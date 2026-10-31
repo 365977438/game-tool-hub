@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AGS入门：从安装到首个像素冒险 - 游戏工具集</title>
+<meta name="description" content="本教程带你完成 Adventure Game Studio 的安装、项目创建与脚本编写，并利用示例工程制作一个包含房间、角色和交互对话的可运行冒险游戏。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tutorials/tut-adventure-game-studio.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AGS入门：从安装到首个像素冒险 - 游戏工具集">
+<meta property="og:description" content="本教程带你完成 Adventure Game Studio 的安装、项目创建与脚本编写，并利用示例工程制作一个包含房间、角色和交互对话的可运行冒险游戏。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tutorials/tut-adventure-game-studio.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link active" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tutorials/">教程</a> / <span>AGS入门：从安装到首个像素冒险</span></nav>
+<article class="article tutorial-article">
+  <header class="article-head">
+    <div class="news-card-meta"><span class="tag tag-imp">关卡与数据管线</span><span>AI 撰写</span><span>更新于 2026-10-25</span></div>
+    <h1>AGS入门：从安装到首个像素冒险</h1>
+    <p class="lead">本教程带你完成 Adventure Game Studio 的安装、项目创建与脚本编写，并利用示例工程制作一个包含房间、角色和交互对话的可运行冒险游戏。</p>
+    <div class="article-tools"><span>关联工具</span><a href="/game-tool-hub/tools/adventure-game-studio.html"><span class="logo-badge" style="--logo-bg:hsl(60120 61% 44%);width:28px;height:28px;font-size:11px">AD</span>Adventure Game Studio</a><a class="btn btn-ghost btn-sm" href="https://adventuregamer.com" target="_blank" rel="noopener nofollow">官网 ↗</a></div>
+  </header>
+  <div class="tut-meta-line"><span class="badge">入门</span><span>⏱ 约30分钟</span><span>🎯 制作并运行一个可交互的像素冒险原型</span></div>
+    <ol class="step-list">
+      <li class="step"><div class="step-no">1</div><div><h4>下载并安装引擎</h4><p>访问 adventuregamer.com 的下载页面，选择对应操作系统的版本并下载安装。首次启动时按提示选择界面语言、默认素材目录及临时工程位置，建议使用独立项目目录。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>创建冒险项目</h4><p>在启动窗口选择新建项目，填写项目名称和保存路径，确认分辨率与像素缩放设置。新建完成后先运行空项目，确保窗口能够正常显示，再开始添加场景。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>配置房间与背景</h4><p>打开项目管理器，进入默认房间或新建房间，在 Room 面板设置背景图片、碰撞区域及角色初始位置。切换到视图模式检查可行走范围，保存后再次运行确认场景显示正常。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>添加角色和交互</h4><p>在树形资源面板创建 Character，导入精灵帧并设置默认朝向、动画帧数与动画速度。把角色放入房间，设置可交互名称、光标及点击时执行脚本，最后用运行模式测试触发效果。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>编写对话脚本</h4><p>打开角色的交互脚本编辑器，输入如 Display(&quot;你要冒险吗？&quot;) 的语句；按选项分支加入 SetPlayerCharacter、ChangeRoom 等命令，并为后续剧情变量设置初始值。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>运行并导出游戏</h4><p>使用运行按钮完整测试移动、碰撞、物品交互和剧情分支，确认没有脚本报错后进入构建菜单，选择目标平台及输出目录，生成可执行文件并在另一目录中启动验证。</p></div></li>
+    </ol>
+    <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>先用内置示例熟悉房间与脚本结构</li><li>角色精灵应统一帧尺寸与锚点</li><li>复杂对话先拆成多个脚本函数</li><li>发布前检查各分辨率下的文字显示</li></ul></div>
+    <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>背景图片需加入资源清单并重载</li><li>碰撞区边缘过窄会导致角色卡住</li></ul></div>
+  <section class="detail-block"><h2>相关工具</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/tiled.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(57240 57% 55%);width:40px;height:40px;font-size:15px">TI</span>
+    <div class="tool-card-info">
+      <h3>Tiled 地图编辑器</h3>
+      <p>承接 AI 生成的瓦片与场景，搭建可交付的二维游戏地图</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">2D地图</span><span class="tag">瓦片关卡</span><span class="tag">开源</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/dungeon-alchemist.html" data-cat="ai-art" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(34920 70% 57%);width:40px;height:40px;font-size:15px">DU</span>
+    <div class="tool-card-info">
+      <h3>Dungeon Alchemist<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 快速生成俯视地牢布局，替掉反复手工摆房间</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI地牢</span><span class="tag">关卡生成</span><span class="tag">俯视视角</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/world-machine.html" data-cat="pipeline" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(53280 57% 42%);width:40px;height:40px;font-size:15px">WO</span>
+    <div class="tool-card-info">
+      <h3>World Machine</h3>
+      <p>把 AI 生成的地形思路转成高度图，服务大型场景制作</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">程序化地形</span><span class="tag">高度图</span><span class="tag">地貌生成</span></div>
+</a></div></section>
+</article>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

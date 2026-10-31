@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 自动化维护 - 游戏工具集</title>
+<meta name="description" content="游戏工具集站的 AI 自动化流水线：工具收集、新闻聚合、教程生成、质量门禁与自动发布全过程透明可查。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/automation.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI 自动化维护 - 游戏工具集">
+<meta property="og:description" content="游戏工具集站的 AI 自动化流水线：工具收集、新闻聚合、教程生成、质量门禁与自动发布全过程透明可查。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/automation.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link active" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<div class="page-head">
+  <h1>🤖 AI 自动化维护流水线</h1>
+  <p>本站的采集、整理、撰写、校验与发布全部由 AI 机器人按计划自动执行，无需任何人工介入。以下为流水线结构与最近运行记录。</p>
+</div>
+<section class="auto-hero">
+  <div class="auto-stat"><strong>274</strong><span>工具</span></div>
+  <div class="auto-stat"><strong>138</strong><span>快讯</span></div>
+  <div class="auto-stat"><strong>292</strong><span>教程</span></div>
+  <div class="auto-stat"><strong>57</strong><span>自动运行</span></div>
+  <div class="auto-stat"><strong>20</strong><span>可用信源</span></div>
+</section>
+<section class="detail-block">
+  <h2>流水线阶段</h2>
+  <div class="stage-flow"><div class="stage"><div class="stage-title">① 采集</div><div class="stage-body"><strong>RSS 源 + Steam 官方公告 + GitHub 搜索 + 种子工具库</strong><p>并行抓取、解析、时效过滤、去重</p></div></div><div class="stage"><div class="stage-title">② AI 加工</div><div class="stage-body"><strong>MiniMax-M3 批量调用</strong><p>翻译、摘要、分类、标签、功能要点改写</p></div></div><div class="stage"><div class="stage-title">③ 教程生成</div><div class="stage-body"><strong>按工具与分类两路生成</strong><p>分步实操教程、技巧、常见坑、分类总览</p></div></div><div class="stage"><div class="stage-title">④ 质量门禁</div><div class="stage-body"><strong>字段校验 + 链接存活探测</strong><p>不合格内容丢弃，失效链接降级为待复核</p></div></div><div class="stage"><div class="stage-title">⑤ 构建发布</div><div class="stage-body"><strong>零依赖静态生成器 + gh-pages 分支</strong><p>生成全站页面、提交仓库、自动发布到公网</p></div></div></div>
+</section>
+<section class="detail-block">
+  <h2>最近运行记录</h2>
+  <div class="table-wrap"><table class="data-table"><thead><tr><th>时间</th><th>模式</th><th>工具</th><th>新增快讯</th><th>教程</th><th>耗时</th><th>结果</th></tr></thead><tbody><tr>
+      <td>2026-11-01 01:39</td>
+      <td>full</td>
+      <td>274</td>
+      <td>1</td>
+      <td>292</td>
+      <td>102s</td>
+      <td><span class="badge badge-ok">成功</span></td>
+    </tr><tr>
+      <td>2026-10-31 21:39</td>
+      <td>full</td>
+      <td>274</td>
+      <td>2</td>
+      <td>292</td>
+      <td>120s</td>
+      <td><span class="badge badge-ok">成功</span></td>
+    </tr><tr>
+      <td>2026-10-31 17:39</td>
+      <td>full</td>
+      <td>274</td>
+      <td>1</td>
+      <td>292</td>
+      <td>132s</td>
+      <td><span class="badge badge-ok">成功</span></td>
+    </tr><tr>
+      <td>2026-10-31 13:39</td>
+      <td>full</td>
+      <td>274</td>
+      <td>0</td>
+      <td>292</td>
+      <td>152s</td>
+      <td><span class="badge badge-ok">成功</span></td>
+    </tr><tr>
+      <td>2026-10-31 09:37</td>
+      <td>full</td>
+      <td>274</td>
+      <td>2</td>
+      <td>292</td>
+      <td>141s</td>
+      <td><span class="badge badge-ok">成功</span></td>
+    </tr><tr>
+      <td>2026-10-31 05:39</td>
+      <td>full</td>
+      <td>274</td>
+      <td>1</td>
+      <td>292</td>
+      <td>123s</td>
+      <td><span class="badge badge-ok">成功</span></td>
+    </tr><tr>
+      <td>2026-10-31 01:38</td>
+      <td>full</td>
+      <td>274</td>
+      <td>2</td>
+      <td>292</td>
+      <td>129s</td>
+      <td><span class="badge badge-ok">成功</span></td>
+    </tr><tr>
+      <td>2026-10-30 21:39</td>
+      <td>full</td>
+      <td>274</td>
+      <td>2</td>
+      <td>292</td>
+      <td>153s</td>
+      <td><span class="badge badge-ok">成功</span></td>
+    </tr><tr>
+      <td>2026-10-30 17:37</td>
+      <td>full</td>
+      <td>274</td>
+      <td>1</td>
+      <td>292</td>
+      <td>100s</td>
+      <td><span class="badge badge-ok">成功</span></td>
+    </tr><tr>
+      <td>2026-10-30 13:39</td>
+      <td>full</td>
+      <td>274</td>
+      <td>0</td>
+      <td>292</td>
+      <td>130s</td>
+      <td><span class="badge badge-ok">成功</span></td>
+    </tr><tr>
+      <td>2026-10-30 09:37</td>
+      <td>full</td>
+      <td>274</td>
+      <td>1</td>
+      <td>292</td>
+      <td>140s</td>
+      <td><span class="badge badge-ok">成功</span></td>
+    </tr><tr>
+      <td>2026-10-30 05:39</td>
+      <td>full</td>
+      <td>274</td>
+      <td>4</td>
+      <td>292</td>
+      <td>122s</td>
+      <td><span class="badge badge-ok">成功</span></td>
+    </tr></tbody></table></div>
+  <p class="muted small">最近一次：2026-11-01 01:39，耗时 102 秒，LLM 调用 6 次，输入 9708 tokens。</p>
+</section>
+<section class="detail-block">
+  <h2>已接入的信源</h2>
+  <div class="table-wrap"><table class="data-table"><thead><tr><th>来源</th><th>地址</th><th>条目</th><th>状态</th></tr></thead><tbody><tr><td>机核</td><td><code>https://www.gcores.com/rss.xml</code></td><td>20</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>触乐</td><td><code>https://www.chuapp.com/feed</code></td><td>30</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>indienova</td><td><code>https://indienova.com/feed/</code></td><td>10</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>游戏陀螺</td><td><code>https://www.youxituoluo.com/feed</code></td><td>30</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>IT之家</td><td><code>https://www.ithome.com/rss/</code></td><td>60</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>GamesIndustry.biz</td><td><code>https://www.gamesindustry.biz/feed</code></td><td>100</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>Eurogamer</td><td><code>https://www.eurogamer.net/feed</code></td><td>100</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>Rock Paper Shotgun</td><td><code>https://www.rockpapershotgun.com/feed</code></td><td>100</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>Game World Observer</td><td><code>https://gameworldobserver.com/feed</code></td><td>100</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>PC Gamer</td><td><code>https://www.pcgamer.com/rss/</code></td><td>50</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>GameSpot</td><td><code>https://www.gamespot.com/feeds/mashup/</code></td><td>15</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>Game Informer</td><td><code>https://gameinformer.com/rss.xml</code></td><td>50</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>Godot Blog</td><td><code>https://godotengine.org/rss.xml</code></td><td>15</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>Blender News</td><td><code>https://www.blender.org/feed/</code></td><td>9</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>Steam 新闻</td><td><code>https://store.steampowered.com/feeds/news/?l=schinese</code></td><td>10</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>NVIDIA Blog</td><td><code>https://blogs.nvidia.com/feed/</code></td><td>18</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>steam-featuredcategories</td><td><code>https://store.steampowered.com/api/featuredcategories</code></td><td>51012</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>steam-appdetails</td><td><code>https://store.steampowered.com/api/appdetails?appids=730&amp;cc=cn&amp;l=schinese</code></td><td>15664</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>steam-news</td><td><code>https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=730&amp;count=5&amp;maxlength=200&amp;format=json</code></td><td>3211</td><td><span class="ok-dot"></span>正常</td></tr><tr><td>github-search</td><td><code>https://api.github.com/search/repositories?q=godot+plugin&amp;sort=stars&amp;per_page=5</code></td><td>32784</td><td><span class="ok-dot"></span>正常</td></tr></tbody></table></div>
+</section>
+<section class="detail-block">
+  <h2>无人值守保障</h2>
+  <ul class="feature-list">
+    <li>Windows 计划任务按小时/每日触发内容管线，无需登录或人工确认</li>
+    <li>每一步都有失败重试与降级：单个信源失败不影响整体运行</li>
+    <li>AI 输出强制 JSON 解析，解析失败自动纠错重试，仍失败则跳过该条</li>
+    <li>链接存活探测自动标记状态，失效链接在页面显式提示「待复核」</li>
+    <li>内容变更自动提交 Git 仓库，GitHub Actions 自动重新构建并发布到公网</li>
+    <li>数据层为增量更新：已完善的工具与教程不会被重复消耗算力重写</li>
+  </ul>
+</section>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

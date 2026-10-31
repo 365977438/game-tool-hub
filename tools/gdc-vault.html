@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GDC Vault - 学习与社区 - 游戏工具集</title>
+<meta name="description" content="检索游戏大会演讲，补齐 AI 制作中的工程与设计知识">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tools/gdc-vault.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GDC Vault - 学习与社区 - 游戏工具集">
+<meta property="og:description" content="检索游戏大会演讲，补齐 AI 制作中的工程与设计知识">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tools/gdc-vault.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link active" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tools/">工具集</a> / <a href="/game-tool-hub/categories/learn.html">学习与社区</a> / <span>GDC Vault</span></nav>
+<article class="detail">
+  <header class="detail-head">
+    <span class="logo-badge" style="--logo-bg:hsl(59400 74% 43%);width:64px;height:64px;font-size:24px">GD</span>
+    <div class="detail-title">
+      <h1>GDC Vault</h1>
+      <p class="detail-summary">检索游戏大会演讲，补齐 AI 制作中的工程与设计知识</p>
+      <div class="detail-tags"><span class="tag">开发大会</span><span class="tag">技术演讲</span><span class="tag">游戏开发</span><span class="tag">工程实践</span></div>
+    </div>
+    <div class="detail-cta">
+      <a class="btn btn-primary" href="https://www.gdcvault.com" target="_blank" rel="noopener nofollow">访问官网 ↗</a>
+      <a class="btn btn-ghost" href="/game-tool-hub/tutorials/tut-gdc-vault.html">阅读教程</a>
+    </div>
+  </header>
+  <div class="meta-grid">
+    <div><span>所属分类</span><strong><a href="/game-tool-hub/categories/learn.html">🎓 学习与社区</a></strong></div>
+    <div><span>创作阶段</span><strong>🎓 学习</strong></div>
+    <div><span>工具类型</span><strong>传统工具 · AI 管线配套</strong></div>
+    <div><span>支持平台</span><strong>Web</strong></div>
+    <div><span>价格模式</span><strong>部分免费</strong></div>
+    <div><span>适合人群</span><strong>游戏开发者、技术负责人及 AI 管线团队</strong></div>
+    <div><span>官网链接</span><strong class="link-status ok">● 正常</strong></div>
+    <div><span>资料更新</span><strong>2026-11-01</strong></div>
+  </div>
+  <section class="detail-block ai-role-block">
+    <h2>🧠 在 AI 创作链路中的位置</h2>
+    <p class="lead">为 AI 游戏管线提供前沿方案、工程经验与设计参考</p>
+    <p class="muted small">所属阶段：🎓 学习 · 传统工具，负责把 AI 产物打磨/接入到可交付的管线里</p>
+  </section>
+  <section class="detail-block">
+    <h2>工具介绍</h2>
+    <p class="lead">GDC Vault 汇集游戏开发大会的技术演讲与课程资料，适合学习渲染、AI、关卡、在线服务等实战经验。它不承担直接生成内容，而是帮助团队理解 AI 落地方案并规避常见工程问题；网页观看，部分内容免费，部分需购买或订阅。</p>
+  </section>
+  <section class="detail-block"><h2>核心能力</h2><ul class="feature-list"><li>汇聚历年技术演讲</li><li>覆盖多个开发专题</li><li>支持在线观看学习</li><li>部分课程免费开放</li></ul></section>
+  <div class="two-col">
+    <section class="detail-block"><h2>👍 优点</h2><ul class="plus-list"><li>一线厂商经验集中</li><li>技术方案可落地</li><li>适合系统补足知识</li></ul></section>
+    <section class="detail-block"><h2>⚠️ 局限</h2><ul class="minus-list"><li>部分内容收费</li><li>并非中文主阵地</li></ul></section>
+  </div>
+  <section class="detail-block"><h2>典型使用场景</h2><ul class="usecase-list"><li>学习 AI 游戏技术实践</li><li>研究玩法与关卡设计</li><li>为团队技术选型提供参考</li></ul></section>
+  <section class="detail-block"><h2>使用教程</h2>
+      <div class="tut-meta-line"><span class="badge">入门</span><span>⏱ 约 20 分钟</span><span>🎯 建立个人学习清单并完成一次技术演讲回看</span></div>
+      <ol class="step-list"><li class="step"><div class="step-no">1</div><div><h4>访问并了解平台</h4><p>打开 GDC Vault 官网，浏览首页的演讲、课程和专题栏目，先确认内容语言、发布日期与适合的岗位方向。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>搜索目标技术</h4><p>在搜索框输入关键技术或岗位名称，如 Rendering、Procedural Generation、Technical Art；使用筛选器缩小年份与内容类型。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>打开演讲详情</h4><p>选择感兴趣的演讲进入详情页，查看摘要、讲师、主题标签、相关课程及可用资源，再决定观看顺序。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>观看录像与幻灯</h4><p>在线播放录像并同步下载公开幻灯，配合暂停、倍速和重播功能，提取可应用到项目的技术要点。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>加入专业课程</h4><p>从课程列表按技能、难度和时长筛选内容，完成章节练习与测验，重点观察讲师给出的案例和工具链。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>建立学习清单</h4><p>收藏演讲和课程，创建个人清单并标记学习进度；定期按专题回看，把经验整理成可执行的实践任务。</p></div></li></ol>
+      <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>优先筛选带幻灯与案例的演讲</li><li>用英文关键词检索结果更完整</li><li>按岗位需求组合专题学习路径</li><li>边看边记录可复用的工作流</li></ul></div>
+      <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>避免只看标题，应先读摘要与标签</li><li>免费资源数量有限，付费前先核对权限</li></ul></div>
+      <p class="muted small">完整图文教程：<a href="/game-tool-hub/tutorials/tut-gdc-vault.html">GDC Vault 入门：高效学习前沿开发经验</a></p>
+    </section>
+  <section class="detail-block guide-callout"><h2>📖 同类工具怎么选</h2><p>本分类覆盖官方教程、系统课程、开放规范、行业媒体与开发者社区，适合从入门学习、技术进阶到行业洞察的不同阶段。建议先按当前目标选择主线：引擎上手选官方学习中心，图形编程选OpenGL或着色器课程，架构能力查范式书籍，会议经验看GDC，行业动态则结合中文社区与专业媒体。</p><a class="btn btn-ghost" href="/game-tool-hub/tutorials/guide-learn.html">阅读《游戏开发学习资源与社区选择指南》</a></section>
+  <section class="detail-block"><h2>同类工具推荐</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/unity-learn.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(47160 61% 45%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>Unity Learn</h3>
+      <p>用 Unity 官方课程补齐 AI 产出的脚本、场景与工作流知识</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">官方教程</span><span class="tag">脚本开发</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/unreal-learning.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(48960 74% 50%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>Unreal Learning</h3>
+      <p>学习 Unreal 制作流程，把 AI 蓝图与 C++ 产出打磨成游戏</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unreal</span><span class="tag">官方教程</span><span class="tag">蓝图</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/indienova.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(34200 60% 48%);width:40px;height:40px;font-size:15px">IN</span>
+    <div class="tool-card-info">
+      <h3>indienova  indie 游戏</h3>
+      <p>获取中文独立游戏经验，交流 AI 制作与项目落地</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">独立游戏</span><span class="tag">中文社区</span><span class="tag">开发日志</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gcores.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(21240 68% 54%);width:40px;height:40px;font-size:15px">机核</span>
+    <div class="tool-card-info">
+      <h3>机核</h3>
+      <p>用中文游戏媒体洞察玩法与趋势，为AI游戏创意提供方向参考。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏媒体</span><span class="tag">中文社区</span><span class="tag">玩家洞察</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/game-programming-patterns.html" data-cat="learn" data-stage="代码" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(91800 69% 47%);width:40px;height:40px;font-size:15px">游戏</span>
+    <div class="tool-card-info">
+      <h3>游戏编程范式</h3>
+      <p>用经典游戏架构模式约束AI生成代码，减少手工重构与返工。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏架构</span><span class="tag">编程模式</span><span class="tag">免费书籍</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/learn-opengl.html" data-cat="learn" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(86040 74% 46%);width:40px;height:40px;font-size:15px">LE</span>
+    <div class="tool-card-info">
+      <h3>LearnOpenGL</h3>
+      <p>用图形学教材补足AI渲染代码知识，支撑画面与引擎效果实现。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">OpenGL</span><span class="tag">图形学</span><span class="tag">着色器</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/the-book-of-shaders.html" data-cat="learn" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(17280 57% 57%);width:40px;height:40px;font-size:15px">TH</span>
+    <div class="tool-card-info">
+      <h3>The Book of Shaders</h3>
+      <p>用交互式着色器课程指导AI生成视觉特效，缩短效果调试验收时间。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">GLSL</span><span class="tag">着色器</span><span class="tag">视觉特效</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/igda.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(31320 69% 57%);width:40px;height:40px;font-size:15px">IG</span>
+    <div class="tool-card-info">
+      <h3>IGDA</h3>
+      <p>连接全球游戏从业者，交流 AI 制作经验与行业资源</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">开发者组织</span><span class="tag">行业社群</span><span class="tag">技术交流</span></div>
+</a></div></section>
+</article>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"GDC Vault","description":"检索游戏大会演讲，补齐 AI 制作中的工程与设计知识","url":"https://www.gdcvault.com","applicationCategory":"GameDevelopmentApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

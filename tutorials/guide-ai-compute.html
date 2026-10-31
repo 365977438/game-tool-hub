@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 算力与部署：从本地试验到在线推理 - 游戏工具集</title>
+<meta name="description" content="本分类负责为 AI 制作游戏提供模型运行、API 调用与推理服务能力，覆盖开发机本地部署、云端生成和在线高并发服务。挑选时应结合模型兼容性、响应延迟、吞吐与显存、调用成本、部署地域、并发方式及数据合规，并按原型验证、资产批量生成与在线 NPC 分层验证。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tutorials/guide-ai-compute.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI 算力与部署：从本地试验到在线推理 - 游戏工具集">
+<meta property="og:description" content="本分类负责为 AI 制作游戏提供模型运行、API 调用与推理服务能力，覆盖开发机本地部署、云端生成和在线高并发服务。挑选时应结合模型兼容性、响应延迟、吞吐与显存、调用成本、部署地域、并发方式及数据合规，并按原型验证、资产批量生成与在线 NPC 分层验证。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tutorials/guide-ai-compute.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link active" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tutorials/">教程</a> / <span>AI 算力与部署：从本地试验到在线推理</span></nav>
+<article class="article tutorial-article">
+  <header class="article-head">
+    <div class="news-card-meta"><span class="tag tag-imp">AI 算力与部署</span><span>AI 撰写</span><span>更新于 2026-10-26</span></div>
+    <h1>AI 算力与部署：从本地试验到在线推理</h1>
+    <p class="lead">本分类负责为 AI 制作游戏提供模型运行、API 调用与推理服务能力，覆盖开发机本地部署、云端生成和在线高并发服务。挑选时应结合模型兼容性、响应延迟、吞吐与显存、调用成本、部署地域、并发方式及数据合规，并按原型验证、资产批量生成与在线 NPC 分层验证。</p>
+    
+  </header>
+  <div class="article-body">
+      <section class="guide-section-block"><h3>算力层在 AI 游戏链路中的位置</h3><p>AI 游戏链路通常从提示词和素材需求开始，经模型生成、筛选与编辑，再进入代码、角色行为或运行时服务。算力与部署层决定模型能否稳定执行，以及生成速度、成本和失败率，是连接创意方案与可交付资产的关键环节。</p><p>原型阶段可先用本地模型快速验证对话、代码和 NPC 逻辑；正式生产阶段更适合调用云端 API 批量生成图像、视频或文本；上线后的高频请求则应关注并发、缓存、显存与可观测性，避免把试验方案直接带入生产。</p></section><section class="guide-section-block"><h3>本地部署：快速试验与离线能力</h3><p>Ollama、LM Studio 和 llama.cpp 适合在开发机上运行大语言模型。Ollama 接入简单，适合 NPC 对话、测试和内容草稿；LM Studio 提供桌面交互与本地 API；llama.cpp 强调轻量、跨平台和量化模型，可在资源有限设备上运行。</p><p>选择本地方案时，先检查模型架构是否受支持、量化后能否保持可用质量，以及内存与显存是否满足上下文长度。开发期应固定模型、参数和提示词版本，保留输出记录；涉及敏感素材或离线场景时，本地部署也更利于控制数据流向。</p></section><section class="guide-section-block"><h3>云端 API：快速接入与批量生成</h3><p>Replicate、fal.ai、硅基流动、阿里云百炼、火山引擎方舟、Together AI 与 OpenRouter 都提供不同程度的云端模型接入。它们适合把文本、图像或视频能力接入游戏管线，省去 GPU 采购、驱动维护和模型服务部署。</p><p>云端选型不要只看单价，应比较目标模型是否可用、区域与网络延迟、请求并发限制、输出格式兼容性和计费单位。资产生产可利用异步任务、批量调用和结果存储；国内项目还应核实服务可用性、数据合规、实名要求及模型备案情况。</p></section><section class="guide-section-block"><h3>生产推理：高吞吐服务与 GPU 调度</h3><p>vLLM 面向自托管高吞吐推理，适合需要统一模型后端的在线 NPC、代码生成服务或内部工具。其优势在于批处理、连续批处理和 OpenAI 兼容接口，但部署者仍需处理 GPU 利用率、显存占用、模型副本和扩缩容。</p><p>上线前应按真实上下文长度、并发数和输出长度压测，区分首字延迟、完整响应延迟与每秒请求量。为热门模型预留副本，设置队列、超时、重试和熔断，并通过日志追踪提示词版本、耗时、Token、错误率与成本。</p></section><section class="guide-section-block"><h3>按场景组合工具与服务</h3><p>一条实用管线常采用混合架构：LM Studio 或 Ollama 用于离线原型，fal.ai 生成游戏图像与视频，云端文本 API 支撑非实时内容，vLLM 承载高频在线 NPC。OpenRouter 或 Together AI 可作为统一入口，降低多供应商切换与接口适配成本。</p><p>不要一开始就确定单一供应商。先建立统一适配层，把请求、参数、结果和用量转换为内部格式，再对同一任务比较质量、延迟和单次成本。对长尾资产生成可预生成并写入 CDN，对实时对话则应缩短上下文、缓存固定知识，并设置明确的降级回复。</p></section><section class="guide-section-block"><h3>成本、速度与质量的平衡</h3><p>生成成本不只来自模型调用。本地方案承担设备、显存和运维投入，云端方案则受 Token、分辨率、时长、并发和重试影响。应以“每个合格素材”或“每次成功交互”计算成本，而不是只比较模型标价或 GPU 小时。</p><p>速度也需按环节拆分：资产生成允许异步排队，对话关注首字延迟，视频任务关注交付时长。评估时固定提示词、输入素材和验收标准，记录多轮结果，再决定采用更小模型、量化模型、批处理、缓存，还是为关键流量升级服务。</p></section>
+    </div>
+    <div class="tips-box"><h3>✅ 落地清单</h3><ul><li>按原型、资产与上线场景划分算力方案</li><li>核对模型格式、量化方式和上下文长度</li><li>统一请求、结果与错误处理接口</li><li>压测首字延迟、吞吐和显存占用</li><li>按合格素材或成功交互核算成本</li><li>为云端任务设置队列、重试与降级</li><li>记录模型版本、参数、耗时和用量</li><li>验证数据地域、隐私与合规要求</li></ul></div>
+    <section class="detail-block"><h2>常见问题</h2><div class="faq-item"><h4>Q：本地模型和云端 API 应该怎么选？</h4><p>原型验证、隐私敏感或离线需求优先本地；需要高质量图像视频、快速上线或弹性并发时优先云端。也可混合使用，让本地承担试验，让云端承担批量生产。</p></div><div class="faq-item"><h4>Q：显卡越贵，AI 游戏生产就越快吗？</h4><p>不一定。速度还取决于模型大小、量化方式、上下文长度、批处理策略和提示词长度。应使用代表性任务压测，并同时比较质量、延迟与每个合格结果的成本。</p></div><div class="faq-item"><h4>Q：在线 NPC 直接调用大模型够用吗？</h4><p>够用于原型，但生产环境通常需要上下文裁剪、缓存、并发控制、失败重试和固定回复兜底。高频场景可自托管推理服务，并保留降级策略避免服务异常拖垮游戏。</p></div><div class="faq-item"><h4>Q：如何避免多模型接入变得不可维护？</h4><p>在供应商与游戏业务之间建立统一适配层，固定请求结构、错误格式、用量字段和模型别名。再通过配置切换供应商，避免业务代码直接依赖某一家平台的专属参数。</p></div></section>
+    <section class="detail-block"><h2>本分类工具</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/ollama.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(69840 67% 55%);width:40px;height:40px;font-size:15px">OL</span>
+    <div class="tool-card-info">
+      <h3>Ollama<span class="badge-ai">AI 原生</span></h3>
+      <p>在开发机上部署 AI 模型，为 NPC、测试和内容生成提供本地接口。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">本地模型</span><span class="tag">模型部署</span><span class="tag">推理服务</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/replicate.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(59760 71% 51%);width:40px;height:40px;font-size:15px">RE</span>
+    <div class="tool-card-info">
+      <h3>Replicate<span class="badge-ai">AI 原生</span></h3>
+      <p>调用与部署开源模型，把AI生成能力快速接入游戏管线。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">模型API</span><span class="tag">云端推理</span><span class="tag">一键部署</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/fal-ai.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(82080 77% 55%);width:40px;height:40px;font-size:15px">FA</span>
+    <div class="tool-card-info">
+      <h3>fal.ai<span class="badge-ai">AI 原生</span></h3>
+      <p>低延迟生成图像与视频，为游戏资产管线提速。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">低延迟</span><span class="tag">图像生成</span><span class="tag">视频生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/siliconflow.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(66960 62% 51%);width:40px;height:40px;font-size:15px">SI</span>
+    <div class="tool-card-info">
+      <h3>SiliconFlow 硅基流动<span class="badge-ai">AI 原生</span></h3>
+      <p>提供国内开源模型推理，快速接入游戏AI功能。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">国内API</span><span class="tag">开源模型</span><span class="tag">低延迟</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/aliyun-bailian.html" data-cat="ai-compute" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(24480 66% 56%);width:40px;height:40px;font-size:15px">阿里</span>
+    <div class="tool-card-info">
+      <h3>阿里云百炼<span class="badge-ai">AI 原生</span></h3>
+      <p>整合模型、知识库与应用编排，搭建游戏AI服务。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">模型服务</span><span class="tag">应用编排</span><span class="tag">知识库</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/volcengine-ark.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(56880 64% 43%);width:40px;height:40px;font-size:15px">火山</span>
+    <div class="tool-card-info">
+      <h3>火山引擎方舟<span class="badge-ai">AI 原生</span></h3>
+      <p>为游戏 AI 管线提供多模态模型推理与批量调用能力</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">模型推理</span><span class="tag">批量调用</span><span class="tag">多模态</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/together-ai.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(54360 69% 51%);width:40px;height:40px;font-size:15px">TO</span>
+    <div class="tool-card-info">
+      <h3>Together AI<span class="badge-ai">AI 原生</span></h3>
+      <p>用统一 API 调用图像视频模型，并微调游戏专用模型</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">模型 API</span><span class="tag">图像生成</span><span class="tag">视频生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/lm-studio.html" data-cat="ai-compute" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(44280 60% 43%);width:40px;height:40px;font-size:15px">LM</span>
+    <div class="tool-card-info">
+      <h3>LM Studio<span class="badge-ai">AI 原生</span></h3>
+      <p>在桌面本地运行大模型，为游戏原型生成代码、文本与智能体逻辑。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">本地推理</span><span class="tag">大模型</span><span class="tag">离线开发</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/vllm.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(24120 78% 54%);width:40px;height:40px;font-size:15px">VL</span>
+    <div class="tool-card-info">
+      <h3>vLLM<span class="badge-ai">AI 原生</span></h3>
+      <p>高吞吐自托管模型服务，为在线 NPC 与生成式玩法提供推理后端。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">高吞吐</span><span class="tag">自托管</span><span class="tag">模型服务</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/llama-cpp.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(53280 69% 48%);width:40px;height:40px;font-size:15px">LL</span>
+    <div class="tool-card-info">
+      <h3>llama.cpp<span class="badge-ai">AI 原生</span></h3>
+      <p>以轻量跨平台方式本地运行量化模型，支撑离线 NPC 与开发助手。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">本地推理</span><span class="tag">量化模型</span><span class="tag">跨平台</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/openrouter.html" data-cat="ai-compute" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(57600 76% 48%);width:40px;height:40px;font-size:15px">OP</span>
+    <div class="tool-card-info">
+      <h3>OpenRouter<span class="badge-ai">AI 原生</span></h3>
+      <p>统一调用多家大模型，按需求切换 AI NPC、内容生成与开发辅助模型。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">多模型</span><span class="tag">统一接口</span><span class="tag">模型路由</span></div>
+</a></div></section>
+  
+</article>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

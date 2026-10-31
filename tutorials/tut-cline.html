@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cline 入门：从安装到游戏原型 - 游戏工具集</title>
+<meta name="description" content="在代码编辑器中配置 Cline 与模型 API，让 AI 规划并执行跨文件改造，最终生成一个可运行的 2D 游戏原型。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tutorials/tut-cline.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cline 入门：从安装到游戏原型 - 游戏工具集">
+<meta property="og:description" content="在代码编辑器中配置 Cline 与模型 API，让 AI 规划并执行跨文件改造，最终生成一个可运行的 2D 游戏原型。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tutorials/tut-cline.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link active" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tutorials/">教程</a> / <span>Cline 入门：从安装到游戏原型</span></nav>
+<article class="article tutorial-article">
+  <header class="article-head">
+    <div class="news-card-meta"><span class="tag tag-imp">AI 代码与自动化</span><span>AI 撰写</span><span>更新于 2026-10-26</span></div>
+    <h1>Cline 入门：从安装到游戏原型</h1>
+    <p class="lead">在代码编辑器中配置 Cline 与模型 API，让 AI 规划并执行跨文件改造，最终生成一个可运行的 2D 游戏原型。</p>
+    <div class="article-tools"><span>关联工具</span><a href="/game-tool-hub/tools/cline.html"><span class="logo-badge" style="--logo-bg:hsl(77760 72% 55%);width:28px;height:28px;font-size:11px">CL</span>Cline</a><a class="btn btn-ghost btn-sm" href="https://cline.bot" target="_blank" rel="noopener nofollow">官网 ↗</a></div>
+  </header>
+  <div class="tut-meta-line"><span class="badge">入门</span><span>⏱ 约 30 分钟</span><span>🎯 用自然语言生成并运行首个 2D 游戏原型</span></div>
+    <ol class="step-list">
+      <li class="step"><div class="step-no">1</div><div><h4>准备编辑器与项目</h4><p>安装 VS Code，并用 Cline 创建或打开游戏项目目录；先准备引擎源码、素材和启动命令，确保后续 AI 能准确定位文件与运行入口。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>安装并配置 Cline</h4><p>打开 VS Code 扩展市场，搜索 Cline 并安装；在侧边栏点击 Cline，进入设置页填入模型名称、API 地址与密钥，保存后发送简单测试消息。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>描述游戏需求</h4><p>在 Cline 对话框输入具体任务，例如“用现有引擎实现角色移动、镜头跟随和碰撞”，并限定语言、目录及验收标准，避免只给模糊的一句话。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>审核并执行计划</h4><p>让 Cline 先读取项目并生成多步计划；逐项确认涉及的新建、修改文件和终端命令，再批准执行。关键改动前先查看差异，不盲目授权。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>验证产物并迭代</h4><p>根据 Cline 给出的启动命令运行游戏，检查控制、碰撞和资源加载；把报错日志与复现步骤发回对话，要求 AI 定位根因并完成跨文件修复。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>接入版本与构建管线</h4><p>确认游戏可正常运行后，让 Cline 补充构建脚本、README 和测试命令；检查 git diff，将源码、配置及必要素材提交到仓库，形成可复现的原型。</p></div></li>
+    </ol>
+    <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>先让 AI 读项目，再要求修改代码</li><li>每轮只安排一个可验证目标</li><li>把控制台报错原样交给 AI</li><li>提交前审查跨文件变更</li></ul></div>
+    <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>授予终端权限前先核对命令范围</li><li>不要把 API 密钥写入项目文件</li></ul></div>
+  <section class="detail-block"><h2>相关工具</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/cursor.html" data-cat="ai-code" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(55440 69% 56%);width:40px;height:40px;font-size:15px">CU</span>
+    <div class="tool-card-info">
+      <h3>Cursor<span class="badge-ai">AI 原生</span></h3>
+      <p>用自然对话修改游戏项目代码，把需求快速转成可运行逻辑。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI IDE</span><span class="tag">游戏逻辑</span><span class="tag">代码生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/aider.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(90000 67% 49%);width:40px;height:40px;font-size:15px">AI</span>
+    <div class="tool-card-info">
+      <h3>Aider<span class="badge-ai">AI 原生</span></h3>
+      <p>在终端里用 AI 编写、修改并提交游戏代码</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">终端编码</span><span class="tag">结对编程</span><span class="tag">Git集成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/roo-code.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(72360 75% 48%);width:40px;height:40px;font-size:15px">RO</span>
+    <div class="tool-card-info">
+      <h3>Roo Code<span class="badge-ai">AI 原生</span></h3>
+      <p>以多模式 AI 代理编写游戏代码和项目工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">IDE插件</span><span class="tag">多模式代理</span><span class="tag">本地模型</span></div>
+</a></div></section>
+</article>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

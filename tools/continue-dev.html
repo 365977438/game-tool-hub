@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Continue - AI 代码与自动化 - 游戏工具集</title>
+<meta name="description" content="用可自建后端的 AI 补全并改造游戏代码">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tools/continue-dev.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Continue - AI 代码与自动化 - 游戏工具集">
+<meta property="og:description" content="用可自建后端的 AI 补全并改造游戏代码">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tools/continue-dev.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link active" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tools/">工具集</a> / <a href="/game-tool-hub/categories/ai-code.html">AI 代码与自动化</a> / <span>Continue</span></nav>
+<article class="detail">
+  <header class="detail-head">
+    <span class="logo-badge" style="--logo-bg:hsl(57600 71% 50%);width:64px;height:64px;font-size:24px">CO</span>
+    <div class="detail-title">
+      <h1>Continue</h1>
+      <p class="detail-summary">用可自建后端的 AI 补全并改造游戏代码</p>
+      <div class="detail-tags"><span class="tag">IDE插件</span><span class="tag">代码补全</span><span class="tag">本地模型</span><span class="tag">自建后端</span><span class="tag">团队开发</span></div>
+    </div>
+    <div class="detail-cta">
+      <a class="btn btn-primary" href="https://www.continue.dev" target="_blank" rel="noopener nofollow">访问官网 ↗</a>
+      <a class="btn btn-ghost" href="/game-tool-hub/tutorials/tut-continue-dev.html">阅读教程</a>
+    </div>
+  </header>
+  <div class="meta-grid">
+    <div><span>所属分类</span><strong><a href="/game-tool-hub/categories/ai-code.html">⌨️ AI 代码与自动化</a></strong></div>
+    <div><span>创作阶段</span><strong>⌨️ 代码</strong></div>
+    <div><span>工具类型</span><strong>⚡ AI 原生工具</strong></div>
+    <div><span>支持平台</span><strong>跨平台</strong></div>
+    <div><span>价格模式</span><strong>免费开源</strong></div>
+    <div><span>适合人群</span><strong>独立开发者、团队技术负责人、隐私敏感团队</strong></div>
+    <div><span>官网链接</span><strong class="link-status ok">● 正常</strong></div>
+    <div><span>资料更新</span><strong>2026-11-01</strong></div>
+  </div>
+  <section class="detail-block ai-role-block">
+    <h2>🧠 在 AI 创作链路中的位置</h2>
+    <p class="lead">为日常游戏编码提供补全、对话与上下文改写</p>
+    <p class="muted small">所属阶段：⌨️ 代码 · AI 原生工具，直接用生成能力做生产</p>
+  </section>
+  <section class="detail-block">
+    <h2>工具介绍</h2>
+    <p class="lead">Continue 是开源 IDE 插件，提供代码补全、聊天、编辑和自定义模型接入，可构建私有开发链路。它适合希望统一团队编码环境、接入本地或自托管模型的开发者。跨平台使用，但不同 IDE 与后端配置存在差异。</p>
+  </section>
+  <section class="detail-block"><h2>核心能力</h2><ul class="feature-list"><li>上下文代码补全</li><li>项目级聊天</li><li>选中代码直接编辑</li><li>支持自建后端</li><li>可接入本地模型</li></ul></section>
+  <div class="two-col">
+    <section class="detail-block"><h2>👍 优点</h2><ul class="plus-list"><li>开源且可自托管</li><li>模型接入方式灵活</li><li>适合融入现有开发规范</li></ul></section>
+    <section class="detail-block"><h2>⚠️ 局限</h2><ul class="minus-list"><li>后端配置有门槛</li><li>复杂代理能力相对有限</li></ul></section>
+  </div>
+  <section class="detail-block"><h2>典型使用场景</h2><ul class="usecase-list"><li>补全引擎与编辑器脚本</li><li>解释项目代码结构</li><li>生成数据转换工具</li><li>统一团队 AI 编码环境</li></ul></section>
+  <section class="detail-block"><h2>使用教程</h2>
+      <div class="tut-meta-line"><span class="badge">入门</span><span>⏱ 约 20 分钟</span><span>🎯 用 AI 生成并接入一个可运行的游戏功能</span></div>
+      <ol class="step-list"><li class="step"><div class="step-no">1</div><div><h4>安装 Continue 扩展</h4><p>在 VS Code 左侧扩展面板搜索 Continue 并安装；若使用其他编辑器，先确认其兼容版本和配置方式。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>配置模型与后端</h4><p>打开 Continue 侧栏，在模型配置中填写 API 密钥、模型和接口地址；也可选择本地模型或自建兼容 OpenAI 格式的后端。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>建立游戏项目上下文</h4><p>用 Continue 的项目级聊天添加引擎、玩法和目录说明，让 AI 了解语言、框架、输入系统及代码规范，避免只生成孤立片段。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>生成并预览代码</h4><p>在游戏控制器或玩法脚本中描述需求，例如“实现玩家跳跃和二段跳”；查看补全候选，按 Tab 接受并用预览窗口或运行命令检查结果。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>选中代码进行改写</h4><p>选中需要修改的代码，通过聊天框输入明确指令，如“增加无敌帧并保持原输入逻辑”；确认差异后逐段接受，再运行游戏验证。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>接入开发与提交流程</h4><p>把 AI 生成代码按模块保存，执行格式化、测试和本地运行；通过 Git 查看差异，确认无敏感信息与破坏性改动后提交。</p></div></li></ol>
+      <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>用配置文件说明项目结构和编码规范</li><li>每次只改一个玩法或系统模块</li><li>优先选择本地模型处理核心代码</li><li>先保存 Git 提交再让 AI 改写</li></ul></div>
+      <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>不要直接接受整文件生成结果</li><li>接口地址与模型名称必须匹配</li></ul></div>
+      <p class="muted small">完整图文教程：<a href="/game-tool-hub/tutorials/tut-continue-dev.html">Continue 入门：用 AI 完成首个游戏功能</a></p>
+    </section>
+  <section class="detail-block guide-callout"><h2>📖 同类工具怎么选</h2><p>AI 代码工具负责把需求转为可运行代码、补全脚本、维护工程并连接 Godot、Unity 等编辑器。应按项目规模、编辑器、代理自主程度和部署需求选型，再用版本控制、测试与人工审查守住质量。</p><a class="btn btn-ghost" href="/game-tool-hub/tutorials/guide-ai-code.html">阅读《AI 代码与自动化：游戏开发提效全链路》</a></section>
+  <section class="detail-block"><h2>同类工具推荐</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/github-copilot.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(14400 57% 43%);width:40px;height:40px;font-size:15px">GI</span>
+    <div class="tool-card-info">
+      <h3>GitHub Copilot<span class="badge-ai">AI 原生</span></h3>
+      <p>在代码编辑器中辅助编写游戏脚本与工具链，替代重复性编码工作。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI 编程</span><span class="tag">代码补全</span><span class="tag">游戏脚本</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/cursor.html" data-cat="ai-code" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(55440 69% 56%);width:40px;height:40px;font-size:15px">CU</span>
+    <div class="tool-card-info">
+      <h3>Cursor<span class="badge-ai">AI 原生</span></h3>
+      <p>用自然对话修改游戏项目代码，把需求快速转成可运行逻辑。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI IDE</span><span class="tag">游戏逻辑</span><span class="tag">代码生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/aider.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(90000 67% 49%);width:40px;height:40px;font-size:15px">AI</span>
+    <div class="tool-card-info">
+      <h3>Aider<span class="badge-ai">AI 原生</span></h3>
+      <p>在终端里用 AI 编写、修改并提交游戏代码</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">终端编码</span><span class="tag">结对编程</span><span class="tag">Git集成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/cline.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(77760 72% 55%);width:40px;height:40px;font-size:15px">CL</span>
+    <div class="tool-card-info">
+      <h3>Cline<span class="badge-ai">AI 原生</span></h3>
+      <p>在 IDE 中让 AI 自主完成游戏代码与工程任务</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">IDE插件</span><span class="tag">自主代理</span><span class="tag">代码生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/roo-code.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(72360 75% 48%);width:40px;height:40px;font-size:15px">RO</span>
+    <div class="tool-card-info">
+      <h3>Roo Code<span class="badge-ai">AI 原生</span></h3>
+      <p>以多模式 AI 代理编写游戏代码和项目工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">IDE插件</span><span class="tag">多模式代理</span><span class="tag">本地模型</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/windsurf.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(30240 59% 45%);width:40px;height:40px;font-size:15px">WI</span>
+    <div class="tool-card-info">
+      <h3>Windsurf<span class="badge-ai">AI 原生</span></h3>
+      <p>用智能体理解整个游戏工程，快速生成代码并接手重复开发任务</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI编程</span><span class="tag">智能体</span><span class="tag">代码生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/replit.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(43560 72% 57%);width:40px;height:40px;font-size:15px">RE</span>
+    <div class="tool-card-info">
+      <h3>Replit<span class="badge-ai">AI 原生</span></h3>
+      <p>在浏览器里借助 AI 编程并部署可玩的游戏原型</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">云端开发</span><span class="tag">AI代理</span><span class="tag">快速部署</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/claude-code.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(20160 78% 53%);width:40px;height:40px;font-size:15px">CL</span>
+    <div class="tool-card-info">
+      <h3>Claude Code<span class="badge-ai">AI 原生</span></h3>
+      <p>在终端理解游戏仓库并自动改代码，替代重复开发与排错</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">终端编码</span><span class="tag">仓库理解</span><span class="tag">自动改码</span></div>
+</a></div></section>
+</article>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Continue","description":"用可自建后端的 AI 补全并改造游戏代码","url":"https://www.continue.dev","applicationCategory":"GameDevelopmentApplication","operatingSystem":"跨平台","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Splice 入门：从注册到制作首个采样 - 游戏工具集</title>
+<meta name="description" content="本教程将带你完成 Splice 注册、素材检索与试听、收藏下载，并建立个人采样库，快速为音乐作品补充可用声音。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tutorials/tut-splice.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Splice 入门：从注册到制作首个采样 - 游戏工具集">
+<meta property="og:description" content="本教程将带你完成 Splice 注册、素材检索与试听、收藏下载，并建立个人采样库，快速为音乐作品补充可用声音。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tutorials/tut-splice.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link active" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tutorials/">教程</a> / <span>Splice 入门：从注册到制作首个采样</span></nav>
+<article class="article tutorial-article">
+  <header class="article-head">
+    <div class="news-card-meta"><span class="tag tag-imp">音频与音效</span><span>AI 撰写</span><span>更新于 2026-10-25</span></div>
+    <h1>Splice 入门：从注册到制作首个采样</h1>
+    <p class="lead">本教程将带你完成 Splice 注册、素材检索与试听、收藏下载，并建立个人采样库，快速为音乐作品补充可用声音。</p>
+    <div class="article-tools"><span>关联工具</span><a href="/game-tool-hub/tools/splice.html"><span class="logo-badge" style="--logo-bg:hsl(11160 56% 56%);width:28px;height:28px;font-size:11px">SP</span>Splice</a><a class="btn btn-ghost btn-sm" href="https://splice.com" target="_blank" rel="noopener nofollow">官网 ↗</a></div>
+  </header>
+  <div class="tut-meta-line"><span class="badge">入门</span><span>⏱ 约 15 分钟</span><span>🎯 下载并整理一组可用于创作的采样素材</span></div>
+    <ol class="step-list">
+      <li class="step"><div class="step-no">1</div><div><h4>注册并登录账号</h4><p>打开 splice.com，点击页面右上角“Sign Up”或“Log In”，使用邮箱或支持的第三方账号完成注册。登录后进入个人工作台，可按需选择订阅方案。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>进入采样浏览器</h4><p>在首页搜索框输入关键词，如“drum”“vocal”或“cinematic”，也可点击分类标签浏览。进入采样页面后，使用乐器、风格、情绪、BPM 和音高等筛选条件缩小范围。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>试听并判断匹配度</h4><p>点击采样卡片上的播放按钮试听，注意循环长度、起音和整体响度。需要比较不同版本时，可同时打开多个试听窗口，并在耳机环境下检查低频与细节。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>收藏并加入采样库</h4><p>点击心形图标收藏素材，或使用“Add to Project”将其加入项目。通过左侧采样库查看已收藏内容，按乐器或标签整理，为后续创作建立个人素材分类。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>下载音频素材</h4><p>选择素材后点击下载按钮，根据需求选择 WAV、MP3 等格式，并确认采样长度与质量。下载前检查授权和订阅额度，项目文件通常会保存在本地默认文件夹。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>导入音乐软件使用</h4><p>打开 LMMS、Audacity 或其他 DAW，将下载文件拖入时间线或采样库。先调整音量与循环起点，再用 EQ、混响等效果处理，使素材与作品节奏、音色保持一致。</p></div></li>
+    </ol>
+    <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>搜索时加入“techno”“jazz”等风格词</li><li>先用收藏夹筛选，再批量浏览</li><li>下载前确认文件格式和采样长度</li><li>团队项目可统一维护共享采样库</li></ul></div>
+    <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>试听与下载格式不同，效果可能存在差异</li><li>大量下载会消耗额度，发布前留意授权</li></ul></div>
+  <section class="detail-block"><h2>相关工具</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/audacity.html" data-cat="audio" data-stage="声音" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(68760 58% 54%);width:40px;height:40px;font-size:15px">AU</span>
+    <div class="tool-card-info">
+      <h3>Audacity</h3>
+      <p>把 AI 生成或采集的音频剪成可用成品，统一游戏素材的响度与质感。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">音频编辑</span><span class="tag">降噪</span><span class="tag">响度处理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/lmms.html" data-cat="audio" data-stage="声音" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(57960 76% 47%);width:40px;height:40px;font-size:15px">LM</span>
+    <div class="tool-card-info">
+      <h3>LMMS</h3>
+      <p>把 AI 旋律与素材编排成完整游戏配乐，衔接作曲和音频落地。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">音乐制作</span><span class="tag">配乐编曲</span><span class="tag">虚拟乐器</span></div>
+</a></div></section>
+</article>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

@@ -1,0 +1,2679 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 游戏创作工具集 - 游戏工具集</title>
+<meta name="description" content="按 AI 创作链路整理的游戏开发工具导航：AI 美术、AI 3D、AI 配音、AI 代码、AI NPC、工作流、算力部署，以及引擎与素材等配套环节。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tools/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI 游戏创作工具集 - 游戏工具集">
+<meta property="og:description" content="按 AI 创作链路整理的游戏开发工具导航：AI 美术、AI 3D、AI 配音、AI 代码、AI NPC、工作流、算力部署，以及引擎与素材等配套环节。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tools/">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link active" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<div class="page-head">
+  <h1>🧰 AI 游戏创作工具集</h1>
+  <p>274 个工具（130 个 AI 原生），覆盖 AI 美术、AI 三维、AI 配音、AI 代码、AI NPC、工作流与算力部署，另有引擎、素材等传统配套环节。资料由 AI 自动抓取官网信息并改写，链接状态每日体检。</p>
+</div>
+<div class="tool-toolbar">
+  <input type="search" id="tool-filter" class="filter-input" placeholder="按名称、简介、标签筛选…">
+  <div class="filters"><button class="filter-btn" data-cat="ai-art">🖌️ AI 美术生成 <em>14</em></button><button class="filter-btn" data-cat="ai-3d">🧊 AI 三维与动画 <em>25</em></button><button class="filter-btn" data-cat="ai-audio">🎙️ AI 音频与配音 <em>20</em></button><button class="filter-btn" data-cat="ai-code">⌨️ AI 代码与自动化 <em>15</em></button><button class="filter-btn" data-cat="ai-npc">🗣️ AI NPC 与智能体 <em>9</em></button><button class="filter-btn" data-cat="ai-workflow">🔗 AI 工作流与训练 <em>24</em></button><button class="filter-btn" data-cat="ai-video">🎬 AI 视频与宣传 <em>11</em></button><button class="filter-btn" data-cat="ai-compute">🖥️ AI 算力与部署 <em>11</em></button><button class="filter-btn" data-cat="ai-model">📚 AI 模型与素材库 <em>5</em></button><button class="filter-btn" data-cat="engine">🎮 游戏引擎与框架 <em>31</em></button><button class="filter-btn" data-cat="art">🎨 美术与 DCC <em>22</em></button><button class="filter-btn" data-cat="audio">🎵 音频与音效 <em>9</em></button><button class="filter-btn" data-cat="pipeline">🗺️ 关卡与数据管线 <em>22</em></button><button class="filter-btn" data-cat="asset">📦 素材与资源库 <em>17</em></button><button class="filter-btn" data-cat="mod">🧩 Mod 与插件 <em>7</em></button><button class="filter-btn" data-cat="perf">🩺 性能与优化 <em>10</em></button><button class="filter-btn" data-cat="publish">🛫 发行与平台 <em>5</em></button><button class="filter-btn" data-cat="learn">🎓 学习与社区 <em>17</em></button></div>
+  <div class="filters stage-filters">
+    <span class="filter-label">创作阶段</span>
+    <button class="filter-btn active" data-stage="">全部</button>
+    <button class="filter-btn" data-stage="概念">💡 概念 <em>1</em></button><button class="filter-btn" data-stage="美术">🖌️ 美术 <em>59</em></button><button class="filter-btn" data-stage="声音">🎙️ 声音 <em>24</em></button><button class="filter-btn" data-stage="代码">⌨️ 代码 <em>19</em></button><button class="filter-btn" data-stage="玩法">🗣️ 玩法 <em>18</em></button><button class="filter-btn" data-stage="工作流">🔗 工作流 <em>25</em></button><button class="filter-btn" data-stage="宣传">🎬 宣传 <em>16</em></button><button class="filter-btn" data-stage="算力">🖥️ 算力 <em>10</em></button><button class="filter-btn" data-stage="资源">📚 资源 <em>44</em></button><button class="filter-btn" data-stage="引擎">🎮 引擎 <em>18</em></button><button class="filter-btn" data-stage="工程">🛠️ 工程 <em>24</em></button><button class="filter-btn" data-stage="发行">🛫 发行 <em>4</em></button><button class="filter-btn" data-stage="学习">🎓 学习 <em>12</em></button>
+    <button class="filter-btn filter-native" data-native="1">⚡ 只看 AI 原生</button>
+  </div>
+</div>
+<div class="tool-grid tool-grid-all" id="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/move-ai.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(63000 72% 43%);width:40px;height:40px;font-size:15px">MO</span>
+    <div class="tool-card-info">
+      <h3>move.ai<span class="badge-ai">AI 原生</span></h3>
+      <p>用视频生成角色动作，让AI角色无需真人逐段表演</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI动捕</span><span class="tag">视频转动画</span><span class="tag">游戏动画</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/opus-clip.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(31320 58% 56%);width:40px;height:40px;font-size:15px">OP</span>
+    <div class="tool-card-info">
+      <h3>OpusClip<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 从长视频提取精彩片段，生成多平台游戏短视频。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI 切片</span><span class="tag">短视频</span><span class="tag">字幕生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/scenario.html" data-cat="ai-art" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(30240 64% 56%);width:40px;height:40px;font-size:15px">SC</span>
+    <div class="tool-card-info">
+      <h3>Scenario<span class="badge-ai">AI 原生</span></h3>
+      <p>按统一美术风格批量生成游戏图标与二维资产。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI美术</span><span class="tag">风格一致</span><span class="tag">批量生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/comfyui.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(58320 74% 57%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI<span class="badge-ai">AI 原生</span></h3>
+      <p>用节点式工作流批量生成并串联游戏美术资产</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">节点工作流</span><span class="tag">批量生图</span><span class="tag">本地部署</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/stable-diffusion-webui.html" data-cat="ai-workflow" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(26640 59% 44%);width:40px;height:40px;font-size:15px">ST</span>
+    <div class="tool-card-info">
+      <h3>Stable Diffusion WebUI<span class="badge-ai">AI 原生</span></h3>
+      <p>在本地快速生成游戏概念图、贴图与角色素材</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">本地生图</span><span class="tag">扩散模型</span><span class="tag">图生图</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/fooocus.html" data-cat="ai-workflow" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(60120 60% 47%);width:40px;height:40px;font-size:15px">FO</span>
+    <div class="tool-card-info">
+      <h3>Fooocus<span class="badge-ai">AI 原生</span></h3>
+      <p>用简化生图界面快速产出游戏美术草案与素材</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">易用生图</span><span class="tag">美术草案</span><span class="tag">本地生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/trellis.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(7200 58% 50%);width:40px;height:40px;font-size:15px">TR</span>
+    <div class="tool-card-info">
+      <h3>TRELLIS<span class="badge-ai">AI 原生</span></h3>
+      <p>把单张游戏概念图快速转成可编辑三维资产</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">图生三维</span><span class="tag">模型生成</span><span class="tag">动画生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/melody-assistant.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(81360 79% 49%);width:40px;height:40px;font-size:15px">ME</span>
+    <div class="tool-card-info">
+      <h3>Melody Assistant<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 辅助作曲和编曲，快速产出适配游戏场景的音乐草案。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI作曲</span><span class="tag">旋律生成</span><span class="tag">编曲辅助</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/jimeng.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(13320 64% 44%);width:40px;height:40px;font-size:15px">DR</span>
+    <div class="tool-card-info">
+      <h3>即梦 Dreamina<span class="badge-ai">AI 原生</span></h3>
+      <p>用提示词生成游戏宣传片与动态美术概念，替代大量分镜和素材剪辑。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI 视频</span><span class="tag">游戏宣传</span><span class="tag">动态分镜</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/hunyuan3d.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(11880 57% 49%);width:40px;height:40px;font-size:15px">3D</span>
+    <div class="tool-card-info">
+      <h3>腾讯混元 3D<span class="badge-ai">AI 原生</span></h3>
+      <p>从文字或图片生成可编辑三维资产，快速补齐游戏原型所需模型。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI 3D</span><span class="tag">三维生成</span><span class="tag">游戏美术</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/github-copilot.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(14400 57% 43%);width:40px;height:40px;font-size:15px">GI</span>
+    <div class="tool-card-info">
+      <h3>GitHub Copilot<span class="badge-ai">AI 原生</span></h3>
+      <p>在代码编辑器中辅助编写游戏脚本与工具链，替代重复性编码工作。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI 编程</span><span class="tag">代码补全</span><span class="tag">游戏脚本</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/cursor.html" data-cat="ai-code" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(55440 69% 56%);width:40px;height:40px;font-size:15px">CU</span>
+    <div class="tool-card-info">
+      <h3>Cursor<span class="badge-ai">AI 原生</span></h3>
+      <p>用自然对话修改游戏项目代码，把需求快速转成可运行逻辑。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI IDE</span><span class="tag">游戏逻辑</span><span class="tag">代码生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/runway.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(18360 67% 52%);width:40px;height:40px;font-size:15px">RU</span>
+    <div class="tool-card-info">
+      <h3>Runway<span class="badge-ai">AI 原生</span></h3>
+      <p>用生成式视频快速制作游戏过场、预告与宣传片段</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI视频</span><span class="tag">过场动画</span><span class="tag">游戏预告</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/hyper3d-rodin.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(68760 73% 47%);width:40px;height:40px;font-size:15px">HY</span>
+    <div class="tool-card-info">
+      <h3>Hyper3D Rodin<span class="badge-ai">AI 原生</span></h3>
+      <p>从文字或图片生成可编辑的游戏三维模型。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">三维生成</span><span class="tag">游戏资产</span><span class="tag">自动拓扑</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/rokoko-vision.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(10440 76% 53%);width:40px;height:40px;font-size:15px">RO</span>
+    <div class="tool-card-info">
+      <h3>Rokoko Vision<span class="badge-ai">AI 原生</span></h3>
+      <p>用普通摄像头把真人动作转成可用于动画的数据。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">摄像头动捕</span><span class="tag">AI动作</span><span class="tag">动作捕捉</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/fish-speech.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(71280 58% 57%);width:40px;height:40px;font-size:15px">FI</span>
+    <div class="tool-card-info">
+      <h3>Fish Speech<span class="badge-ai">AI 原生</span></h3>
+      <p>用多语言声音克隆生成角色对白，支撑跨语种游戏语音本地化</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">语音合成</span><span class="tag">声音克隆</span><span class="tag">多语言</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/cosyvoice.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(43200 78% 51%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>CosyVoice<span class="badge-ai">AI 原生</span></h3>
+      <p>零样本克隆角色声线并控制情感，生成自然中文游戏语音</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">中文语音</span><span class="tag">声音克隆</span><span class="tag">情感控制</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/layer-ai.html" data-cat="ai-art" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(49680 78% 45%);width:40px;height:40px;font-size:15px">LA</span>
+    <div class="tool-card-info">
+      <h3>Layer AI<span class="badge-ai">AI 原生</span></h3>
+      <p>批量生成统一风格的游戏资产，替美术团队省去重复制作与筛选时间。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏资产</span><span class="tag">批量生成</span><span class="tag">风格库</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/rosebud-ai.html" data-cat="ai-art" data-stage="概念" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(3240 55% 43%);width:40px;height:40px;font-size:15px">RO</span>
+    <div class="tool-card-info">
+      <h3>Rosebud AI<span class="badge-ai">AI 原生</span></h3>
+      <p>从角色生成到叙事迭代，快速搭建可讨论的游戏原型与视觉方向。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏原型</span><span class="tag">角色生成</span><span class="tag">叙事迭代</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/aider.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(90000 67% 49%);width:40px;height:40px;font-size:15px">AI</span>
+    <div class="tool-card-info">
+      <h3>Aider<span class="badge-ai">AI 原生</span></h3>
+      <p>在终端里用 AI 编写、修改并提交游戏代码</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">终端编码</span><span class="tag">结对编程</span><span class="tag">Git集成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/cline.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(77760 72% 55%);width:40px;height:40px;font-size:15px">CL</span>
+    <div class="tool-card-info">
+      <h3>Cline<span class="badge-ai">AI 原生</span></h3>
+      <p>在 IDE 中让 AI 自主完成游戏代码与工程任务</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">IDE插件</span><span class="tag">自主代理</span><span class="tag">代码生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/pixelcut.html" data-cat="ai-art" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(77040 58% 49%);width:40px;height:40px;font-size:15px">PI</span>
+    <div class="tool-card-info">
+      <h3>Pixelcut<span class="badge-ai">AI 原生</span></h3>
+      <p>自动抠图并优化商店截图，让 AI 游戏素材更快达到上架规格。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">商店素材</span><span class="tag">截图处理</span><span class="tag">自动抠图</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/krita-ai-diffusion.html" data-cat="ai-art" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(7920 56% 54%);width:40px;height:40px;font-size:15px">KR</span>
+    <div class="tool-card-info">
+      <h3>Krita AI Diffusion<span class="badge-ai">AI 原生</span></h3>
+      <p>在 Krita 内局部重绘与可控生成，精细打磨 AI 游戏美术。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">画师集成</span><span class="tag">局部重绘</span><span class="tag">ControlNet</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/roo-code.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(72360 75% 48%);width:40px;height:40px;font-size:15px">RO</span>
+    <div class="tool-card-info">
+      <h3>Roo Code<span class="badge-ai">AI 原生</span></h3>
+      <p>以多模式 AI 代理编写游戏代码和项目工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">IDE插件</span><span class="tag">多模式代理</span><span class="tag">本地模型</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/continue-dev.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(57600 71% 50%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>Continue<span class="badge-ai">AI 原生</span></h3>
+      <p>用可自建后端的 AI 补全并改造游戏代码</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">IDE插件</span><span class="tag">代码补全</span><span class="tag">本地模型</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/elevenlabs.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(47880 68% 43%);width:40px;height:40px;font-size:15px">EL</span>
+    <div class="tool-card-info">
+      <h3>ElevenLabs<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 快速生成角色配音、旁白与拟真的声音素材</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI配音</span><span class="tag">声音克隆</span><span class="tag">文本转语音</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/kits-ai.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(55800 62% 48%);width:40px;height:40px;font-size:15px">KI</span>
+    <div class="tool-card-info">
+      <h3>Kits AI<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 清理人声、降噪并打磨可交付的音频成品</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">人声分离</span><span class="tag">降噪</span><span class="tag">母带处理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/lalal-ai.html" data-cat="ai-audio" data-stage="资源" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(35280 57% 50%);width:40px;height:40px;font-size:15px">LA</span>
+    <div class="tool-card-info">
+      <h3>LALAL.AI<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 拆分音乐声轨，提取角色配音和游戏循环素材</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">人声分离</span><span class="tag">乐器分离</span><span class="tag">音频分轨</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/stable-audio.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(75960 57% 46%);width:40px;height:40px;font-size:15px">ST</span>
+    <div class="tool-card-info">
+      <h3>Stable Audio<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 按情绪与场景生成音乐、音效和声音氛围</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">音乐生成</span><span class="tag">音效生成</span><span class="tag">情绪控制</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/deepmotion.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(83880 71% 57%);width:40px;height:40px;font-size:15px">DE</span>
+    <div class="tool-card-info">
+      <h3>DeepMotion<span class="badge-ai">AI 原生</span></h3>
+      <p>用AI动捕生成角色动画，免去逐帧绑定与K帧制作。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI动捕</span><span class="tag">3D动画</span><span class="tag">动作捕捉</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/audiocraft.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(62640 76% 57%);width:40px;height:40px;font-size:15px">AU</span>
+    <div class="tool-card-info">
+      <h3>AudioCraft<span class="badge-ai">AI 原生</span></h3>
+      <p>用开源模型批量生成游戏音乐与音效，替代手工作曲和找素材</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">音乐生成</span><span class="tag">音效生成</span><span class="tag">文本生音频</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gpt-sovits.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(26640 78% 57%);width:40px;height:40px;font-size:15px">GP</span>
+    <div class="tool-card-info">
+      <h3>GPT-SoVITS<span class="badge-ai">AI 原生</span></h3>
+      <p>用少量中文语音样本微调角色音色，批量产出游戏对白</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">声音克隆</span><span class="tag">中文配音</span><span class="tag">角色对白</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/kling-ai.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(54360 66% 48%);width:40px;height:40px;font-size:15px">AI</span>
+    <div class="tool-card-info">
+      <h3>可灵 AI<span class="badge-ai">AI 原生</span></h3>
+      <p>用AI生成游戏宣传片，把概念图转成动态预告。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI视频</span><span class="tag">宣传片</span><span class="tag">图生视频</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/animate-diff.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(82800 74% 51%);width:40px;height:40px;font-size:15px">AN</span>
+    <div class="tool-card-info">
+      <h3>AnimateDiff<span class="badge-ai">AI 原生</span></h3>
+      <p>把静态游戏美术快速转成动态镜头，适合预演动作与制作宣传片段。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">图生视频</span><span class="tag">视频扩散</span><span class="tag">动画预演</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/capcut.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(83880 66% 51%);width:40px;height:40px;font-size:15px">CA</span>
+    <div class="tool-card-info">
+      <h3>CapCut<span class="badge-ai">AI 原生</span></h3>
+      <p>把 AI 生成的视频、字幕和包装快速剪成可发布的游戏宣传片。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">视频剪辑</span><span class="tag">自动字幕</span><span class="tag">智能包装</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/descript.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(80640 67% 54%);width:40px;height:40px;font-size:15px">DE</span>
+    <div class="tool-card-info">
+      <h3>Descript<span class="badge-ai">AI 原生</span></h3>
+      <p>用脚本和字幕直接剪辑游戏访谈，替代逐段查找与粗剪工作。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">文本剪辑</span><span class="tag">自动转录</span><span class="tag">去口癖</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/ollama.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(69840 67% 55%);width:40px;height:40px;font-size:15px">OL</span>
+    <div class="tool-card-info">
+      <h3>Ollama<span class="badge-ai">AI 原生</span></h3>
+      <p>在开发机上部署 AI 模型，为 NPC、测试和内容生成提供本地接口。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">本地模型</span><span class="tag">模型部署</span><span class="tag">推理服务</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/windsurf.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(30240 59% 45%);width:40px;height:40px;font-size:15px">WI</span>
+    <div class="tool-card-info">
+      <h3>Windsurf<span class="badge-ai">AI 原生</span></h3>
+      <p>用智能体理解整个游戏工程，快速生成代码并接手重复开发任务</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI编程</span><span class="tag">智能体</span><span class="tag">代码生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/replit.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(43560 72% 57%);width:40px;height:40px;font-size:15px">RE</span>
+    <div class="tool-card-info">
+      <h3>Replit<span class="badge-ai">AI 原生</span></h3>
+      <p>在浏览器里借助 AI 编程并部署可玩的游戏原型</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">云端开发</span><span class="tag">AI代理</span><span class="tag">快速部署</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/replicate.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(59760 71% 51%);width:40px;height:40px;font-size:15px">RE</span>
+    <div class="tool-card-info">
+      <h3>Replicate<span class="badge-ai">AI 原生</span></h3>
+      <p>调用与部署开源模型，把AI生成能力快速接入游戏管线。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">模型API</span><span class="tag">云端推理</span><span class="tag">一键部署</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/fal-ai.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(82080 77% 55%);width:40px;height:40px;font-size:15px">FA</span>
+    <div class="tool-card-info">
+      <h3>fal.ai<span class="badge-ai">AI 原生</span></h3>
+      <p>低延迟生成图像与视频，为游戏资产管线提速。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">低延迟</span><span class="tag">图像生成</span><span class="tag">视频生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/inworld.html" data-cat="ai-npc" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(65520 59% 43%);width:40px;height:40px;font-size:15px">IN</span>
+    <div class="tool-card-info">
+      <h3>Inworld AI<span class="badge-ai">AI 原生</span></h3>
+      <p>为游戏 NPC 注入可记忆、可对话的智能角色能力</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">智能NPC</span><span class="tag">角色记忆</span><span class="tag">对话系统</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/convai.html" data-cat="ai-npc" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(22680 55% 44%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>Convai<span class="badge-ai">AI 原生</span></h3>
+      <p>为游戏 NPC 快速接入自然对话和语音交互能力</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">智能NPC</span><span class="tag">语音交互</span><span class="tag">对话生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/siliconflow.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(66960 62% 51%);width:40px;height:40px;font-size:15px">SI</span>
+    <div class="tool-card-info">
+      <h3>SiliconFlow 硅基流动<span class="badge-ai">AI 原生</span></h3>
+      <p>提供国内开源模型推理，快速接入游戏AI功能。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">国内API</span><span class="tag">开源模型</span><span class="tag">低延迟</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/aliyun-bailian.html" data-cat="ai-compute" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(24480 66% 56%);width:40px;height:40px;font-size:15px">阿里</span>
+    <div class="tool-card-info">
+      <h3>阿里云百炼<span class="badge-ai">AI 原生</span></h3>
+      <p>整合模型、知识库与应用编排，搭建游戏AI服务。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">模型服务</span><span class="tag">应用编排</span><span class="tag">知识库</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/volcengine-ark.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(56880 64% 43%);width:40px;height:40px;font-size:15px">火山</span>
+    <div class="tool-card-info">
+      <h3>火山引擎方舟<span class="badge-ai">AI 原生</span></h3>
+      <p>为游戏 AI 管线提供多模态模型推理与批量调用能力</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">模型推理</span><span class="tag">批量调用</span><span class="tag">多模态</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/together-ai.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(54360 69% 51%);width:40px;height:40px;font-size:15px">TO</span>
+    <div class="tool-card-info">
+      <h3>Together AI<span class="badge-ai">AI 原生</span></h3>
+      <p>用统一 API 调用图像视频模型，并微调游戏专用模型</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">模型 API</span><span class="tag">图像生成</span><span class="tag">视频生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/modelscope.html" data-cat="ai-model" data-stage="资源" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(28800 56% 56%);width:40px;height:40px;font-size:15px">MO</span>
+    <div class="tool-card-info">
+      <h3>ModelScope 魔搭<span class="badge-ai">AI 原生</span></h3>
+      <p>查找并下载模型、数据集与创空间，快速组装游戏 AI</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">中文模型库</span><span class="tag">数据集</span><span class="tag">创空间</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/sdnext.html" data-cat="ai-workflow" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(32760 64% 42%);width:40px;height:40px;font-size:15px">SD</span>
+    <div class="tool-card-info">
+      <h3>SD.Next<span class="badge-ai">AI 原生</span></h3>
+      <p>统一多款扩散模型，批量生成并筛选游戏美术资产</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">扩散模型</span><span class="tag">批量出图</span><span class="tag">本地部署</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/n8n.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(31680 74% 44%);width:40px;height:40px;font-size:15px">N8</span>
+    <div class="tool-card-info">
+      <h3>n8n<span class="badge-ai">AI 原生</span></h3>
+      <p>以可视化节点串联模型、素材库与游戏交付流程</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">流程编排</span><span class="tag">自动化</span><span class="tag">AI 节点</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/draw-things.html" data-cat="ai-workflow" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(28080 74% 54%);width:40px;height:40px;font-size:15px">DR</span>
+    <div class="tool-card-info">
+      <h3>Draw Things<span class="badge-ai">AI 原生</span></h3>
+      <p>在 Mac 本地生成游戏图像、视频并微调专属模型</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">本地出图</span><span class="tag">视频生成</span><span class="tag">模型微调</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/kaiber.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(56160 63% 55%);width:40px;height:40px;font-size:15px">KA</span>
+    <div class="tool-card-info">
+      <h3>Kaiber<span class="badge-ai">AI 原生</span></h3>
+      <p>按音乐节奏生成风格化视频，支撑游戏宣传片制作</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">生成视频</span><span class="tag">音乐节奏</span><span class="tag">风格化</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/nvidia-ace.html" data-cat="ai-npc" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(33480 66% 49%);width:40px;height:40px;font-size:15px">NV</span>
+    <div class="tool-card-info">
+      <h3>NVIDIA ACE<span class="badge-ai">AI 原生</span></h3>
+      <p>为游戏角色接入可听、可说、会反应的生成式智能体能力</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">智能体</span><span class="tag">NPC</span><span class="tag">实时语音</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/charactr.html" data-cat="ai-npc" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(83160 59% 45%);width:40px;height:40px;font-size:15px">CH</span>
+    <div class="tool-card-info">
+      <h3>Charactr<span class="badge-ai">AI 原生</span></h3>
+      <p>快速制作会对话、可分支叙事的 AI 角色原型</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">角色对话</span><span class="tag">分支剧情</span><span class="tag">叙事原型</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/kohya-ss.html" data-cat="ai-workflow" data-stage="资源" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(2520 66% 43%);width:40px;height:40px;font-size:15px">KO</span>
+    <div class="tool-card-info">
+      <h3>kohya_ss<span class="badge-ai">AI 原生</span></h3>
+      <p>训练专属 LoRA，让游戏美术产出稳定贴合角色设定</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">LoRA</span><span class="tag">模型微调</span><span class="tag">美术训练</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/comfyui-manager.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(59040 65% 51%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI-Manager<span class="badge-ai">AI 原生</span></h3>
+      <p>管理 ComfyUI 模型与插件，让 AI 美术管线更顺畅</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">节点管理</span><span class="tag">模型同步</span><span class="tag">插件安装</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/dungeon-alchemist.html" data-cat="ai-art" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(34920 70% 57%);width:40px;height:40px;font-size:15px">DU</span>
+    <div class="tool-card-info">
+      <h3>Dungeon Alchemist<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 快速生成俯视地牢布局，替掉反复手工摆房间</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI地牢</span><span class="tag">关卡生成</span><span class="tag">俯视视角</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/lm-studio.html" data-cat="ai-compute" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(44280 60% 43%);width:40px;height:40px;font-size:15px">LM</span>
+    <div class="tool-card-info">
+      <h3>LM Studio<span class="badge-ai">AI 原生</span></h3>
+      <p>在桌面本地运行大模型，为游戏原型生成代码、文本与智能体逻辑。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">本地推理</span><span class="tag">大模型</span><span class="tag">离线开发</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/vllm.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(24120 78% 54%);width:40px;height:40px;font-size:15px">VL</span>
+    <div class="tool-card-info">
+      <h3>vLLM<span class="badge-ai">AI 原生</span></h3>
+      <p>高吞吐自托管模型服务，为在线 NPC 与生成式玩法提供推理后端。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">高吞吐</span><span class="tag">自托管</span><span class="tag">模型服务</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/llama-cpp.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(53280 69% 48%);width:40px;height:40px;font-size:15px">LL</span>
+    <div class="tool-card-info">
+      <h3>llama.cpp<span class="badge-ai">AI 原生</span></h3>
+      <p>以轻量跨平台方式本地运行量化模型，支撑离线 NPC 与开发助手。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">本地推理</span><span class="tag">量化模型</span><span class="tag">跨平台</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/openrouter.html" data-cat="ai-compute" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(57600 76% 48%);width:40px;height:40px;font-size:15px">OP</span>
+    <div class="tool-card-info">
+      <h3>OpenRouter<span class="badge-ai">AI 原生</span></h3>
+      <p>统一调用多家大模型，按需求切换 AI NPC、内容生成与开发辅助模型。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">多模型</span><span class="tag">统一接口</span><span class="tag">模型路由</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/kokoro.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(17280 71% 45%);width:40px;height:40px;font-size:15px">KO</span>
+    <div class="tool-card-info">
+      <h3>Kokoro TTS<span class="badge-ai">AI 原生</span></h3>
+      <p>本地把文本转成多音色语音，快速补齐游戏角色配音草稿</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">语音合成</span><span class="tag">本地运行</span><span class="tag">多音色</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/whisper.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(86040 70% 49%);width:40px;height:40px;font-size:15px">WH</span>
+    <div class="tool-card-info">
+      <h3>Whisper<span class="badge-ai">AI 原生</span></h3>
+      <p>把录音转成文字和字幕，自动整理游戏访谈与配音素材</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">语音识别</span><span class="tag">自动字幕</span><span class="tag">多语言</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/unity.html" data-cat="engine" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(72000 64% 54%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>Unity 引擎</h3>
+      <p>承接 AI 生成资产并整合进可发布游戏，主打跨平台一体化制作。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">跨平台</span><span class="tag">游戏引擎</span><span class="tag">C# 脚本</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/beatoven.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(65520 72% 46%);width:40px;height:40px;font-size:15px">BE</span>
+    <div class="tool-card-info">
+      <h3>Beatoven<span class="badge-ai">AI 原生</span></h3>
+      <p>按情绪与节奏生成游戏配乐，快速铺满场景音乐草案</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI配乐</span><span class="tag">情绪控制</span><span class="tag">场景音乐</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/claude-code.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(20160 78% 53%);width:40px;height:40px;font-size:15px">CL</span>
+    <div class="tool-card-info">
+      <h3>Claude Code<span class="badge-ai">AI 原生</span></h3>
+      <p>在终端理解游戏仓库并自动改代码，替代重复开发与排错</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">终端编码</span><span class="tag">仓库理解</span><span class="tag">自动改码</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/godot.html" data-cat="engine" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(20880 74% 56%);width:40px;height:40px;font-size:15px">GO</span>
+    <div class="tool-card-info">
+      <h3>Godot 引擎</h3>
+      <p>以轻量开源引擎快速组装 AI 资产与原型，适合个人开发。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">开源引擎</span><span class="tag">轻量快速</span><span class="tag">GDScript</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/cocos-creator.html" data-cat="engine" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(60480 63% 45%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>Cocos Creator</h3>
+      <p>承接 AI 生成的脚本与素材，快速组装并发布轻量游戏</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏引擎</span><span class="tag">小游戏</span><span class="tag">国产引擎</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/defold.html" data-cat="engine" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(43920 65% 42%);width:40px;height:40px;font-size:15px">DE</span>
+    <div class="tool-card-info">
+      <h3>Defold</h3>
+      <p>用 Lua 管线承接 AI 代码与轻量资源，产出小体积游戏</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏引擎</span><span class="tag">开源</span><span class="tag">Lua</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gdevelop.html" data-cat="engine" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(9720 70% 55%);width:40px;height:40px;font-size:15px">GD</span>
+    <div class="tool-card-info">
+      <h3>GDevelop</h3>
+      <p>以无代码事件系统承接 AI 游戏方案并导出多平台版本</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏引擎</span><span class="tag">开源</span><span class="tag">无代码</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/playcanvas.html" data-cat="engine" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(14760 70% 57%);width:40px;height:40px;font-size:15px">PL</span>
+    <div class="tool-card-info">
+      <h3>PlayCanvas</h3>
+      <p>在浏览器协作构建 3D 游戏，承接 AI 生成的场景与交互原型</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">浏览器3D</span><span class="tag">云协作</span><span class="tag">多端发布</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/vscode.html" data-cat="ai-code" data-stage="代码" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(69840 73% 46%);width:40px;height:40px;font-size:15px">VS</span>
+    <div class="tool-card-info">
+      <h3>VS Code</h3>
+      <p>用 AI 插件编写和整理游戏代码，统一管理生成资产与脚本。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">代码编辑</span><span class="tag">AI编程</span><span class="tag">插件生态</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/bevy.html" data-cat="engine" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(57960 71% 54%);width:40px;height:40px;font-size:15px">BE</span>
+    <div class="tool-card-info">
+      <h3>Bevy</h3>
+      <p>用 Rust 搭建高性能原生游戏，承接 AI 生成的 ECS 玩法代码</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Rust</span><span class="tag">高性能</span><span class="tag">ECS</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/stencyl.html" data-cat="engine" data-stage="玩法" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(33480 62% 50%);width:40px;height:40px;font-size:15px">ST</span>
+    <div class="tool-card-info">
+      <h3>Stencyl</h3>
+      <p>用积木式编程快速搭建并发布游戏原型</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">无代码</span><span class="tag">游戏引擎</span><span class="tag">积木编程</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/blender.html" data-cat="art" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(25920 71% 44%);width:40px;height:40px;font-size:15px">BL</span>
+    <div class="tool-card-info">
+      <h3>Blender</h3>
+      <p>将 AI 生成的三维模型打磨成可交付游戏资产</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">三维建模</span><span class="tag">开源软件</span><span class="tag">动画</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/houdini.html" data-cat="art" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(36720 72% 51%);width:40px;height:40px;font-size:15px">HO</span>
+    <div class="tool-card-info">
+      <h3>Houdini</h3>
+      <p>用程序化节点批量生成环境、材质与特效，消化AI资产的不确定性。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">程序化生成</span><span class="tag">节点工作流</span><span class="tag">批量资产</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/zbrush.html" data-cat="art" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(83160 56% 55%);width:40px;height:40px;font-size:15px">ZB</span>
+    <div class="tool-card-info">
+      <h3>ZBrush</h3>
+      <p>精修AI生成模型，补齐雕刻细节并重拓扑成可交付游戏资产。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">数字雕刻</span><span class="tag">模型精修</span><span class="tag">重拓扑</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/nvidia-omniverse.html" data-cat="ai-3d" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(90360 78% 46%);width:40px;height:40px;font-size:15px">NV</span>
+    <div class="tool-card-info">
+      <h3>NVIDIA Omniverse</h3>
+      <p>连接生成式 AI 与游戏三维资产，统一协作、仿真和场景交付。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">数字孪生</span><span class="tag">三维协作</span><span class="tag">实时仿真</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/sketchfab.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(2520 56% 56%);width:40px;height:40px;font-size:15px">SK</span>
+    <div class="tool-card-info">
+      <h3>Sketchfab</h3>
+      <p>下载并预览 AI 生成的三维模型，为原型和场景制作快速补齐资产。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">三维模型</span><span class="tag">模型分享</span><span class="tag">AR 预览</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/melonloader.html" data-cat="mod" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(82440 76% 50%);width:40px;height:40px;font-size:15px">ME</span>
+    <div class="tool-card-info">
+      <h3>MelonLoader</h3>
+      <p>为 Unity 游戏装载 AI 生成 Mod，支持跨平台运行与调试</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity 插件</span><span class="tag">跨平台</span><span class="tag">运行时加载</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/thunderstore.html" data-cat="mod" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(4320 67% 44%);width:40px;height:40px;font-size:15px">TH</span>
+    <div class="tool-card-info">
+      <h3>Thunderstore</h3>
+      <p>为 AI 生成的模组提供依赖管理和一键分发，补齐游戏集成环节</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">模组平台</span><span class="tag">依赖管理</span><span class="tag">版本分发</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/monogame.html" data-cat="engine" data-stage="代码" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(26640 58% 44%);width:40px;height:40px;font-size:15px">MO</span>
+    <div class="tool-card-info">
+      <h3>MonoGame</h3>
+      <p>用 C# 承接 AI 生成代码与游戏资产，制作跨平台独立游戏。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">C#开发</span><span class="tag">跨平台</span><span class="tag">独立游戏</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/aseprite.html" data-cat="art" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(13680 64% 45%);width:40px;height:40px;font-size:15px">AS</span>
+    <div class="tool-card-info">
+      <h3>Aseprite</h3>
+      <p>把AI生成的像素概念整理成可交付精灵与动画资产。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">像素画</span><span class="tag">精灵动画</span><span class="tag">逐帧动画</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gimp.html" data-cat="art" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(65520 69% 56%);width:40px;height:40px;font-size:15px">GI</span>
+    <div class="tool-card-info">
+      <h3>GIMP</h3>
+      <p>免费修整AI图像，并批量产出规范统一的游戏贴图。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">图像处理</span><span class="tag">开源</span><span class="tag">贴图处理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/capframex.html" data-cat="perf" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(80280 64% 53%);width:40px;height:40px;font-size:15px">CA</span>
+    <div class="tool-card-info">
+      <h3>CapFrameX</h3>
+      <p>采集并分析游戏帧数据，为 AI 资产上线前的性能验收提供依据。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">帧时间分析</span><span class="tag">性能基准</span><span class="tag">卡顿检测</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/flax-engine.html" data-cat="engine" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(6120 69% 53%);width:40px;height:40px;font-size:15px">FL</span>
+    <div class="tool-card-info">
+      <h3>Flax 引擎</h3>
+      <p>用可视化 3D 管线整合 AI 资产，并打磨成可发布的游戏场景。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">三维引擎</span><span class="tag">可视化编辑</span><span class="tag">C++开发</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/photoshop.html" data-cat="art" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(65160 75% 51%);width:40px;height:40px;font-size:15px">PH</span>
+    <div class="tool-card-info">
+      <h3>Photoshop</h3>
+      <p>把AI视觉素材精修成可直接进入游戏和宣传流程的成品。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">图像处理</span><span class="tag">修图合成</span><span class="tag">游戏贴图</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/figma.html" data-cat="art" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(60480 66% 45%);width:40px;height:40px;font-size:15px">FI</span>
+    <div class="tool-card-info">
+      <h3>Figma</h3>
+      <p>把AI界面草图变成可协作、可交付的游戏UI设计稿。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">UI设计</span><span class="tag">协作</span><span class="tag">游戏界面</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/renderdoc.html" data-cat="perf" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(77040 56% 52%);width:40px;height:40px;font-size:15px">RE</span>
+    <div class="tool-card-info">
+      <h3>RenderDoc</h3>
+      <p>逐帧抓取并检查渲染过程，排查 AI 美术接入引发的画面异常</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">显卡抓帧</span><span class="tag">渲染调试</span><span class="tag">着色器</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/penpot.html" data-cat="art" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(5400 56% 52%);width:40px;height:40px;font-size:15px">PE</span>
+    <div class="tool-card-info">
+      <h3>Penpot</h3>
+      <p>用开源协作设计工具承接 AI 生成的游戏界面与交互稿</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">开源设计</span><span class="tag">界面设计</span><span class="tag">协作原型</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/nsight-graphics.html" data-cat="perf" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(47880 55% 44%);width:40px;height:40px;font-size:15px">NS</span>
+    <div class="tool-card-info">
+      <h3>Nsight Graphics</h3>
+      <p>逐帧定位 GPU 瓶颈，让 AI 生成资产与特效稳定达到帧率目标。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">GPU分析</span><span class="tag">逐帧调试</span><span class="tag">渲染优化</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/blockbench.html" data-cat="art" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(37800 56% 42%);width:40px;height:40px;font-size:15px">BL</span>
+    <div class="tool-card-info">
+      <h3>Blockbench</h3>
+      <p>用低模建模工具手工修整 AI 生成的游戏模型与贴图</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">低模建模</span><span class="tag">像素模型</span><span class="tag">骨骼动画</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/cascadeur.html" data-cat="ai-3d" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(70560 69% 49%);width:40px;height:40px;font-size:15px">CA</span>
+    <div class="tool-card-info">
+      <h3>Cascadeur</h3>
+      <p>用物理辅助把AI生成角色的动作打磨到可交付质量</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">物理动画</span><span class="tag">角色动画</span><span class="tag">动作精修</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/mixamo.html" data-cat="ai-3d" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(23400 69% 55%);width:40px;height:40px;font-size:15px">MI</span>
+    <div class="tool-card-info">
+      <h3>Mixamo 动作库</h3>
+      <p>为AI角色快速配齐动作，并自动适配骨骼与时长</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">动作库</span><span class="tag">动作捕捉</span><span class="tag">角色动画</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/rokoko-studio.html" data-cat="ai-3d" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(67320 76% 55%);width:40px;height:40px;font-size:15px">RO</span>
+    <div class="tool-card-info">
+      <h3>Rokoko Studio</h3>
+      <p>把真人动作转成游戏动画，补齐AI角色的表演层</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">动作捕捉</span><span class="tag">真人表演</span><span class="tag">角色动画</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/kenney.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(55800 57% 44%);width:40px;height:40px;font-size:15px">KE</span>
+    <div class="tool-card-info">
+      <h3>Kenney 素材库</h3>
+      <p>用海量免费素材补齐 AI 游戏原型与成品资产缺口</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">免费素材</span><span class="tag">CC0</span><span class="tag">游戏原型</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/unity-asset-store.html" data-cat="asset" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(9720 60% 47%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>Unity 资源商店</h3>
+      <p>用 Unity 插件和资产打通 AI 产出到可交付游戏的管线</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">插件市场</span><span class="tag">项目模板</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/bepinex.html" data-cat="mod" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(24840 56% 44%);width:40px;height:40px;font-size:15px">BE</span>
+    <div class="tool-card-info">
+      <h3>BepInEx</h3>
+      <p>让 Unity 游戏装入 AI 生成的插件并运行自动化逻辑</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity 插件</span><span class="tag">运行时注入</span><span class="tag">方法补丁</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/craftpix.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(74160 70% 54%);width:40px;height:40px;font-size:15px">CR</span>
+    <div class="tool-card-info">
+      <h3>CraftPix</h3>
+      <p>采购成套像素素材与游戏模板，替 AI 省去手工绘制和界面拼装。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">像素素材</span><span class="tag">2D 游戏</span><span class="tag">游戏模板</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/opengameart.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(45360 64% 48%);width:40px;height:40px;font-size:15px">OP</span>
+    <div class="tool-card-info">
+      <h3>OpenGameArt</h3>
+      <p>获取开源游戏素材，为 AI 原型补上角色、场景、音效等基础资源。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">开源素材</span><span class="tag">游戏资源</span><span class="tag">音效</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/polyhaven.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(48960 77% 56%);width:40px;height:40px;font-size:15px">PO</span>
+    <div class="tool-card-info">
+      <h3>Poly Haven</h3>
+      <p>下载高质 CC0 模型与 HDRI，为 AI 场景和渲染提供可信环境底座。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">HDRI</span><span class="tag">CC0</span><span class="tag">3D 模型</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/krita.html" data-cat="art" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(49680 67% 57%);width:40px;height:40px;font-size:15px">KR</span>
+    <div class="tool-card-info">
+      <h3>Krita</h3>
+      <p>精修AI图像并制作动画，补齐游戏2D资产生产环节。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">2D绘画</span><span class="tag">动画制作</span><span class="tag">图像精修</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/presentmon.html" data-cat="perf" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(11520 64% 47%);width:40px;height:40px;font-size:15px">PR</span>
+    <div class="tool-card-info">
+      <h3>PresentMon</h3>
+      <p>采集游戏帧与显示时序数据，定位 AI 生成资产引入的性能瓶颈</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">帧时间</span><span class="tag">性能分析</span><span class="tag">帧率诊断</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/audacity.html" data-cat="audio" data-stage="声音" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(68760 58% 54%);width:40px;height:40px;font-size:15px">AU</span>
+    <div class="tool-card-info">
+      <h3>Audacity</h3>
+      <p>把 AI 生成或采集的音频剪成可用成品，统一游戏素材的响度与质感。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">音频编辑</span><span class="tag">降噪</span><span class="tag">响度处理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/lmms.html" data-cat="audio" data-stage="声音" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(57960 76% 47%);width:40px;height:40px;font-size:15px">LM</span>
+    <div class="tool-card-info">
+      <h3>LMMS</h3>
+      <p>把 AI 旋律与素材编排成完整游戏配乐，衔接作曲和音频落地。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">音乐制作</span><span class="tag">配乐编曲</span><span class="tag">虚拟乐器</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/ffmpeg.html" data-cat="pipeline" data-stage="宣传" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(71280 60% 57%);width:40px;height:40px;font-size:15px">FF</span>
+    <div class="tool-card-info">
+      <h3>FFmpeg</h3>
+      <p>批量转码与裁切 AI 视频素材，快速生成可交付的宣发内容。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">视频转码</span><span class="tag">命令行</span><span class="tag">批处理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/davinci-resolve.html" data-cat="pipeline" data-stage="宣传" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(5400 72% 46%);width:40px;height:40px;font-size:15px">DA</span>
+    <div class="tool-card-info">
+      <h3>DaVinci Resolve</h3>
+      <p>精剪、调色并交付 AI 生成的宣传片与游戏实机视频。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">专业剪辑</span><span class="tag">调色</span><span class="tag">后期制作</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/splice.html" data-cat="audio" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(11160 56% 56%);width:40px;height:40px;font-size:15px">SP</span>
+    <div class="tool-card-info">
+      <h3>Splice</h3>
+      <p>订阅获取海量采样与音色，为 AI 游戏音频提供可授权素材底座。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">采样库</span><span class="tag">音效素材</span><span class="tag">音色资源</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/ambientcg.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(63360 76% 45%);width:40px;height:40px;font-size:15px">AM</span>
+    <div class="tool-card-info">
+      <h3>ambientCG</h3>
+      <p>为 AI 生成场景补齐可直接使用的 CC0 PBR 贴图资产。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">PBR 贴图</span><span class="tag">CC0</span><span class="tag">材质库</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/quaternius.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(15840 78% 52%);width:40px;height:40px;font-size:15px">QU</span>
+    <div class="tool-card-info">
+      <h3>Quaternius</h3>
+      <p>用 CC0 低模资产接住 AI 产出，快速搭出可玩游戏原型。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">低模资产</span><span class="tag">CC0</span><span class="tag">占位模型</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/freesound.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(78480 57% 56%);width:40px;height:40px;font-size:15px">FR</span>
+    <div class="tool-card-info">
+      <h3>Freesound</h3>
+      <p>为 AI 音频流程提供可检索、可复用的社区音效素材。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">音效库</span><span class="tag">社区资源</span><span class="tag">CC 授权</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/o3de.html" data-cat="engine" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(81000 61% 46%);width:40px;height:40px;font-size:15px">O3</span>
+    <div class="tool-card-info">
+      <h3>O3DE</h3>
+      <p>用开源大型游戏引擎承接 AI 生成资产并完成实时开发与发布</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">开源引擎</span><span class="tag">实时渲染</span><span class="tag">大型项目</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/renpy.html" data-cat="engine" data-stage="代码" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(83160 71% 46%);width:40px;height:40px;font-size:15px">RE</span>
+    <div class="tool-card-info">
+      <h3>Ren&#39;Py</h3>
+      <p>用 Python 视觉小说引擎快速承载 AI 剧本与互动叙事</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">视觉小说</span><span class="tag">互动叙事</span><span class="tag">Python</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/twine.html" data-cat="engine" data-stage="玩法" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(89640 58% 45%);width:40px;height:40px;font-size:15px">TW</span>
+    <div class="tool-card-info">
+      <h3>Twine</h3>
+      <p>用轻量叙事编辑器快速验证 AI 生成的剧情分支与结构</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">互动叙事</span><span class="tag">剧情原型</span><span class="tag">极简工具</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/solar2d.html" data-cat="engine" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(65160 59% 50%);width:40px;height:40px;font-size:15px">SO</span>
+    <div class="tool-card-info">
+      <h3>Solar2D</h3>
+      <p>用 Lua 跨平台引擎承接 AI 生成素材并快速制作移动游戏</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Lua</span><span class="tag">移动游戏</span><span class="tag">跨平台</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/bfxr.html" data-cat="audio" data-stage="声音" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(60840 65% 42%);width:40px;height:40px;font-size:15px">BF</span>
+    <div class="tool-card-info">
+      <h3>Bfxr</h3>
+      <p>快速生成像素化音效，为 AI 游戏原型补齐可播放的 8-bit 声音素材。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">像素音效</span><span class="tag">芯片音效</span><span class="tag">网页工具</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/fmod.html" data-cat="audio" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(17640 77% 57%);width:40px;height:40px;font-size:15px">FM</span>
+    <div class="tool-card-info">
+      <h3>FMOD Studio</h3>
+      <p>把 AI 音频接入事件系统与自适应混音，让动态场景声音稳定上线。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">音频中间件</span><span class="tag">自适应音乐</span><span class="tag">交互音频</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/wwise.html" data-cat="audio" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(43920 79% 54%);width:40px;height:40px;font-size:15px">WW</span>
+    <div class="tool-card-info">
+      <h3>Wwise</h3>
+      <p>以专业音频中间件整合 AI 语音与音效，实现高规格交互式声音交付。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">音频中间件</span><span class="tag">交互音乐</span><span class="tag">语音集成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/soundation.html" data-cat="audio" data-stage="声音" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(2520 63% 55%);width:40px;height:40px;font-size:15px">SO</span>
+    <div class="tool-card-info">
+      <h3>Soundation</h3>
+      <p>在浏览器中制作并导出游戏配乐，为 AI 音频方案补齐编曲环节。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">在线编曲</span><span class="tag">游戏配乐</span><span class="tag">音频混音</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/steamworks.html" data-cat="publish" data-stage="发行" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(14760 65% 56%);width:40px;height:40px;font-size:15px">ST</span>
+    <div class="tool-card-info">
+      <h3>Steamworks</h3>
+      <p>完成游戏上架、商店运营与玩家服务接入</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">上架发行</span><span class="tag">SteamSDK</span><span class="tag">玩家服务</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/game-jolt.html" data-cat="publish" data-stage="发行" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(62640 77% 50%);width:40px;height:40px;font-size:15px">GA</span>
+    <div class="tool-card-info">
+      <h3>Game Jolt</h3>
+      <p>免费发布实验版本和独立游戏，快速收集玩家反馈</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">独立游戏</span><span class="tag">免费上架</span><span class="tag">玩家社区</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/unity-learn.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(47160 61% 45%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>Unity Learn</h3>
+      <p>用 Unity 官方课程补齐 AI 产出的脚本、场景与工作流知识</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">官方教程</span><span class="tag">脚本开发</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/unreal-learning.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(48960 74% 50%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>Unreal Learning</h3>
+      <p>学习 Unreal 制作流程，把 AI 蓝图与 C++ 产出打磨成游戏</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unreal</span><span class="tag">官方教程</span><span class="tag">蓝图</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/spline.html" data-cat="ai-3d" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(27360 60% 52%);width:40px;height:40px;font-size:15px">SP</span>
+    <div class="tool-card-info">
+      <h3>Spline</h3>
+      <p>把 AI 生成的三维创意快速做成实时场景。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">三维设计</span><span class="tag">实时渲染</span><span class="tag">AI材质</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/meshy.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(21600 75% 46%);width:40px;height:40px;font-size:15px">ME</span>
+    <div class="tool-card-info">
+      <h3>Meshy<span class="badge-ai">AI 原生</span></h3>
+      <p>用文字或图片快速生成可供游戏使用的三维资产。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI建模</span><span class="tag">三维生成</span><span class="tag">游戏资产</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/tripo3d.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(75240 70% 42%);width:40px;height:40px;font-size:15px">TR</span>
+    <div class="tool-card-info">
+      <h3>Tripo 3D<span class="badge-ai">AI 原生</span></h3>
+      <p>从文本或图片生成高质感三维模型，加速游戏资产落地。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI建模</span><span class="tag">三维生成</span><span class="tag">高质量</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/godot-documentation.html" data-cat="publish" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(50400 59% 55%);width:40px;height:40px;font-size:15px">GO</span>
+    <div class="tool-card-info">
+      <h3>Godot 官方文档</h3>
+      <p>查阅 Godot 开发规范，把 AI 生成代码接入引擎与导出流程</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">官方文档</span><span class="tag">代码参考</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/leonardo-ai.html" data-cat="ai-art" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(31680 55% 55%);width:40px;height:40px;font-size:15px">LE</span>
+    <div class="tool-card-info">
+      <h3>Leonardo.Ai<span class="badge-ai">AI 原生</span></h3>
+      <p>生成可控的游戏贴图、概念图与宣传素材。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI美术</span><span class="tag">游戏贴图</span><span class="tag">概念设计</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/indienova.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(34200 60% 48%);width:40px;height:40px;font-size:15px">IN</span>
+    <div class="tool-card-info">
+      <h3>indienova  indie 游戏</h3>
+      <p>获取中文独立游戏经验，交流 AI 制作与项目落地</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">独立游戏</span><span class="tag">中文社区</span><span class="tag">开发日志</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gcores.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(21240 68% 54%);width:40px;height:40px;font-size:15px">机核</span>
+    <div class="tool-card-info">
+      <h3>机核</h3>
+      <p>用中文游戏媒体洞察玩法与趋势，为AI游戏创意提供方向参考。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏媒体</span><span class="tag">中文社区</span><span class="tag">玩家洞察</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/game-programming-patterns.html" data-cat="learn" data-stage="代码" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(91800 69% 47%);width:40px;height:40px;font-size:15px">游戏</span>
+    <div class="tool-card-info">
+      <h3>游戏编程范式</h3>
+      <p>用经典游戏架构模式约束AI生成代码，减少手工重构与返工。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏架构</span><span class="tag">编程模式</span><span class="tag">免费书籍</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/learn-opengl.html" data-cat="learn" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(86040 74% 46%);width:40px;height:40px;font-size:15px">LE</span>
+    <div class="tool-card-info">
+      <h3>LearnOpenGL</h3>
+      <p>用图形学教材补足AI渲染代码知识，支撑画面与引擎效果实现。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">OpenGL</span><span class="tag">图形学</span><span class="tag">着色器</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/the-book-of-shaders.html" data-cat="learn" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(17280 57% 57%);width:40px;height:40px;font-size:15px">TH</span>
+    <div class="tool-card-info">
+      <h3>The Book of Shaders</h3>
+      <p>用交互式着色器课程指导AI生成视觉特效，缩短效果调试验收时间。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">GLSL</span><span class="tag">着色器</span><span class="tag">视觉特效</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/kaggle-datasets.html" data-cat="ai-model" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(87120 62% 50%);width:40px;height:40px;font-size:15px">KA</span>
+    <div class="tool-card-info">
+      <h3>Kaggle Datasets</h3>
+      <p>获取训练数据与教程，支撑游戏 AI 模型训练验证</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">训练数据</span><span class="tag">公开数据集</span><span class="tag">模型训练</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-comfyui-yolain-workflows.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(63360 75% 45%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI-Yolain 工作流集<span class="badge-ai">AI 原生</span></h3>
+      <p>基于 Easy Use 节点构建的 ComfyUI 创作工作流合集</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">工作流</span><span class="tag">Easy-Use</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-whatdreamscost-comfyui.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(30600 73% 52%);width:40px;height:40px;font-size:15px">WH</span>
+    <div class="tool-card-info">
+      <h3>WhatDreamsCost ComfyUI 扩展<span class="badge-ai">AI 原生</span></h3>
+      <p>提供 LTX Director 与多种自定义节点的 ComfyUI 项目</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">LTX-Director</span><span class="tag">工作流</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/invokeai.html" data-cat="ai-art" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(65880 57% 55%);width:40px;height:40px;font-size:15px">IN</span>
+    <div class="tool-card-info">
+      <h3>InvokeAI<span class="badge-ai">AI 原生</span></h3>
+      <p>本地生成并精修游戏概念图、贴图与场景素材。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">图像生成</span><span class="tag">画布编辑</span><span class="tag">本地运行</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-vibevoice-comfyui.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(76320 75% 42%);width:40px;height:40px;font-size:15px">VI</span>
+    <div class="tool-card-info">
+      <h3>VibeVoice ComfyUI 集成<span class="badge-ai">AI 原生</span></h3>
+      <p>将微软 VibeVoice 文本转语音模型集成进 ComfyUI</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">VibeVoice</span><span class="tag">文本转语音</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-comfyui-lora-manager.html" data-cat="ai-model" data-stage="资源" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(20160 73% 50%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI LoRA 管理器<span class="badge-ai">AI 原生</span></h3>
+      <p>用于整理、预览和接入 LoRA 模型的 ComfyUI 扩展</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">LoRA</span><span class="tag">模型管理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-comfyui-workspace-manager.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(8280 72% 43%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI 工作区管理器<span class="badge-ai">AI 原生</span></h3>
+      <p>集中管理 ComfyUI 工作流、模型与子工作流</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">工作流管理</span><span class="tag">模型管理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-comfyui-minimaxh3-director.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(5040 72% 42%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI MiniMax H3 导演工作流<span class="badge-ai">AI 原生</span></h3>
+      <p>面向 ComfyUI 的 MiniMax H3 多语言导演工作流</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">MiniMax H3</span><span class="tag">导演工作流</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gdc-vault.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(59400 74% 43%);width:40px;height:40px;font-size:15px">GD</span>
+    <div class="tool-card-info">
+      <h3>GDC Vault</h3>
+      <p>检索游戏大会演讲，补齐 AI 制作中的工程与设计知识</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">开发大会</span><span class="tag">技术演讲</span><span class="tag">游戏开发</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/igda.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(31320 69% 57%);width:40px;height:40px;font-size:15px">IG</span>
+    <div class="tool-card-info">
+      <h3>IGDA</h3>
+      <p>连接全球游戏从业者，交流 AI 制作经验与行业资源</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">开发者组织</span><span class="tag">行业社群</span><span class="tag">技术交流</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-workflow-templates.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(88920 65% 57%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI 工作流模板库<span class="badge-ai">AI 原生</span></h3>
+      <p>以 TypeScript 维护的 ComfyUI 模板工作流集合</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">工作流模板</span><span class="tag">TypeScript</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-wyrde-comfyui-workflows.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(33840 68% 48%);width:40px;height:40px;font-size:15px">WY</span>
+    <div class="tool-card-info">
+      <h3>Wyrde ComfyUI 工作流合集<span class="badge-ai">AI 原生</span></h3>
+      <p>汇集可复用 ComfyUI 工作流的社区项目</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">工作流合集</span><span class="tag">Python</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-text2image-gui.html" data-cat="ai-art" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(30960 67% 44%);width:40px;height:40px;font-size:15px">TE</span>
+    <div class="tool-card-info">
+      <h3>Text2Image 图形界面<span class="badge-ai">AI 原生</span></h3>
+      <p>模块化 Stable Diffusion 文生图桌面图形界面</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Stable Diffusion</span><span class="tag">文生图</span><span class="tag">GUI</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/tiled.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(57240 57% 55%);width:40px;height:40px;font-size:15px">TI</span>
+    <div class="tool-card-info">
+      <h3>Tiled 地图编辑器</h3>
+      <p>承接 AI 生成的瓦片与场景，搭建可交付的二维游戏地图</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">2D地图</span><span class="tag">瓦片关卡</span><span class="tag">开源</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/world-machine.html" data-cat="pipeline" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(53280 57% 42%);width:40px;height:40px;font-size:15px">WO</span>
+    <div class="tool-card-info">
+      <h3>World Machine</h3>
+      <p>把 AI 生成的地形思路转成高度图，服务大型场景制作</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">程序化地形</span><span class="tag">高度图</span><span class="tag">地貌生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-hunyuan3d-1.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(63360 64% 46%);width:40px;height:40px;font-size:15px">3D</span>
+    <div class="tool-card-info">
+      <h3>混元3D 1.0<span class="badge-ai">AI 原生</span></h3>
+      <p>腾讯开源的统一式文生三维与图生三维生成框架</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">文生3D</span><span class="tag">图生3D</span><span class="tag">游戏资产</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-prolificdreamer.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(76680 79% 51%);width:40px;height:40px;font-size:15px">多产</span>
+    <div class="tool-card-info">
+      <h3>多产梦想家<span class="badge-ai">AI 原生</span></h3>
+      <p>基于变分分数蒸馏的高保真多样化文生三维项目</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">文生3D</span><span class="tag">变分分数蒸馏</span><span class="tag">三维生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/sbox-hammer.html" data-cat="pipeline" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(84960 63% 44%);width:40px;height:40px;font-size:15px">HA</span>
+    <div class="tool-card-info">
+      <h3>Hammer 关卡编辑器</h3>
+      <p>把 AI 生成的关卡方案搭成空间结构，并接入 Source 2 制作管线。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Source 2</span><span class="tag">s&amp;box</span><span class="tag">关卡编辑</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-t3bench.html" data-cat="learn" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(81360 73% 45%);width:40px;height:40px;font-size:15px">T3</span>
+    <div class="tool-card-info">
+      <h3>T3Bench 三维生成评测基准<span class="badge-ai">AI 原生</span></h3>
+      <p>用于衡量文本到三维生成技术进展的公开评测基准</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">文生3D</span><span class="tag">模型评测</span><span class="tag">研究基准</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-gaussiandreamer.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(29160 70% 46%);width:40px;height:40px;font-size:15px">高斯</span>
+    <div class="tool-card-info">
+      <h3>高斯梦想家<span class="badge-ai">AI 原生</span></h3>
+      <p>桥接二维与三维扩散模型实现快速文生三维高斯</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">文生3D</span><span class="tag">三维高斯</span><span class="tag">扩散模型</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/midjourney.html" data-cat="ai-art" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(88200 68% 57%);width:40px;height:40px;font-size:15px">MI</span>
+    <div class="tool-card-info">
+      <h3>Midjourney<span class="badge-ai">AI 原生</span></h3>
+      <p>用文生图快速产出游戏概念与美术参考，减少前期视觉探索成本。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">文生图</span><span class="tag">概念设计</span><span class="tag">风格一致</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-luciddreamer.html" data-cat="ai-3d" data-stage="资源" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(87840 58% 42%);width:40px;height:40px;font-size:15px">LU</span>
+    <div class="tool-card-info">
+      <h3>LucidDreamer<span class="badge-ai">AI 原生</span></h3>
+      <p>基于区间分数匹配的高保真文本生成三维项目</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">文本生成三维</span><span class="tag">生成模型</span><span class="tag">论文实现</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-3dgenstudio.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(360 70% 45%);width:40px;height:40px;font-size:15px">3D</span>
+    <div class="tool-card-info">
+      <h3>3DGenStudio<span class="badge-ai">AI 原生</span></h3>
+      <p>整合三维生成流程的可视化工作空间</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">三维生成</span><span class="tag">ComfyUI</span><span class="tag">可视化工作流</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-kitchen-comfyui.html" data-cat="ai-workflow" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(42840 62% 54%);width:40px;height:40px;font-size:15px">KI</span>
+    <div class="tool-card-info">
+      <h3>Kitchen ComfyUI<span class="badge-ai">AI 原生</span></h3>
+      <p>基于 React Flow 的 Stable Diffusion 节点式图形界面</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Stable Diffusion</span><span class="tag">React Flow</span><span class="tag">节点工作流</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-3dfuse.html" data-cat="ai-3d" data-stage="资源" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(72720 67% 44%);width:40px;height:40px;font-size:15px">3D</span>
+    <div class="tool-card-info">
+      <h3>3DFuse<span class="badge-ai">AI 原生</span></h3>
+      <p>融合二维扩散先验的稳健文本生成三维方案</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">文本生成三维</span><span class="tag">扩散模型</span><span class="tag">三维一致性</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-3dtopia.html" data-cat="ai-3d" data-stage="资源" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(13320 60% 55%);width:40px;height:40px;font-size:15px">3D</span>
+    <div class="tool-card-info">
+      <h3>3DTopia<span class="badge-ai">AI 原生</span></h3>
+      <p>主打五分钟内完成文本生成三维的开源项目</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">文本生成三维</span><span class="tag">快速生成</span><span class="tag">三维资产</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-sd-gui.html" data-cat="ai-art" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(8280 62% 56%);width:40px;height:40px;font-size:15px">SD</span>
+    <div class="tool-card-info">
+      <h3>SD GUI<span class="badge-ai">AI 原生</span></h3>
+      <p>简洁易用的跨平台 Stable Diffusion 图形界面</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Stable Diffusion</span><span class="tag">跨平台</span><span class="tag">GUI</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/jsonschema-validator.html" data-cat="pipeline" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(47880 73% 49%);width:40px;height:40px;font-size:15px">JS</span>
+    <div class="tool-card-info">
+      <h3>JSON Schema 校验器</h3>
+      <p>校验 AI 生成的游戏配置数据，提前拦截格式与字段错误。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">数据校验</span><span class="tag">JSON</span><span class="tag">Schema</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/assetstudio.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(49680 72% 53%);width:40px;height:40px;font-size:15px">AS</span>
+    <div class="tool-card-info">
+      <h3>AssetStudio</h3>
+      <p>导出游戏资源供 AI 提取、重制或作为生成参考。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">资源导出</span><span class="tag">Unity</span><span class="tag">素材提取</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/assetripper.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(14040 70% 42%);width:40px;height:40px;font-size:15px">AS</span>
+    <div class="tool-card-info">
+      <h3>AssetRipper</h3>
+      <p>还原 Unity 游戏资源，为 AI 改作与资产研究提供素材。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">资源还原</span><span class="tag">资产研究</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/uabe.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(23040 76% 43%);width:40px;height:40px;font-size:15px">UA</span>
+    <div class="tool-card-info">
+      <h3>UABE 资源包编辑器</h3>
+      <p>编辑 Unity 资源包，接住 AI 生成的材质与音频改动。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">资源包</span><span class="tag">Unity</span><span class="tag">资产编辑</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-chatarena.html" data-cat="ai-npc" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(41400 55% 53%);width:40px;height:40px;font-size:15px">CH</span>
+    <div class="tool-card-info">
+      <h3>ChatArena 多智能体语言游戏环境<span class="badge-ai">AI 原生</span></h3>
+      <p>用于训练与评测大模型沟通协作能力的多智能体游戏环境</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">多智能体</span><span class="tag">LLM</span><span class="tag">游戏环境</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-ai-game-devtools.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(65160 70% 55%);width:40px;height:40px;font-size:15px">AI</span>
+    <div class="tool-card-info">
+      <h3>AI 游戏开发工具资源中心<span class="badge-ai">AI 原生</span></h3>
+      <p>汇集AI游戏开发工具，覆盖模型、美术、音频、视频与代码环节</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏开发</span><span class="tag">工具导航</span><span class="tag">AI工作流</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/sheetjs.html" data-cat="pipeline" data-stage="工作流" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(84960 78% 56%);width:40px;height:40px;font-size:15px">SH</span>
+    <div class="tool-card-info">
+      <h3>SheetJS</h3>
+      <p>解析游戏策划表格，把配置数据批量接入资产与代码流程。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">表格解析</span><span class="tag">数据导入</span><span class="tag">批量处理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-gamingagent.html" data-cat="ai-npc" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(88200 61% 54%);width:40px;height:40px;font-size:15px">GA</span>
+    <div class="tool-card-info">
+      <h3>GamingAgent 游戏智能体与评测框架<span class="badge-ai">AI 原生</span></h3>
+      <p>通过电子游戏研究并评测LLM与VLM智能体能力</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏智能体</span><span class="tag">VLM</span><span class="tag">模型评测</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-godot-mcp.html" data-cat="engine" data-stage="引擎" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(720 70% 49%);width:40px;height:40px;font-size:15px">GO</span>
+    <div class="tool-card-info">
+      <h3>Godot MCP<span class="badge-ai">AI 原生</span></h3>
+      <p>通过 MCP 操作 Godot 编辑器与运行项目</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">MCP</span><span class="tag">AI 编程</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-godot-ai.html" data-cat="engine" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(40680 79% 42%);width:40px;height:40px;font-size:15px">GO</span>
+    <div class="tool-card-info">
+      <h3>Godot AI<span class="badge-ai">AI 原生</span></h3>
+      <p>面向 Godot 的生产级 MCP 与 AI 工具集</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">MCP</span><span class="tag">AI 工具</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/suno.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(90720 61% 42%);width:40px;height:40px;font-size:15px">SU</span>
+    <div class="tool-card-info">
+      <h3>Suno<span class="badge-ai">AI 原生</span></h3>
+      <p>用文本生成游戏配乐，快速覆盖主题曲与场景音乐。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI音乐</span><span class="tag">游戏配乐</span><span class="tag">音乐生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-artbot-for-stable-diffusion.html" data-cat="ai-art" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(38880 62% 49%);width:40px;height:40px;font-size:15px">AR</span>
+    <div class="tool-card-info">
+      <h3>ArtBot for Stable Diffusion<span class="badge-ai">AI 原生</span></h3>
+      <p>连接 AI Horde 分布式集群的 Stable Diffusion 前端</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI Horde</span><span class="tag">Stable Diffusion</span><span class="tag">分布式生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-godot-mcp-native.html" data-cat="ai-code" data-stage="引擎" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(66600 64% 44%);width:40px;height:40px;font-size:15px">GO</span>
+    <div class="tool-card-info">
+      <h3>Godot MCP Native<span class="badge-ai">AI 原生</span></h3>
+      <p>以 Godot 原生实现 MCP 服务的引擎插件</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">MCP</span><span class="tag">原生插件</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/udio.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(75600 61% 51%);width:40px;height:40px;font-size:15px">UD</span>
+    <div class="tool-card-info">
+      <h3>Udio<span class="badge-ai">AI 原生</span></h3>
+      <p>用AI生成游戏音乐与音效，快速补齐听觉素材。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI音乐</span><span class="tag">游戏音频</span><span class="tag">旋律生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-comfyui-workflows-zho.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(29880 55% 42%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI 工作流合集 ZHO<span class="badge-ai">AI 原生</span></h3>
+      <p>汇集多种 ComfyUI 创作工作流的社区项目</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">工作流</span><span class="tag">AI美术</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-comfyui-copilot.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(33840 66% 47%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI 智能助手<span class="badge-ai">AI 原生</span></h3>
+      <p>为 ComfyUI 提供智能辅助与自动化支持的节点</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">智能助手</span><span class="tag">自动化</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-doyunha-gopeak.html" data-cat="engine" data-stage="工程" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(55080 63% 51%);width:40px;height:40px;font-size:15px">GO</span>
+    <div class="tool-card-info">
+      <h3>GoPeak<span class="badge-ai">AI 原生</span></h3>
+      <p>提供九十多项工具的 Godot 综合 MCP 服务</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">MCP</span><span class="tag">开发工具</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-stable-diffusion.html" data-cat="learn" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(7200 60% 45%);width:40px;height:40px;font-size:15px">ST</span>
+    <div class="tool-card-info">
+      <h3>Stable Diffusion<span class="badge-ai">AI 原生</span></h3>
+      <p>基于开源扩散模型的文本图像生成方案</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Stable Diffusion</span><span class="tag">文生图</span><span class="tag">游戏美术</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-yovoice.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(72000 64% 43%);width:40px;height:40px;font-size:15px">YO</span>
+    <div class="tool-card-info">
+      <h3>YoVoice<span class="badge-ai">AI 原生</span></h3>
+      <p>用于生成语音内容的开源 AI 语音项目</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI 配音</span><span class="tag">语音合成</span><span class="tag">游戏音频</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-alexandria-audiobook.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(66240 58% 56%);width:40px;height:40px;font-size:15px">AL</span>
+    <div class="tool-card-info">
+      <h3>Alexandria Audiobook<span class="badge-ai">AI 原生</span></h3>
+      <p>将文本转换为有声内容的开源音频项目</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">文本转语音</span><span class="tag">有声内容</span><span class="tag">游戏音频</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-izwi.html" data-cat="ai-audio" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(47880 55% 47%);width:40px;height:40px;font-size:15px">IZ</span>
+    <div class="tool-card-info">
+      <h3>Izwi<span class="badge-ai">AI 原生</span></h3>
+      <p>面向智能体交互的开源 AI 应用项目</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI NPC</span><span class="tag">智能体</span><span class="tag">对话交互</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-gdmaim.html" data-cat="ai-workflow" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(54360 58% 43%);width:40px;height:40px;font-size:15px">GD</span>
+    <div class="tool-card-info">
+      <h3>GDMaim<span class="badge-ai">AI 原生</span></h3>
+      <p>面向 Godot 项目的 AI NPC 与智能体开发框架</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">AI NPC</span><span class="tag">智能体</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-rai-pal.html" data-cat="ai-npc" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(72000 72% 55%);width:40px;height:40px;font-size:15px">RA</span>
+    <div class="tool-card-info">
+      <h3>RAI PAL<span class="badge-ai">AI 原生</span></h3>
+      <p>用于驱动游戏角色行为与交互的智能体工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI NPC</span><span class="tag">角色智能体</span><span class="tag">游戏交互</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-unity-mcp.html" data-cat="ai-code" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(9000 59% 45%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>Unity MCP<span class="badge-ai">AI 原生</span></h3>
+      <p>通过 MCP 连接 Unity 与 AI 编程助手的开源方案</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">MCP</span><span class="tag">AI 编程</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-comfyui-examples.html" data-cat="ai-workflow" data-stage="学习" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(71640 65% 48%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI 官方示例集<span class="badge-ai">AI 原生</span></h3>
+      <p>展示 ComfyUI 节点编排与使用方法的示例集</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">示例</span><span class="tag">节点工作流</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-comfyui-to-python-extension.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(33480 67% 42%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI 转 Python 扩展<span class="badge-ai">AI 原生</span></h3>
+      <p>将 ComfyUI 工作流转换为可执行 Python 代码</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">Python</span><span class="tag">自动化</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-unity-mcp-plugin.html" data-cat="ai-code" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(81720 60% 56%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>Unity MCP Plugin<span class="badge-ai">AI 原生</span></h3>
+      <p>在 Unity 中连接 MCP 服务与 AI 工具的插件</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">MCP</span><span class="tag">编辑器插件</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-civagent.html" data-cat="ai-npc" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(30600 78% 51%);width:40px;height:40px;font-size:15px">CI</span>
+    <div class="tool-card-info">
+      <h3>CivAgent 文明类策略游戏智能体<span class="badge-ai">AI 原生</span></h3>
+      <p>让大语言模型智能体在Unciv策略游戏中扮演数字玩家</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">策略游戏</span><span class="tag">数字玩家</span><span class="tag">LLM智能体</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/jq.html" data-cat="pipeline" data-stage="工作流" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(77760 72% 57%);width:40px;height:40px;font-size:15px">JQ</span>
+    <div class="tool-card-info">
+      <h3>jq</h3>
+      <p>用命令行筛选转换 JSON，串起 AI 资产管线。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">JSON</span><span class="tag">命令行</span><span class="tag">数据转换</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/json-crack.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(50040 72% 57%);width:40px;height:40px;font-size:15px">JS</span>
+    <div class="tool-card-info">
+      <h3>JSON Crack</h3>
+      <p>可视化浏览 JSON，快速检查 AI 生成数据结构。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">JSON</span><span class="tag">可视化</span><span class="tag">数据检查</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-make-a-character.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(11160 62% 52%);width:40px;height:40px;font-size:15px">MA</span>
+    <div class="tool-card-info">
+      <h3>Make-A-Character<span class="badge-ai">AI 原生</span></h3>
+      <p>几分钟内将文本提示转化为高质量三维角色</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">文本生成3D</span><span class="tag">角色生成</span><span class="tag">游戏美术</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-world-r1.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(17280 60% 50%);width:40px;height:40px;font-size:15px">WO</span>
+    <div class="tool-card-info">
+      <h3>World-R1<span class="badge-ai">AI 原生</span></h3>
+      <p>强化三维空间约束的文本到视频生成框架</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">文本生成视频</span><span class="tag">三维约束</span><span class="tag">游戏宣传</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-comfyui-hy-motion1.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(75600 62% 44%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI-HY-Motion1<span class="badge-ai">AI 原生</span></h3>
+      <p>在ComfyUI中用文本生成三维人体动作</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">人体动作</span><span class="tag">ComfyUI</span><span class="tag">文本生成3D</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-gala3d.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(25920 57% 57%);width:40px;height:40px;font-size:15px">GA</span>
+    <div class="tool-card-info">
+      <h3>GALA3D<span class="badge-ai">AI 原生</span></h3>
+      <p>通过布局引导生成文本驱动的复杂三维场景</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">三维场景</span><span class="tag">高斯泼溅</span><span class="tag">布局引导</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/civitai.html" data-cat="ai-model" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(90360 60% 56%);width:40px;height:40px;font-size:15px">CI</span>
+    <div class="tool-card-info">
+      <h3>CivitAI<span class="badge-ai">AI 原生</span></h3>
+      <p>发现社区模型与 LoRA，为游戏美术生成定制风格资产。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">社区模型</span><span class="tag">LoRA</span><span class="tag">美术生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/openart.html" data-cat="ai-art" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(6120 64% 54%);width:40px;height:40px;font-size:15px">OP</span>
+    <div class="tool-card-info">
+      <h3>OpenArt<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 批量生成并微调游戏美术，替代概念设绘与素材扩产中的重复出图工作。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI绘画</span><span class="tag">风格微调</span><span class="tag">批量出图</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/csm.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(8280 78% 55%);width:40px;height:40px;font-size:15px">CS</span>
+    <div class="tool-card-info">
+      <h3>CSM<span class="badge-ai">AI 原生</span></h3>
+      <p>用文本或图片快速生成三维资产，为游戏原型补齐模型、贴图与场景底稿。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">三维生成</span><span class="tag">游戏原型</span><span class="tag">资产生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/luma-ai.html" data-cat="ai-3d" data-stage="资源" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(53640 70% 53%);width:40px;height:40px;font-size:15px">LU</span>
+    <div class="tool-card-info">
+      <h3>Luma AI<span class="badge-ai">AI 原生</span></h3>
+      <p>用实景捕捉重建三维场景，并生成视频，让游戏资产与宣传片快速成形。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">三维捕捉</span><span class="tag">场景重建</span><span class="tag">视频生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/pika.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(16920 65% 50%);width:40px;height:40px;font-size:15px">PI</span>
+    <div class="tool-card-info">
+      <h3>Pika<span class="badge-ai">AI 原生</span></h3>
+      <p>把游戏图片变成可修改的 AI 视频，快速产出预告、玩法短片与社媒素材。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">文生视频</span><span class="tag">图生视频</span><span class="tag">局部修改</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-unity-mcp-server.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(64080 68% 55%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>Unity MCP 服务器<span class="badge-ai">AI 原生</span></h3>
+      <p>面向 Unity 项目的 MCP 服务，让 AI 协助操作编辑器与项目内容。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">MCP</span><span class="tag">智能体</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-funplay-unity-mcp.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(43560 65% 45%);width:40px;height:40px;font-size:15px">FU</span>
+    <div class="tool-card-info">
+      <h3>Funplay Unity MCP<span class="badge-ai">AI 原生</span></h3>
+      <p>面向 Unity 开发环境的 MCP 集成，用于连接 AI 与编辑器。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">MCP</span><span class="tag">AI 工作流</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-lingecho-app.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(69840 67% 53%);width:40px;height:40px;font-size:15px">灵回</span>
+    <div class="tool-card-info">
+      <h3>灵回声应用<span class="badge-ai">AI 原生</span></h3>
+      <p>面向语音交互场景的开源应用，具体能力以项目文档为准。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">语音交互</span><span class="tag">音频</span><span class="tag">开源应用</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/huggingface.html" data-cat="ai-model" data-stage="资源" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(53280 58% 55%);width:40px;height:40px;font-size:15px">HU</span>
+    <div class="tool-card-info">
+      <h3>Hugging Face<span class="badge-ai">AI 原生</span></h3>
+      <p>集中获取模型与数据集，快速搭建游戏 AI 生成和推理链路。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">模型库</span><span class="tag">数据集</span><span class="tag">在线推理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/ideogram.html" data-cat="ai-art" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(48600 62% 47%);width:40px;height:40px;font-size:15px">ID</span>
+    <div class="tool-card-info">
+      <h3>Ideogram<span class="badge-ai">AI 原生</span></h3>
+      <p>生成带准确文字的游戏海报、Logo 和宣传视觉素材。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">文字渲染</span><span class="tag">海报生成</span><span class="tag">Logo 设计</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-qwentts-cpp.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(79560 60% 46%);width:40px;height:40px;font-size:15px">QW</span>
+    <div class="tool-card-info">
+      <h3>Qwen TTS C++ 实现<span class="badge-ai">AI 原生</span></h3>
+      <p>将 Qwen TTS 语音合成能力以 C++ 项目形式实现。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Qwen TTS</span><span class="tag">C++</span><span class="tag">语音合成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-free-ai-notebooks.html" data-cat="ai-workflow" data-stage="学习" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(24120 78% 45%);width:40px;height:40px;font-size:15px">AI</span>
+    <div class="tool-card-info">
+      <h3>免费 AI 笔记本合集<span class="badge-ai">AI 原生</span></h3>
+      <p>汇集免费 AI 笔记本，帮助开发者快速实践常见模型与任务。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Jupyter Notebook</span><span class="tag">AI 实验</span><span class="tag">免费学习资源</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/unreal-engine.html" data-cat="engine" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(63720 74% 49%);width:40px;height:40px;font-size:15px">虚幻</span>
+    <div class="tool-card-info">
+      <h3>虚幻引擎</h3>
+      <p>把 AI 生成的模型、动画和代码加工成高品质商业游戏。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">虚幻引擎</span><span class="tag">高品质渲染</span><span class="tag">蓝图开发</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gamemaker.html" data-cat="engine" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(16920 61% 48%);width:40px;height:40px;font-size:15px">GA</span>
+    <div class="tool-card-info">
+      <h3>GameMaker</h3>
+      <p>用拖拽脚本快速把 AI 生成的 2D 素材和玩法做成游戏原型。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">2D 游戏</span><span class="tag">快速原型</span><span class="tag">低代码</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/construct-3.html" data-cat="engine" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(39600 63% 57%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>Construct 3</h3>
+      <p>用无代码事件系统组装 AI 生成逻辑，快速发布网页游戏</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏引擎</span><span class="tag">无代码</span><span class="tag">HTML5</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/phaser.html" data-cat="engine" data-stage="代码" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(71640 60% 53%);width:40px;height:40px;font-size:15px">PH</span>
+    <div class="tool-card-info">
+      <h3>Phaser</h3>
+      <p>用 TypeScript 快速搭建网页游戏，接住 AI 生成的玩法与界面代码</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">网页游戏</span><span class="tag">H5</span><span class="tag">TypeScript</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/love2d.html" data-cat="engine" data-stage="代码" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(63360 64% 45%);width:40px;height:40px;font-size:15px">LV</span>
+    <div class="tool-card-info">
+      <h3>LÖVE 2D</h3>
+      <p>用轻量 Lua 框架实现 2D 游戏，快速验证 AI 生成的玩法逻辑</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Lua</span><span class="tag">轻量</span><span class="tag">2D</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/maya.html" data-cat="art" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(82440 63% 48%);width:40px;height:40px;font-size:15px">MA</span>
+    <div class="tool-card-info">
+      <h3>Maya 三维软件</h3>
+      <p>把 AI 角色与场景精修为工业级三维资产</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">三维建模</span><span class="tag">角色动画</span><span class="tag">绑定</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/3ds-max.html" data-cat="art" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(72720 67% 50%);width:40px;height:40px;font-size:15px">3D</span>
+    <div class="tool-card-info">
+      <h3>3ds Max</h3>
+      <p>将 AI 场景素材加工成规范统一的游戏资产</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">三维建模</span><span class="tag">硬表面</span><span class="tag">建筑可视化</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/substance-painter.html" data-cat="art" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(32760 65% 50%);width:40px;height:40px;font-size:15px">SU</span>
+    <div class="tool-card-info">
+      <h3>Substance Painter</h3>
+      <p>为AI生成的模型快速绘制PBR材质，统一游戏资产的贴图标准。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">PBR材质</span><span class="tag">贴图绘制</span><span class="tag">程序化纹理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/hedra.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(0 76% 56%);width:40px;height:40px;font-size:15px">HE</span>
+    <div class="tool-card-info">
+      <h3>Hedra<span class="badge-ai">AI 原生</span></h3>
+      <p>用角色图片与音频生成口型同步的 NPC 对话视频。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">角色视频</span><span class="tag">口型同步</span><span class="tag">NPC 过场</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/character-ai.html" data-cat="ai-npc" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(28440 56% 49%);width:40px;height:40px;font-size:15px">CH</span>
+    <div class="tool-card-info">
+      <h3>Character.AI<span class="badge-ai">AI 原生</span></h3>
+      <p>通过角色设定与对话调参，快速测试 NPC 性格和玩家交互。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI NPC</span><span class="tag">角色设定</span><span class="tag">对话调参</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/cinema4d.html" data-cat="art" data-stage="宣传" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(90720 68% 53%);width:40px;height:40px;font-size:15px">CI</span>
+    <div class="tool-card-info">
+      <h3>Cinema 4D</h3>
+      <p>把AI生成的图形与概念加工成可用于宣传和游戏场景的三维动画。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">运动图形</span><span class="tag">三维动画</span><span class="tag">宣传片</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/msi-afterburner.html" data-cat="perf" data-stage="算力" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(77400 59% 54%);width:40px;height:40px;font-size:15px">MS</span>
+    <div class="tool-card-info">
+      <h3>MSI Afterburner</h3>
+      <p>调节显卡频率并监控帧率，为本地 AI 训练与游戏测试稳住性能。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">显卡超频</span><span class="tag">性能监控</span><span class="tag">本地 AI</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/riva-tuner.html" data-cat="perf" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(32040 56% 55%);width:40px;height:40px;font-size:15px">RT</span>
+    <div class="tool-card-info">
+      <h3>RTSS 帧率监控</h3>
+      <p>在游戏画面叠加帧率与帧时间，帮助验证 AI 资源引入后的性能。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">帧率显示</span><span class="tag">游戏内 OSD</span><span class="tag">帧时间</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/pygame.html" data-cat="engine" data-stage="代码" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(69480 59% 44%);width:40px;height:40px;font-size:15px">PY</span>
+    <div class="tool-card-info">
+      <h3>Pygame</h3>
+      <p>用 Python 快速搭起 AI 生成玩法原型，免去重复搭建基础循环。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">二维游戏</span><span class="tag">快速原型</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/stride.html" data-cat="engine" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(50400 57% 47%);width:40px;height:40px;font-size:15px">ST</span>
+    <div class="tool-card-info">
+      <h3>Stride</h3>
+      <p>用现代 3D 引擎打磨 AI 生成模型、材质与动画并交付游戏。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">三维引擎</span><span class="tag">C#开发</span><span class="tag">实时渲染</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/pix.html" data-cat="perf" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(55080 58% 57%);width:40px;height:40px;font-size:15px">MI</span>
+    <div class="tool-card-info">
+      <h3>Microsoft PIX</h3>
+      <p>分析 DirectX 游戏性能与 GPU 负载，评估 AI 资产带来的帧耗</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">DirectX</span><span class="tag">GPU 分析</span><span class="tag">逐帧捕获</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/inkscape.html" data-cat="art" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(89640 56% 49%);width:40px;height:40px;font-size:15px">IN</span>
+    <div class="tool-card-info">
+      <h3>Inkscape</h3>
+      <p>用矢量修图工具精修 AI 游戏图标、UI 与宣传素材</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">矢量编辑</span><span class="tag">图标制作</span><span class="tag">UI 素材</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/special-k.html" data-cat="perf" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(75600 58% 56%);width:40px;height:40px;font-size:15px">SP</span>
+    <div class="tool-card-info">
+      <h3>Special K</h3>
+      <p>为 Windows 游戏调帧和注入覆盖层，便于稳定测试 AI 内容表现。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">帧率限制</span><span class="tag">游戏覆盖层</span><span class="tag">体验测试</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/armorpaint.html" data-cat="art" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(53280 63% 53%);width:40px;height:40px;font-size:15px">AR</span>
+    <div class="tool-card-info">
+      <h3>ArmorPaint</h3>
+      <p>用免费纹理绘制工具打磨 AI 模型贴图并导出引擎资产</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">纹理绘制</span><span class="tag">材质制作</span><span class="tag">UV 贴图</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/mangohud.html" data-cat="perf" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(16560 76% 50%);width:40px;height:40px;font-size:15px">MA</span>
+    <div class="tool-card-info">
+      <h3>MangoHud</h3>
+      <p>在 Linux 游戏中实时显示性能指标，辅助评估 AI 资产运行开销。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Linux</span><span class="tag">性能叠加层</span><span class="tag">帧率监控</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/itch-io.html" data-cat="asset" data-stage="发行" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(25920 57% 54%);width:40px;height:40px;font-size:15px">IT</span>
+    <div class="tool-card-info">
+      <h3>itch.io</h3>
+      <p>用独立游戏市场承接 AI 原型的发布、试玩与反馈</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">独立游戏</span><span class="tag">素材市场</span><span class="tag">试玩发布</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gamedev-market.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(60120 72% 47%);width:40px;height:40px;font-size:15px">GA</span>
+    <div class="tool-card-info">
+      <h3>GameDev Market</h3>
+      <p>购买商用成品资产，快速完善 AI 制作的原型与游戏</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">商用素材</span><span class="tag">游戏美术</span><span class="tag">模型资源</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/fab.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(50760 58% 48%);width:40px;height:40px;font-size:15px">FA</span>
+    <div class="tool-card-info">
+      <h3>Fab（Epic 资产市场）</h3>
+      <p>为游戏项目采购并导入现成资产，快速补齐 AI 生成内容之外的制作缺口。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">UE 资产</span><span class="tag">模型素材</span><span class="tag">动画资源</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/pureref.html" data-cat="art" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(88920 56% 54%);width:40px;height:40px;font-size:15px">PU</span>
+    <div class="tool-card-info">
+      <h3>PureRef</h3>
+      <p>集中整理AI参考图与提示词素材，保持视觉方向一致。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">参考图板</span><span class="tag">视觉管理</span><span class="tag">情绪板</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/sonic-pi.html" data-cat="audio" data-stage="声音" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(24120 61% 42%);width:40px;height:40px;font-size:15px">SO</span>
+    <div class="tool-card-info">
+      <h3>Sonic Pi</h3>
+      <p>用代码生成可复现的游戏音乐，适合快速制作动态配乐原型。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">代码音乐</span><span class="tag">动态配乐</span><span class="tag">实时合成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/substance-designer.html" data-cat="art" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(54000 79% 45%);width:40px;height:40px;font-size:15px">SU</span>
+    <div class="tool-card-info">
+      <h3>Substance Designer</h3>
+      <p>程序化生成游戏材质，把AI概念图快速转成可调资产。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">程序化材质</span><span class="tag">PBR</span><span class="tag">AI资产加工</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/marmoset-toolbag.html" data-cat="art" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(20160 63% 45%);width:40px;height:40px;font-size:15px">MA</span>
+    <div class="tool-card-info">
+      <h3>Marmoset Toolbag</h3>
+      <p>快速检查AI生成模型与材质，提前筛出不可用资产。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">材质预览</span><span class="tag">资产质检</span><span class="tag">PBR</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/sonniss-gdc.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(62640 66% 45%);width:40px;height:40px;font-size:15px">SO</span>
+    <div class="tool-card-info">
+      <h3>Sonniss GDC 音效包</h3>
+      <p>用专业级年包补足 AI 音效管线中的高质声音素材。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">专业音效</span><span class="tag">免费年包</span><span class="tag">游戏音频</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/chiptune-club.html" data-cat="audio" data-stage="声音" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(87120 67% 57%);width:40px;height:40px;font-size:15px">CH</span>
+    <div class="tool-card-info">
+      <h3>Chiptone</h3>
+      <p>用 AI 配乐思路搭配芯片乐器，快速生成适合游戏试玩的复古音乐。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">芯片音乐</span><span class="tag">游戏配乐</span><span class="tag">旋律编排</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/epic-games-store.html" data-cat="publish" data-stage="发行" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(84960 74% 44%);width:40px;height:40px;font-size:15px">EP</span>
+    <div class="tool-card-info">
+      <h3>Epic 游戏商城</h3>
+      <p>为完成开发的游戏提供上架发行与多平台触达渠道</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">上架发行</span><span class="tag">游戏商城</span><span class="tag">版本发布</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gamedev-net.html" data-cat="learn" data-stage="工作流" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(52560 66% 52%);width:40px;height:40px;font-size:15px">GA</span>
+    <div class="tool-card-info">
+      <h3>GameDev.net</h3>
+      <p>交流游戏开发经验，排查 AI 管线中的技术问题与流程坑</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏开发</span><span class="tag">开发者社区</span><span class="tag">论坛</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/pixabay.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(20880 70% 49%);width:40px;height:40px;font-size:15px">PI</span>
+    <div class="tool-card-info">
+      <h3>Pixabay</h3>
+      <p>为 AI 游戏原型补齐图片与音效素材，省去自行搜库和整理资源。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">图片素材</span><span class="tag">音效素材</span><span class="tag">资源库</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/zapsplat.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(79920 61% 46%);width:40px;height:40px;font-size:15px">ZA</span>
+    <div class="tool-card-info">
+      <h3>Zapsplat</h3>
+      <p>为 AI 游戏补充分类明确的环境音与动作音效，快速完善听觉反馈。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">音效库</span><span class="tag">环境音</span><span class="tag">动作音效</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gltf.html" data-cat="learn" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(88920 55% 56%);width:40px;height:40px;font-size:15px">GL</span>
+    <div class="tool-card-info">
+      <h3>glTF 规范</h3>
+      <p>用开放三维格式打通 AI 资产与引擎，减少模型接入和转换工作。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">三维格式</span><span class="tag">资产交付</span><span class="tag">模型标准</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/khronos-learn.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(74160 68% 48%);width:40px;height:40px;font-size:15px">KH</span>
+    <div class="tool-card-info">
+      <h3>Khronos 学习中心</h3>
+      <p>学习图形 API 与开放标准，支撑 AI 素材在引擎中的稳定落地。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">图形API</span><span class="tag">OpenGL</span><span class="tag">Vulkan</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-phaser-ce-npm-webpack-typescript-starter-project.html" data-cat="engine" data-stage="代码" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(2160 72% 49%);width:40px;height:40px;font-size:15px">PH</span>
+    <div class="tool-card-info">
+      <h3>Phaser CE Webpack TypeScript 入门模板</h3>
+      <p>基于 Phaser CE、Webpack 与 TypeScript 的网页游戏起步模板</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Phaser</span><span class="tag">TypeScript</span><span class="tag">Webpack</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-unity-editor-toolbox.html" data-cat="mod" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(8280 65% 52%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>Unity 编辑器工具箱</h3>
+      <p>用于提升 Unity 项目编辑效率的编辑器扩展工具集合</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">编辑器扩展</span><span class="tag">开发工具</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-godot-spatial-gardener.html" data-cat="engine" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(79200 72% 53%);width:40px;height:40px;font-size:15px">GO</span>
+    <div class="tool-card-info">
+      <h3>Godot 空间园艺家</h3>
+      <p>面向 Godot 的程序化植被与空间场景生成工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">程序化生成</span><span class="tag">植被</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-godot-road-generator.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(77400 70% 50%);width:40px;height:40px;font-size:15px">GO</span>
+    <div class="tool-card-info">
+      <h3>Godot 道路生成器</h3>
+      <p>在 Godot 中程序化生成道路网络与路线结构</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">道路生成</span><span class="tag">程序化关卡</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-cyclopslevelbuilder.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(24840 69% 45%);width:40px;height:40px;font-size:15px">CY</span>
+    <div class="tool-card-info">
+      <h3>Cyclops 关卡构建器</h3>
+      <p>用于游戏关卡编辑与快速构建的开发工具项目</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">关卡编辑</span><span class="tag">原型制作</span><span class="tag">游戏工具</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-godot-powerful.html" data-cat="engine" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(4320 59% 42%);width:40px;height:40px;font-size:15px">GO</span>
+    <div class="tool-card-info">
+      <h3>Godot Powerful 开发工具集</h3>
+      <p>面向 Godot 项目开发效率提升的社区工具集合</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">开发工具</span><span class="tag">效率</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-rimsort.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(360 72% 44%);width:40px;height:40px;font-size:15px">RI</span>
+    <div class="tool-card-info">
+      <h3>RimSort 模组清单管理器</h3>
+      <p>用于管理 RimWorld 模组清单和加载顺序的工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">RimWorld</span><span class="tag">模组管理</span><span class="tag">加载顺序</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-deadlock-mod-manager.html" data-cat="mod" data-stage="玩法" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(11520 59% 47%);width:40px;height:40px;font-size:15px">DE</span>
+    <div class="tool-card-info">
+      <h3>Deadlock 模组管理器</h3>
+      <p>用于发现、下载和管理 Deadlock 模组的工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Deadlock</span><span class="tag">模组管理</span><span class="tag">游戏扩展</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-unicli.html" data-cat="ai-code" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(51840 74% 50%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>UniCli</h3>
+      <p>面向 Unity 项目的跨平台命令行交互与管理工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">命令行</span><span class="tag">自动化</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-miku-material-converter-blender-to-unity-.html" data-cat="art" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(72720 68% 44%);width:40px;height:40px;font-size:15px">MI</span>
+    <div class="tool-card-info">
+      <h3>Miku 材质转换器：Blender 转 Unity</h3>
+      <p>用于将 Blender 材质转换并迁移至 Unity 的社区开源工具。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Blender</span><span class="tag">Unity</span><span class="tag">材质转换</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/games104.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(91800 56% 54%);width:40px;height:40px;font-size:15px">GA</span>
+    <div class="tool-card-info">
+      <h3>GAMES104 现代游戏引擎</h3>
+      <p>用中文系统学习引擎原理，为搭建 AI 游戏工作流打牢底层基础。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">中文课程</span><span class="tag">引擎原理</span><span class="tag">实时渲染</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/adventure-game-studio.html" data-cat="pipeline" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(60120 61% 44%);width:40px;height:40px;font-size:15px">AD</span>
+    <div class="tool-card-info">
+      <h3>Adventure Game Studio</h3>
+      <p>承接 AI 生成的角色、剧情和场景，组装成可发布的像素冒险游戏。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">像素冒险</span><span class="tag">开源引擎</span><span class="tag">剧情游戏</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/game-developer.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(51480 64% 52%);width:40px;height:40px;font-size:15px">GA</span>
+    <div class="tool-card-info">
+      <h3>Game Developer</h3>
+      <p>跟踪游戏技术与 AI 动态，为制作决策提供行业情报</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">行业媒体</span><span class="tag">游戏技术</span><span class="tag">AI 动态</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/trenchbroom.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(64440 61% 50%);width:40px;height:40px;font-size:15px">TR</span>
+    <div class="tool-card-info">
+      <h3>TrenchBroom</h3>
+      <p>把 AI 生成的空间布局与素材，整理成可发布的 Quake 系关卡</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">3D关卡</span><span class="tag">复古射击</span><span class="tag">Quake</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/worldpainter.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(43200 69% 56%);width:40px;height:40px;font-size:15px">WO</span>
+    <div class="tool-card-info">
+      <h3>WorldPainter</h3>
+      <p>把 AI 生成的像素地形概念快速打磨成可导入游戏的地图资产。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">像素地形</span><span class="tag">实况游戏</span><span class="tag">地图绘制</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/ogier-editor.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(23400 70% 45%);width:40px;height:40px;font-size:15px">OG</span>
+    <div class="tool-card-info">
+      <h3>Ogier 编辑器</h3>
+      <p>在浏览器中把 AI 生成的地图数据整理成结构清晰的关卡文件。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">JSON 地图</span><span class="tag">网页编辑</span><span class="tag">瓦片地图</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-imgui-godot.html" data-cat="engine" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(8640 65% 55%);width:40px;height:40px;font-size:15px">IM</span>
+    <div class="tool-card-info">
+      <h3>imgui-godot</h3>
+      <p>将 Dear ImGui 调试界面接入 Godot 的绑定项目</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">Dear ImGui</span><span class="tag">调试界面</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-godot-tiled-importer.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(52560 64% 52%);width:40px;height:40px;font-size:15px">GO</span>
+    <div class="tool-card-info">
+      <h3>Godot Tiled 导入器</h3>
+      <p>用于将 Tiled 地图内容导入 Godot 的项目插件</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">Tiled</span><span class="tag">地图导入</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-unity-animationui.html" data-cat="engine" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(53280 79% 46%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>Unity Animation UI</h3>
+      <p>扩展 Unity 动画编辑与查看体验的界面工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">动画编辑</span><span class="tag">编辑器工具</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-godot-mterrain-plugin.html" data-cat="art" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(60840 79% 42%);width:40px;height:40px;font-size:15px">GO</span>
+    <div class="tool-card-info">
+      <h3>Godot-MTerrain-plugin</h3>
+      <p>用于 Godot 的 MTerrain 地形扩展插件</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">地形</span><span class="tag">插件</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-rimpy.html" data-cat="engine" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(65520 60% 51%);width:40px;height:40px;font-size:15px">RI</span>
+    <div class="tool-card-info">
+      <h3>RimPy</h3>
+      <p>面向游戏开发的开源引擎与框架项目</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏引擎</span><span class="tag">开源框架</span><span class="tag">独立游戏</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-ugui-editor.html" data-cat="mod" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(84240 78% 52%);width:40px;height:40px;font-size:15px">UG</span>
+    <div class="tool-card-info">
+      <h3>UGUI 编辑器</h3>
+      <p>面向 Unity UGUI 界面的编辑器辅助工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">UGUI</span><span class="tag">编辑器</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-godot-ci.html" data-cat="publish" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(86400 69% 48%);width:40px;height:40px;font-size:15px">GO</span>
+    <div class="tool-card-info">
+      <h3>Godot 持续集成工具</h3>
+      <p>为 Godot 项目提供持续集成支持，辅助自动构建与发布流程</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">持续集成</span><span class="tag">自动化构建</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-awesome-godot.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(23400 78% 46%);width:40px;height:40px;font-size:15px">AW</span>
+    <div class="tool-card-info">
+      <h3>Awesome Godot 资源清单</h3>
+      <p>汇集 Godot 工具、插件与学习资源的清单</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">资源清单</span><span class="tag">学习资料</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-unityplayablegraphmonitortool.html" data-cat="perf" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(2160 63% 48%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>Unity PlayableGraph 监视工具</h3>
+      <p>用于观察 Unity PlayableGraph 执行的调试工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">PlayableGraph</span><span class="tag">性能调试</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-instantpipes.html" data-cat="pipeline" data-stage="工作流" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(1080 61% 49%);width:40px;height:40px;font-size:15px">IN</span>
+    <div class="tool-card-info">
+      <h3>InstantPipes</h3>
+      <p>用于连接数据处理流程的管线工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">数据管线</span><span class="tag">工作流</span><span class="tag">工具集成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-godot-aseprite-wizard.html" data-cat="art" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(84240 63% 56%);width:40px;height:40px;font-size:15px">GO</span>
+    <div class="tool-card-info">
+      <h3>Godot Aseprite 向导</h3>
+      <p>面向 Godot 的 Aseprite 像素美术导入辅助工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">Aseprite</span><span class="tag">像素美术</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-unity-mulligan-renamer.html" data-cat="engine" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(61920 73% 56%);width:40px;height:40px;font-size:15px">MU</span>
+    <div class="tool-card-info">
+      <h3>Mulligan Renamer</h3>
+      <p>面向Unity项目的资源批量重命名工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">资源管理</span><span class="tag">批量重命名</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-stardrop.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(13680 61% 54%);width:40px;height:40px;font-size:15px">ST</span>
+    <div class="tool-card-info">
+      <h3>Stardrop</h3>
+      <p>用于发现和获取游戏资产的社区工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏资源</span><span class="tag">美术素材</span><span class="tag">资源管理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-totk-mod-manager-for-switch-emulators.html" data-cat="mod" data-stage="玩法" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(88560 72% 57%);width:40px;height:40px;font-size:15px">MO</span>
+    <div class="tool-card-info">
+      <h3>塞尔达传说：王国之泪模拟器 Mod 管理器</h3>
+      <p>为 Switch 模拟器管理王国之泪 Mod 的工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">王国之泪</span><span class="tag">Switch模拟器</span><span class="tag">Mod管理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/excel-gamesheet.html" data-cat="pipeline" data-stage="玩法" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(64080 75% 53%);width:40px;height:40px;font-size:15px">EX</span>
+    <div class="tool-card-info">
+      <h3>Excel GameSheet</h3>
+      <p>用表格与公式搭建并自动计算游戏数值配置。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">数值策划</span><span class="tag">公式</span><span class="tag">配置表</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/notepad-plus-plus.html" data-cat="pipeline" data-stage="代码" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(19800 66% 55%);width:40px;height:40px;font-size:15px">NO</span>
+    <div class="tool-card-info">
+      <h3>Notepad++</h3>
+      <p>轻量编辑脚本与配置，承接 AI 代码产出。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">代码编辑</span><span class="tag">配置编辑</span><span class="tag">轻量</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/power-automate.html" data-cat="ai-workflow" data-stage="工作流" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(52560 68% 49%);width:40px;height:40px;font-size:15px">PO</span>
+    <div class="tool-card-info">
+      <h3>Power Automate</h3>
+      <p>自动串联游戏资产、审批与归档流程，减少团队手工搬运。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">流程自动化</span><span class="tag">团队协作</span><span class="tag">资产归档</span></div>
+</a></div>
+<p class="empty" id="tool-empty" hidden>没有匹配的工具，换个关键词试试。</p>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+<script>
+      (function(){
+        var grid=document.getElementById('tool-grid');
+        var input=document.getElementById('tool-filter');
+        var empty=document.getElementById('tool-empty');
+        var catBtns=Array.prototype.slice.call(document.querySelectorAll('.filter-btn[data-cat]'));
+        var stageBtns=Array.prototype.slice.call(document.querySelectorAll('.filter-btn[data-stage]'));
+        var nativeBtn=document.querySelector('.filter-native');
+        var activeCat='',activeStage='',nativeOnly=false;
+        function apply(){
+          var q=(input.value||'').trim().toLowerCase();
+          var shown=0;
+          Array.prototype.forEach.call(grid.children,function(card){
+            var okText=!q||card.textContent.toLowerCase().indexOf(q)>-1;
+            var okCat=!activeCat||card.getAttribute('data-cat')===activeCat;
+            var okStage=!activeStage||card.getAttribute('data-stage')===activeStage;
+            var okNative=!nativeOnly||card.getAttribute('data-native')==='1';
+            var show=okText&&okCat&&okStage&&okNative;
+            card.style.display=show?'':'none';
+            if(show)shown++;
+          });
+          empty.hidden=shown>0;
+        }
+        catBtns.forEach(function(btn){btn.addEventListener('click',function(){
+          var cat=btn.getAttribute('data-cat');
+          activeCat=(activeCat===cat)?'':cat;
+          catBtns.forEach(function(b){b.classList.toggle('active',b.getAttribute('data-cat')===activeCat)});
+          apply();
+        })});
+        stageBtns.forEach(function(btn){btn.addEventListener('click',function(){
+          var st=btn.getAttribute('data-stage');
+          activeStage=(activeStage===st)?'':st;
+          stageBtns.forEach(function(b){b.classList.toggle('active',b.getAttribute('data-stage')===activeStage)});
+          apply();
+        })});
+        if(nativeBtn){nativeBtn.addEventListener('click',function(){
+          nativeOnly=!nativeOnly;
+          nativeBtn.classList.toggle('active',nativeOnly);
+          apply();
+        });}
+        input.addEventListener('input',apply);
+      })();
+    </script>
+</body>
+</html>

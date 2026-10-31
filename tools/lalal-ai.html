@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LALAL.AI - AI 音频与配音 - 游戏工具集</title>
+<meta name="description" content="用 AI 拆分音乐声轨，提取角色配音和游戏循环素材">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tools/lalal-ai.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="LALAL.AI - AI 音频与配音 - 游戏工具集">
+<meta property="og:description" content="用 AI 拆分音乐声轨，提取角色配音和游戏循环素材">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tools/lalal-ai.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link active" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tools/">工具集</a> / <a href="/game-tool-hub/categories/ai-audio.html">AI 音频与配音</a> / <span>LALAL.AI</span></nav>
+<article class="detail">
+  <header class="detail-head">
+    <span class="logo-badge" style="--logo-bg:hsl(35280 57% 50%);width:64px;height:64px;font-size:24px">LA</span>
+    <div class="detail-title">
+      <h1>LALAL.AI</h1>
+      <p class="detail-summary">用 AI 拆分音乐声轨，提取角色配音和游戏循环素材</p>
+      <div class="detail-tags"><span class="tag">人声分离</span><span class="tag">乐器分离</span><span class="tag">音频分轨</span><span class="tag">批量处理</span></div>
+    </div>
+    <div class="detail-cta">
+      <a class="btn btn-primary" href="https://www.lalal.ai" target="_blank" rel="noopener nofollow">访问官网 ↗</a>
+      <a class="btn btn-ghost" href="/game-tool-hub/tutorials/tut-lalal-ai.html">阅读教程</a>
+    </div>
+  </header>
+  <div class="meta-grid">
+    <div><span>所属分类</span><strong><a href="/game-tool-hub/categories/ai-audio.html">🎙️ AI 音频与配音</a></strong></div>
+    <div><span>创作阶段</span><strong>📚 资源</strong></div>
+    <div><span>工具类型</span><strong>⚡ AI 原生工具</strong></div>
+    <div><span>支持平台</span><strong>Web</strong></div>
+    <div><span>价格模式</span><strong>免费额度 + 订阅</strong></div>
+    <div><span>适合人群</span><strong>独立开发者、音频素材制作人、游戏音频设计师</strong></div>
+    <div><span>官网链接</span><strong class="link-status ok">● 正常</strong></div>
+    <div><span>资料更新</span><strong>2026-11-01</strong></div>
+  </div>
+  <section class="detail-block ai-role-block">
+    <h2>🧠 在 AI 创作链路中的位置</h2>
+    <p class="lead">从混合音频中提取可再利用的对白与伴奏素材</p>
+    <p class="muted small">所属阶段：📚 资源 · AI 原生工具，直接用生成能力做生产</p>
+  </section>
+  <section class="detail-block">
+    <h2>工具介绍</h2>
+    <p class="lead">LALAL.AI 专注于人声、乐器及多轨分离，可从歌曲、混音或多音轨录音中提取适合游戏使用的声音片段，也支持批量处理。对需要从现有音乐中拆出对白、伴奏或采样素材的团队尤其有用。Web 操作便捷，但分离并非无损，分轨用于商业发行前仍需检查音质与版权。</p>
+  </section>
+  <section class="detail-block"><h2>核心能力</h2><ul class="feature-list"><li>人声精准分离</li><li>乐器分轨提取</li><li>多轨 stems 导出</li><li>批量音频处理</li><li>多种分离模型可选</li></ul></section>
+  <div class="two-col">
+    <section class="detail-block"><h2>👍 优点</h2><ul class="plus-list"><li>批量处理效率高</li><li>分轨结果易于复用</li><li>无需本地安装</li></ul></section>
+    <section class="detail-block"><h2>⚠️ 局限</h2><ul class="minus-list"><li>分离结果并非无损</li><li>商用素材需确认版权</li></ul></section>
+  </div>
+  <section class="detail-block"><h2>典型使用场景</h2><ul class="usecase-list"><li>提取歌曲人声采样</li><li>拆分游戏背景伴奏</li><li>批量整理音频素材</li><li>制作循环音乐片段</li></ul></section>
+  <section class="detail-block"><h2>使用教程</h2>
+      <div class="tut-meta-line"><span class="badge">入门</span><span>⏱ 约 20 分钟</span><span>🎯 获得可导入游戏的分轨音频素材</span></div>
+      <ol class="step-list"><li class="step"><div class="step-no">1</div><div><h4>准备待处理的混合音频</h4><p>先准备包含对白、音乐或环境声的 WAV、FLAC 等文件。优先使用原始音质并确认拥有使用权，再进入官网上传流程。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>上传文件并选择分离模式</h4><p>在官网点击上传音频，等待解析后选择 Instrumental、Voice 或适合多轨素材的模型。多人对白重叠时，可尝试不同模型比较结果。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>预览并检查分离质量</h4><p>逐段试听人声、伴奏及乐器轨道，重点检查尾音、混响和串音。若某个片段分离失败，可切分该片段后单独重跑。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>导出所需轨道</h4><p>选择需要的 stems 格式与质量后导出，保留 WAV 用于后期编辑，也可生成体积较小的 MP3 用于快速验证和原型开发。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>整理并命名游戏素材</h4><p>按用途重命名为 dialogue_01、music_bed、sfx_loop 等，统一采样率、响度和文件命名规范，并记录来源模型与处理参数。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>接入游戏音频管线</h4><p>把对白导入语音系统，把伴奏和音效交给 Unity 或 Unreal 的音频中间件；按场景、距离和循环长度建立可复用素材库。</p></div></li></ol>
+      <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>先短片段验证，再批量处理长音频</li><li>游戏原型优先导出低码率试听版</li><li>为素材建立统一的响度标准</li><li>循环音轨检查接缝与爆音</li></ul></div>
+      <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>重叠对白会降低人声分离准确率</li><li>有损压缩可能产生伪影和额外混响</li></ul></div>
+      <p class="muted small">完整图文教程：<a href="/game-tool-hub/tutorials/tut-lalal-ai.html">LALAL.AI 入门：提取游戏可用音频素材</a></p>
+    </section>
+  <section class="detail-block guide-callout"><h2>📖 同类工具怎么选</h2><p>本分类覆盖配乐、音效、角色对白、声音克隆与后期清理，帮助团队从需求规格、生成草稿、角色音色训练到交付母带建立完整声音流水线。选型时优先匹配语言与音色控制、批量能力、授权条款、离线部署及游戏引擎格式需求，并保留人工验收环节。</p><a class="btn btn-ghost" href="/game-tool-hub/tutorials/guide-ai-audio.html">阅读《AI 游戏音频与配音全流程指南》</a></section>
+  <section class="detail-block"><h2>同类工具推荐</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/melody-assistant.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(81360 79% 49%);width:40px;height:40px;font-size:15px">ME</span>
+    <div class="tool-card-info">
+      <h3>Melody Assistant<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 辅助作曲和编曲，快速产出适配游戏场景的音乐草案。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI作曲</span><span class="tag">旋律生成</span><span class="tag">编曲辅助</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/fish-speech.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(71280 58% 57%);width:40px;height:40px;font-size:15px">FI</span>
+    <div class="tool-card-info">
+      <h3>Fish Speech<span class="badge-ai">AI 原生</span></h3>
+      <p>用多语言声音克隆生成角色对白，支撑跨语种游戏语音本地化</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">语音合成</span><span class="tag">声音克隆</span><span class="tag">多语言</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/cosyvoice.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(43200 78% 51%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>CosyVoice<span class="badge-ai">AI 原生</span></h3>
+      <p>零样本克隆角色声线并控制情感，生成自然中文游戏语音</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">中文语音</span><span class="tag">声音克隆</span><span class="tag">情感控制</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/elevenlabs.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(47880 68% 43%);width:40px;height:40px;font-size:15px">EL</span>
+    <div class="tool-card-info">
+      <h3>ElevenLabs<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 快速生成角色配音、旁白与拟真的声音素材</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI配音</span><span class="tag">声音克隆</span><span class="tag">文本转语音</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/kits-ai.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(55800 62% 48%);width:40px;height:40px;font-size:15px">KI</span>
+    <div class="tool-card-info">
+      <h3>Kits AI<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 清理人声、降噪并打磨可交付的音频成品</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">人声分离</span><span class="tag">降噪</span><span class="tag">母带处理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/stable-audio.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(75960 57% 46%);width:40px;height:40px;font-size:15px">ST</span>
+    <div class="tool-card-info">
+      <h3>Stable Audio<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 按情绪与场景生成音乐、音效和声音氛围</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">音乐生成</span><span class="tag">音效生成</span><span class="tag">情绪控制</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/audiocraft.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(62640 76% 57%);width:40px;height:40px;font-size:15px">AU</span>
+    <div class="tool-card-info">
+      <h3>AudioCraft<span class="badge-ai">AI 原生</span></h3>
+      <p>用开源模型批量生成游戏音乐与音效，替代手工作曲和找素材</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">音乐生成</span><span class="tag">音效生成</span><span class="tag">文本生音频</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gpt-sovits.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(26640 78% 57%);width:40px;height:40px;font-size:15px">GP</span>
+    <div class="tool-card-info">
+      <h3>GPT-SoVITS<span class="badge-ai">AI 原生</span></h3>
+      <p>用少量中文语音样本微调角色音色，批量产出游戏对白</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">声音克隆</span><span class="tag">中文配音</span><span class="tag">角色对白</span></div>
+</a></div></section>
+</article>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"LALAL.AI","description":"用 AI 拆分音乐声轨，提取角色配音和游戏循环素材","url":"https://www.lalal.ai","applicationCategory":"GameDevelopmentApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

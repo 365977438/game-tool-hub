@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MonoGame入门：从安装到首个2D游戏 - 游戏工具集</title>
+<meta name="description" content="从环境搭建、项目创建到精灵渲染与跨平台发布，完整走通MonoGame开发流程，并制作一个可运行的2D小游戏。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tutorials/tut-monogame.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MonoGame入门：从安装到首个2D游戏 - 游戏工具集">
+<meta property="og:description" content="从环境搭建、项目创建到精灵渲染与跨平台发布，完整走通MonoGame开发流程，并制作一个可运行的2D小游戏。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tutorials/tut-monogame.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link active" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tutorials/">教程</a> / <span>MonoGame入门：从安装到首个2D游戏</span></nav>
+<article class="article tutorial-article">
+  <header class="article-head">
+    <div class="news-card-meta"><span class="tag tag-imp">游戏引擎与框架</span><span>AI 撰写</span><span>更新于 2026-10-25</span></div>
+    <h1>MonoGame入门：从安装到首个2D游戏</h1>
+    <p class="lead">从环境搭建、项目创建到精灵渲染与跨平台发布，完整走通MonoGame开发流程，并制作一个可运行的2D小游戏。</p>
+    <div class="article-tools"><span>关联工具</span><a href="/game-tool-hub/tools/monogame.html"><span class="logo-badge" style="--logo-bg:hsl(26640 58% 44%);width:28px;height:28px;font-size:11px">MO</span>MonoGame</a><a class="btn btn-ghost btn-sm" href="https://monogame.net" target="_blank" rel="noopener nofollow">官网 ↗</a></div>
+  </header>
+  <div class="tut-meta-line"><span class="badge">入门</span><span>⏱ 约30分钟</span><span>🎯 独立完成并运行一个2D小游戏</span></div>
+    <ol class="step-list">
+      <li class="step"><div class="step-no">1</div><div><h4>安装开发环境</h4><p>访问monogame.net下载对应平台的安装包，再安装Visual Studio或Visual Studio Code，并确认已安装“.NET桌面开发”与“.NET游戏开发”工作负载。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>创建游戏项目</h4><p>打开Visual Studio，选择“创建新项目”，搜索MonoGame，选中“Desktop GL”模板，填写项目名后创建；首次运行会还原依赖并打开空项目。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>准备游戏素材</h4><p>在项目属性中确认Content目录，新建Textures文件夹，将PNG图片复制进去并确保Build Action设为Content；随后在Game类中加载Texture2D资源。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>绘制并移动精灵</h4><p>在Game1的Update方法中读取键盘方向键并更新角色位置，在Draw方法中调用GraphicsDevice.Clear后通过SpriteBatch绘制纹理，按0到1传入颜色参数。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>添加计分与重开</h4><p>定义玩家位置、分数和速度字段，在Update中处理移动边界、碰撞与计分；按R键重置状态，并使用GraphicsDevice.DefaultFont显示分数和提示。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>调试并发布游戏</h4><p>先在Windows本地运行并用Visual Studio调试器检查异常，再安装对应平台打包工具，通过“发布”菜单生成桌面、网页或移动端版本，注意逐项核对目标平台SDK。</p></div></li>
+    </ol>
+    <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>善用MonoGame扩展管理器安装模板与工具</li><li>SpriteBatch开始绘制前必须先调用Begin</li><li>把更新逻辑与绘制逻辑分别放入对应方法</li><li>优先采用纯色矩形完成首个原型</li></ul></div>
+    <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>图片未设置Build Action会导致运行时加载失败</li><li>窗口未设为ClientSize时坐标计算容易偏差</li></ul></div>
+  <section class="detail-block"><h2>相关工具</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/bevy.html" data-cat="engine" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(57960 71% 54%);width:40px;height:40px;font-size:15px">BE</span>
+    <div class="tool-card-info">
+      <h3>Bevy</h3>
+      <p>用 Rust 搭建高性能原生游戏，承接 AI 生成的 ECS 玩法代码</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Rust</span><span class="tag">高性能</span><span class="tag">ECS</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/playcanvas.html" data-cat="engine" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(14760 70% 57%);width:40px;height:40px;font-size:15px">PL</span>
+    <div class="tool-card-info">
+      <h3>PlayCanvas</h3>
+      <p>在浏览器协作构建 3D 游戏，承接 AI 生成的场景与交互原型</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">浏览器3D</span><span class="tag">云协作</span><span class="tag">多端发布</span></div>
+</a></div></section>
+</article>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

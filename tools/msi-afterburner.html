@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MSI Afterburner - 性能与优化 - 游戏工具集</title>
+<meta name="description" content="调节显卡频率并监控帧率，为本地 AI 训练与游戏测试稳住性能。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tools/msi-afterburner.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MSI Afterburner - 性能与优化 - 游戏工具集">
+<meta property="og:description" content="调节显卡频率并监控帧率，为本地 AI 训练与游戏测试稳住性能。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tools/msi-afterburner.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link active" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tools/">工具集</a> / <a href="/game-tool-hub/categories/perf.html">性能与优化</a> / <span>MSI Afterburner</span></nav>
+<article class="detail">
+  <header class="detail-head">
+    <span class="logo-badge" style="--logo-bg:hsl(77400 59% 54%);width:64px;height:64px;font-size:24px">MS</span>
+    <div class="detail-title">
+      <h1>MSI Afterburner</h1>
+      <p class="detail-summary">调节显卡频率并监控帧率，为本地 AI 训练与游戏测试稳住性能。</p>
+      <div class="detail-tags"><span class="tag">显卡超频</span><span class="tag">性能监控</span><span class="tag">本地 AI</span><span class="tag">帧率监控</span><span class="tag">散热控制</span></div>
+    </div>
+    <div class="detail-cta">
+      <a class="btn btn-primary" href="https://www.guru3d.com/msi-afterburner" target="_blank" rel="noopener nofollow">访问官网 ↗</a>
+      <a class="btn btn-ghost" href="/game-tool-hub/tutorials/tut-msi-afterburner.html">阅读教程</a>
+    </div>
+  </header>
+  <div class="meta-grid">
+    <div><span>所属分类</span><strong><a href="/game-tool-hub/categories/perf.html">🩺 性能与优化</a></strong></div>
+    <div><span>创作阶段</span><strong>🖥️ 算力</strong></div>
+    <div><span>工具类型</span><strong>传统工具 · AI 管线配套</strong></div>
+    <div><span>支持平台</span><strong>Windows</strong></div>
+    <div><span>价格模式</span><strong>免费</strong></div>
+    <div><span>适合人群</span><strong>本地 AI 开发者、独立游戏开发者、硬件测试人员</strong></div>
+    <div><span>官网链接</span><strong class="link-status limited">● 受限（站点防爬）</strong></div>
+    <div><span>资料更新</span><strong>2026-11-01</strong></div>
+  </div>
+  <section class="detail-block ai-role-block">
+    <h2>🧠 在 AI 创作链路中的位置</h2>
+    <p class="lead">为本地 AI 训练和游戏实测提供显卡调优及性能观察。</p>
+    <p class="muted small">所属阶段：🖥️ 算力 · 传统工具，负责把 AI 产物打磨/接入到可交付的管线里</p>
+  </section>
+  <section class="detail-block">
+    <h2>工具介绍</h2>
+    <p class="lead">MSI Afterburner 提供显卡温度、功耗、频率和帧率监控，并支持调节核心频率、功耗上限及风扇曲线。适合运行本地 AI 模型、游戏原型或性能测试的开发者，可为 AI 生成工作流观察资源负载并手动优化硬件表现；仅支持 Windows，调整超频需承担稳定性与散热风险。</p>
+  </section>
+  <section class="detail-block"><h2>核心能力</h2><ul class="feature-list"><li>实时监控显卡关键参数</li><li>调整频率与功耗上限</li><li>自定义风扇控制曲线</li><li>叠加游戏内性能信息</li><li>保存多种硬件配置预设</li></ul></section>
+  <div class="two-col">
+    <section class="detail-block"><h2>👍 优点</h2><ul class="plus-list"><li>显卡监控指标较完整</li><li>调节选项灵活</li><li>适合定位本地 AI 负载</li></ul></section>
+    <section class="detail-block"><h2>⚠️ 局限</h2><ul class="minus-list"><li>仅支持 Windows 系统</li><li>超频可能影响硬件稳定性</li></ul></section>
+  </div>
+  <section class="detail-block"><h2>典型使用场景</h2><ul class="usecase-list"><li>监控本地 AI 训练负载</li><li>优化游戏测试硬件表现</li><li>定位显卡温度与功耗问题</li><li>保存不同场景性能预设</li></ul></section>
+  <section class="detail-block"><h2>使用教程</h2>
+      <div class="tut-meta-line"><span class="badge">入门</span><span>⏱ 约 20 分钟</span><span>🎯 建立安全的显卡调校方案并监控帧率</span></div>
+      <ol class="step-list"><li class="step"><div class="step-no">1</div><div><h4>安装并启动工具</h4><p>从官网下载 MSI Afterburner，完成安装后启动；若检测到支持的显卡，首页会显示温度、频率、功耗和风扇转速等实时数据。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>完成基础检测与界面设置</h4><p>在设置页面检查硬件检测信息，并启用随 Windows 启动。按需要显示 GPU 温度、核心频率、显存频率、帧率及帧时间等参数。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>设置游戏内叠加层</h4><p>打开屏幕叠加显示，勾选温度、频率、帧率和帧时间；在快捷键设置中为叠加层开关指定组合键，启动游戏后按对应按键查看。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>创建频率与功耗调校</h4><p>在主界面先调整功耗上限、温度上限，再小幅调整核心频率和显存频率。每次改动后运行游戏观察温度、频率、帧率与稳定性，避免一次大幅拉高。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>配置自定义风扇曲线</h4><p>进入风扇设置并启用用户自定义曲线，在控制点中设定温度与转速对应关系。低温区保留较低转速，高温区逐步提高，并确保显卡不会因散热异常而过热。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>保存并验证预设</h4><p>点击保存按钮，为当前配置命名；用游戏实测帧时间、温度和稳定性。确认结果后保留预设，并准备一键恢复默认参数的回退方案。</p></div></li></ol>
+      <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>每次只调整一项参数，便于定位问题</li><li>显存频率过高可能导致画面异常或崩溃</li><li>温度接近上限时应降低频率或转速</li><li>帧时间比单纯帧率更能反映卡顿</li></ul></div>
+      <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>不要直接套用他人的极端频率参数</li><li>修改后出现花屏或闪退应立即恢复</li></ul></div>
+      <p class="muted small">完整图文教程：<a href="/game-tool-hub/tutorials/tut-msi-afterburner.html">MSI Afterburner 入门：监控与显卡调校</a></p>
+    </section>
+  <section class="detail-block guide-callout"><h2>📖 同类工具怎么选</h2><p>本分类覆盖帧率监控、GPU 调优、渲染分析与崩溃诊断。先用 CapFrameX、PresentMon、RTSS 或 MangoHud 确认帧时间、卡顿与瓶颈，再用 RenderDoc、Nsight Graphics、PIX 或 GPUView 深入渲染管线；系统级争抢可借助 System Informer、Process Lasso 和 Afterburner 排查与调节。</p><a class="btn btn-ghost" href="/game-tool-hub/tutorials/guide-perf.html">阅读《游戏性能与帧率优化总览教程》</a></section>
+  <section class="detail-block"><h2>同类工具推荐</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/capframex.html" data-cat="perf" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(80280 64% 53%);width:40px;height:40px;font-size:15px">CA</span>
+    <div class="tool-card-info">
+      <h3>CapFrameX</h3>
+      <p>采集并分析游戏帧数据，为 AI 资产上线前的性能验收提供依据。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">帧时间分析</span><span class="tag">性能基准</span><span class="tag">卡顿检测</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/renderdoc.html" data-cat="perf" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(77040 56% 52%);width:40px;height:40px;font-size:15px">RE</span>
+    <div class="tool-card-info">
+      <h3>RenderDoc</h3>
+      <p>逐帧抓取并检查渲染过程，排查 AI 美术接入引发的画面异常</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">显卡抓帧</span><span class="tag">渲染调试</span><span class="tag">着色器</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/nsight-graphics.html" data-cat="perf" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(47880 55% 44%);width:40px;height:40px;font-size:15px">NS</span>
+    <div class="tool-card-info">
+      <h3>Nsight Graphics</h3>
+      <p>逐帧定位 GPU 瓶颈，让 AI 生成资产与特效稳定达到帧率目标。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">GPU分析</span><span class="tag">逐帧调试</span><span class="tag">渲染优化</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/presentmon.html" data-cat="perf" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(11520 64% 47%);width:40px;height:40px;font-size:15px">PR</span>
+    <div class="tool-card-info">
+      <h3>PresentMon</h3>
+      <p>采集游戏帧与显示时序数据，定位 AI 生成资产引入的性能瓶颈</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">帧时间</span><span class="tag">性能分析</span><span class="tag">帧率诊断</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/riva-tuner.html" data-cat="perf" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(32040 56% 55%);width:40px;height:40px;font-size:15px">RT</span>
+    <div class="tool-card-info">
+      <h3>RTSS 帧率监控</h3>
+      <p>在游戏画面叠加帧率与帧时间，帮助验证 AI 资源引入后的性能。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">帧率显示</span><span class="tag">游戏内 OSD</span><span class="tag">帧时间</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/pix.html" data-cat="perf" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(55080 58% 57%);width:40px;height:40px;font-size:15px">MI</span>
+    <div class="tool-card-info">
+      <h3>Microsoft PIX</h3>
+      <p>分析 DirectX 游戏性能与 GPU 负载，评估 AI 资产带来的帧耗</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">DirectX</span><span class="tag">GPU 分析</span><span class="tag">逐帧捕获</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/special-k.html" data-cat="perf" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(75600 58% 56%);width:40px;height:40px;font-size:15px">SP</span>
+    <div class="tool-card-info">
+      <h3>Special K</h3>
+      <p>为 Windows 游戏调帧和注入覆盖层，便于稳定测试 AI 内容表现。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">帧率限制</span><span class="tag">游戏覆盖层</span><span class="tag">体验测试</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/mangohud.html" data-cat="perf" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(16560 76% 50%);width:40px;height:40px;font-size:15px">MA</span>
+    <div class="tool-card-info">
+      <h3>MangoHud</h3>
+      <p>在 Linux 游戏中实时显示性能指标，辅助评估 AI 资产运行开销。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Linux</span><span class="tag">性能叠加层</span><span class="tag">帧率监控</span></div>
+</a></div></section>
+</article>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"MSI Afterburner","description":"调节显卡频率并监控帧率，为本地 AI 训练与游戏测试稳住性能。","url":"https://www.guru3d.com/msi-afterburner","applicationCategory":"GameDevelopmentApplication","operatingSystem":"Windows","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

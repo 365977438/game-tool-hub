@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ModelScope 魔搭 - AI 模型与素材库 - 游戏工具集</title>
+<meta name="description" content="查找并下载模型、数据集与创空间，快速组装游戏 AI">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tools/modelscope.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ModelScope 魔搭 - AI 模型与素材库 - 游戏工具集">
+<meta property="og:description" content="查找并下载模型、数据集与创空间，快速组装游戏 AI">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tools/modelscope.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link active" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tools/">工具集</a> / <a href="/game-tool-hub/categories/ai-model.html">AI 模型与素材库</a> / <span>ModelScope 魔搭</span></nav>
+<article class="detail">
+  <header class="detail-head">
+    <span class="logo-badge" style="--logo-bg:hsl(28800 56% 56%);width:64px;height:64px;font-size:24px">MO</span>
+    <div class="detail-title">
+      <h1>ModelScope 魔搭</h1>
+      <p class="detail-summary">查找并下载模型、数据集与创空间，快速组装游戏 AI</p>
+      <div class="detail-tags"><span class="tag">中文模型库</span><span class="tag">数据集</span><span class="tag">创空间</span><span class="tag">开源社区</span><span class="tag">本地部署</span></div>
+    </div>
+    <div class="detail-cta">
+      <a class="btn btn-primary" href="https://modelscope.cn" target="_blank" rel="noopener nofollow">访问官网 ↗</a>
+      <a class="btn btn-ghost" href="/game-tool-hub/tutorials/tut-modelscope.html">阅读教程</a>
+    </div>
+  </header>
+  <div class="meta-grid">
+    <div><span>所属分类</span><strong><a href="/game-tool-hub/categories/ai-model.html">📚 AI 模型与素材库</a></strong></div>
+    <div><span>创作阶段</span><strong>📚 资源</strong></div>
+    <div><span>工具类型</span><strong>⚡ AI 原生工具</strong></div>
+    <div><span>支持平台</span><strong>Web</strong></div>
+    <div><span>价格模式</span><strong>免费</strong></div>
+    <div><span>适合人群</span><strong>中文 AI 开发者、学生、独立游戏创作者与模型学习者</strong></div>
+    <div><span>官网链接</span><strong class="link-status ok">● 正常</strong></div>
+    <div><span>资料更新</span><strong>2026-11-01</strong></div>
+  </div>
+  <section class="detail-block ai-role-block">
+    <h2>🧠 在 AI 创作链路中的位置</h2>
+    <p class="lead">提供游戏 AI 所需模型、数据与社区案例</p>
+    <p class="muted small">所属阶段：📚 资源 · AI 原生工具，直接用生成能力做生产</p>
+  </section>
+  <section class="detail-block">
+    <h2>工具介绍</h2>
+    <p class="lead">ModelScope 魔搭是中文模型与开源社区，提供模型、数据集、创空间及部署相关资源，方便团队寻找角色对话、视觉生成和语音模型。适合中文开发者、学生与独立创作者，可作为游戏 AI 项目的模型发现和实验入口；具体许可及商用范围需逐项核对。</p>
+  </section>
+  <section class="detail-block"><h2>核心能力</h2><ul class="feature-list"><li>汇集中文开源模型</li><li>提供数据集资源</li><li>支持在线创空间体验</li><li>便于模型下载部署</li><li>社区示例可供参考</li></ul></section>
+  <div class="two-col">
+    <section class="detail-block"><h2>👍 优点</h2><ul class="plus-list"><li>中文资源与文档友好</li><li>模型与数据集丰富</li><li>适合快速验证方案</li></ul></section>
+    <section class="detail-block"><h2>⚠️ 局限</h2><ul class="minus-list"><li>资源许可需逐项确认</li><li>部署环境需自行配置</li></ul></section>
+  </div>
+  <section class="detail-block"><h2>典型使用场景</h2><ul class="usecase-list"><li>寻找 NPC 对话模型</li><li>获取视觉训练数据集</li><li>体验现成游戏 AI 创空间</li><li>筛选可本地部署模型</li></ul></section>
+  <section class="detail-block"><h2>使用教程</h2>
+      <div class="tut-meta-line"><span class="badge">入门</span><span>⏱ 约20分钟</span><span>🎯 让游戏调用一个中文大模型生成角色对白</span></div>
+      <ol class="step-list"><li class="step"><div class="step-no">1</div><div><h4>创建账号并进入模型广场</h4><p>打开官网注册并登录，点击顶部“模型”进入模型广场；用“游戏NPC”“中文对话”等关键词搜索，优先查看有运行示例和下载说明的模型。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>筛选模型并查看运行方式</h4><p>在模型页查看任务类型、参数规模、许可证和“创空间”标签。先打开在线创空间输入测试提示，确认输出质量与延迟，再决定本地部署。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>安装客户端与运行依赖</h4><p>在终端执行pip install modelscope，按模型页安装PyTorch或Transformers等依赖；建议使用Python 3.10以上虚拟环境，避免与现有游戏工程依赖冲突。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>下载并加载模型</h4><p>复制模型页给出的modelscope下载代码，在项目目录运行并保存到models目录。加载时填写同一模型ID，确认框架与任务类型匹配，再做一次短文本推理。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>封装为游戏服务</h4><p>编写FastAPI接口，接收角色名、玩家输入、场景提示和最大回复长度，调用模型后返回文本；加入超时、长度限制、输入清洗与基础提示模板。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>接入游戏并验证产物</h4><p>在Unity或Unreal中通过HTTP请求调用服务，将返回对白写入NPC对话组件；用固定角色提示测试一致性，并记录响应时间、空回复和异常情况。</p></div></li></ol>
+      <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>优先选择支持推理的中文模型</li><li>先用创空间验证再下载</li><li>提示词固定角色和场景边界</li><li>模型文件与游戏资源分开存放</li></ul></div>
+      <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>模型框架与加载代码不匹配</li><li>显存不足导致首次推理失败</li></ul></div>
+      <p class="muted small">完整图文教程：<a href="/game-tool-hub/tutorials/tut-modelscope.html">ModelScope入门：为游戏接入首个AI模型</a></p>
+    </section>
+  <section class="detail-block guide-callout"><h2>📖 同类工具怎么选</h2><p>AI 模型与素材库负责提供训练数据、基础模型、LoRA 权重及可商用生成素材，是游戏 AI 制作链路的资源层。选型时应兼顾授权条款、模型质量、硬件成本、格式兼容性、社区活跃度与复现能力，并与标注、训练、微调、推理和资产制作流程衔接。</p><a class="btn btn-ghost" href="/game-tool-hub/tutorials/guide-ai-model.html">阅读《AI 模型与素材库总览：从选型到接入游戏》</a></section>
+  <section class="detail-block"><h2>同类工具推荐</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/kaggle-datasets.html" data-cat="ai-model" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(87120 62% 50%);width:40px;height:40px;font-size:15px">KA</span>
+    <div class="tool-card-info">
+      <h3>Kaggle Datasets</h3>
+      <p>获取训练数据与教程，支撑游戏 AI 模型训练验证</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">训练数据</span><span class="tag">公开数据集</span><span class="tag">模型训练</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-comfyui-lora-manager.html" data-cat="ai-model" data-stage="资源" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(20160 73% 50%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI LoRA 管理器<span class="badge-ai">AI 原生</span></h3>
+      <p>用于整理、预览和接入 LoRA 模型的 ComfyUI 扩展</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">LoRA</span><span class="tag">模型管理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/civitai.html" data-cat="ai-model" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(90360 60% 56%);width:40px;height:40px;font-size:15px">CI</span>
+    <div class="tool-card-info">
+      <h3>CivitAI<span class="badge-ai">AI 原生</span></h3>
+      <p>发现社区模型与 LoRA，为游戏美术生成定制风格资产。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">社区模型</span><span class="tag">LoRA</span><span class="tag">美术生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/huggingface.html" data-cat="ai-model" data-stage="资源" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(53280 58% 55%);width:40px;height:40px;font-size:15px">HU</span>
+    <div class="tool-card-info">
+      <h3>Hugging Face<span class="badge-ai">AI 原生</span></h3>
+      <p>集中获取模型与数据集，快速搭建游戏 AI 生成和推理链路。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">模型库</span><span class="tag">数据集</span><span class="tag">在线推理</span></div>
+</a></div></section>
+</article>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"ModelScope 魔搭","description":"查找并下载模型、数据集与创空间，快速组装游戏 AI","url":"https://modelscope.cn","applicationCategory":"GameDevelopmentApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

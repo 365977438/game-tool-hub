@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dean Hall 炮轰大厂贪欲：游戏引擎与开发框架该重做 - 游戏工具集</title>
+<meta name="description" content="《DayZ》创作者 Dean Hall 称游戏行业正因大公司的“贪婪”而从核心处腐化，并将矛头指向 Epic 的 Unreal 与 Unity。他提出新的游戏开发框架构想，随后进一步澄清其是否使用或欢迎生成式 AI。该争论把引擎控制权、制作成本与 AI 工具选择推到台前。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/news/n-2dfe9f59.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dean Hall 炮轰大厂贪欲：游戏引擎与开发框架该重做 - 游戏工具集">
+<meta property="og:description" content="《DayZ》创作者 Dean Hall 称游戏行业正因大公司的“贪婪”而从核心处腐化，并将矛头指向 Epic 的 Unreal 与 Unity。他提出新的游戏开发框架构想，随后进一步澄清其是否使用或欢迎生成式 AI。该争论把引擎控制权、制作成本与 AI 工具选择推到台前。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/news/n-2dfe9f59.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link active" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/news/">新闻</a> / <span>Dean Hall 炮轰大厂贪欲：游戏引擎与开发框架该重做</span></nav>
+<article class="article">
+  <header class="article-head">
+    <div class="news-card-meta"><span class="tag tag-imp">引擎与平台</span><span>Eurogamer</span><span>2026-10-15 21:02</span></div>
+    <h1>Dean Hall 炮轰大厂贪欲：游戏引擎与开发框架该重做</h1>
+    <p class="lead">《DayZ》创作者 Dean Hall 称游戏行业正因大公司的“贪婪”而从核心处腐化，并将矛头指向 Epic 的 Unreal 与 Unity。他提出新的游戏开发框架构想，随后进一步澄清其是否使用或欢迎生成式 AI。该争论把引擎控制权、制作成本与 AI 工具选择推到台前。</p>
+    <div class="news-highlight">💡 Dean Hall 对 Unreal、Unity 与行业贪欲的批评，迫使开发者重新衡量引擎控制权、成本和 AI 介入方式。</div>
+  </header>
+  <section class="article-points"><h3 class="body-label">关键要点</h3><ul><li>厘清框架是否采用生成式 AI，避免把技术立场混为一谈</li><li>评估 Unreal 与 Unity 的授权、锁定风险和迁移成本</li><li>拆解制作环节，判断哪些任务值得引入 AI 辅助</li><li>保持资产与管线可迁移，降低对单一引擎的依赖</li></ul></section>
+  <div class="article-body"><h3 class="body-label">正文（AI 核查整理）</h3><p>《DayZ》创作者 Dean Hall 在接受 Eurogamer 采访时表示，游戏行业正在从核心处腐化，问题来自大型公司的“贪婪”。他尤其批评 Epic 的 Unreal 与 Unity，并以开发框架改革作为回应，试图把行业对既有工具和平台结构的依赖重新摆上讨论桌。</p><p>Hall 随后通过邮件进一步解释自己的框架构想，并澄清相关方案是否使用或欢迎生成式 AI。现有素材没有完整披露框架的技术架构、开源安排、商业模式或落地时间表，因此目前更适合将其看作一次方向性主张，而不是已经可用的引擎产品。</p><p>对独立开发者而言，这场争论触及实际制作成本：大厂控制的主流引擎拥有成熟工具和生态，但平台规则、授权费用及路线变化也会影响项目。Hall 对 Epic 与 Unity 的批评，为团队评估 Unreal、Unity 或替代方案提供了新的信号，却不能代替对具体版本、授权条款和迁移成本的实测。</p><p>AI 工具选型也应避免只依据速度指标。开发者需要区分哪些环节适合生成式辅助，例如资料整理、原型探索或重复性制作，以及哪些环节必须保留人工判断。若新框架不以“接入更多 AI 功能”为卖点，反而可能说明其优先解决的是开发控制、工作流透明度和工具链所有权。</p><p>这场口水战未必能立即改变行业格局，但它暴露了开发者对既有引擎生态的不满。更可落地的做法是保持核心资产可迁移，限制对单一平台专属功能的依赖，并用真实项目测算许可证、插件、人才储备和管线切换成本，再决定是否试验新框架。</p></div>
+  <div class="article-foot">
+    <a class="btn btn-primary" href="https://www.eurogamer.net/dean-hall-brutal-framework-ksp-epic-unreal-unity" target="_blank" rel="noopener nofollow">阅读原文 ↗</a>
+    <div class="article-tags"><span class="tag">Dean Hall</span><span class="tag">游戏引擎</span><span class="tag">Unreal</span><span class="tag">Unity</span><span class="tag">生成式 AI</span></div>
+  </div>
+  <section class="detail-block"><h2>相关快讯</h2><ul class="link-list"><li><a href="/game-tool-hub/news/n-20f2e792.html">Reddit 将转向仅登录体验，AI 相关细则仍待确定</a><em>2026-10-30</em></li><li><a href="/game-tool-hub/news/n-df97a39f.html">Xsolla 收购 GamePix，瞄准网页与 AI 生成游戏平台</a><em>2026-10-30</em></li><li><a href="/game-tool-hub/news/n-3e57880b.html">Studio Atelico 推出可在游戏内本地运行的 AI 引擎</a><em>2026-10-30</em></li><li><a href="/game-tool-hub/news/n-7af2b345.html">Epic将允许用虚幻引擎与MetaHuman输出训练AI</a><em>2026-10-28</em></li><li><a href="/game-tool-hub/news/n-d9114f1b.html">Steam 周报再议 AI 披露与平台治理争议</a><em>2026-10-26</em></li><li><a href="/game-tool-hub/news/n-2dbcde6c.html">Xbox Labs 探索 AI 游戏重组，借反编译拓展移植与重制</a><em>2026-10-14</em></li></ul></section>
+</article>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Dean Hall 炮轰大厂贪欲：游戏引擎与开发框架该重做","description":"《DayZ》创作者 Dean Hall 称游戏行业正因大公司的“贪婪”而从核心处腐化，并将矛头指向 Epic 的 Unreal 与 Unity。他提出新的游戏开发框架构想，随后进一步澄清其是否使用或欢迎生成式 AI。该争论把引擎控制权、制作成本与 AI 工具选择推到台前。","datePublished":"2026-10-15T13:02:51.000Z","dateModified":"2026-10-25T09:21:21.469Z","author":{"@type":"Organization","name":"Eurogamer"},"publisher":{"@type":"Organization","name":"游戏工具集"},"mainEntityOfPage":"https://365977438.github.io/game-tool-hub/news/n-2dfe9f59.html"}</script>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

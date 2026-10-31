@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>glTF 规范 - 学习与社区 - 游戏工具集</title>
+<meta name="description" content="用开放三维格式打通 AI 资产与引擎，减少模型接入和转换工作。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tools/gltf.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="glTF 规范 - 学习与社区 - 游戏工具集">
+<meta property="og:description" content="用开放三维格式打通 AI 资产与引擎，减少模型接入和转换工作。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tools/gltf.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link active" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tools/">工具集</a> / <a href="/game-tool-hub/categories/learn.html">学习与社区</a> / <span>glTF 规范</span></nav>
+<article class="detail">
+  <header class="detail-head">
+    <span class="logo-badge" style="--logo-bg:hsl(88920 55% 56%);width:64px;height:64px;font-size:24px">GL</span>
+    <div class="detail-title">
+      <h1>glTF 规范</h1>
+      <p class="detail-summary">用开放三维格式打通 AI 资产与引擎，减少模型接入和转换工作。</p>
+      <div class="detail-tags"><span class="tag">三维格式</span><span class="tag">资产交付</span><span class="tag">模型标准</span><span class="tag">引擎接入</span></div>
+    </div>
+    <div class="detail-cta">
+      <a class="btn btn-primary" href="https://gltf.net" target="_blank" rel="noopener nofollow">访问官网 ↗</a>
+      <a class="btn btn-ghost" href="/game-tool-hub/tutorials/tut-gltf.html">阅读教程</a>
+    </div>
+  </header>
+  <div class="meta-grid">
+    <div><span>所属分类</span><strong><a href="/game-tool-hub/categories/learn.html">🎓 学习与社区</a></strong></div>
+    <div><span>创作阶段</span><strong>📚 资源</strong></div>
+    <div><span>工具类型</span><strong>传统工具 · AI 管线配套</strong></div>
+    <div><span>支持平台</span><strong>Web</strong></div>
+    <div><span>价格模式</span><strong>免费</strong></div>
+    <div><span>适合人群</span><strong>独立开发者、3D 美术、资产管线工程师</strong></div>
+    <div><span>官网链接</span><strong class="link-status warn">● 待复核</strong></div>
+    <div><span>资料更新</span><strong>2026-11-01</strong></div>
+  </div>
+  <section class="detail-block ai-role-block">
+    <h2>🧠 在 AI 创作链路中的位置</h2>
+    <p class="lead">作为 AI 三维资产的标准化交付层，让生成结果更易接入引擎。</p>
+    <p class="muted small">所属阶段：📚 资源 · 传统工具，负责把 AI 产物打磨/接入到可交付的管线里</p>
+  </section>
+  <section class="detail-block">
+    <h2>工具介绍</h2>
+    <p class="lead">glTF 是用于传输和加载三维场景模型、动画、材质及贴图的开放标准。它能在 AI 生成模型、DCC 工具与游戏引擎之间充当统一资产接口，方便自动校验、转换和交付。适合独立团队、工具开发者与资产管线维护者，通过 Web 阅读规范并使用配套工具。</p>
+  </section>
+  <section class="detail-block"><h2>核心能力</h2><ul class="feature-list"><li>开放三维传输标准</li><li>支持模型与骨骼动画</li><li>统一材质和贴图接口</li><li>适配主流引擎工具</li><li>便于自动化校验转换</li></ul></section>
+  <div class="two-col">
+    <section class="detail-block"><h2>👍 优点</h2><ul class="plus-list"><li>生态兼容范围广</li><li>适合批处理资产管线</li><li>减少跨工具转换成本</li></ul></section>
+    <section class="detail-block"><h2>⚠️ 局限</h2><ul class="minus-list"><li>本身不生成三维资产</li><li>规范不等于现成编辑器</li></ul></section>
+  </div>
+  <section class="detail-block"><h2>典型使用场景</h2><ul class="usecase-list"><li>接入 AI 生成三维模型</li><li>自动转换与校验资产</li><li>建立跨引擎交付规范</li><li>批量发布角色动画</li></ul></section>
+  <section class="detail-block"><h2>使用教程</h2>
+      <div class="tut-meta-line"><span class="badge">入门</span><span>⏱ 约20分钟</span><span>🎯 能读懂glTF结构并验证合规模型</span></div>
+      <ol class="step-list"><li class="step"><div class="step-no">1</div><div><h4>理解glTF核心组成</h4><p>打开官网规范页，先读glTF 2.0概览，确认JSON格式、.gltf与.glb的区别，并了解缓冲区、图像、材质和纹理等核心对象。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>查看节点与场景层级</h4><p>在规范页进入“Nodes”章节，观察节点变换、父子关系和场景组织方式，再打开示例文件对照scenes与nodes数组理解层级。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>梳理网格材质与纹理</h4><p>依次阅读Meshes、Materials、Textures和Images章节，明确顶点属性、索引、PBR材质参数及纹理URI如何关联。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>了解动画与扩展机制</h4><p>阅读Animations、Skins和Extensions章节，掌握采样器、轨道和骨骼权重规则，并确认扩展声明及实现支持要求。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>分析二进制资产布局</h4><p>对照Buffers与Buffer Views章节，查看.bin数据如何存放，GLB如何把JSON与缓冲区合并，并留意字节偏移与数据对齐规则。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>使用官方验证器检查</h4><p>进入官网Validator页面，上传.gltf或.glb文件并运行验证；根据错误定位到对应章节修正，再复测直至通过。</p></div></li></ol>
+      <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>优先掌握glTF 2.0，版本差异更少</li><li>示例文件适合对照字段逐项理解</li><li>生产环境优先使用GLB便于单文件传输</li><li>使用扩展前确认目标引擎已支持</li></ul></div>
+      <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>外部纹理URI填错会导致资源丢失</li><li>节点变换顺序错误会引起模型错位</li></ul></div>
+      <p class="muted small">完整图文教程：<a href="/game-tool-hub/tutorials/tut-gltf.html">glTF规范入门：从结构到模型验证</a></p>
+    </section>
+  <section class="detail-block guide-callout"><h2>📖 同类工具怎么选</h2><p>本分类覆盖官方教程、系统课程、开放规范、行业媒体与开发者社区，适合从入门学习、技术进阶到行业洞察的不同阶段。建议先按当前目标选择主线：引擎上手选官方学习中心，图形编程选OpenGL或着色器课程，架构能力查范式书籍，会议经验看GDC，行业动态则结合中文社区与专业媒体。</p><a class="btn btn-ghost" href="/game-tool-hub/tutorials/guide-learn.html">阅读《游戏开发学习资源与社区选择指南》</a></section>
+  <section class="detail-block"><h2>同类工具推荐</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/unity-learn.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(47160 61% 45%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>Unity Learn</h3>
+      <p>用 Unity 官方课程补齐 AI 产出的脚本、场景与工作流知识</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">官方教程</span><span class="tag">脚本开发</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/unreal-learning.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(48960 74% 50%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>Unreal Learning</h3>
+      <p>学习 Unreal 制作流程，把 AI 蓝图与 C++ 产出打磨成游戏</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unreal</span><span class="tag">官方教程</span><span class="tag">蓝图</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/indienova.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(34200 60% 48%);width:40px;height:40px;font-size:15px">IN</span>
+    <div class="tool-card-info">
+      <h3>indienova  indie 游戏</h3>
+      <p>获取中文独立游戏经验，交流 AI 制作与项目落地</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">独立游戏</span><span class="tag">中文社区</span><span class="tag">开发日志</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gcores.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(21240 68% 54%);width:40px;height:40px;font-size:15px">机核</span>
+    <div class="tool-card-info">
+      <h3>机核</h3>
+      <p>用中文游戏媒体洞察玩法与趋势，为AI游戏创意提供方向参考。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏媒体</span><span class="tag">中文社区</span><span class="tag">玩家洞察</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/game-programming-patterns.html" data-cat="learn" data-stage="代码" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(91800 69% 47%);width:40px;height:40px;font-size:15px">游戏</span>
+    <div class="tool-card-info">
+      <h3>游戏编程范式</h3>
+      <p>用经典游戏架构模式约束AI生成代码，减少手工重构与返工。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏架构</span><span class="tag">编程模式</span><span class="tag">免费书籍</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/learn-opengl.html" data-cat="learn" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(86040 74% 46%);width:40px;height:40px;font-size:15px">LE</span>
+    <div class="tool-card-info">
+      <h3>LearnOpenGL</h3>
+      <p>用图形学教材补足AI渲染代码知识，支撑画面与引擎效果实现。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">OpenGL</span><span class="tag">图形学</span><span class="tag">着色器</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/the-book-of-shaders.html" data-cat="learn" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(17280 57% 57%);width:40px;height:40px;font-size:15px">TH</span>
+    <div class="tool-card-info">
+      <h3>The Book of Shaders</h3>
+      <p>用交互式着色器课程指导AI生成视觉特效，缩短效果调试验收时间。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">GLSL</span><span class="tag">着色器</span><span class="tag">视觉特效</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gdc-vault.html" data-cat="learn" data-stage="学习" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(59400 74% 43%);width:40px;height:40px;font-size:15px">GD</span>
+    <div class="tool-card-info">
+      <h3>GDC Vault</h3>
+      <p>检索游戏大会演讲，补齐 AI 制作中的工程与设计知识</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">开发大会</span><span class="tag">技术演讲</span><span class="tag">游戏开发</span></div>
+</a></div></section>
+</article>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"glTF 规范","description":"用开放三维格式打通 AI 资产与引擎，减少模型接入和转换工作。","url":"https://gltf.net","applicationCategory":"GameDevelopmentApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

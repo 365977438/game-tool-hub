@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suno 入门：从提示词到首支歌曲 - 游戏工具集</title>
+<meta name="description" content="介绍注册、编写提示词、选择曲风、生成歌曲、续写段落及下载音频的完整流程，帮助你快速制作游戏配乐和音乐草案。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tutorials/tut-suno.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Suno 入门：从提示词到首支歌曲 - 游戏工具集">
+<meta property="og:description" content="介绍注册、编写提示词、选择曲风、生成歌曲、续写段落及下载音频的完整流程，帮助你快速制作游戏配乐和音乐草案。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tutorials/tut-suno.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link active" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tutorials/">教程</a> / <span>Suno 入门：从提示词到首支歌曲</span></nav>
+<article class="article tutorial-article">
+  <header class="article-head">
+    <div class="news-card-meta"><span class="tag tag-imp">AI 音频与配音</span><span>AI 撰写</span><span>更新于 2026-10-25</span></div>
+    <h1>Suno 入门：从提示词到首支歌曲</h1>
+    <p class="lead">介绍注册、编写提示词、选择曲风、生成歌曲、续写段落及下载音频的完整流程，帮助你快速制作游戏配乐和音乐草案。</p>
+    <div class="article-tools"><span>关联工具</span><a href="/game-tool-hub/tools/suno.html"><span class="logo-badge" style="--logo-bg:hsl(90720 61% 42%);width:28px;height:28px;font-size:11px">SU</span>Suno</a><a class="btn btn-ghost btn-sm" href="https://suno.com" target="_blank" rel="noopener nofollow">官网 ↗</a></div>
+  </header>
+  <div class="tut-meta-line"><span class="badge">入门</span><span>⏱ 约 20 分钟</span><span>🎯 生成并下载一首可用于项目的完整歌曲</span></div>
+    <ol class="step-list">
+      <li class="step"><div class="step-no">1</div><div><h4>注册并进入创作页</h4><p>打开 suno.com，点击注册或登录按钮，完成账号验证后进入 Create 创作页；首次使用可先浏览示例，了解歌曲提示的基本写法。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>设置歌曲模式与风格</h4><p>在创作页选择 Simple Song 模式，输入主题描述，并按界面选项选择情绪、曲风、年代等标签；也可上传音频，但需注意素材版权与清晰度。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>编写详细提示词</h4><p>在描述框填写主题、场景、情绪、节奏、主唱性别和乐器等信息。建议使用“场景＋情绪＋曲风＋结构＋乐器＋演唱方式”的组合，避免提示词过于笼统。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>生成并挑选版本</h4><p>点击 Create 生成歌曲，等待系统制作多个版本；试听后选择更符合主题的一首，必要时修改提示词或风格标签重新生成，并对比人声与伴奏效果。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>扩展段落或调整结构</h4><p>打开满意作品的 Extend 或相关编辑功能，选择续写位置并补充段落描述，例如加入更激烈的鼓点和合唱；反复试听，避免续写内容与原曲风格脱节。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>导出音频用于项目</h4><p>在作品页面点击下载菜单，按需要保存音频文件；导出前检查时长、格式和音质，并保留完整提示词，方便后续修改或生成同系列配乐。</p></div></li>
+    </ol>
+    <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>提示词应具体写明场景、节奏和乐器</li><li>先做短版本验证整体方向</li><li>准备多组风格标签便于比较</li><li>续写前先试听段落衔接处</li></ul></div>
+    <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>过于笼统的描述容易生成跑题作品</li><li>上传音频前确认拥有必要版权</li></ul></div>
+  <section class="detail-block"><h2>相关工具</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/github-copilot.html" data-cat="ai-code" data-stage="代码" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(14400 57% 43%);width:40px;height:40px;font-size:15px">GI</span>
+    <div class="tool-card-info">
+      <h3>GitHub Copilot<span class="badge-ai">AI 原生</span></h3>
+      <p>在代码编辑器中辅助编写游戏脚本与工具链，替代重复性编码工作。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI 编程</span><span class="tag">代码补全</span><span class="tag">游戏脚本</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/cursor.html" data-cat="ai-code" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(55440 69% 56%);width:40px;height:40px;font-size:15px">CU</span>
+    <div class="tool-card-info">
+      <h3>Cursor<span class="badge-ai">AI 原生</span></h3>
+      <p>用自然对话修改游戏项目代码，把需求快速转成可运行逻辑。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI IDE</span><span class="tag">游戏逻辑</span><span class="tag">代码生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/comfyui.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(58320 74% 57%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI<span class="badge-ai">AI 原生</span></h3>
+      <p>用节点式工作流批量生成并串联游戏美术资产</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">节点工作流</span><span class="tag">批量生图</span><span class="tag">本地部署</span></div>
+</a></div></section>
+</article>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI游戏资产与关卡管线总览 - 游戏工具集</title>
+<meta name="description" content="本分类负责把 AI 生成的视频、地图、数值表和资源包转化为可编辑、可校验、可集成的工程资产。应按目标引擎、资产格式、自动化程度与可回溯性选型，并先统一目录、命名和数据规范，再衔接生成、编辑、验证与发布流程。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tutorials/guide-pipeline.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI游戏资产与关卡管线总览 - 游戏工具集">
+<meta property="og:description" content="本分类负责把 AI 生成的视频、地图、数值表和资源包转化为可编辑、可校验、可集成的工程资产。应按目标引擎、资产格式、自动化程度与可回溯性选型，并先统一目录、命名和数据规范，再衔接生成、编辑、验证与发布流程。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tutorials/guide-pipeline.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link active" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tutorials/">教程</a> / <span>AI游戏资产与关卡管线总览</span></nav>
+<article class="article tutorial-article">
+  <header class="article-head">
+    <div class="news-card-meta"><span class="tag tag-imp">关卡与数据管线</span><span>AI 撰写</span><span>更新于 2026-10-26</span></div>
+    <h1>AI游戏资产与关卡管线总览</h1>
+    <p class="lead">本分类负责把 AI 生成的视频、地图、数值表和资源包转化为可编辑、可校验、可集成的工程资产。应按目标引擎、资产格式、自动化程度与可回溯性选型，并先统一目录、命名和数据规范，再衔接生成、编辑、验证与发布流程。</p>
+    
+  </header>
+  <div class="article-body">
+      <section class="guide-section-block"><h3>管线定位：从生成结果到工程资产</h3><p>AI 创作通常先产出概念图、脚本、地图草图、视频片段或表格，而游戏工程要求明确的格式、尺寸、坐标系、命名和依赖。关卡编辑、数值配置与资产管理工具就是中间的转译层，把低置信度结果整理为可被引擎读取和持续维护的资产。</p><p>选择时应先明确最终交付物：可导入的瓦片地图、Source 或 Unity 资源包、结构化数值表，还是宣传视频。工具是否支持目标版本、批处理、无损往返、错误报告和版本控制，往往比是否带有一项 AI 功能更重要。</p></section><section class="guide-section-block"><h3>图像视频素材：生成后的加工与交付</h3><p>World Machine 与 WorldPainter 分别适合从地形思路生成高度场，以及快速绘制像素地形；Tiled 则把瓦片和场景组合为二维地图。实际流程通常是先生成高度图或概念图，再校正比例、图层和碰撞信息，最后导出为目标引擎可识别的资源。</p><p>视频素材可由 FFmpeg 批量转码、裁切和压缩，再用 DaVinci Resolve 完成精剪、调色、字幕与交付规格。挑选时要核对色彩空间、透明通道、分辨率、帧率、平台编码器及批处理能力，并保留原始生成素材，避免覆盖不可恢复的源文件。</p></section><section class="guide-section-block"><h3>三维关卡：空间搭建与引擎适配</h3><p>Hammer 适合在 Source 2 工作流中搭建空间结构，TrenchBroom 面向 Quake 系格式，Godot 道路生成器适合程序化布局，Cyclops 则为 Unity 提供可视化构建能力。选型应围绕目标引擎、关卡格式、团队习惯和发布目标，而不是只比较界面效率。</p><p>AI 生成的布局方案需要人工复核通行距离、视线、出生点、碰撞、导航网格和性能预算。程序化生成结果还要设置约束与随机种子，并通过代表性测试场景验证导出、编译和运行结果，防止“编辑器里正常、游戏里失效”。</p></section><section class="guide-section-block"><h3>数据配置：表格、脚本与结构校验</h3><p>Excel 游戏数值表、SheetJS 和 jq 负责把策划公式或 AI 表格转换为机器可读配置；JSON Schema 校验器与 JSON Crack 分别用于自动验证和人工检查。Notepad++ 适合快速修改脚本与配置，但正式批量流程仍应采用可重复执行的转换命令。</p><p>数据管线应先定义稳定字段、类型、枚举、默认值和版本策略，再让 AI 生成内容或公式。导入前自动校验，导入后做平衡与边界测试；关键数值需要审阅记录，避免 AI 擅自补全缺失字段、改变单位或引入隐蔽的数值范围错误。</p></section><section class="guide-section-block"><h3>资产管理：解包、检查与安全修改</h3><p>AssetStudio、AssetRipper 可用于检查、导出或还原游戏资源，为 AI 重制和资产研究提供输入；UABE 则支持直接编辑 Unity 资源包中的材质、音频等内容。处理前必须确认授权与用途，并优先在副本上操作，保留原始包体、版本和哈希。</p><p>资产管理不只是格式转换，还包括重命名、依赖检查、丢失贴图定位、平台压缩与导入设置验证。AI 改动应限制在明确的资源范围，经过视觉、运行和性能测试后再替换正式资产；无法确认依赖或版本兼容时，应停止修改并回查来源。</p></section><section class="guide-section-block"><h3>串联方法：规范、自动化与可追溯交付</h3><p>InstantPipes、Stardrop 等工具可用于组织开发资源和处理流程，但真正稳定的管线仍依赖清晰目录、命名规则、输入输出契约与自动检查。推荐让每一步都产出日志和错误报告，并以原始素材、中间资产和发布资产三层目录隔离处理。</p><p>挑选时重点评估格式覆盖、命令行或接口能力、增量处理、失败恢复、团队协作、版本控制兼容和文档质量。接入 CI 时，可先自动校验 JSON、地图导入和资源完整性，再由设计师集中处理语义、体验与最终视觉质量，形成可重复的发布闭环。</p></section>
+    </div>
+    <div class="tips-box"><h3>✅ 落地清单</h3><ul><li>定义目标引擎、格式与交付规范</li><li>统一目录、命名、单位和坐标约定</li><li>保留生成原文件与处理中间件</li><li>自动校验数据字段和资源依赖</li><li>抽样检查地图碰撞与可通行性</li><li>验证视频编码、色彩与平台规格</li><li>用批量脚本替代重复手工操作</li><li>记录工具版本、错误与替换记录</li></ul></div>
+    <section class="detail-block"><h2>常见问题</h2><div class="faq-item"><h4>Q：AI 已生成完整结果，还需要关卡与数据工具吗？</h4><p>通常需要。生成结果往往缺少严格格式、依赖关系、性能约束与版本信息，工程工具负责补齐这些环节，并让结果可编辑、可测试、可重复发布。</p></div><div class="faq-item"><h4>Q：选可视化工具还是命令行工具？</h4><p>可视化工具适合探索、复核和精修，命令行更适合批量、自动化与持续集成。成熟管线常以命令行处理为主，以可视化工具处理异常和最终审阅。</p></div><div class="faq-item"><h4>Q：如何避免 AI 改坏配置和资源？</h4><p>先使用 Schema、类型检查和资源依赖检查拦截硬错误，再通过边界测试、场景试玩和性能测试验证软问题；所有替换都应基于可回滚副本。</p></div><div class="faq-item"><h4>Q：哪些资产不应直接交给 AI 修改？</h4><p>关键终稿、含复杂依赖的二进制资源、授权不明的第三方素材，以及缺少备份的正式资产，不应直接覆盖。应先隔离、备份并明确人工验收责任人。</p></div></section>
+    <section class="detail-block"><h2>本分类工具</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/ffmpeg.html" data-cat="pipeline" data-stage="宣传" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(71280 60% 57%);width:40px;height:40px;font-size:15px">FF</span>
+    <div class="tool-card-info">
+      <h3>FFmpeg</h3>
+      <p>批量转码与裁切 AI 视频素材，快速生成可交付的宣发内容。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">视频转码</span><span class="tag">命令行</span><span class="tag">批处理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/davinci-resolve.html" data-cat="pipeline" data-stage="宣传" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(5400 72% 46%);width:40px;height:40px;font-size:15px">DA</span>
+    <div class="tool-card-info">
+      <h3>DaVinci Resolve</h3>
+      <p>精剪、调色并交付 AI 生成的宣传片与游戏实机视频。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">专业剪辑</span><span class="tag">调色</span><span class="tag">后期制作</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/tiled.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(57240 57% 55%);width:40px;height:40px;font-size:15px">TI</span>
+    <div class="tool-card-info">
+      <h3>Tiled 地图编辑器</h3>
+      <p>承接 AI 生成的瓦片与场景，搭建可交付的二维游戏地图</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">2D地图</span><span class="tag">瓦片关卡</span><span class="tag">开源</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/world-machine.html" data-cat="pipeline" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(53280 57% 42%);width:40px;height:40px;font-size:15px">WO</span>
+    <div class="tool-card-info">
+      <h3>World Machine</h3>
+      <p>把 AI 生成的地形思路转成高度图，服务大型场景制作</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">程序化地形</span><span class="tag">高度图</span><span class="tag">地貌生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/worldpainter.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(43200 69% 56%);width:40px;height:40px;font-size:15px">WO</span>
+    <div class="tool-card-info">
+      <h3>WorldPainter</h3>
+      <p>把 AI 生成的像素地形概念快速打磨成可导入游戏的地图资产。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">像素地形</span><span class="tag">实况游戏</span><span class="tag">地图绘制</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/sbox-hammer.html" data-cat="pipeline" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(84960 63% 44%);width:40px;height:40px;font-size:15px">HA</span>
+    <div class="tool-card-info">
+      <h3>Hammer 关卡编辑器</h3>
+      <p>把 AI 生成的关卡方案搭成空间结构，并接入 Source 2 制作管线。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Source 2</span><span class="tag">s&amp;box</span><span class="tag">关卡编辑</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/jsonschema-validator.html" data-cat="pipeline" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(47880 73% 49%);width:40px;height:40px;font-size:15px">JS</span>
+    <div class="tool-card-info">
+      <h3>JSON Schema 校验器</h3>
+      <p>校验 AI 生成的游戏配置数据，提前拦截格式与字段错误。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">数据校验</span><span class="tag">JSON</span><span class="tag">Schema</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/assetstudio.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(49680 72% 53%);width:40px;height:40px;font-size:15px">AS</span>
+    <div class="tool-card-info">
+      <h3>AssetStudio</h3>
+      <p>导出游戏资源供 AI 提取、重制或作为生成参考。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">资源导出</span><span class="tag">Unity</span><span class="tag">素材提取</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/assetripper.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(14040 70% 42%);width:40px;height:40px;font-size:15px">AS</span>
+    <div class="tool-card-info">
+      <h3>AssetRipper</h3>
+      <p>还原 Unity 游戏资源，为 AI 改作与资产研究提供素材。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">资源还原</span><span class="tag">资产研究</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/uabe.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(23040 76% 43%);width:40px;height:40px;font-size:15px">UA</span>
+    <div class="tool-card-info">
+      <h3>UABE 资源包编辑器</h3>
+      <p>编辑 Unity 资源包，接住 AI 生成的材质与音频改动。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">资源包</span><span class="tag">Unity</span><span class="tag">资产编辑</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/sheetjs.html" data-cat="pipeline" data-stage="工作流" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(84960 78% 56%);width:40px;height:40px;font-size:15px">SH</span>
+    <div class="tool-card-info">
+      <h3>SheetJS</h3>
+      <p>解析游戏策划表格，把配置数据批量接入资产与代码流程。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">表格解析</span><span class="tag">数据导入</span><span class="tag">批量处理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/jq.html" data-cat="pipeline" data-stage="工作流" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(77760 72% 57%);width:40px;height:40px;font-size:15px">JQ</span>
+    <div class="tool-card-info">
+      <h3>jq</h3>
+      <p>用命令行筛选转换 JSON，串起 AI 资产管线。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">JSON</span><span class="tag">命令行</span><span class="tag">数据转换</span></div>
+</a></div></section>
+  
+</article>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

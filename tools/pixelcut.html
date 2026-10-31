@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixelcut - AI 美术生成 - 游戏工具集</title>
+<meta name="description" content="自动抠图并优化商店截图，让 AI 游戏素材更快达到上架规格。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tools/pixelcut.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pixelcut - AI 美术生成 - 游戏工具集">
+<meta property="og:description" content="自动抠图并优化商店截图，让 AI 游戏素材更快达到上架规格。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tools/pixelcut.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link active" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item open">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tools/">工具集</a> / <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a> / <span>Pixelcut</span></nav>
+<article class="detail">
+  <header class="detail-head">
+    <span class="logo-badge" style="--logo-bg:hsl(77040 58% 49%);width:64px;height:64px;font-size:24px">PI</span>
+    <div class="detail-title">
+      <h1>Pixelcut</h1>
+      <p class="detail-summary">自动抠图并优化商店截图，让 AI 游戏素材更快达到上架规格。</p>
+      <div class="detail-tags"><span class="tag">商店素材</span><span class="tag">截图处理</span><span class="tag">自动抠图</span><span class="tag">游戏宣传</span></div>
+    </div>
+    <div class="detail-cta">
+      <a class="btn btn-primary" href="https://www.pixelcut.ai" target="_blank" rel="noopener nofollow">访问官网 ↗</a>
+      <a class="btn btn-ghost" href="/game-tool-hub/tutorials/tut-pixelcut.html">阅读教程</a>
+    </div>
+  </header>
+  <div class="meta-grid">
+    <div><span>所属分类</span><strong><a href="/game-tool-hub/categories/ai-art.html">🖌️ AI 美术生成</a></strong></div>
+    <div><span>创作阶段</span><strong>🎬 宣传</strong></div>
+    <div><span>工具类型</span><strong>⚡ AI 原生工具</strong></div>
+    <div><span>支持平台</span><strong>Web</strong></div>
+    <div><span>价格模式</span><strong>免费额度 + 订阅</strong></div>
+    <div><span>适合人群</span><strong>独立开发者、游戏发行人员、商店运营人员</strong></div>
+    <div><span>官网链接</span><strong class="link-status ok">● 正常</strong></div>
+    <div><span>资料更新</span><strong>2026-11-01</strong></div>
+  </div>
+  <section class="detail-block ai-role-block">
+    <h2>🧠 在 AI 创作链路中的位置</h2>
+    <p class="lead">作为资产收尾环节，自动处理 AI 素材并包装成商店可用宣传图。</p>
+    <p class="muted small">所属阶段：🎬 宣传 · AI 原生工具，直接用生成能力做生产</p>
+  </section>
+  <section class="detail-block">
+    <h2>工具介绍</h2>
+    <p class="lead">Pixelcut 可自动移除图片背景、清理边缘，并结合模板生成适合游戏商店的宣传截图，适合承接 AI 生成的角色图、场景图和宣传视觉。独立开发者与发行团队可用它减少手工抠图、裁切和排版时间。工具基于 Web 使用，输出前仍应检查小尺寸下的文字、构图与平台规范。</p>
+  </section>
+  <section class="detail-block"><h2>核心能力</h2><ul class="feature-list"><li>AI 自动抠图去背景</li><li>智能清理图片边缘</li><li>提供商店截图模板</li><li>批量裁切宣传素材</li><li>快速生成营销图组合</li></ul></section>
+  <div class="two-col">
+    <section class="detail-block"><h2>👍 优点</h2><ul class="plus-list"><li>抠图流程简单快捷</li><li>减少手工排版工作</li><li>适合游戏商店素材</li></ul></section>
+    <section class="detail-block"><h2>⚠️ 局限</h2><ul class="minus-list"><li>复杂边缘仍需检查</li><li>模板不能替代平台核验</li></ul></section>
+  </div>
+  <section class="detail-block"><h2>典型使用场景</h2><ul class="usecase-list"><li>处理 AI 角色立绘</li><li>制作商店宣传截图</li><li>批量裁切宣传图</li><li>清理场景素材背景</li></ul></section>
+  <section class="detail-block"><h2>使用教程</h2>
+      <div class="tut-meta-line"><span class="badge">入门</span><span>⏱ 约 20 分钟</span><span>🎯 生成一组可直接进入商店发布管线的宣传图</span></div>
+      <ol class="step-list"><li class="step"><div class="step-no">1</div><div><h4>准备并上传 AI 游戏素材</h4><p>打开官网并注册登录，进入 Pixelcut 工作区后点击上传，导入游戏 Logo、角色截图或宣传原图；建议使用 PNG、透明背景图及 2000 像素以上的素材。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>执行 AI 自动抠图</h4><p>在素材编辑页选择自动抠图，等待 AI 识别主体后检查角色、武器和装饰元素；误选区域可用修复画笔补回，再点击应用并保存透明背景版本。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>清理边缘与残留</h4><p>打开智能边缘清理功能，依次检查发丝、武器和透明区域，移除背景残影并平滑锯齿；导出前切换到棋盘格背景，确认轮廓没有白边或缺口。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>套用商店截图模板</h4><p>进入截图或营销图模板页，选择适配目标商店画布比例的模板，将游戏名称、Logo 和已抠图素材拖入预设区域，替换文案时控制每行长度，保留主要玩法画面。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>批量裁切宣传素材</h4><p>上传同一批横版、竖版游戏画面，在批量裁切中选择目标比例与输出尺寸；勾选统一裁切和设备框选项，一次生成横版、竖版及商店封面所需尺寸。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>导出并接入发布管线</h4><p>按 PNG 或 JPG 批量导出，检查分辨率、色彩模式和文件体积后，按商店规范命名并上传至发布素材目录；同时保留透明抠图文件，供官网、社媒和 A/B 测试复用。</p></div></li></ol>
+      <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>先处理主体边缘，再套模板</li><li>不同商店比例分别预览安全区</li><li>保留透明原图便于二次包装</li><li>批量导出后逐张检查文字</li></ul></div>
+      <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>自动抠图可能误删细长装饰</li><li>模板缩放会压低小字可读性</li></ul></div>
+      <p class="muted small">完整图文教程：<a href="/game-tool-hub/tutorials/tut-pixelcut.html">Pixelcut 入门：从 AI 素材到商店宣传图</a></p>
+    </section>
+  <section class="detail-block guide-callout"><h2>📖 同类工具怎么选</h2><p>AI美术生成覆盖从概念探索、角色与场景设绘，到贴图、图标、宣传图及后期精修的视觉生产环节。选型时应结合资产类型、批量一致性、局部控制、版权与部署方式，并让生成结果进入统一规范和人工审核流程。</p><a class="btn btn-ghost" href="/game-tool-hub/tutorials/guide-ai-art.html">阅读《用AI生成游戏美术资产全流程指南》</a></section>
+  <section class="detail-block"><h2>同类工具推荐</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/scenario.html" data-cat="ai-art" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(30240 64% 56%);width:40px;height:40px;font-size:15px">SC</span>
+    <div class="tool-card-info">
+      <h3>Scenario<span class="badge-ai">AI 原生</span></h3>
+      <p>按统一美术风格批量生成游戏图标与二维资产。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI美术</span><span class="tag">风格一致</span><span class="tag">批量生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/layer-ai.html" data-cat="ai-art" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(49680 78% 45%);width:40px;height:40px;font-size:15px">LA</span>
+    <div class="tool-card-info">
+      <h3>Layer AI<span class="badge-ai">AI 原生</span></h3>
+      <p>批量生成统一风格的游戏资产，替美术团队省去重复制作与筛选时间。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏资产</span><span class="tag">批量生成</span><span class="tag">风格库</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/rosebud-ai.html" data-cat="ai-art" data-stage="概念" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(3240 55% 43%);width:40px;height:40px;font-size:15px">RO</span>
+    <div class="tool-card-info">
+      <h3>Rosebud AI<span class="badge-ai">AI 原生</span></h3>
+      <p>从角色生成到叙事迭代，快速搭建可讨论的游戏原型与视觉方向。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏原型</span><span class="tag">角色生成</span><span class="tag">叙事迭代</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/krita-ai-diffusion.html" data-cat="ai-art" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(7920 56% 54%);width:40px;height:40px;font-size:15px">KR</span>
+    <div class="tool-card-info">
+      <h3>Krita AI Diffusion<span class="badge-ai">AI 原生</span></h3>
+      <p>在 Krita 内局部重绘与可控生成，精细打磨 AI 游戏美术。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">画师集成</span><span class="tag">局部重绘</span><span class="tag">ControlNet</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/dungeon-alchemist.html" data-cat="ai-art" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(34920 70% 57%);width:40px;height:40px;font-size:15px">DU</span>
+    <div class="tool-card-info">
+      <h3>Dungeon Alchemist<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 快速生成俯视地牢布局，替掉反复手工摆房间</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI地牢</span><span class="tag">关卡生成</span><span class="tag">俯视视角</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/leonardo-ai.html" data-cat="ai-art" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(31680 55% 55%);width:40px;height:40px;font-size:15px">LE</span>
+    <div class="tool-card-info">
+      <h3>Leonardo.Ai<span class="badge-ai">AI 原生</span></h3>
+      <p>生成可控的游戏贴图、概念图与宣传素材。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI美术</span><span class="tag">游戏贴图</span><span class="tag">概念设计</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/invokeai.html" data-cat="ai-art" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(65880 57% 55%);width:40px;height:40px;font-size:15px">IN</span>
+    <div class="tool-card-info">
+      <h3>InvokeAI<span class="badge-ai">AI 原生</span></h3>
+      <p>本地生成并精修游戏概念图、贴图与场景素材。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">图像生成</span><span class="tag">画布编辑</span><span class="tag">本地运行</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-text2image-gui.html" data-cat="ai-art" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(30960 67% 44%);width:40px;height:40px;font-size:15px">TE</span>
+    <div class="tool-card-info">
+      <h3>Text2Image 图形界面<span class="badge-ai">AI 原生</span></h3>
+      <p>模块化 Stable Diffusion 文生图桌面图形界面</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Stable Diffusion</span><span class="tag">文生图</span><span class="tag">GUI</span></div>
+</a></div></section>
+</article>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Pixelcut","description":"自动抠图并优化商店截图，让 AI 游戏素材更快达到上架规格。","url":"https://www.pixelcut.ai","applicationCategory":"GameDevelopmentApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

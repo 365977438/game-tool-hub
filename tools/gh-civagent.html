@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CivAgent 文明类策略游戏智能体 - AI NPC 与智能体 - 游戏工具集</title>
+<meta name="description" content="让大语言模型智能体在Unciv策略游戏中扮演数字玩家">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tools/gh-civagent.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CivAgent 文明类策略游戏智能体 - AI NPC 与智能体 - 游戏工具集">
+<meta property="og:description" content="让大语言模型智能体在Unciv策略游戏中扮演数字玩家">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tools/gh-civagent.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link active" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tools/">工具集</a> / <a href="/game-tool-hub/categories/ai-npc.html">AI NPC 与智能体</a> / <span>CivAgent 文明类策略游戏智能体</span></nav>
+<article class="detail">
+  <header class="detail-head">
+    <span class="logo-badge" style="--logo-bg:hsl(30600 78% 51%);width:64px;height:64px;font-size:24px">CI</span>
+    <div class="detail-title">
+      <h1>CivAgent 文明类策略游戏智能体</h1>
+      <p class="detail-summary">让大语言模型智能体在Unciv策略游戏中扮演数字玩家</p>
+      <div class="detail-tags"><span class="tag">策略游戏</span><span class="tag">数字玩家</span><span class="tag">LLM智能体</span></div>
+    </div>
+    <div class="detail-cta">
+      <a class="btn btn-primary" href="https://github.com/fuxiAIlab/CivAgent" target="_blank" rel="noopener nofollow">访问官网 ↗</a>
+      <a class="btn btn-ghost" href="/game-tool-hub/tutorials/tut-gh-civagent.html">阅读教程</a>
+    </div>
+  </header>
+  <div class="meta-grid">
+    <div><span>所属分类</span><strong><a href="/game-tool-hub/categories/ai-npc.html">🗣️ AI NPC 与智能体</a></strong></div>
+    <div><span>创作阶段</span><strong>🗣️ 玩法</strong></div>
+    <div><span>工具类型</span><strong>⚡ AI 原生工具</strong></div>
+    <div><span>支持平台</span><strong>Python、Unciv</strong></div>
+    <div><span>价格模式</span><strong>免费开源</strong></div>
+    <div><span>适合人群</span><strong>适合策略游戏AI研究者及关注智能体行为的技术人员</strong></div>
+    <div><span>官网链接</span><strong class="link-status ok">● 正常</strong></div>
+    <div><span>资料更新</span><strong>2026-11-01</strong></div>
+  </div>
+  <section class="detail-block ai-role-block">
+    <h2>🧠 在 AI 创作链路中的位置</h2>
+    <p class="lead">以数字玩家身份进行策略决策与游戏交互</p>
+    <p class="muted small">所属阶段：🗣️ 玩法 · AI 原生工具，直接用生成能力做生产</p>
+  </section>
+  <section class="detail-block">
+    <h2>工具介绍</h2>
+    <p class="lead">CivAgent 是一款由大语言模型驱动、能够在策略游戏 Unciv 中充当数字玩家的类人智能体。它以游戏行为为载体研究模型在策略环境中的决策表现。</p>
+  </section>
+  <section class="detail-block"><h2>核心能力</h2><ul class="feature-list"><li>基于大语言模型构建数字玩家</li><li>接入Unciv策略游戏环境</li><li>模拟类人玩家行为</li><li>支持研究模型策略决策能力</li></ul></section>
+  <div class="two-col">
+    <section class="detail-block"><h2>👍 优点</h2><ul class="plus-list"><li>智能体与成熟策略游戏环境结合</li><li>实验场景具体且易于理解</li></ul></section>
+    <section class="detail-block"><h2>⚠️ 局限</h2><ul class="minus-list"><li>应用范围集中于Unciv策略游戏</li><li>面向游戏AI研究，非通用内容生产工具</li></ul></section>
+  </div>
+  <section class="detail-block"><h2>典型使用场景</h2><ul class="usecase-list"><li>测试大模型在策略游戏中的决策能力</li><li>研究类人数字玩家的行为模式</li></ul></section>
+  <section class="detail-block"><h2>使用教程</h2>
+      <div class="tut-meta-line"><span class="badge">进阶</span><span>⏱ 约 30 分钟</span><span>🎯 运行一名由 LLM 驱动的文明玩家</span></div>
+      <ol class="step-list"><li class="step"><div class="step-no">1</div><div><h4>准备运行环境</h4><p>安装 Python、Git 与 Unciv，在终端克隆 CivAgent：git clone https://github.com/fuxiAIlab/CivAgent.git，然后进入仓库并按 README 创建虚拟环境、安装依赖。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>配置大语言模型</h4><p>复制项目提供的环境变量或配置文件模板，填入模型 API 地址、密钥、模型名称及超时参数；密钥只放本地环境变量，不要提交到 Git。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>设置文明与策略参数</h4><p>在 CivAgent 的智能体配置中选择文明、玩家名称和策略提示词，设定决策温度、行动频率等参数；先用默认文明验证完整链路。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>连接 Unciv 对局</h4><p>按项目说明启动 CivAgent 与 Unciv 服务，在 Unciv 中创建或载入对局，添加智能体玩家并填写其连接信息，确认双方使用同一端口与房间。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>运行并观察决策</h4><p>启动智能体进程，在终端日志中检查模型请求、状态解析和动作提交；进入游戏观察其完成采集、探索或建设，并核对回合是否推进。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>接入游戏开发管线</h4><p>将 CivAgent 作为外部对局服务接入测试框架，用固定种子和可复现配置批量评估决策质量，并将日志、动作与胜率结果写入你的实验管线。</p></div></li></ol>
+      <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>先验证单回合，再运行完整文明</li><li>限制输出结构，避免无效游戏动作</li><li>记录提示词、模型版本与回合日志</li><li>用固定种子做策略对比实验</li></ul></div>
+      <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>API 密钥误写入配置文件或提交仓库</li><li>端口、文明名称或回合协议不一致</li></ul></div>
+      <p class="muted small">完整图文教程：<a href="/game-tool-hub/tutorials/tut-gh-civagent.html">CivAgent 入门：接入第一个智能体玩家</a></p>
+    </section>
+  <section class="detail-block guide-callout"><h2>📖 同类工具怎么选</h2><p>AI NPC 与智能体负责让角色具备记忆、对话、情绪反馈和自主行动能力。本类工具横跨角色原型、即时交互、多人环境与游戏评测，选型时应重点考察记忆一致性、响应延迟、语音支持、引擎集成、可控性、成本与隐私方案。</p><a class="btn btn-ghost" href="/game-tool-hub/tutorials/guide-ai-npc.html">阅读《AI NPC 与智能体游戏开发总览》</a></section>
+  <section class="detail-block"><h2>同类工具推荐</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/inworld.html" data-cat="ai-npc" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(65520 59% 43%);width:40px;height:40px;font-size:15px">IN</span>
+    <div class="tool-card-info">
+      <h3>Inworld AI<span class="badge-ai">AI 原生</span></h3>
+      <p>为游戏 NPC 注入可记忆、可对话的智能角色能力</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">智能NPC</span><span class="tag">角色记忆</span><span class="tag">对话系统</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/convai.html" data-cat="ai-npc" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(22680 55% 44%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>Convai<span class="badge-ai">AI 原生</span></h3>
+      <p>为游戏 NPC 快速接入自然对话和语音交互能力</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">智能NPC</span><span class="tag">语音交互</span><span class="tag">对话生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/nvidia-ace.html" data-cat="ai-npc" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(33480 66% 49%);width:40px;height:40px;font-size:15px">NV</span>
+    <div class="tool-card-info">
+      <h3>NVIDIA ACE<span class="badge-ai">AI 原生</span></h3>
+      <p>为游戏角色接入可听、可说、会反应的生成式智能体能力</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">智能体</span><span class="tag">NPC</span><span class="tag">实时语音</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/charactr.html" data-cat="ai-npc" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(83160 59% 45%);width:40px;height:40px;font-size:15px">CH</span>
+    <div class="tool-card-info">
+      <h3>Charactr<span class="badge-ai">AI 原生</span></h3>
+      <p>快速制作会对话、可分支叙事的 AI 角色原型</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">角色对话</span><span class="tag">分支剧情</span><span class="tag">叙事原型</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-chatarena.html" data-cat="ai-npc" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(41400 55% 53%);width:40px;height:40px;font-size:15px">CH</span>
+    <div class="tool-card-info">
+      <h3>ChatArena 多智能体语言游戏环境<span class="badge-ai">AI 原生</span></h3>
+      <p>用于训练与评测大模型沟通协作能力的多智能体游戏环境</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">多智能体</span><span class="tag">LLM</span><span class="tag">游戏环境</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-gamingagent.html" data-cat="ai-npc" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(88200 61% 54%);width:40px;height:40px;font-size:15px">GA</span>
+    <div class="tool-card-info">
+      <h3>GamingAgent 游戏智能体与评测框架<span class="badge-ai">AI 原生</span></h3>
+      <p>通过电子游戏研究并评测LLM与VLM智能体能力</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏智能体</span><span class="tag">VLM</span><span class="tag">模型评测</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-rai-pal.html" data-cat="ai-npc" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(72000 72% 55%);width:40px;height:40px;font-size:15px">RA</span>
+    <div class="tool-card-info">
+      <h3>RAI PAL<span class="badge-ai">AI 原生</span></h3>
+      <p>用于驱动游戏角色行为与交互的智能体工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI NPC</span><span class="tag">角色智能体</span><span class="tag">游戏交互</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/character-ai.html" data-cat="ai-npc" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(28440 56% 49%);width:40px;height:40px;font-size:15px">CH</span>
+    <div class="tool-card-info">
+      <h3>Character.AI<span class="badge-ai">AI 原生</span></h3>
+      <p>通过角色设定与对话调参，快速测试 NPC 性格和玩家交互。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI NPC</span><span class="tag">角色设定</span><span class="tag">对话调参</span></div>
+</a></div></section>
+</article>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"CivAgent 文明类策略游戏智能体","description":"让大语言模型智能体在Unciv策略游戏中扮演数字玩家","url":"https://github.com/fuxiAIlab/CivAgent","applicationCategory":"GameDevelopmentApplication","operatingSystem":"Python, Unciv","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

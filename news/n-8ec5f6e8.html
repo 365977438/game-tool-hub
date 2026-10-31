@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D高斯泼溅进入皮克斯流程，游戏场景采集有了新路径 - 游戏工具集</title>
+<meta name="description" content="皮克斯在官方3D渲染教程中采用禾赛Kosmo采集真实场景，并以3D高斯泼溅数据接入RenderMan。素材显示，该方案能在较短采集时间内保留几何、色彩与光照信息，也可用于AI训练和机器人任务构建。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/news/n-8ec5f6e8.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="3D高斯泼溅进入皮克斯流程，游戏场景采集有了新路径 - 游戏工具集">
+<meta property="og:description" content="皮克斯在官方3D渲染教程中采用禾赛Kosmo采集真实场景，并以3D高斯泼溅数据接入RenderMan。素材显示，该方案能在较短采集时间内保留几何、色彩与光照信息，也可用于AI训练和机器人任务构建。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/news/n-8ec5f6e8.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link active" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/news/">新闻</a> / <span>3D高斯泼溅进入皮克斯流程，游戏场景采集有了新路径</span></nav>
+<article class="article">
+  <header class="article-head">
+    <div class="news-card-meta"><span class="tag tag-imp">AI 工具链</span><span>量子位</span><span>2026-10-27 17:54</span></div>
+    <h1>3D高斯泼溅进入皮克斯流程，游戏场景采集有了新路径</h1>
+    <p class="lead">皮克斯在官方3D渲染教程中采用禾赛Kosmo采集真实场景，并以3D高斯泼溅数据接入RenderMan。素材显示，该方案能在较短采集时间内保留几何、色彩与光照信息，也可用于AI训练和机器人任务构建。</p>
+    <div class="news-highlight">💡 3DGS已从研究格式进入皮克斯官方流程，也提供了游戏场景快速采集的新路径。</div>
+  </header>
+  <section class="article-points"><h3 class="body-label">关键要点</h3><ul><li>评估3DGS扫描作为场景建模底稿</li><li>验证USD与现有引擎工具链兼容性</li><li>利用真实场景数据构建AI训练资产</li><li>在入库前处理性能、碰撞与导航需求</li></ul></section>
+  <div class="article-body"><h3 class="body-label">正文（AI 核查整理）</h3><p>皮克斯近期上架官方3D渲染教程，讲解如何使用其工具处理真实世界的3D高斯泼溅数据，并在说明中感谢禾赛提供的3D场景扫描方案Kosmo。RenderMan已经加入对3DGS这一三维数据格式的支持，Kosmo则负责现实场景的数据采集。</p><p>按照皮克斯对Kosmo的描述，建模师可以快速捕捉空间元素、精准几何结构与真实光照。以Pixar Lamp、Pixar Ball及周边广场为例，手持设备采集约100平方米空间需要15至20分钟，所得高质量3DGS数据可通过USD格式进入制作环境。</p><p>这套流程对游戏开发有直接价值：开发者能够用真实扫描快速建立场景底稿，减少人工建模、贴图与光照还原的基础工作。由于数据可直接输出为3DGS并进入编辑流程，后续可继续调整模型位置、比例、透明度和风格化表现。</p><p>素材还提到，3D高斯泼溅可用于训练模型和构建机器人任务，Kosmo的后续定位是成为具身智能、物理AI的数据入口。对游戏团队而言，这类真实空间数据还可帮助建立场景识别、语义分割和交互训练数据，减少纯人工采集与标注。</p><p>实际引入时，团队应先验证扫描区域、采集时间、格式兼容性以及风格化编辑结果，再决定是否替换传统建模流程。3DGS适合作为快速还原真实环境的起点，但最终资产仍需结合游戏性能、碰撞、导航和美术规范进行整理。</p></div>
+  <div class="article-foot">
+    <a class="btn btn-primary" href="https://www.qbitai.com/2026/10/505830.html" target="_blank" rel="noopener nofollow">阅读原文 ↗</a>
+    <div class="article-tags"><span class="tag">3D高斯泼溅</span><span class="tag">场景采集</span><span class="tag">游戏建模</span><span class="tag">皮克斯</span></div>
+  </div>
+  <section class="detail-block"><h2>相关快讯</h2><ul class="link-list"><li><a href="/game-tool-hub/news/n-a8fde85a.html">Ramen 发布 Aura Autopilot 开源自主游戏测试代理</a><em>2026-10-30</em></li><li><a href="/game-tool-hub/news/n-47993511.html">Playgama 用真实玩家参与度评选 AI 编程智能体</a><em>2026-10-29</em></li><li><a href="/game-tool-hub/news/n-88aa79f4.html">Epic 将生成式 AI 深入 Fortnite 与 Unreal Engine 6</a><em>2026-10-29</em></li><li><a href="/game-tool-hub/news/n-39e8a443.html">UGC 平台转向 AI 工具，让普通玩家成为游戏创作者</a><em>2026-10-26</em></li><li><a href="/game-tool-hub/news/n-04f612f8.html">Scenes AI 用单张显卡运行 34B 实时世界模型</a><em>2026-10-23</em></li><li><a href="/game-tool-hub/news/n-3caa3c2c.html">亦庄发布游戏电竞十大科技创新场景，AI创作进入大会议程</a><em>2026-10-23</em></li></ul></section>
+</article>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"3D高斯泼溅进入皮克斯流程，游戏场景采集有了新路径","description":"皮克斯在官方3D渲染教程中采用禾赛Kosmo采集真实场景，并以3D高斯泼溅数据接入RenderMan。素材显示，该方案能在较短采集时间内保留几何、色彩与光照信息，也可用于AI训练和机器人任务构建。","datePublished":"2026-10-27T09:54:51.000Z","dateModified":"2026-10-28T11:45:16.536Z","author":{"@type":"Organization","name":"量子位"},"publisher":{"@type":"Organization","name":"游戏工具集"},"mainEntityOfPage":"https://365977438.github.io/game-tool-hub/news/n-8ec5f6e8.html"}</script>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

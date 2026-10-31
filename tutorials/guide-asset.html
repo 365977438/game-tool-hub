@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>游戏素材与资源库选择与使用总览 - 游戏工具集</title>
+<meta name="description" content="“素材与资源库”覆盖模型、贴图、像素图、音效、UI及引擎插件，帮助开发者降低美术、音频和工具制作成本。挑选时应先看授权条款、格式兼容性与资源风格，再结合用途选择通用库、专业市场或创作者平台；同时核对商用、署名、修改和再分发限制。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tutorials/guide-asset.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="游戏素材与资源库选择与使用总览 - 游戏工具集">
+<meta property="og:description" content="“素材与资源库”覆盖模型、贴图、像素图、音效、UI及引擎插件，帮助开发者降低美术、音频和工具制作成本。挑选时应先看授权条款、格式兼容性与资源风格，再结合用途选择通用库、专业市场或创作者平台；同时核对商用、署名、修改和再分发限制。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tutorials/guide-asset.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link active" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tutorials/">教程</a> / <span>游戏素材与资源库选择与使用总览</span></nav>
+<article class="article tutorial-article">
+  <header class="article-head">
+    <div class="news-card-meta"><span class="tag tag-imp">素材与资源库</span><span>AI 撰写</span><span>更新于 2026-10-25</span></div>
+    <h1>游戏素材与资源库选择与使用总览</h1>
+    <p class="lead">“素材与资源库”覆盖模型、贴图、像素图、音效、UI及引擎插件，帮助开发者降低美术、音频和工具制作成本。挑选时应先看授权条款、格式兼容性与资源风格，再结合用途选择通用库、专业市场或创作者平台；同时核对商用、署名、修改和再分发限制。</p>
+    
+  </header>
+  <div class="article-body">
+      <section class="guide-section-block"><h3>按制作阶段建立资源路线</h3><p>原型阶段可优先使用 Kenney、CraftPix、Quaternius 和 Pixabay，快速拼出可玩的场景、角色与界面。其优势是分类清晰、下载方便，适合验证玩法，不必在早期投入大量自绘或建模时间。</p><p>正式制作阶段再转向 Poly Haven、ambientCG、Fab 或 GameDev Market，重点比较细节完成度、统一风格、源文件与可编辑性。资源库解决的是采购和起步问题，无法替代原创美术方向与质量把控。</p></section><section class="guide-section-block"><h3>三维模型与材质的选择逻辑</h3><p>Sketchfab 适合浏览创作者模型并通过网页 AR 展示真实作品，选购前应确认下载格式、面数、贴图组织和许可；Fab 更适合集中采购商业资产，并关注平台条款及所含工具的适用范围。</p><p>Poly Haven 与 ambientCG 以 CC0 模型、贴图和 HDRI 为主，适合环境搭建与光照；Quaternius 提供轻量低模，适合原型和风格化场景。使用前要核对单位、轴向、命名、材质通道及引擎导入设置。</p></section><section class="guide-section-block"><h3>二维、像素与通用多媒体素材</h3><p>CraftPix 面向像素游戏和 2D 原型，适合角色、地图、特效及界面套件；OpenGameArt 和 Pixabay 则适合补充通用图像、音乐、视频或音效。成套资源能提高视觉一致性，但购买前应确认包含的动画、变体和源文件。</p><p>不要仅凭预览图判断可用性，应检查分辨率、透明度、切片方式、像素尺寸与动画帧率。对于商业项目，还要区分免费、付费、个人授权和商业授权，避免把“可下载”误认为“可任意使用”。</p></section><section class="guide-section-block"><h3>音效、音乐与专业音频包</h3><p>Freesound 适合按关键词搜索和试听社区音效，Zapsplat 则提供更细的分类、情绪和风格筛选。下载前应检查时长、采样率、声道、循环点及文件格式，避免后期发现噪声或无法无缝播放。</p><p>Sonniss GDC 音效包适合查找高品质游戏声音，itch.io 也常有独立创作者出售音频。正式项目中要留意授权是否允许商业发行，明确是否需要署名、是否限制再分发，并保留下载时的许可凭证。</p></section><section class="guide-section-block"><h3>插件市场与引擎生态</h3><p>Unity Asset Store 和 Fab 适合获取引擎插件、模板、模型、材质及音频资产；itch.io 更偏向独立作品交易与直接向创作者购买。Godot 精选资源列表可帮助用户发现免费插件和脚本，但需逐项核实维护状态与兼容版本。</p><p>选择插件时先看近期更新、问题反馈、文档、示例项目和源码开放程度，再比较价格。插件只是工具，导入项目后仍要验证性能、平台构建、序列化稳定性和与现有技术栈的兼容性。</p></section><section class="guide-section-block"><h3>授权审核与资产入库</h3><p>免费不等于无限制，CC0 通常允许广泛使用，而其他许可可能要求署名、禁止商用、禁止转售或限制衍生分发。团队应保存资源链接、作者、购买凭证、许可文本和下载日期，并在发布前完成一次授权复核。</p><p>建立统一资产库时，为文件添加类型、风格、引擎、版本、作者和许可字段，并保留原始包与导入后的版本。统一重命名、缩放、单位和色彩管理，可显著减少跨工具协作与后期返工。</p></section>
+    </div>
+    <div class="tips-box"><h3>✅ 落地清单</h3><ul><li>确认素材允许商业游戏使用</li><li>核对署名、修改与转售限制</li><li>检查模型格式、面数与贴图通道</li><li>匹配像素图、动画和界面分辨率</li><li>试听音效时长、噪声与循环点</li><li>验证插件版本与引擎兼容性</li><li>保存凭证并建立统一资产目录</li></ul></div>
+    <section class="detail-block"><h2>常见问题</h2><div class="faq-item"><h4>Q：免费素材可以直接用于商业游戏吗？</h4><p>不一定。CC0 通常限制较少，但其他免费资源仍可能要求署名、禁止商用或禁止转售。应以资源页面当前许可和购买时的条款为准。</p></div><div class="faq-item"><h4>Q：模型下载后还需要做哪些处理？</h4><p>通常需要检查轴向、缩放、单位、材质、法线与粗糙度通道，并在目标引擎中测试贴图和骨骼。用于正式项目时还应补充统一命名与优化。</p></div><div class="faq-item"><h4>Q：原型阶段应该优先买素材吗？</h4><p>原型阶段可先用免费资源验证玩法；进入正式制作后，再按统一风格、质量和授权要求采购。购买前应先确认长期使用范围，避免重复支出。</p></div><div class="faq-item"><h4>Q：如何判断音效是否适合项目？</h4><p>先按情绪、场景和风格筛选，再试听噪声、动态与循环点。正式使用前还需确认采样率、声道、时长及授权，并进行响度统一处理。</p></div></section>
+    <section class="detail-block"><h2>本分类工具</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/sketchfab.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(2520 56% 56%);width:40px;height:40px;font-size:15px">SK</span>
+    <div class="tool-card-info">
+      <h3>Sketchfab</h3>
+      <p>下载并预览 AI 生成的三维模型，为原型和场景制作快速补齐资产。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">三维模型</span><span class="tag">模型分享</span><span class="tag">AR 预览</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/kenney.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(55800 57% 44%);width:40px;height:40px;font-size:15px">KE</span>
+    <div class="tool-card-info">
+      <h3>Kenney 素材库</h3>
+      <p>用海量免费素材补齐 AI 游戏原型与成品资产缺口</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">免费素材</span><span class="tag">CC0</span><span class="tag">游戏原型</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/craftpix.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(74160 70% 54%);width:40px;height:40px;font-size:15px">CR</span>
+    <div class="tool-card-info">
+      <h3>CraftPix</h3>
+      <p>采购成套像素素材与游戏模板，替 AI 省去手工绘制和界面拼装。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">像素素材</span><span class="tag">2D 游戏</span><span class="tag">游戏模板</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/opengameart.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(45360 64% 48%);width:40px;height:40px;font-size:15px">OP</span>
+    <div class="tool-card-info">
+      <h3>OpenGameArt</h3>
+      <p>获取开源游戏素材，为 AI 原型补上角色、场景、音效等基础资源。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">开源素材</span><span class="tag">游戏资源</span><span class="tag">音效</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/polyhaven.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(48960 77% 56%);width:40px;height:40px;font-size:15px">PO</span>
+    <div class="tool-card-info">
+      <h3>Poly Haven</h3>
+      <p>下载高质 CC0 模型与 HDRI，为 AI 场景和渲染提供可信环境底座。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">HDRI</span><span class="tag">CC0</span><span class="tag">3D 模型</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/unity-asset-store.html" data-cat="asset" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(9720 60% 47%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>Unity 资源商店</h3>
+      <p>用 Unity 插件和资产打通 AI 产出到可交付游戏的管线</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">插件市场</span><span class="tag">项目模板</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/ambientcg.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(63360 76% 45%);width:40px;height:40px;font-size:15px">AM</span>
+    <div class="tool-card-info">
+      <h3>ambientCG</h3>
+      <p>为 AI 生成场景补齐可直接使用的 CC0 PBR 贴图资产。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">PBR 贴图</span><span class="tag">CC0</span><span class="tag">材质库</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/quaternius.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(15840 78% 52%);width:40px;height:40px;font-size:15px">QU</span>
+    <div class="tool-card-info">
+      <h3>Quaternius</h3>
+      <p>用 CC0 低模资产接住 AI 产出，快速搭出可玩游戏原型。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">低模资产</span><span class="tag">CC0</span><span class="tag">占位模型</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/freesound.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(78480 57% 56%);width:40px;height:40px;font-size:15px">FR</span>
+    <div class="tool-card-info">
+      <h3>Freesound</h3>
+      <p>为 AI 音频流程提供可检索、可复用的社区音效素材。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">音效库</span><span class="tag">社区资源</span><span class="tag">CC 授权</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/itch-io.html" data-cat="asset" data-stage="发行" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(25920 57% 54%);width:40px;height:40px;font-size:15px">IT</span>
+    <div class="tool-card-info">
+      <h3>itch.io</h3>
+      <p>用独立游戏市场承接 AI 原型的发布、试玩与反馈</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">独立游戏</span><span class="tag">素材市场</span><span class="tag">试玩发布</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gamedev-market.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(60120 72% 47%);width:40px;height:40px;font-size:15px">GA</span>
+    <div class="tool-card-info">
+      <h3>GameDev Market</h3>
+      <p>购买商用成品资产，快速完善 AI 制作的原型与游戏</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">商用素材</span><span class="tag">游戏美术</span><span class="tag">模型资源</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/fab.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(50760 58% 48%);width:40px;height:40px;font-size:15px">FA</span>
+    <div class="tool-card-info">
+      <h3>Fab（Epic 资产市场）</h3>
+      <p>为游戏项目采购并导入现成资产，快速补齐 AI 生成内容之外的制作缺口。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">UE 资产</span><span class="tag">模型素材</span><span class="tag">动画资源</span></div>
+</a></div></section>
+  
+</article>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

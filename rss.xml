@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>游戏工具集 · AI 游戏快讯</title>
+    <link>https://365977438.github.io/game-tool-hub/news/</link>
+    <description>游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</description>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 31 Oct 2026 17:39:39 GMT</lastBuildDate>
+    <item>
+      <title><![CDATA[Anthropic 调整 Claude，减少用户克隆游戏的生成请求]]></title>
+      <link><![CDATA[https://www.pcgamer.com/gaming-industry/anthropic-updates-claude-to-steer-it-away-from-letting-users-clone-games-following-weeks-of-steam-being-inundated-with-ai-slop/]]></link>
+      <guid isPermaLink="false">n-66264ac0</guid>
+      <pubDate>Sat, 31 Oct 2026 15:23:04 GMT</pubDate>
+      <description><![CDATA[PC Gamer 报道，Anthropic 更新 Claude 的使用策略，引导用户避免直接克隆其他游戏。背景是 Steam 连续数周出现大量疑似 AI 生成的垃圾内容，这不仅关系到模型工具的边界，也提醒开发者评估 AI 辅助制作时必须面对版权、平台审核与作品同质化风险。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">PC Gamer</source>
+    </item>
+    <item>
+      <title><![CDATA[Claude Opus 5.5 被限制复刻现有游戏]]></title>
+      <link><![CDATA[https://www.ithome.com/1/020/471.htm]]></link>
+      <guid isPermaLink="false">n-ac4f5f11</guid>
+      <pubDate>Sat, 31 Oct 2026 06:26:18 GMT</pubDate>
+      <description><![CDATA[Anthropic 在 Claude Code 的 Opus 5.5 提示词中加入不可关闭的引导规则，禁止模型复刻特定现有游戏；原创游戏、类型化游戏以及基于用户自有设计和素材的开发仍被允许。这将直接影响开发者使用 AI 编程工具进行游戏原型和功能实现时的合规边界。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[Roblox 称 AI 推动游戏内容爆发，5 个月上线近 7 万款]]></title>
+      <link><![CDATA[https://www.pcgamer.com/software/ai/ai-powered-game-development-is-leading-to-an-explosion-of-content-roblox-says-as-it-brags-about-70-000-games-published-on-its-platform-in-the-last-5-months-alone/]]></link>
+      <guid isPermaLink="false">n-731d3355</guid>
+      <pubDate>Fri, 30 Oct 2026 20:39:57 GMT</pubDate>
+      <description><![CDATA[Roblox 表示，AI 辅助开发正在带来游戏内容的显著增长，其平台近五个月已发布约 7 万款游戏。这一数据把 AI 从单点提效工具推向规模化生产阶段，也令内容质量、审核与同质化问题更受关注。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">PC Gamer</source>
+    </item>
+    <item>
+      <title><![CDATA[10人用AI开发两年，《麦琪的花园》进入市场]]></title>
+      <link><![CDATA[https://www.youxituoluo.com/535013.html]]></link>
+      <guid isPermaLink="false">n-da778d94</guid>
+      <pubDate>Fri, 30 Oct 2026 14:22:27 GMT</pubDate>
+      <description><![CDATA[AutoGame团队以约10人开发《麦琪的花园》两年，将AI生成能力嵌入角色、任务、关卡与道具循环。制作人称，不用AI项目可能需要6年，也坦言更复杂的生成玩法和内容组织仍待突破。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">游戏陀螺</source>
+    </item>
+    <item>
+      <title><![CDATA[Helldivers 2 创意负责人设想生成式 AI 讽刺游戏]]></title>
+      <link><![CDATA[https://www.rockpapershotgun.com/helldivers-2-boss-can-absolutely-see-making-a-game-parody-of-generative-ai-but-it-would-need-to-be-quirky-rather-than-doom-laden]]></link>
+      <guid isPermaLink="false">n-baf19449</guid>
+      <pubDate>Fri, 30 Oct 2026 12:58:41 GMT</pubDate>
+      <description><![CDATA[Arrowhead 首席创意官 Johan Pilestedt 表示，工作室完全可能开发一款讽刺生成式 AI 的游戏，但不会归入《Helldivers》系列，而会采用古怪、有趣而非末日式的表达。这一设想把生成式 AI 从制作工具进一步延伸为游戏题材，也提醒开发者关注其文化挪用与叙事包装。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">Rock Paper Shotgun</source>
+    </item>
+    <item>
+      <title><![CDATA[Ramen 发布 Aura Autopilot 开源自主游戏测试代理]]></title>
+      <link><![CDATA[https://gamesbeat.com/ramen-launches-aura-autopilot-an-open-source-autonomous-game-tester/]]></link>
+      <guid isPermaLink="false">n-a8fde85a</guid>
+      <pubDate>Fri, 30 Oct 2026 12:15:00 GMT</pubDate>
+      <description><![CDATA[Ramen 推出 Aura Autopilot，一款面向 Unreal Engine、Unity 与 Godot 的开源自主游戏测试代理。它可作为智能体参与游戏试玩，为开发者增加一种自动化测试路径，有望减少重复试玩与缺陷发现成本，也使多引擎项目更容易接入 AI 辅助工作流。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">GamesBeat</source>
+    </item>
+    <item>
+      <title><![CDATA[AI 游戏泛滥，Steam 等商店面临“Slop Grenade”难题]]></title>
+      <link><![CDATA[https://www.gamesindustry.biz/gaming-storefronts-are-facing-a-slop-grenade-problem-opinion]]></link>
+      <guid isPermaLink="false">n-f926099c</guid>
+      <pubDate>Fri, 30 Oct 2026 12:00:00 GMT</pubDate>
+      <description><![CDATA[GamesIndustry.biz 刊发观点文章称，玩家与开发者都不喜欢 AI 批量生成的游戏，但数字商店缺乏足够机制应对内容洪流。对独立开发者而言，商店若缺乏透明披露与质量筛选，AI 量产可能进一步挤压人工游戏的曝光和生存空间。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">GamesIndustry.biz</source>
+    </item>
+    <item>
+      <title><![CDATA[Reddit 将转向仅登录体验，AI 相关细则仍待确定]]></title>
+      <link><![CDATA[https://www.pcgamer.com/software/ai/reddit-will-switch-to-a-logged-in-only-experience/]]></link>
+      <guid isPermaLink="false">n-20f2e792</guid>
+      <pubDate>Thu, 29 Oct 2026 23:58:10 GMT</pubDate>
+      <description><![CDATA[Reddit 宣布将切换为“仅登录体验”，并明确表示此举与 AI 有关，但具体规则仍在确定中。对游戏团队而言，这不是新的 AI 制作工具，却可能改变社区调研、舆情观察与公开内容获取的路径。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">PC Gamer</source>
+    </item>
+    <item>
+      <title><![CDATA[Xsolla 收购 GamePix，瞄准网页与 AI 生成游戏平台]]></title>
+      <link><![CDATA[https://gamesbeat.com/xsolla-acquires-gamepix-to-build-platform-for-web-and-ai-created-games/]]></link>
+      <guid isPermaLink="false">n-df97a39f</guid>
+      <pubDate>Thu, 29 Oct 2026 22:35:00 GMT</pubDate>
+      <description><![CDATA[全球商业服务公司 Xsolla 收购网页游戏平台 GamePix，计划围绕浏览器游戏及 AI 生成游戏建设平台。交易把内容分发与商业化能力进一步接入 AI 创作生态，为开发者从生成内容到上线变现提供新的基础设施入口。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">GamesBeat</source>
+    </item>
+    <item>
+      <title><![CDATA[Roblox：头部百款游戏中逾八成已用 AI 加速创作]]></title>
+      <link><![CDATA[https://gamesbeat.com/roblox-says-more-than-80-of-its-top-100-games-used-ai-to-accelerate-creation/]]></link>
+      <guid isPermaLink="false">n-2a3433ce</guid>
+      <pubDate>Thu, 29 Oct 2026 20:10:00 GMT</pubDate>
+      <description><![CDATA[Roblox 在财报中披露，按游玩时长计算，其最受欢迎的 100 款游戏中，超过 80% 已使用 AI 加速游戏创作。这表明 AI 已从试验性工具进入头部作品的实际制作流程，但摘要未披露具体用途、采用方式与效率数据。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">GamesBeat</source>
+    </item>
+    <item>
+      <title><![CDATA[Studio Atelico 推出可在游戏内本地运行的 AI 引擎]]></title>
+      <link><![CDATA[https://gamesbeat.com/studio-atelico-launches-ai-engine-built-to-run-on-device-inside-games/]]></link>
+      <guid isPermaLink="false">n-3e57880b</guid>
+      <pubDate>Thu, 29 Oct 2026 17:00:00 GMT</pubDate>
+      <description><![CDATA[Studio Atelico 宣布 Atelico AI Engine 开放抢先体验，这是一款面向游戏场景、强调在设备端运行的 AI 引擎。它把模型能力直接置于游戏运行环境，为开发者探索低延迟、端侧 AI 交互提供了新的基础设施选择。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">GamesBeat</source>
+    </item>
+    <item>
+      <title><![CDATA[《逃离塔科夫》1.3.0.0 更新加入高难度 AI PMC 与万圣节活动]]></title>
+      <link><![CDATA[https://store.steampowered.com/news/app/3932890/view/719046160957833874]]></link>
+      <guid isPermaLink="false">n-528298f5</guid>
+      <pubDate>Thu, 29 Oct 2026 16:56:30 GMT</pubDate>
+      <description><![CDATA[《逃离塔科夫》1.3.0.0 更新加入万圣节活动、秋季场景和高难度 AI PMC，后者会出现在高等级地图的 PvE 区域。对游戏开发者而言，这是观察 AI 敌对单位、关卡节奏与赛季成长如何配合的一次具体更新。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">Steam 新闻</source>
+    </item>
+    <item>
+      <title><![CDATA[Valve 承认 AI 克隆游戏泛滥，但不限制开发者使用工具]]></title>
+      <link><![CDATA[https://gameworldobserver.com/2026/10/29/valve-acknowledges-ai-clones-issue-but-has-no-intend-to-restrict-developers]]></link>
+      <guid isPermaLink="false">n-3b84c4ae</guid>
+      <pubDate>Thu, 29 Oct 2026 15:04:20 GMT</pubDate>
+      <description><![CDATA[Valve 表示，生成式 AI 正在加剧 Steam 上的游戏克隆与低质量内容问题，但不会通过禁用特定工具或收紧发行规则解决。其建议开发者依靠社区忠诚度和难以复制的游戏价值建立防线。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">Game World Observer</source>
+    </item>
+    <item>
+      <title><![CDATA[Playgama 用真实玩家参与度评选 AI 编程智能体]]></title>
+      <link><![CDATA[https://gamesbeat.com/playgama-launches-ai-game-index-to-rank-coding-agents-by-real-player-engagement/]]></link>
+      <guid isPermaLink="false">n-47993511</guid>
+      <pubDate>Thu, 29 Oct 2026 13:00:00 GMT</pubDate>
+      <description><![CDATA[Playgama 推出 AI Game Index，以真实玩家参与度衡量不同编程智能体制作的游戏表现。数据显示，Claude Opus 构建了平台上超过一半的新 AI 制作游戏，而 OpenAI 的 Astra 制作的游戏最受玩家欢迎，为开发者选择代码智能体提供了一个面向成品质量的参考。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">GamesBeat</source>
+    </item>
+    <item>
+      <title><![CDATA[EA 员工控诉强制推行 AI 加剧士气低迷与管理问题]]></title>
+      <link><![CDATA[https://www.pcgamer.com/gaming-industry/morale-has-been-terrible-at-ea-workers-claim-saying-that-ai-mandates-and-mismanagement-have-left-the-company-a-cold-dead-place-thats-slowly-decaying-as-leadership-pilfers-every-last-cent/]]></link>
+      <guid isPermaLink="false">n-a9726ea8</guid>
+      <pubDate>Thu, 29 Oct 2026 11:47:20 GMT</pubDate>
+      <description><![CDATA[EA 员工公开批评公司强推 AI 工具，并将其与管理层决策、资源分配和裁员争议联系起来。事件显示，AI 在大型游戏公司中的落地不只关乎效率，也会直接改变员工的工作方式、岗位预期与组织信任。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">PC Gamer</source>
+    </item>
+    <item>
+      <title><![CDATA[Riot CFO谈AI投入：多产品线扩张与独立核算并行]]></title>
+      <link><![CDATA[https://www.youxituoluo.com/535006.html]]></link>
+      <guid isPermaLink="false">n-64c7a634</guid>
+      <pubDate>Thu, 29 Oct 2026 10:42:27 GMT</pubDate>
+      <description><![CDATA[Riot CFO Mark Sottosanti在访谈中介绍了公司多产品线的经营状况，并回应了AI、并购及与腾讯合作等话题。其中对游戏制作最具关联的信息，是大型厂商在扩充项目组合时，必须同时评估AI带来的开发效率变化，以及不同产品线独立核算和长期运营的需求。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">游戏陀螺</source>
+    </item>
+    <item>
+      <title><![CDATA[《Needle in a Haystack》开发者用克隆模式反击 AI 跟风]]></title>
+      <link><![CDATA[https://80.lv/articles/dev-of-viral-needle-in-a-haystack-game-finds-creative-way-to-mock-ai-clones/]]></link>
+      <guid isPermaLink="false">n-8e850f10</guid>
+      <pubDate>Thu, 29 Oct 2026 09:36:00 GMT</pubDate>
+      <description><![CDATA[病毒式独立游戏《Needle in a Haystack Simulator》的开发者 NasNakarus，针对 Steam 上不断出现的 AI 克隆作品加入寻找“正版”的创意游戏模式，以游戏表达对抄袭与自动复刻的讽刺，凸显独立开发者面临的原创性和维权压力。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">80 Level</source>
+    </item>
+    <item>
+      <title><![CDATA[《麦琪的花园》把 AI 自创伙伴接入开放世界冒险]]></title>
+      <link><![CDATA[https://www.gcores.com/articles/221620]]></link>
+      <guid isPermaLink="false">n-94469fe9</guid>
+      <pubDate>Thu, 29 Oct 2026 03:37:09 GMT</pubDate>
+      <description><![CDATA[《麦琪的花园》以 RPG、开放世界生存建造和 AI 自创角色为核心，玩家可通过文字或参考图片生成伙伴，并让其参与对话、战斗、生产、关系培养及专属剧情，展示了生成式 AI 深入游戏角色系统的产品路径。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">机核</source>
+    </item>
+    <item>
+      <title><![CDATA[Epic 将生成式 AI 深入 Fortnite 与 Unreal Engine 6]]></title>
+      <link><![CDATA[https://www.eurogamer.net/epic-genai-fortnite-unreal-engine-6-no-longer-writing-code]]></link>
+      <guid isPermaLink="false">n-88aa79f4</guid>
+      <pubDate>Wed, 28 Oct 2026 20:08:50 GMT</pubDate>
+      <description><![CDATA[Epic Games 正把生成式 AI 的应用范围扩大至 Fortnite、Unreal Engine 6 等核心产品，并称工程师已不再亲手编写大部分代码。对独立开发者与工具厂商而言，这预示着 AI 正从局部辅助工具走向引擎和研发流程底座。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">Eurogamer</source>
+    </item>
+    <item>
+      <title><![CDATA[Steam 承认 AI 粗制滥造与克隆泛滥，但拒绝限制工具]]></title>
+      <link><![CDATA[https://www.pcgamer.com/software/ai/valve-admits-steam-has-an-ai-slop-and-cloning-problem-but-says-we-dont-want-to-be-gatekeepers-telling-developers-which-tools-they-should-or-shouldnt-use/]]></link>
+      <guid isPermaLink="false">n-d434ed70</guid>
+      <pubDate>Wed, 28 Oct 2026 17:37:24 GMT</pubDate>
+      <description><![CDATA[Valve 承认 Steam Next Fest 正涌入大量低投入 AI 游戏，开发者也因作品可能被迅速克隆而不愿分享项目。平台选择不充当工具使用守门人，意味着开发者将同时面对曝光竞争、创意保护和质量识别压力。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">PC Gamer</source>
+    </item>
+    <item>
+      <title><![CDATA[Epic 详解 Claude Code 与 Codex 在游戏开发中的用法]]></title>
+      <link><![CDATA[https://www.rockpapershotgun.com/we-are-more-concerned-about-the-risks-of-moving-too-slowly-epic-get-more-specific-about-genai-use-in-unreal-engine-and-fortnite-development]]></link>
+      <guid isPermaLink="false">n-a31cb9f3</guid>
+      <pubDate>Wed, 28 Oct 2026 16:49:39 GMT</pubDate>
+      <description><![CDATA[Epic 披露正使用 Claude Code 与 Codex 协助开发，并承认存在“vibe coding”。案例包括减少长期困扰团队的随机烹饪 Bug，以及加速着色器压缩工作，显示生成式 AI 已进入引擎研发和 Fortnite 制作环节。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">Rock Paper Shotgun</source>
+    </item>
+    <item>
+      <title><![CDATA[Steam 新品节前两天随机推荐，AI 垃圾游戏争议再起]]></title>
+      <link><![CDATA[https://www.ithome.com/1/019/227.htm]]></link>
+      <guid isPermaLink="false">n-c726cb44</guid>
+      <pubDate>Wed, 28 Oct 2026 15:24:06 GMT</pubDate>
+      <description><![CDATA[Valve 解释称，Steam 新品节开始两天内采用纯随机推荐，第三天才启用个性化算法，以保障开发者公平曝光。随机机制也使低质量与疑似“AI 垃圾”游戏获得同等展示机会，开发者需要正视作品辨识度和制作质量。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[NVIDIA RTX Spark 升级本地 AI 模型、智能体与游戏支持]]></title>
+      <link><![CDATA[https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/]]></link>
+      <guid isPermaLink="false">n-d32b2f4f</guid>
+      <pubDate>Wed, 28 Oct 2026 15:00:46 GMT</pubDate>
+      <description><![CDATA[NVIDIA 公布 RTX Spark Windows 笔记本的新型号与软件更新，陆续加入 Nemotron 3.5 Transcribe、LFM3、OpenShell、Switchyard 等本地 AI 与智能体能力，同时支持《Phantom Blade Zero》的 DLSS 4.5。这让开发者与创作者能在便携设备上并行运行创作工具、后台智能体和游戏。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">NVIDIA Blog</source>
+    </item>
+    <item>
+      <title><![CDATA[Valve 回应 Steam AI 克隆游戏问题：建议开发者降低可复制性]]></title>
+      <link><![CDATA[https://www.eurogamer.net/steam-ai-clone-game-problem-valve-response]]></link>
+      <guid isPermaLink="false">n-2e273dcb</guid>
+      <pubDate>Wed, 28 Oct 2026 14:43:53 GMT</pubDate>
+      <description><![CDATA[面对 Steam 上利用生成式 AI 制作相似游戏并销售的现象，Valve 没有承诺直接清理相关产品，而是把应对责任更多交给开发者，强调让作品更难被复制。这一回应凸显 AI 降低制作门槛后，创意、机制和版权保护面临的新压力。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">Eurogamer</source>
+    </item>
+    <item>
+      <title><![CDATA[Epic 确认用 AI 工具开发 Unreal Engine 6 与 Fortnite]]></title>
+      <link><![CDATA[https://www.pcgamer.com/software/ai/yes-we-are-vibe-coding-things-epic-confirms-its-using-ai-tools-to-code-unreal-engine-6-fortnite-and-more/]]></link>
+      <guid isPermaLink="false">n-95b88566</guid>
+      <pubDate>Wed, 28 Oct 2026 13:58:17 GMT</pubDate>
+      <description><![CDATA[Epic Games 确认正在使用 AI 工具辅助代码开发，覆盖 Unreal Engine 6、Fortnite 等项目，并公开谈论“vibe coding”。对独立开发者与工具厂商而言，这意味着 AI 正从外围辅助进入引擎和大型游戏的核心生产流程。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">PC Gamer</source>
+    </item>
+    <item>
+      <title><![CDATA[Epic将允许用虚幻引擎与MetaHuman输出训练AI]]></title>
+      <link><![CDATA[https://www.gcores.com/articles/221590]]></link>
+      <guid isPermaLink="false">n-7af2b345</guid>
+      <pubDate>Wed, 28 Oct 2026 11:07:23 GMT</pubDate>
+      <description><![CDATA[Epic首席执行官蒂姆·斯威尼宣布，公司将修改最终用户许可协议，允许开发者使用虚幻引擎和MetaHuman的输出训练人工智能；各游戏开发者仍可自行决定是否允许AI使用自家作品训练。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">机核</source>
+    </item>
+    <item>
+      <title><![CDATA[米哈游押注AI管线，游戏公司财富逻辑正在改变]]></title>
+      <link><![CDATA[https://www.youxituoluo.com/535001.html]]></link>
+      <guid isPermaLink="false">n-51d8c443</guid>
+      <pubDate>Wed, 28 Oct 2026 10:27:03 GMT</pubDate>
+      <description><![CDATA[胡润百富榜显示，米哈游三位创始人财富合计逼近2650亿元，增幅均超过55%。报道将其增长与公司在AI管线、国产大模型及衍生生态上的布局联系起来。对游戏从业者而言，这反映出AI已不再只是降本工具，也开始影响内容公司的估值预期与业务边界。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">游戏陀螺</source>
+    </item>
+    <item>
+      <title><![CDATA[Square Enix 老将：开发者需掌握 AI，人工创意仍不可替代]]></title>
+      <link><![CDATA[https://www.pcgamer.com/gaming-industry/game-development/square-enix-vets-say-devs-of-the-future-will-need-to-master-the-use-of-ai-but-the-human-touch-will-still-be-vital/]]></link>
+      <guid isPermaLink="false">n-93b763c5</guid>
+      <pubDate>Tue, 27 Oct 2026 15:15:52 GMT</pubDate>
+      <description><![CDATA[Square Enix 老将认为，未来游戏开发者需要掌握 AI 的使用，同时人的参与仍不可或缺，尤其是在把想法从零变成一的第一阶段。这条表态直接触及 AI 辅助游戏开发中效率与创意如何分工的问题。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">PC Gamer</source>
+    </item>
+    <item>
+      <title><![CDATA[宫本茂谈生成式 AI：效率提升不等于创意诞生]]></title>
+      <link><![CDATA[https://gamesbeat.com/shigeru-miyamoto-weighs-in-on-ai-and-the-difference-between-productivity-and-creativity/]]></link>
+      <guid isPermaLink="false">n-5d919a63</guid>
+      <pubDate>Tue, 27 Oct 2026 14:44:23 GMT</pubDate>
+      <description><![CDATA[Shigeru Miyamoto 就生成式 AI、生产力与创造力之间的关系发表看法，聚焦技术如何改变游戏设计，以及效率工具与原创构思之间的区别。这为开发者评估 AI 应被放在哪个制作环节提供了来自行业核心人物的观点。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">GamesBeat</source>
+    </item>
+    <item>
+      <title><![CDATA[Steam 新品节被 AI 粗制滥造内容淹没，50 款 Demo 脱颖而出]]></title>
+      <link><![CDATA[https://www.gamespot.com/articles/steam-next-fest-was-flooded-with-slop-these-50-demos-cut-through-the-noise/]]></link>
+      <guid isPermaLink="false">n-a9f9a9b8</guid>
+      <pubDate>Tue, 27 Oct 2026 14:29:19 GMT</pubDate>
+      <description><![CDATA[10 月 Steam 新品节被大量疑似借助 AI 快速制作的内容淹没，玩家筛选优质试玩版本变得困难，GameSpot 随后整理出 50 款值得关注的 Demo。事件直接暴露了 AI 降低制作门槛后，作品同质化与质量识别成本上升的问题。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">GameSpot</source>
+    </item>
+    <item>
+      <title><![CDATA[Peter Molyneux：游戏开发已很难完全不使用 AI]]></title>
+      <link><![CDATA[https://www.pcgamer.com/games/strategy/peter-molyneux-speaks-candidly-about-ai-we-as-the-industry-are-pretending-were-not-using-ai-but-the-reality-is-its-almost-impossible-to-code-now-without-using-ai/]]></link>
+      <guid isPermaLink="false">n-514babcc</guid>
+      <pubDate>Tue, 27 Oct 2026 13:30:01 GMT</pubDate>
+      <description><![CDATA[《god game》创始人 Peter Molyneux 表示，整个游戏行业仍在假装没有使用 AI，但如今编程几乎离不开 AI 辅助。这把 AI 从可选效率工具推向基础开发能力，也提醒独立开发者建立代码审查、版权与质量控制流程。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">PC Gamer</source>
+    </item>
+    <item>
+      <title><![CDATA[AI 粉丝维基错误污染游戏文化资料]]></title>
+      <link><![CDATA[https://www.eurogamer.net/ai-fan-wikis-errors-complicating-games-culture]]></link>
+      <guid isPermaLink="false">n-dd9e9af8</guid>
+      <pubDate>Tue, 27 Oct 2026 10:00:41 GMT</pubDate>
+      <description><![CDATA[Eurogamer 发现，部分由 AI 驱动的粉丝维基看似内容丰富，却混入不存在的角色、技能、影视资料和无关来源，还限制用户直接编辑。对游戏开发者而言，这类站点可能污染世界观资料与市场调研，验证来源已成为内容工作流中的必要环节。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">Eurogamer</source>
+    </item>
+    <item>
+      <title><![CDATA[3D高斯泼溅进入皮克斯流程，游戏场景采集有了新路径]]></title>
+      <link><![CDATA[https://www.qbitai.com/2026/10/505830.html]]></link>
+      <guid isPermaLink="false">n-8ec5f6e8</guid>
+      <pubDate>Tue, 27 Oct 2026 09:54:51 GMT</pubDate>
+      <description><![CDATA[皮克斯在官方3D渲染教程中采用禾赛Kosmo采集真实场景，并以3D高斯泼溅数据接入RenderMan。素材显示，该方案能在较短采集时间内保留几何、色彩与光照信息，也可用于AI训练和机器人任务构建。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">量子位</source>
+    </item>
+    <item>
+      <title><![CDATA[Steam 新游试玩榜：50 款中仅 4 款披露使用 AI]]></title>
+      <link><![CDATA[https://www.pcgamer.com/software/platforms/the-50-most-played-steam-next-fest-demos-include-7-incremental-games-4-ai-disclosures-and-only-one-instance-of-haystack-slop/]]></link>
+      <guid isPermaLink="false">n-f6fbde0e</guid>
+      <pubDate>Tue, 27 Oct 2026 00:18:15 GMT</pubDate>
+      <description><![CDATA[PC Gamer 统计的 Steam Next Fest 最热门 50 款试玩中，有 7 款增量游戏、4 款披露使用 AI，仅出现 1 款被批评为“干草堆垃圾”的作品。这表明 AI 尚未主导试玩阵容，但披露方式、生成质量与玩家反馈已开始影响作品曝光和制作策略。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">PC Gamer</source>
+    </item>
+    <item>
+      <title><![CDATA[Epic CEO 称 Steam 的 AI 披露政策是一场“政治行动”]]></title>
+      <link><![CDATA[https://www.gamesindustry.biz/epic-games-ceo-calls-steams-ai-disclosure-policies-a-political-act]]></link>
+      <guid isPermaLink="false">n-4ffc07e6</guid>
+      <pubDate>Mon, 26 Oct 2026 19:54:19 GMT</pubDate>
+      <description><![CDATA[Epic Games CEO Tim Sweeney 再次批评 Steam 的 AI 披露政策，称强制开发者作出披露是一项“政治行动”。争议核心不是 AI 能否进入制作流程，而是平台如何要求开发者解释工具使用，以及这些披露可能被玩家社区如何解读。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">GamesIndustry.biz</source>
+    </item>
+    <item>
+      <title><![CDATA[Microsoft 面向 6 万名员工推出自愿退出计划]]></title>
+      <link><![CDATA[https://www.eurogamer.net/xbox-ai-microsoft-voluntary-exit-offer-60000]]></link>
+      <guid isPermaLink="false">n-64caae56</guid>
+      <pubDate>Mon, 26 Oct 2026 18:44:22 GMT</pubDate>
+      <description><![CDATA[在 Xbox 大规模裁员及 Microsoft 持续加码 AI 投资的背景下，公司向最多 6 万名员工提供自愿退出选项。对游戏行业而言，这一组织变化意味着 AI 投资可能与岗位结构调整同时推进，开发团队需要关注人才流动、团队重组和项目资源分配。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">Eurogamer</source>
+    </item>
+    <item>
+      <title><![CDATA[Epic CEO 质疑 Steam 的生成式 AI 披露制度]]></title>
+      <link><![CDATA[https://www.rockpapershotgun.com/steams-ai-disclosures-are-akin-to-forcing-developers-to-list-their-voting-history-says-man-who-must-hate-seeing-eggs-virtue-signal-that-theyre-free-range]]></link>
+      <guid isPermaLink="false">n-c51af597</guid>
+      <pubDate>Mon, 26 Oct 2026 17:03:44 GMT</pubDate>
+      <description><![CDATA[Steam 要求使用生成式 AI 制作的游戏在商店页面披露相关信息，Epic CEO Tim Sweeney 将其比作强制开发者公开政治立场。争议不只关乎透明度，也直接关系到独立开发者如何说明 AI 参与制作、应对玩家质疑及维护商店信誉。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">Rock Paper Shotgun</source>
+    </item>
+    <item>
+      <title><![CDATA[Sam Altman 称 AI 将迫使软件安全转向新防御模型]]></title>
+      <link><![CDATA[https://www.pcgamer.com/software/ai/i-no-longer-think-were-going-to-be-able-to-patch-all-bugs-says-ai-pandoras-box-opener-sam-altman-were-going-to-have-to-completely-switch-the-defense-model/]]></link>
+      <guid isPermaLink="false">n-10772249</guid>
+      <pubDate>Mon, 26 Oct 2026 15:24:27 GMT</pubDate>
+      <description><![CDATA[Sam Altman 表示，AI 带来的风险扩张可能使行业无法继续依靠逐个修补漏洞来保障软件安全，需要全面转向新的防御模型。虽然讨论聚焦通用软件安全，但这一判断直接关系到使用 AI 生成代码的团队如何审查依赖、验证逻辑与持续维护游戏。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">PC Gamer</source>
+    </item>
+    <item>
+      <title><![CDATA[腾讯、叠纸与京东加码游戏，AI版权争议同步升温]]></title>
+      <link><![CDATA[https://www.youxituoluo.com/534995.html]]></link>
+      <guid isPermaLink="false">n-870d0233</guid>
+      <pubDate>Mon, 26 Oct 2026 15:13:30 GMT</pubDate>
+      <description><![CDATA[腾讯公布新游、叠纸成立机器人公司、京东全资布局游戏业务，产业资本继续寻找新增长点。同期，《针影裁梦》主创公开质疑AI训练对创作者劳动成果的侵占，显示降本工具与版权边界已成为制作端必须正面处理的问题。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">游戏陀螺</source>
+    </item>
+    <item>
+      <title><![CDATA[UGC 平台转向 AI 工具，让普通玩家成为游戏创作者]]></title>
+      <link><![CDATA[https://gamesbeat.com/ugc-platforms-are-turning-to-ai-to-make-game-developers-out-of-everyday-players/]]></link>
+      <guid isPermaLink="false">n-39e8a443</guid>
+      <pubDate>Mon, 26 Oct 2026 12:00:00 GMT</pubDate>
+      <description><![CDATA[UGC 平台正越来越多地引入 AI 工具，试图把游戏开发从专业人员能力扩展到普通玩家。对独立开发者与工具厂商而言，AI 不再只是后台提效手段，也可能成为降低创作门槛、扩大用户创作供给的产品入口。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">GamesBeat</source>
+    </item>
+  </channel>
+</rss>

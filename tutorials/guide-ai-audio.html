@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 游戏音频与配音全流程指南 - 游戏工具集</title>
+<meta name="description" content="本分类覆盖配乐、音效、角色对白、声音克隆与后期清理，帮助团队从需求规格、生成草稿、角色音色训练到交付母带建立完整声音流水线。选型时优先匹配语言与音色控制、批量能力、授权条款、离线部署及游戏引擎格式需求，并保留人工验收环节。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tutorials/guide-ai-audio.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI 游戏音频与配音全流程指南 - 游戏工具集">
+<meta property="og:description" content="本分类覆盖配乐、音效、角色对白、声音克隆与后期清理，帮助团队从需求规格、生成草稿、角色音色训练到交付母带建立完整声音流水线。选型时优先匹配语言与音色控制、批量能力、授权条款、离线部署及游戏引擎格式需求，并保留人工验收环节。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tutorials/guide-ai-audio.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link active" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tutorials/">教程</a> / <span>AI 游戏音频与配音全流程指南</span></nav>
+<article class="article tutorial-article">
+  <header class="article-head">
+    <div class="news-card-meta"><span class="tag tag-imp">AI 音频与配音</span><span>AI 撰写</span><span>更新于 2026-10-26</span></div>
+    <h1>AI 游戏音频与配音全流程指南</h1>
+    <p class="lead">本分类覆盖配乐、音效、角色对白、声音克隆与后期清理，帮助团队从需求规格、生成草稿、角色音色训练到交付母带建立完整声音流水线。选型时优先匹配语言与音色控制、批量能力、授权条款、离线部署及游戏引擎格式需求，并保留人工验收环节。</p>
+    
+  </header>
+  <div class="article-body">
+      <section class="guide-section-block"><h3>声音环节的任务边界与协作位置</h3><p>在 AI 游戏制作链路中，音频不是最后的装饰，而是由剧本、角色设定、场景节奏和引擎实现共同约束的生产阶段。配乐负责建立情绪与叙事主题，音效负责反馈操作与环境状态，配音则承担角色塑造、剧情推进和本地化。</p><p>开始制作前，应为每条音频写明用途、时长、情绪、空间感、循环点、响度与交付格式。若只有“生成一段酷炫音乐”这类模糊描述，工具越快，返工也会越快；先建立声音规格表，能显著减少后续筛选成本。</p><p>音频资产可与美术、叙事和程序并行推进，但关键角色声线、主题曲动机和战斗节奏应尽早定稿。它们通常会被动画、字幕、镜头时长及互动逻辑反向影响，不适合等到内容锁定后再集中制作。</p></section><section class="guide-section-block"><h3>按资产类型选择生成工具</h3><p>配乐方向可用 Melody Assistant、Stable Audio、AudioCraft、Beatoven、Suno 或 Udio：前两者适合快速形成音乐草案，AudioCraft强调可批量、可微调的开源生成，Suno与Udio擅长用描述快速铺满主题及场景。多人同时产出时，应先统一调性、速度与结构。</p><p>配音方向可按控制能力分层：Kokoro适合本地多音色草稿，CosyVoice适合零样本克隆并控制情感，GPT-SoVITS适合用少量中文样本训练固定角色，Fish Speech面向多语言克隆与本地化，ElevenLabs适合高质量角色对白和旁白。</p><p>音效与后期也有专门工具：Stable Audio可生成环境和事件声音，LALAL.AI可从完整录音中分离人声与伴奏，Kits AI负责清理、降噪和成品化，Whisper则将访谈或录音转成文字与字幕。工具应按任务拆开，而不是寻找一个包办全部工作的平台。</p></section><section class="guide-section-block"><h3>建立从样本到成品的声线流程</h3><p>克隆与微调前，应取得声音权利人的明确授权，并准备干净、时长足够、情绪覆盖自然的录音。先人工挑选样本，再执行降噪、响度统一和切分，可降低气声、爆音及背景噪声被模型一并学习的问题。</p><p>推荐流程是：Whisper转写校对语料，LALAL.AI分离杂音或提取可用片段，Kits AI清理人声，再将样本送入CosyVoice、GPT-SoVITS、Fish Speech或ElevenLabs生成对白。角色模板确定后锁定基础音色，只调整情绪、语速和停顿。</p><p>本地化项目要区分“翻译后合成”与“保留原表演情绪”。前者流程简单、成本低，适合大量普通台词；后者需要更强的跨语种韵律控制、发音词典和母语审听。批量生成后仍需由目标语言配音人员检查角色口吻与专名。</p></section><section class="guide-section-block"><h3>批量生产、节点工作流与引擎落地</h3><p>批量任务应使用结构化台词表、角色表和情绪标签管理，而不是逐条在聊天框生成。AudioCraft适合批量产出音乐与音效底稿，Fish Speech、GPT-SoVITS及Qwen3-TTS适合按角色批量制作对白；文件名、版本和失败记录应同步保留。</p><p>VibeVoice接入ComfyUI后，可将文本转语音纳入可视化工作流；Yovoice、Izwi与Qwen3-TTS C++版本适合离线或私有部署。Alexandria可把多角色有声书式生成用于长篇剧情预览，但正式游戏仍需按台词、镜头或交互节点切分。</p><p>进入引擎前，应统一采样率、声道、响度和命名规则，并测试WAV、OGG等平台要求。循环音乐要标出无缝点，音效要准备短响、长响及随机变化版本；批量生成后先做技术检查，再做听感验收，避免大量格式错误淹没在资产目录中。</p></section><section class="guide-section-block"><h3>质量验收、授权与可维护性</h3><p>声音质量不能只看单条样音。应在手机扬声器、普通耳机和游戏环境中试听，检查角色辨识度、情绪稳定性、爆音、齿音、背景残留以及台词与画面是否同步。生成模型更新后，还要用固定测试句进行回归比较。</p><p>商业项目必须核查工具的商用许可、训练数据声明、声音克隆授权范围和生成内容归属。自制模型也要记录基础模型版本、数据来源、提示词、参数及操作者，便于复现。公开人物的声线或受保护录音不应在未获授权时投入商业项目。</p><p>选型时建议用真实台词做小规模对照，而非只比较官网试听。重点观察语言覆盖、情绪控制、吞吐量、失败恢复、本地运行、接口与批处理能力，再结合授权和长期成本评分；通常保留一个主平台和一个备用平台更稳妥。</p></section>
+    </div>
+    <div class="tips-box"><h3>✅ 落地清单</h3><ul><li>梳理音乐、音效、对白及本地化需求清单</li><li>为每项资产制定情绪、时长与格式规范</li><li>取得声音克隆所需的明确书面授权</li><li>用真实角色台词完成小规模工具对照测试</li><li>建立角色音色、情绪参数与版本记录</li><li>批量生成后执行响度、爆音与同步检查</li><li>按引擎要求统一命名并导出交付母带</li><li>核查商用许可并留存完整生成记录</li></ul></div>
+    <section class="detail-block"><h2>常见问题</h2><div class="faq-item"><h4>Q：AI配音能否完全替代真人配音？</h4><p>适合占位、批量补稿和多语言初稿，但主角、关键剧情及高情绪表演通常仍需真人审听或重录，以保证角色塑造、节奏与商业品质。</p></div><div class="faq-item"><h4>Q：声音克隆是不是上传一段录音就能用？</h4><p>不能。样本应干净、时长充足且覆盖多种语调，同时必须取得授权。若追求稳定音色，微调固定角色通常比每次零样本克隆更容易维护。</p></div><div class="faq-item"><h4>Q：生成音乐后还需要传统音频后期吗？</h4><p>通常需要。生成结果往往需要剪辑、循环点处理、响度统一、降噪、频谱检查和引擎压缩，才能获得稳定且符合技术规范的交付资产。</p></div><div class="faq-item"><h4>Q：本地开源工具与商业平台如何取舍？</h4><p>本地工具重视隐私、离线运行与可定制，适合固定角色批量生产；商业平台通常效果成熟、速度快且易用，但应重点核查许可、费用和数据政策。</p></div></section>
+    <section class="detail-block"><h2>本分类工具</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/melody-assistant.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(81360 79% 49%);width:40px;height:40px;font-size:15px">ME</span>
+    <div class="tool-card-info">
+      <h3>Melody Assistant<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 辅助作曲和编曲，快速产出适配游戏场景的音乐草案。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI作曲</span><span class="tag">旋律生成</span><span class="tag">编曲辅助</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/fish-speech.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(71280 58% 57%);width:40px;height:40px;font-size:15px">FI</span>
+    <div class="tool-card-info">
+      <h3>Fish Speech<span class="badge-ai">AI 原生</span></h3>
+      <p>用多语言声音克隆生成角色对白，支撑跨语种游戏语音本地化</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">语音合成</span><span class="tag">声音克隆</span><span class="tag">多语言</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/cosyvoice.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(43200 78% 51%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>CosyVoice<span class="badge-ai">AI 原生</span></h3>
+      <p>零样本克隆角色声线并控制情感，生成自然中文游戏语音</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">中文语音</span><span class="tag">声音克隆</span><span class="tag">情感控制</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/elevenlabs.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(47880 68% 43%);width:40px;height:40px;font-size:15px">EL</span>
+    <div class="tool-card-info">
+      <h3>ElevenLabs<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 快速生成角色配音、旁白与拟真的声音素材</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI配音</span><span class="tag">声音克隆</span><span class="tag">文本转语音</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/kits-ai.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(55800 62% 48%);width:40px;height:40px;font-size:15px">KI</span>
+    <div class="tool-card-info">
+      <h3>Kits AI<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 清理人声、降噪并打磨可交付的音频成品</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">人声分离</span><span class="tag">降噪</span><span class="tag">母带处理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/lalal-ai.html" data-cat="ai-audio" data-stage="资源" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(35280 57% 50%);width:40px;height:40px;font-size:15px">LA</span>
+    <div class="tool-card-info">
+      <h3>LALAL.AI<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 拆分音乐声轨，提取角色配音和游戏循环素材</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">人声分离</span><span class="tag">乐器分离</span><span class="tag">音频分轨</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/stable-audio.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(75960 57% 46%);width:40px;height:40px;font-size:15px">ST</span>
+    <div class="tool-card-info">
+      <h3>Stable Audio<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 按情绪与场景生成音乐、音效和声音氛围</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">音乐生成</span><span class="tag">音效生成</span><span class="tag">情绪控制</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/audiocraft.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(62640 76% 57%);width:40px;height:40px;font-size:15px">AU</span>
+    <div class="tool-card-info">
+      <h3>AudioCraft<span class="badge-ai">AI 原生</span></h3>
+      <p>用开源模型批量生成游戏音乐与音效，替代手工作曲和找素材</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">音乐生成</span><span class="tag">音效生成</span><span class="tag">文本生音频</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gpt-sovits.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(26640 78% 57%);width:40px;height:40px;font-size:15px">GP</span>
+    <div class="tool-card-info">
+      <h3>GPT-SoVITS<span class="badge-ai">AI 原生</span></h3>
+      <p>用少量中文语音样本微调角色音色，批量产出游戏对白</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">声音克隆</span><span class="tag">中文配音</span><span class="tag">角色对白</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/udio.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(75600 61% 51%);width:40px;height:40px;font-size:15px">UD</span>
+    <div class="tool-card-info">
+      <h3>Udio<span class="badge-ai">AI 原生</span></h3>
+      <p>用AI生成游戏音乐与音效，快速补齐听觉素材。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI音乐</span><span class="tag">游戏音频</span><span class="tag">旋律生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/kokoro.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(17280 71% 45%);width:40px;height:40px;font-size:15px">KO</span>
+    <div class="tool-card-info">
+      <h3>Kokoro TTS<span class="badge-ai">AI 原生</span></h3>
+      <p>本地把文本转成多音色语音，快速补齐游戏角色配音草稿</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">语音合成</span><span class="tag">本地运行</span><span class="tag">多音色</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/whisper.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(86040 70% 49%);width:40px;height:40px;font-size:15px">WH</span>
+    <div class="tool-card-info">
+      <h3>Whisper<span class="badge-ai">AI 原生</span></h3>
+      <p>把录音转成文字和字幕，自动整理游戏访谈与配音素材</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">语音识别</span><span class="tag">自动字幕</span><span class="tag">多语言</span></div>
+</a></div></section>
+  
+</article>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

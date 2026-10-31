@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3DFuse 入门：生成首个三维一致模型 - 游戏工具集</title>
+<meta name="description" content="面向游戏开发者，演示如何安装 3DFuse、用文本生成三维资产，并将结果导出到 Blender 等资产管线。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tutorials/tut-gh-3dfuse.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="3DFuse 入门：生成首个三维一致模型 - 游戏工具集">
+<meta property="og:description" content="面向游戏开发者，演示如何安装 3DFuse、用文本生成三维资产，并将结果导出到 Blender 等资产管线。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tutorials/tut-gh-3dfuse.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link active" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tutorials/">教程</a> / <span>3DFuse 入门：生成首个三维一致模型</span></nav>
+<article class="article tutorial-article">
+  <header class="article-head">
+    <div class="news-card-meta"><span class="tag tag-imp">AI 三维与动画</span><span>AI 撰写</span><span>更新于 2026-10-26</span></div>
+    <h1>3DFuse 入门：生成首个三维一致模型</h1>
+    <p class="lead">面向游戏开发者，演示如何安装 3DFuse、用文本生成三维资产，并将结果导出到 Blender 等资产管线。</p>
+    <div class="article-tools"><span>关联工具</span><a href="/game-tool-hub/tools/gh-3dfuse.html"><span class="logo-badge" style="--logo-bg:hsl(72720 67% 44%);width:28px;height:28px;font-size:11px">3D</span>3DFuse</a><a class="btn btn-ghost btn-sm" href="https://github.com/cvlab-kaist/3DFuse" target="_blank" rel="noopener nofollow">官网 ↗</a></div>
+  </header>
+  <div class="tut-meta-line"><span class="badge">高级</span><span>⏱ 约 60 分钟</span><span>🎯 获得可导入引擎的三维资产</span></div>
+    <ol class="step-list">
+      <li class="step"><div class="step-no">1</div><div><h4>准备环境与权重</h4><p>克隆 GitHub 仓库，阅读 README 的安装说明；创建 Python 虚拟环境，按依赖文件安装 PyTorch 等组件，并下载论文官方模型权重。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>检查显卡与运行条件</h4><p>确认 NVIDIA GPU、CUDA 和显存满足仓库要求；在终端运行示例脚本的帮助命令，核对参数名称、模型路径及输出目录。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>编写文本生成配置</h4><p>复制示例配置文件，填入模型权重路径、输出路径和随机种子；将提示词改为适合游戏资产的具体描述，如低模盔甲、外形和材质。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>启动三维生成</h4><p>运行 README 指定的推理命令，先用单次采样生成结果；观察终端日志，若速度慢或显存不足，优先降低分辨率或批大小。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>检查并整理模型</h4><p>在输出目录查看网格与预览图，检查三角面、法线、贴图及多视图一致性；使用 Blender 导入模型，修正尺度、坐标轴和材质。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>接入游戏资产管线</h4><p>将网格导出为 GLB 或 FBX，保留 PBR 贴图并压缩面数；放入引擎资源目录，设置碰撞、命名和 LOD，再验证加载效果。</p></div></li>
+    </ol>
+    <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>提示词同时约束形状、风格与用途</li><li>固定随机种子便于对比参数</li><li>先跑低分辨率再提高质量</li><li>统一单位、轴向和材质命名</li></ul></div>
+    <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>忽略官方依赖版本会导致推理失败</li><li>生成网格面数过高会拖慢引擎</li></ul></div>
+  <section class="detail-block"><h2>相关工具</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/trellis.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(7200 58% 50%);width:40px;height:40px;font-size:15px">TR</span>
+    <div class="tool-card-info">
+      <h3>TRELLIS<span class="badge-ai">AI 原生</span></h3>
+      <p>把单张游戏概念图快速转成可编辑三维资产</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">图生三维</span><span class="tag">模型生成</span><span class="tag">动画生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/hunyuan3d.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(11880 57% 49%);width:40px;height:40px;font-size:15px">3D</span>
+    <div class="tool-card-info">
+      <h3>腾讯混元 3D<span class="badge-ai">AI 原生</span></h3>
+      <p>从文字或图片生成可编辑三维资产，快速补齐游戏原型所需模型。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI 3D</span><span class="tag">三维生成</span><span class="tag">游戏美术</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/hyper3d-rodin.html" data-cat="ai-3d" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(68760 73% 47%);width:40px;height:40px;font-size:15px">HY</span>
+    <div class="tool-card-info">
+      <h3>Hyper3D Rodin<span class="badge-ai">AI 原生</span></h3>
+      <p>从文字或图片生成可编辑的游戏三维模型。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">三维生成</span><span class="tag">游戏资产</span><span class="tag">自动拓扑</span></div>
+</a></div></section>
+</article>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

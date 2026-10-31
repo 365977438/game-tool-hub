@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpusClip - AI 视频与宣传 - 游戏工具集</title>
+<meta name="description" content="用 AI 从长视频提取精彩片段，生成多平台游戏短视频。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tools/opus-clip.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="OpusClip - AI 视频与宣传 - 游戏工具集">
+<meta property="og:description" content="用 AI 从长视频提取精彩片段，生成多平台游戏短视频。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tools/opus-clip.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link active" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tools/">工具集</a> / <a href="/game-tool-hub/categories/ai-video.html">AI 视频与宣传</a> / <span>OpusClip</span></nav>
+<article class="detail">
+  <header class="detail-head">
+    <span class="logo-badge" style="--logo-bg:hsl(31320 58% 56%);width:64px;height:64px;font-size:24px">OP</span>
+    <div class="detail-title">
+      <h1>OpusClip</h1>
+      <p class="detail-summary">用 AI 从长视频提取精彩片段，生成多平台游戏短视频。</p>
+      <div class="detail-tags"><span class="tag">AI 切片</span><span class="tag">短视频</span><span class="tag">字幕生成</span><span class="tag">社媒宣发</span><span class="tag">长转短</span></div>
+    </div>
+    <div class="detail-cta">
+      <a class="btn btn-primary" href="https://www.opus.pro" target="_blank" rel="noopener nofollow">访问官网 ↗</a>
+      <a class="btn btn-ghost" href="/game-tool-hub/tutorials/tut-opus-clip.html">阅读教程</a>
+    </div>
+  </header>
+  <div class="meta-grid">
+    <div><span>所属分类</span><strong><a href="/game-tool-hub/categories/ai-video.html">🎬 AI 视频与宣传</a></strong></div>
+    <div><span>创作阶段</span><strong>🎬 宣传</strong></div>
+    <div><span>工具类型</span><strong>⚡ AI 原生工具</strong></div>
+    <div><span>支持平台</span><strong>Web</strong></div>
+    <div><span>价格模式</span><strong>免费额度 + 订阅</strong></div>
+    <div><span>适合人群</span><strong>游戏宣发、内容运营、直播运营与社交媒体团队</strong></div>
+    <div><span>官网链接</span><strong class="link-status ok">● 正常</strong></div>
+    <div><span>资料更新</span><strong>2026-11-01</strong></div>
+  </div>
+  <section class="detail-block ai-role-block">
+    <h2>🧠 在 AI 创作链路中的位置</h2>
+    <p class="lead">自动拆解 AI 或实机长视频，快速产出多平台短视频素材。</p>
+    <p class="muted small">所属阶段：🎬 宣传 · AI 原生工具，直接用生成能力做生产</p>
+  </section>
+  <section class="detail-block">
+    <h2>工具介绍</h2>
+    <p class="lead">OpusClip 通过 AI 识别长视频中的高光片段，自动切分并生成适合短视频的版本，还可添加字幕、画面重构与传播建议。适合把游戏直播、发布会和实机录像转成社媒内容，但成片仍需人工核对语境与品牌规范。</p>
+  </section>
+  <section class="detail-block"><h2>核心能力</h2><ul class="feature-list"><li>AI 识别视频高光</li><li>自动切分精彩片段</li><li>智能生成字幕</li><li>重构竖屏画面布局</li><li>批量适配社媒比例</li></ul></section>
+  <div class="two-col">
+    <section class="detail-block"><h2>👍 优点</h2><ul class="plus-list"><li>显著缩短切片制作时间</li><li>适合快速测试社媒内容</li></ul></section>
+    <section class="detail-block"><h2>⚠️ 局限</h2><ul class="minus-list"><li>免费版额度和功能受限</li><li>自动切片可能偏离叙事重点</li></ul></section>
+  </div>
+  <section class="detail-block"><h2>典型使用场景</h2><ul class="usecase-list"><li>切分游戏直播精华</li><li>制作竖屏预告片段</li><li>提取发布会高光</li><li>批量生成社媒推广素材</li></ul></section>
+  <section class="detail-block"><h2>使用教程</h2>
+      <div class="tut-meta-line"><span class="badge">入门</span><span>⏱ 约 20 分钟</span><span>🎯 产出带字幕、标题和封面的高光短视频</span></div>
+      <ol class="step-list"><li class="step"><div class="step-no">1</div><div><h4>注册并进入工作台</h4><p>打开官网，点击“Get Started”或“Start Creating”注册登录；进入工作台后，可先用示例素材熟悉界面，再开始上传自己的视频。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>导入长视频</h4><p>点击“Upload”或拖拽视频到上传区，支持本地文件和链接导入；填写视频语言、项目名称，并确认字幕与语音识别语言设置正确。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>设置目标平台</h4><p>在剪辑选项中选择 TikTok、YouTube Shorts、Instagram Reels 等目标平台及画幅比例；让系统按时长、布局和字幕安全区自动重构画面。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>检查并排序高光</h4><p>等待 AI 分析完成后，查看各片段的传播潜力评分、起止时间和内容摘要；优先保留高分片段，拖动排序，并可手动删除不合适的部分。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>完善字幕与标题</h4><p>在编辑器中检查 AI 字幕的错字、断句和时间轴；编辑视频标题、字幕样式及画面布局，避免文字被平台按钮遮挡，同时修正转写错误。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>预览并导出发布</h4><p>逐段预览竖屏成片，必要时调整片段边界和字幕；选择导出分辨率、格式及是否带水印，下载后即可发布，多个素材可用批量处理。</p></div></li></ol>
+      <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>上传清晰人声可提升字幕准确率</li><li>先用高分片段做内容测试</li><li>标题保留核心关键词与明确悬念</li><li>导出前检查平台字幕安全区</li></ul></div>
+      <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>自动字幕可能误写专有名词</li><li>横屏素材裁切后可能丢失主体</li></ul></div>
+      <p class="muted small">完整图文教程：<a href="/game-tool-hub/tutorials/tut-opus-clip.html">OpusClip 入门：剪出高传播短视频</a></p>
+    </section>
+  <section class="detail-block guide-callout"><h2>📖 同类工具怎么选</h2><p>本分类覆盖从概念预演、过场与预告生成，到长视频拆条、访谈粗剪、配音口型同步及平台成片包装。挑选时应先看输入输出类型、角色与镜头一致性、可编辑性、音画同步和商用授权，再按游戏类型与宣传平台组合工具。</p><a class="btn btn-ghost" href="/game-tool-hub/tutorials/guide-ai-video.html">阅读《AI游戏视频与宣传素材制作总览》</a></section>
+  <section class="detail-block"><h2>同类工具推荐</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/jimeng.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(13320 64% 44%);width:40px;height:40px;font-size:15px">DR</span>
+    <div class="tool-card-info">
+      <h3>即梦 Dreamina<span class="badge-ai">AI 原生</span></h3>
+      <p>用提示词生成游戏宣传片与动态美术概念，替代大量分镜和素材剪辑。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI 视频</span><span class="tag">游戏宣传</span><span class="tag">动态分镜</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/runway.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(18360 67% 52%);width:40px;height:40px;font-size:15px">RU</span>
+    <div class="tool-card-info">
+      <h3>Runway<span class="badge-ai">AI 原生</span></h3>
+      <p>用生成式视频快速制作游戏过场、预告与宣传片段</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI视频</span><span class="tag">过场动画</span><span class="tag">游戏预告</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/kling-ai.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(54360 66% 48%);width:40px;height:40px;font-size:15px">AI</span>
+    <div class="tool-card-info">
+      <h3>可灵 AI<span class="badge-ai">AI 原生</span></h3>
+      <p>用AI生成游戏宣传片，把概念图转成动态预告。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI视频</span><span class="tag">宣传片</span><span class="tag">图生视频</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/animate-diff.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(82800 74% 51%);width:40px;height:40px;font-size:15px">AN</span>
+    <div class="tool-card-info">
+      <h3>AnimateDiff<span class="badge-ai">AI 原生</span></h3>
+      <p>把静态游戏美术快速转成动态镜头，适合预演动作与制作宣传片段。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">图生视频</span><span class="tag">视频扩散</span><span class="tag">动画预演</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/capcut.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(83880 66% 51%);width:40px;height:40px;font-size:15px">CA</span>
+    <div class="tool-card-info">
+      <h3>CapCut<span class="badge-ai">AI 原生</span></h3>
+      <p>把 AI 生成的视频、字幕和包装快速剪成可发布的游戏宣传片。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">视频剪辑</span><span class="tag">自动字幕</span><span class="tag">智能包装</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/descript.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(80640 67% 54%);width:40px;height:40px;font-size:15px">DE</span>
+    <div class="tool-card-info">
+      <h3>Descript<span class="badge-ai">AI 原生</span></h3>
+      <p>用脚本和字幕直接剪辑游戏访谈，替代逐段查找与粗剪工作。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">文本剪辑</span><span class="tag">自动转录</span><span class="tag">去口癖</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/kaiber.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(56160 63% 55%);width:40px;height:40px;font-size:15px">KA</span>
+    <div class="tool-card-info">
+      <h3>Kaiber<span class="badge-ai">AI 原生</span></h3>
+      <p>按音乐节奏生成风格化视频，支撑游戏宣传片制作</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">生成视频</span><span class="tag">音乐节奏</span><span class="tag">风格化</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-world-r1.html" data-cat="ai-video" data-stage="宣传" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(17280 60% 50%);width:40px;height:40px;font-size:15px">WO</span>
+    <div class="tool-card-info">
+      <h3>World-R1<span class="badge-ai">AI 原生</span></h3>
+      <p>强化三维空间约束的文本到视频生成框架</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">文本生成视频</span><span class="tag">三维约束</span><span class="tag">游戏宣传</span></div>
+</a></div></section>
+</article>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"OpusClip","description":"用 AI 从长视频提取精彩片段，生成多平台游戏短视频。","url":"https://www.opus.pro","applicationCategory":"GameDevelopmentApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

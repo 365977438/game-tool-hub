@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>游戏 Mod 与插件工具全流程指南 - 游戏工具集</title>
+<meta name="description" content="本分类覆盖模组框架、加载器、管理器、创意工坊与编辑器增强工具，适用于安装玩家模组、开发跨平台模组或维护 Unity、Godot 项目。挑选时应先确认游戏引擎、平台与安装方式，再区分运行时加载、依赖管理、冲突修复和内容分发工具。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tutorials/guide-mod.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="游戏 Mod 与插件工具全流程指南 - 游戏工具集">
+<meta property="og:description" content="本分类覆盖模组框架、加载器、管理器、创意工坊与编辑器增强工具，适用于安装玩家模组、开发跨平台模组或维护 Unity、Godot 项目。挑选时应先确认游戏引擎、平台与安装方式，再区分运行时加载、依赖管理、冲突修复和内容分发工具。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tutorials/guide-mod.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link active" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tutorials/">教程</a> / <span>游戏 Mod 与插件工具全流程指南</span></nav>
+<article class="article tutorial-article">
+  <header class="article-head">
+    <div class="news-card-meta"><span class="tag tag-imp">Mod 与插件</span><span>AI 撰写</span><span>更新于 2026-10-25</span></div>
+    <h1>游戏 Mod 与插件工具全流程指南</h1>
+    <p class="lead">本分类覆盖模组框架、加载器、管理器、创意工坊与编辑器增强工具，适用于安装玩家模组、开发跨平台模组或维护 Unity、Godot 项目。挑选时应先确认游戏引擎、平台与安装方式，再区分运行时加载、依赖管理、冲突修复和内容分发工具。</p>
+    
+  </header>
+  <div class="article-body">
+      <section class="guide-section-block"><h3>加载框架与运行基础</h3><p>BepInEx、MelonLoader 与 IL2CPP 加载器负责在游戏运行前发现并执行模组。Unity Mono 游戏通常优先考虑 BepInEx 或 MelonLoader，IL2CPP 构建则应选择明确支持对应生成版本与目标框架的加载器。</p><p>上古卷轴脚本扩展器 SKSE 专为《上古卷轴5》扩展 Papyrus 能力，不能替代普通管理器。使用前应核对游戏版本、脚本扩展接口与依赖库，并按加载器要求部署到正确目录。</p></section><section class="guide-section-block"><h3>安装、更新与依赖管理</h3><p>Thunderstore、r2modman、MO2、Vortex 与 RimPy/RimSort 面向不同生态：Thunderstore 擅长社区包及依赖解析，r2modman 适合按配置档案切换模组，MO2 适合大型整合的隔离管理，Vortex 适合 Nexus Mods 用户。</p><p>选择管理器时不要只看界面，还要确认游戏支持、虚拟安装能力、冲突覆盖策略和存档关联。安装大型整合应先建立配置档案或实例，再按依赖顺序启用，避免直接覆盖原始游戏文件。</p></section><section class="guide-section-block"><h3>模组发布与内容发现</h3><p>Steam 创意工坊适合发布 Steam 游戏模组，mod.io 面向多游戏开发者分发与追踪更新，Nexus Mods 则提供大型社区模组库。创作者应准备清晰版本说明、依赖清单、兼容范围与更新日志。</p><p>玩家下载后应核对文件来源、发布日期和游戏版本，并查看评论区的冲突报告。通过创意工坊订阅时应开启自动更新策略，外部平台则建议使用管理器的下载、更新和依赖安装功能。</p></section><section class="guide-section-block"><h3>冲突检查、补丁与维护</h3><p>xEdit 用于 Bethesda 插件链检查、引用清理、脚本冲突处理与补丁生成。它面向特定游戏格式，清理前应备份存档和插件，并理解加载顺序，避免删除其他模组仍在使用的资产。</p><p>UEVR 为 Unreal 游戏注入 VR 支持，不等同于完整原生 VR 移植。使用时应确认游戏版本、可用注入器版本和性能开销，并通过无头显模式逐步验证显示、输入及虚拟屏幕功能。</p></section><section class="guide-section-block"><h3>引擎插件与开发工具</h3><p>Unity 工具箱、动画可视化工具、UGUI 增强工具和批量重命名器可提升编辑器效率；Unity Explorer 与 UEVR 更多用于运行时检查和注入。插件应按 Unity 版本验证兼容性，不可在发布包中混入无关示例资源。</p><p>Godot Powerful、Dear ImGui 和 GDScript 混淆插件分别面向功能扩展、原生即时界面和脚本发布保护。Godot Dear ImGui 涉及 C++ 扩展，部署前需准备匹配的编译工具链；混淆插件则应保留调试与热更新能力。</p></section>
+    </div>
+    <div class="tips-box"><h3>✅ 落地清单</h3><ul><li>核对游戏版本、引擎类型与操作系统</li><li>确认加载器支持目标游戏架构</li><li>备份存档、配置与原始游戏文件</li><li>建立独立配置档案或管理实例</li><li>按依赖和加载顺序启用模组</li><li>使用官方来源下载并校验版本</li><li>检查冲突、缺失引用与运行日志</li><li>记录模组组合并定期创建备份</li></ul></div>
+    <section class="detail-block"><h2>常见问题</h2><div class="faq-item"><h4>Q：BepInEx 与 MelonLoader 该选哪个？</h4><p>先查看模组说明与游戏兼容列表。BepInEx 插件生态庞大且教程丰富，MelonLoader 通常强调跨平台 Unity 支持；最终应优先选择目标模组明确要求的框架。</p></div><div class="faq-item"><h4>Q：模组管理器能自动解决所有冲突吗？</h4><p>不能。管理器擅长下载、依赖和文件覆盖，但脚本冲突、加载顺序错误或格式不兼容仍需人工处理。大型整合应结合配置档案、日志与专用冲突工具排查。</p></div><div class="faq-item"><h4>Q：使用创意工坊还需要模组管理器吗？</h4><p>一般不需要额外管理器来安装创意工坊内容，Steam 可直接订阅更新；但多个创意工坊模组之间仍可能冲突，需要查看说明、调整订阅项并保留恢复点。</p></div><div class="faq-item"><h4>Q：开发 Unity 插件前要检查什么？</h4><p>确认 Unity 编辑器版本、目标平台、程序集定义与第三方依赖，并在最小项目中验证导入和构建。涉及原生扩展时还要准备匹配的编译工具链。</p></div></section>
+    <section class="detail-block"><h2>本分类工具</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/bepinex.html" data-cat="mod" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(24840 56% 44%);width:40px;height:40px;font-size:15px">BE</span>
+    <div class="tool-card-info">
+      <h3>BepInEx</h3>
+      <p>让 Unity 游戏装入 AI 生成的插件并运行自动化逻辑</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity 插件</span><span class="tag">运行时注入</span><span class="tag">方法补丁</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/melonloader.html" data-cat="mod" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(82440 76% 50%);width:40px;height:40px;font-size:15px">ME</span>
+    <div class="tool-card-info">
+      <h3>MelonLoader</h3>
+      <p>为 Unity 游戏装载 AI 生成 Mod，支持跨平台运行与调试</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity 插件</span><span class="tag">跨平台</span><span class="tag">运行时加载</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/thunderstore.html" data-cat="mod" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(4320 67% 44%);width:40px;height:40px;font-size:15px">TH</span>
+    <div class="tool-card-info">
+      <h3>Thunderstore</h3>
+      <p>为 AI 生成的模组提供依赖管理和一键分发，补齐游戏集成环节</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">模组平台</span><span class="tag">依赖管理</span><span class="tag">版本分发</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-godot-powerful.html" data-cat="engine" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(4320 59% 42%);width:40px;height:40px;font-size:15px">GO</span>
+    <div class="tool-card-info">
+      <h3>Godot Powerful 开发工具集</h3>
+      <p>面向 Godot 项目开发效率提升的社区工具集合</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">开发工具</span><span class="tag">效率</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-unity-editor-toolbox.html" data-cat="mod" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(8280 65% 52%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>Unity 编辑器工具箱</h3>
+      <p>用于提升 Unity 项目编辑效率的编辑器扩展工具集合</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">编辑器扩展</span><span class="tag">开发工具</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-unity-animationui.html" data-cat="engine" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(53280 79% 46%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>Unity Animation UI</h3>
+      <p>扩展 Unity 动画编辑与查看体验的界面工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">动画编辑</span><span class="tag">编辑器工具</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-unity-mulligan-renamer.html" data-cat="engine" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(61920 73% 56%);width:40px;height:40px;font-size:15px">MU</span>
+    <div class="tool-card-info">
+      <h3>Mulligan Renamer</h3>
+      <p>面向Unity项目的资源批量重命名工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">资源管理</span><span class="tag">批量重命名</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-rimsort.html" data-cat="asset" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(360 72% 44%);width:40px;height:40px;font-size:15px">RI</span>
+    <div class="tool-card-info">
+      <h3>RimSort 模组清单管理器</h3>
+      <p>用于管理 RimWorld 模组清单和加载顺序的工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">RimWorld</span><span class="tag">模组管理</span><span class="tag">加载顺序</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-rimpy.html" data-cat="engine" data-stage="引擎" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(65520 60% 51%);width:40px;height:40px;font-size:15px">RI</span>
+    <div class="tool-card-info">
+      <h3>RimPy</h3>
+      <p>面向游戏开发的开源引擎与框架项目</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏引擎</span><span class="tag">开源框架</span><span class="tag">独立游戏</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-gdmaim.html" data-cat="ai-workflow" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(54360 58% 43%);width:40px;height:40px;font-size:15px">GD</span>
+    <div class="tool-card-info">
+      <h3>GDMaim<span class="badge-ai">AI 原生</span></h3>
+      <p>面向 Godot 项目的 AI NPC 与智能体开发框架</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">AI NPC</span><span class="tag">智能体</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-imgui-godot.html" data-cat="engine" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(8640 65% 55%);width:40px;height:40px;font-size:15px">IM</span>
+    <div class="tool-card-info">
+      <h3>imgui-godot</h3>
+      <p>将 Dear ImGui 调试界面接入 Godot 的绑定项目</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">Dear ImGui</span><span class="tag">调试界面</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-ugui-editor.html" data-cat="mod" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(84240 78% 52%);width:40px;height:40px;font-size:15px">UG</span>
+    <div class="tool-card-info">
+      <h3>UGUI 编辑器</h3>
+      <p>面向 Unity UGUI 界面的编辑器辅助工具</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">UGUI</span><span class="tag">编辑器</span></div>
+</a></div></section>
+  
+</article>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

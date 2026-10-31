@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenRouter - AI 算力与部署 - 游戏工具集</title>
+<meta name="description" content="统一调用多家大模型，按需求切换 AI NPC、内容生成与开发辅助模型。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tools/openrouter.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="OpenRouter - AI 算力与部署 - 游戏工具集">
+<meta property="og:description" content="统一调用多家大模型，按需求切换 AI NPC、内容生成与开发辅助模型。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tools/openrouter.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link active" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tools/">工具集</a> / <a href="/game-tool-hub/categories/ai-compute.html">AI 算力与部署</a> / <span>OpenRouter</span></nav>
+<article class="detail">
+  <header class="detail-head">
+    <span class="logo-badge" style="--logo-bg:hsl(57600 76% 48%);width:64px;height:64px;font-size:24px">OP</span>
+    <div class="detail-title">
+      <h1>OpenRouter</h1>
+      <p class="detail-summary">统一调用多家大模型，按需求切换 AI NPC、内容生成与开发辅助模型。</p>
+      <div class="detail-tags"><span class="tag">多模型</span><span class="tag">统一接口</span><span class="tag">模型路由</span><span class="tag">快速集成</span></div>
+    </div>
+    <div class="detail-cta">
+      <a class="btn btn-primary" href="https://openrouter.ai" target="_blank" rel="noopener nofollow">访问官网 ↗</a>
+      <a class="btn btn-ghost" href="/game-tool-hub/tutorials/tut-openrouter.html">阅读教程</a>
+    </div>
+  </header>
+  <div class="meta-grid">
+    <div><span>所属分类</span><strong><a href="/game-tool-hub/categories/ai-compute.html">🖥️ AI 算力与部署</a></strong></div>
+    <div><span>创作阶段</span><strong>🔗 工作流</strong></div>
+    <div><span>工具类型</span><strong>⚡ AI 原生工具</strong></div>
+    <div><span>支持平台</span><strong>Web</strong></div>
+    <div><span>价格模式</span><strong>免费额度 + 订阅</strong></div>
+    <div><span>适合人群</span><strong>独立开发者、AI 原型团队与内容制作团队</strong></div>
+    <div><span>官网链接</span><strong class="link-status ok">● 正常</strong></div>
+    <div><span>资料更新</span><strong>2026-11-01</strong></div>
+  </div>
+  <section class="detail-block ai-role-block">
+    <h2>🧠 在 AI 创作链路中的位置</h2>
+    <p class="lead">为游戏 AI 流程提供统一模型入口，简化选型与调用。</p>
+    <p class="muted small">所属阶段：🔗 工作流 · AI 原生工具，直接用生成能力做生产</p>
+  </section>
+  <section class="detail-block">
+    <h2>工具介绍</h2>
+    <p class="lead">OpenRouter 通过统一 API 接入多家模型，支持按模型、价格和延迟等条件选择或路由，适合原型阶段比较不同模型在 NPC 对话、文本扩写和代码辅助中的表现。无需自行维护多套供应商接入，但生产应用仍需关注数据策略、费用、可用性与服务商限制。</p>
+  </section>
+  <section class="detail-block"><h2>核心能力</h2><ul class="feature-list"><li>聚合多家模型服务</li><li>统一 API 调用方式</li><li>支持模型灵活切换</li><li>便于比较效果与成本</li></ul></section>
+  <div class="two-col">
+    <section class="detail-block"><h2>👍 优点</h2><ul class="plus-list"><li>减少多供应商接入成本</li><li>模型选择空间较大</li><li>适合快速原型验证</li></ul></section>
+    <section class="detail-block"><h2>⚠️ 局限</h2><ul class="minus-list"><li>依赖第三方服务稳定性</li><li>长期成本随调用量增长</li></ul></section>
+  </div>
+  <section class="detail-block"><h2>典型使用场景</h2><ul class="usecase-list"><li>NPC 模型效果对比</li><li>动态剧情文本生成</li><li>批量内容扩写</li><li>开发助手模型切换</li></ul></section>
+  <section class="detail-block"><h2>使用教程</h2>
+      <div class="tut-meta-line"><span class="badge">入门</span><span>⏱ 约 20 分钟</span><span>🎯 做出可调用大模型的游戏 NPC 原型</span></div>
+      <ol class="step-list"><li class="step"><div class="step-no">1</div><div><h4>注册并创建 API 密钥</h4><p>打开官网，点击 Sign Up 或 Log In 登录。进入控制台的 Keys 页面，点击 Create API Key，填写名称并复制密钥；密钥只展示一次，需存入环境变量，不要写进代码仓库。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>筛选适合 NPC 的模型</h4><p>进入 Models 页面，按聊天、文本生成或角色扮演标签筛选模型，查看上下文长度、定价与延迟。先选一款价格适中的模型做原型，再保留候选模型用于效果和成本对比。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>配置调用环境</h4><p>在项目目录创建 .env，写入 OPENROUTER_API_KEY；再安装 OpenAI 兼容 SDK。将 base URL 设为 https://openrouter.ai/api/v1，模型标识填入刚选中的模型 ID，便于后续统一替换。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>编写 NPC 对话请求</h4><p>编写异步函数，发送 system 角色设定、NPC 背景、玩家状态和历史对白，并要求返回简短、可直接展示的台词。先用固定玩家输入测试，设置超时、token 上限及基础错误重试。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>接入游戏对话流程</h4><p>把请求封装成游戏事件监听器：玩家提交对话后调用模型，把回复写入 NPC 对话框，再交回对话状态机。加入流式输出、取消生成和兜底台词，避免网络等待阻塞主线程。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>验证产物并记录指标</h4><p>连续测试问候、询问线索、冲突和越界问题，记录首字延迟、完整回复时间、token 消耗与费用。比较不同模型的角色一致性后，将模型 ID、提示词和参数配置化，方便迭代。</p></div></li></ol>
+      <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>用环境变量管理密钥，定期轮换</li><li>先用小 token 上限控制原型成本</li><li>把模型 ID 与提示词配置化</li><li>对话历史只保留必要消息</li></ul></div>
+      <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>误把完整回复延迟当作首字延迟</li><li>让 NPC 输出游戏指令而非台词</li></ul></div>
+      <p class="muted small">完整图文教程：<a href="/game-tool-hub/tutorials/tut-openrouter.html">OpenRouter 入门：接入游戏 AI NPC</a></p>
+    </section>
+  <section class="detail-block guide-callout"><h2>📖 同类工具怎么选</h2><p>本分类负责为 AI 制作游戏提供模型运行、API 调用与推理服务能力，覆盖开发机本地部署、云端生成和在线高并发服务。挑选时应结合模型兼容性、响应延迟、吞吐与显存、调用成本、部署地域、并发方式及数据合规，并按原型验证、资产批量生成与在线 NPC 分层验证。</p><a class="btn btn-ghost" href="/game-tool-hub/tutorials/guide-ai-compute.html">阅读《AI 算力与部署：从本地试验到在线推理》</a></section>
+  <section class="detail-block"><h2>同类工具推荐</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/ollama.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(69840 67% 55%);width:40px;height:40px;font-size:15px">OL</span>
+    <div class="tool-card-info">
+      <h3>Ollama<span class="badge-ai">AI 原生</span></h3>
+      <p>在开发机上部署 AI 模型，为 NPC、测试和内容生成提供本地接口。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">本地模型</span><span class="tag">模型部署</span><span class="tag">推理服务</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/replicate.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(59760 71% 51%);width:40px;height:40px;font-size:15px">RE</span>
+    <div class="tool-card-info">
+      <h3>Replicate<span class="badge-ai">AI 原生</span></h3>
+      <p>调用与部署开源模型，把AI生成能力快速接入游戏管线。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">模型API</span><span class="tag">云端推理</span><span class="tag">一键部署</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/fal-ai.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(82080 77% 55%);width:40px;height:40px;font-size:15px">FA</span>
+    <div class="tool-card-info">
+      <h3>fal.ai<span class="badge-ai">AI 原生</span></h3>
+      <p>低延迟生成图像与视频，为游戏资产管线提速。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">低延迟</span><span class="tag">图像生成</span><span class="tag">视频生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/siliconflow.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(66960 62% 51%);width:40px;height:40px;font-size:15px">SI</span>
+    <div class="tool-card-info">
+      <h3>SiliconFlow 硅基流动<span class="badge-ai">AI 原生</span></h3>
+      <p>提供国内开源模型推理，快速接入游戏AI功能。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">国内API</span><span class="tag">开源模型</span><span class="tag">低延迟</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/aliyun-bailian.html" data-cat="ai-compute" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(24480 66% 56%);width:40px;height:40px;font-size:15px">阿里</span>
+    <div class="tool-card-info">
+      <h3>阿里云百炼<span class="badge-ai">AI 原生</span></h3>
+      <p>整合模型、知识库与应用编排，搭建游戏AI服务。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">模型服务</span><span class="tag">应用编排</span><span class="tag">知识库</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/volcengine-ark.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(56880 64% 43%);width:40px;height:40px;font-size:15px">火山</span>
+    <div class="tool-card-info">
+      <h3>火山引擎方舟<span class="badge-ai">AI 原生</span></h3>
+      <p>为游戏 AI 管线提供多模态模型推理与批量调用能力</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">模型推理</span><span class="tag">批量调用</span><span class="tag">多模态</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/together-ai.html" data-cat="ai-compute" data-stage="算力" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(54360 69% 51%);width:40px;height:40px;font-size:15px">TO</span>
+    <div class="tool-card-info">
+      <h3>Together AI<span class="badge-ai">AI 原生</span></h3>
+      <p>用统一 API 调用图像视频模型，并微调游戏专用模型</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">模型 API</span><span class="tag">图像生成</span><span class="tag">视频生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/lm-studio.html" data-cat="ai-compute" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(44280 60% 43%);width:40px;height:40px;font-size:15px">LM</span>
+    <div class="tool-card-info">
+      <h3>LM Studio<span class="badge-ai">AI 原生</span></h3>
+      <p>在桌面本地运行大模型，为游戏原型生成代码、文本与智能体逻辑。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">本地推理</span><span class="tag">大模型</span><span class="tag">离线开发</span></div>
+</a></div></section>
+</article>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"OpenRouter","description":"统一调用多家大模型，按需求切换 AI NPC、内容生成与开发辅助模型。","url":"https://openrouter.ai","applicationCategory":"GameDevelopmentApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

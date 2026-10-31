@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Izwi - AI 音频与配音 - 游戏工具集</title>
+<meta name="description" content="面向智能体交互的开源 AI 应用项目">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tools/gh-izwi.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Izwi - AI 音频与配音 - 游戏工具集">
+<meta property="og:description" content="面向智能体交互的开源 AI 应用项目">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tools/gh-izwi.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link active" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tools/">工具集</a> / <a href="/game-tool-hub/categories/ai-audio.html">AI 音频与配音</a> / <span>Izwi</span></nav>
+<article class="detail">
+  <header class="detail-head">
+    <span class="logo-badge" style="--logo-bg:hsl(47880 55% 47%);width:64px;height:64px;font-size:24px">IZ</span>
+    <div class="detail-title">
+      <h1>Izwi</h1>
+      <p class="detail-summary">面向智能体交互的开源 AI 应用项目</p>
+      <div class="detail-tags"><span class="tag">AI NPC</span><span class="tag">智能体</span><span class="tag">对话交互</span></div>
+    </div>
+    <div class="detail-cta">
+      <a class="btn btn-primary" href="https://github.com/izwi-ai/izwi" target="_blank" rel="noopener nofollow">访问官网 ↗</a>
+      <a class="btn btn-ghost" href="/game-tool-hub/tutorials/tut-gh-izwi.html">阅读教程</a>
+    </div>
+  </header>
+  <div class="meta-grid">
+    <div><span>所属分类</span><strong><a href="/game-tool-hub/categories/ai-audio.html">🎙️ AI 音频与配音</a></strong></div>
+    <div><span>创作阶段</span><strong>🗣️ 玩法</strong></div>
+    <div><span>工具类型</span><strong>⚡ AI 原生工具</strong></div>
+    <div><span>支持平台</span><strong>Web</strong></div>
+    <div><span>价格模式</span><strong>免费开源</strong></div>
+    <div><span>适合人群</span><strong>适合研究对话式 NPC 和智能体玩法的游戏开发者</strong></div>
+    <div><span>官网链接</span><strong class="link-status ok">● 正常</strong></div>
+    <div><span>资料更新</span><strong>2026-11-01</strong></div>
+  </div>
+  <section class="detail-block ai-role-block">
+    <h2>🧠 在 AI 创作链路中的位置</h2>
+    <p class="lead">探索具备对话交互能力的游戏 NPC 与智能体</p>
+    <p class="muted small">所属阶段：🗣️ 玩法 · AI 原生工具，直接用生成能力做生产</p>
+  </section>
+  <section class="detail-block">
+    <h2>工具介绍</h2>
+    <p class="lead">Izwi 是 Izwi AI 社区维护的智能体相关项目，可作为探索 AI NPC、对话交互与智能体应用原型的技术基础。候选资料未说明具体模型、接口或游戏引擎接入能力，完整功能需查阅仓库文档。</p>
+  </section>
+  <section class="detail-block"><h2>核心能力</h2><ul class="feature-list"><li>围绕 AI 智能体与交互应用构建</li><li>可作为对话型 NPC 的原型基础</li><li>适合验证角色回复和任务交互逻辑</li><li>具体接入方式需以仓库文档为准</li></ul></section>
+  <div class="two-col">
+    <section class="detail-block"><h2>👍 优点</h2><ul class="plus-list"><li>适合快速验证智能体交互玩法</li><li>开源项目便于评估与二次开发</li></ul></section>
+    <section class="detail-block"><h2>⚠️ 局限</h2><ul class="minus-list"><li>社区项目，文档与支持有限</li><li>缺少明确的游戏引擎集成信息</li></ul></section>
+  </div>
+  <section class="detail-block"><h2>典型使用场景</h2><ul class="usecase-list"><li>构建可对话的剧情型游戏 NPC</li><li>原型验证基于角色设定的任务交互</li></ul></section>
+  <section class="detail-block"><h2>使用教程</h2>
+      <div class="tut-meta-line"><span class="badge">进阶</span><span>⏱ 约 30 分钟</span><span>🎯 生成带对白与角色音色的可播放原型</span></div>
+      <ol class="step-list"><li class="step"><div class="step-no">1</div><div><h4>获取项目与检查环境</h4><p>打开 GitHub 的 izwi-ai/izwi，查看 README、Release 和示例配置；准备 Python、模型依赖及可用磁盘空间，按仓库说明创建运行环境。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>启动本地服务</h4><p>根据 README 配置模型路径、端口和设备，使用项目提供的启动命令运行服务；先访问健康检查或示例页面，确认接口能够响应。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>接入语音转录</h4><p>调用兼容 OpenAI 的转录接口上传角色录音，指定语言并查看返回文本；游戏事件日志中的语音可提交识别，结果写入字幕或对话状态。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>分离多名说话人</h4><p>在支持说话人分离的转录请求中开启相关选项，检查返回的说话人标签与时间戳；用 segment 字段映射 NPC、旁白等角色，生成对白轨。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>合成并克隆角色语音</h4><p>在文本转语音接口提交台词、角色参考音频和克隆参数，预览输出音频；统一采样率、响度及文件命名后，放入角色语音资源目录。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>串入游戏播放管线</h4><p>用服务返回的音频 URL 或文件替换临时下载文件，在游戏事件触发时调用 TTS，并把字幕、角色 ID 与音频路径一起写入资源清单，形成可播放原型。</p></div></li></ol>
+      <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>先用短句和单人录音验证效果</li><li>固定模型版本便于复现结果</li><li>缓存重复台词可降低延迟</li><li>按角色拆分音频资源目录</li></ul></div>
+      <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>参考音频质量差会导致音色不稳</li><li>转录时间戳需与游戏时间轴校准</li></ul></div>
+      <p class="muted small">完整图文教程：<a href="/game-tool-hub/tutorials/tut-gh-izwi.html">Izwi 入门：搭建游戏语音 AI 管线</a></p>
+    </section>
+  <section class="detail-block guide-callout"><h2>📖 同类工具怎么选</h2><p>本分类覆盖配乐、音效、角色对白、声音克隆与后期清理，帮助团队从需求规格、生成草稿、角色音色训练到交付母带建立完整声音流水线。选型时优先匹配语言与音色控制、批量能力、授权条款、离线部署及游戏引擎格式需求，并保留人工验收环节。</p><a class="btn btn-ghost" href="/game-tool-hub/tutorials/guide-ai-audio.html">阅读《AI 游戏音频与配音全流程指南》</a></section>
+  <section class="detail-block"><h2>同类工具推荐</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/melody-assistant.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(81360 79% 49%);width:40px;height:40px;font-size:15px">ME</span>
+    <div class="tool-card-info">
+      <h3>Melody Assistant<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 辅助作曲和编曲，快速产出适配游戏场景的音乐草案。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI作曲</span><span class="tag">旋律生成</span><span class="tag">编曲辅助</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/fish-speech.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(71280 58% 57%);width:40px;height:40px;font-size:15px">FI</span>
+    <div class="tool-card-info">
+      <h3>Fish Speech<span class="badge-ai">AI 原生</span></h3>
+      <p>用多语言声音克隆生成角色对白，支撑跨语种游戏语音本地化</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">语音合成</span><span class="tag">声音克隆</span><span class="tag">多语言</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/cosyvoice.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(43200 78% 51%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>CosyVoice<span class="badge-ai">AI 原生</span></h3>
+      <p>零样本克隆角色声线并控制情感，生成自然中文游戏语音</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">中文语音</span><span class="tag">声音克隆</span><span class="tag">情感控制</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/elevenlabs.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(47880 68% 43%);width:40px;height:40px;font-size:15px">EL</span>
+    <div class="tool-card-info">
+      <h3>ElevenLabs<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 快速生成角色配音、旁白与拟真的声音素材</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">AI配音</span><span class="tag">声音克隆</span><span class="tag">文本转语音</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/kits-ai.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(55800 62% 48%);width:40px;height:40px;font-size:15px">KI</span>
+    <div class="tool-card-info">
+      <h3>Kits AI<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 清理人声、降噪并打磨可交付的音频成品</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">人声分离</span><span class="tag">降噪</span><span class="tag">母带处理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/lalal-ai.html" data-cat="ai-audio" data-stage="资源" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(35280 57% 50%);width:40px;height:40px;font-size:15px">LA</span>
+    <div class="tool-card-info">
+      <h3>LALAL.AI<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 拆分音乐声轨，提取角色配音和游戏循环素材</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">人声分离</span><span class="tag">乐器分离</span><span class="tag">音频分轨</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/stable-audio.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(75960 57% 46%);width:40px;height:40px;font-size:15px">ST</span>
+    <div class="tool-card-info">
+      <h3>Stable Audio<span class="badge-ai">AI 原生</span></h3>
+      <p>用 AI 按情绪与场景生成音乐、音效和声音氛围</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">音乐生成</span><span class="tag">音效生成</span><span class="tag">情绪控制</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/audiocraft.html" data-cat="ai-audio" data-stage="声音" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(62640 76% 57%);width:40px;height:40px;font-size:15px">AU</span>
+    <div class="tool-card-info">
+      <h3>AudioCraft<span class="badge-ai">AI 原生</span></h3>
+      <p>用开源模型批量生成游戏音乐与音效，替代手工作曲和找素材</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">音乐生成</span><span class="tag">音效生成</span><span class="tag">文本生音频</span></div>
+</a></div></section>
+</article>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Izwi","description":"面向智能体交互的开源 AI 应用项目","url":"https://github.com/izwi-ai/izwi","applicationCategory":"GameDevelopmentApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

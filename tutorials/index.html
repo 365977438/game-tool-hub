@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>使用教程 - 游戏工具集</title>
+<meta name="description" content="游戏工具的中文实操教程：分步操作、实用技巧与常见坑，全部由 AI 自动撰写并持续更新。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tutorials/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="使用教程 - 游戏工具集">
+<meta property="og:description" content="游戏工具的中文实操教程：分步操作、实用技巧与常见坑，全部由 AI 自动撰写并持续更新。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tutorials/">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link active" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<div class="page-head">
+  <h1>📖 使用教程</h1>
+  <p>18 篇分类总览 + 274 篇工具实操教程，全部由 AI 依据工具官网信息与公开文档自动撰写。</p>
+</div>
+<section class="guide-section">
+  <div class="section-head"><h2><span class="sec-emoji">📚</span>分类总览</h2></div>
+  <div class="guide-grid"><a class="guide-card" href="/game-tool-hub/tutorials/guide-ai-model.html">
+      <div class="guide-icon">📚</div>
+      <div><h3>AI 模型与素材库总览：从选型到接入游戏</h3><p>AI 模型与素材库负责提供训练数据、基础模型、LoRA 权重及可商用生成素材，是游戏 AI 制作链路的资源层。选型时应兼顾授权条款、模型质量、硬件成本、格式兼容性、社区活跃度与复现能力，并与标注、训练、微调、推理和资产制作流程衔接。</p></div>
+      <span class="guide-arrow">→</span>
+    </a><a class="guide-card" href="/game-tool-hub/tutorials/guide-pipeline.html">
+      <div class="guide-icon">🗺️</div>
+      <div><h3>AI游戏资产与关卡管线总览</h3><p>本分类负责把 AI 生成的视频、地图、数值表和资源包转化为可编辑、可校验、可集成的工程资产。应按目标引擎、资产格式、自动化程度与可回溯性选型，并先统一目录、命名和数据规范，再衔接生成、编辑、验证与发布流程。</p></div>
+      <span class="guide-arrow">→</span>
+    </a><a class="guide-card" href="/game-tool-hub/tutorials/guide-ai-art.html">
+      <div class="guide-icon">🖌️</div>
+      <div><h3>用AI生成游戏美术资产全流程指南</h3><p>AI美术生成覆盖从概念探索、角色与场景设绘，到贴图、图标、宣传图及后期精修的视觉生产环节。选型时应结合资产类型、批量一致性、局部控制、版权与部署方式，并让生成结果进入统一规范和人工审核流程。</p></div>
+      <span class="guide-arrow">→</span>
+    </a><a class="guide-card" href="/game-tool-hub/tutorials/guide-ai-3d.html">
+      <div class="guide-icon">🧊</div>
+      <div><h3>AI 三维与动画制作全链路指南</h3><p>AI 三维与动画工具负责把文字、概念图、真人动作快速转成可编辑模型、实时场景与动画数据。选型时应重点检查拓扑质量、纹理与UV、引擎兼容性、动作稳定性、生成速度及商用授权，并按原型、角色、场景和动捕需求组合工作流。</p></div>
+      <span class="guide-arrow">→</span>
+    </a><a class="guide-card" href="/game-tool-hub/tutorials/guide-ai-audio.html">
+      <div class="guide-icon">🎙️</div>
+      <div><h3>AI 游戏音频与配音全流程指南</h3><p>本分类覆盖配乐、音效、角色对白、声音克隆与后期清理，帮助团队从需求规格、生成草稿、角色音色训练到交付母带建立完整声音流水线。选型时优先匹配语言与音色控制、批量能力、授权条款、离线部署及游戏引擎格式需求，并保留人工验收环节。</p></div>
+      <span class="guide-arrow">→</span>
+    </a><a class="guide-card" href="/game-tool-hub/tutorials/guide-ai-code.html">
+      <div class="guide-icon">⌨️</div>
+      <div><h3>AI 代码与自动化：游戏开发提效全链路</h3><p>AI 代码工具负责把需求转为可运行代码、补全脚本、维护工程并连接 Godot、Unity 等编辑器。应按项目规模、编辑器、代理自主程度和部署需求选型，再用版本控制、测试与人工审查守住质量。</p></div>
+      <span class="guide-arrow">→</span>
+    </a><a class="guide-card" href="/game-tool-hub/tutorials/guide-ai-npc.html">
+      <div class="guide-icon">🗣️</div>
+      <div><h3>AI NPC 与智能体游戏开发总览</h3><p>AI NPC 与智能体负责让角色具备记忆、对话、情绪反馈和自主行动能力。本类工具横跨角色原型、即时交互、多人环境与游戏评测，选型时应重点考察记忆一致性、响应延迟、语音支持、引擎集成、可控性、成本与隐私方案。</p></div>
+      <span class="guide-arrow">→</span>
+    </a><a class="guide-card" href="/game-tool-hub/tutorials/guide-ai-workflow.html">
+      <div class="guide-icon">🔗</div>
+      <div><h3>AI 游戏工作流与模型训练总览</h3><p>本分类负责把零散的 AI 生成能力组织成可重复执行的游戏美术管线，覆盖提示词管理、节点式批量出图、角色 LoRA 训练、素材审批与发布。选择时应先看引擎兼容性、批处理能力、模型管理、自动化接口和本地硬件要求，再用官方示例验证工作流。</p></div>
+      <span class="guide-arrow">→</span>
+    </a><a class="guide-card" href="/game-tool-hub/tutorials/guide-ai-video.html">
+      <div class="guide-icon">🎬</div>
+      <div><h3>AI游戏视频与宣传素材制作总览</h3><p>本分类覆盖从概念预演、过场与预告生成，到长视频拆条、访谈粗剪、配音口型同步及平台成片包装。挑选时应先看输入输出类型、角色与镜头一致性、可编辑性、音画同步和商用授权，再按游戏类型与宣传平台组合工具。</p></div>
+      <span class="guide-arrow">→</span>
+    </a><a class="guide-card" href="/game-tool-hub/tutorials/guide-ai-compute.html">
+      <div class="guide-icon">🖥️</div>
+      <div><h3>AI 算力与部署：从本地试验到在线推理</h3><p>本分类负责为 AI 制作游戏提供模型运行、API 调用与推理服务能力，覆盖开发机本地部署、云端生成和在线高并发服务。挑选时应结合模型兼容性、响应延迟、吞吐与显存、调用成本、部署地域、并发方式及数据合规，并按原型验证、资产批量生成与在线 NPC 分层验证。</p></div>
+      <span class="guide-arrow">→</span>
+    </a><a class="guide-card" href="/game-tool-hub/tutorials/guide-engine.html">
+      <div class="guide-icon">🎮</div>
+      <div><h3>游戏引擎与框架选型总览</h3><p>游戏引擎与框架用于搭建2D、3D、网页及叙事项目的运行基础。选型时应综合目标平台、团队技能、渲染需求、开源许可与发布成本，优先验证核心玩法、性能预算和资产管线，再确定通用引擎、专业工具或轻量框架。</p></div>
+      <span class="guide-arrow">→</span>
+    </a><a class="guide-card" href="/game-tool-hub/tutorials/guide-art.html">
+      <div class="guide-icon">🎨</div>
+      <div><h3>游戏美术与建模工具链总览</h3><p>本分类覆盖从概念草图、参考管理、建模雕刻、贴图绘制，到动画动捕、界面原型和资产检查的完整游戏美术流程。选择时应优先明确资产类型、交付规格、团队协作方式与预算，再按环节组合免费开源工具或专业商业软件。</p></div>
+      <span class="guide-arrow">→</span>
+    </a><a class="guide-card" href="/game-tool-hub/tutorials/guide-mod.html">
+      <div class="guide-icon">🧩</div>
+      <div><h3>游戏 Mod 与插件工具全流程指南</h3><p>本分类覆盖模组框架、加载器、管理器、创意工坊与编辑器增强工具，适用于安装玩家模组、开发跨平台模组或维护 Unity、Godot 项目。挑选时应先确认游戏引擎、平台与安装方式，再区分运行时加载、依赖管理、冲突修复和内容分发工具。</p></div>
+      <span class="guide-arrow">→</span>
+    </a><a class="guide-card" href="/game-tool-hub/tutorials/guide-perf.html">
+      <div class="guide-icon">🩺</div>
+      <div><h3>游戏性能与帧率优化总览教程</h3><p>本分类覆盖帧率监控、GPU 调优、渲染分析与崩溃诊断。先用 CapFrameX、PresentMon、RTSS 或 MangoHud 确认帧时间、卡顿与瓶颈，再用 RenderDoc、Nsight Graphics、PIX 或 GPUView 深入渲染管线；系统级争抢可借助 System Informer、Process Lasso 和 Afterburner 排查与调节。</p></div>
+      <span class="guide-arrow">→</span>
+    </a><a class="guide-card" href="/game-tool-hub/tutorials/guide-asset.html">
+      <div class="guide-icon">📦</div>
+      <div><h3>游戏素材与资源库选择与使用总览</h3><p>“素材与资源库”覆盖模型、贴图、像素图、音效、UI及引擎插件，帮助开发者降低美术、音频和工具制作成本。挑选时应先看授权条款、格式兼容性与资源风格，再结合用途选择通用库、专业市场或创作者平台；同时核对商用、署名、修改和再分发限制。</p></div>
+      <span class="guide-arrow">→</span>
+    </a><a class="guide-card" href="/game-tool-hub/tutorials/guide-audio.html">
+      <div class="guide-icon">🎵</div>
+      <div><h3>游戏音频与音乐制作工具总览</h3><p>本分类覆盖游戏音效制作、配乐、采样素材、DSP 与音频中间件。Audacity、LMMS、Splice 适合独立开发者快速产出素材；Bfxr、Chiptone、Sonic Pi 面向芯片音与实验创作；FMOD、Wwise 用于大型项目中的自适应音乐、互动混音和运行时逻辑；Melody Assistant、Soundation 则可辅助旋律生成与云端编曲。</p></div>
+      <span class="guide-arrow">→</span>
+    </a><a class="guide-card" href="/game-tool-hub/tutorials/guide-publish.html">
+      <div class="guide-icon">🛫</div>
+      <div><h3>独立游戏发行与平台接入指南</h3><p>本分类覆盖从游戏导出、平台提交到上线运营的发行链路。选择时应先确认目标市场、DRM政策、商店分成与开发者资质，再结合引擎和自动化需求选用 Steamworks、Epic、Game Jolt 或 GOG，并用 Godot 官方文档及 godot-ci 打通构建与部署。</p></div>
+      <span class="guide-arrow">→</span>
+    </a><a class="guide-card" href="/game-tool-hub/tutorials/guide-learn.html">
+      <div class="guide-icon">🎓</div>
+      <div><h3>游戏开发学习资源与社区选择指南</h3><p>本分类覆盖官方教程、系统课程、开放规范、行业媒体与开发者社区，适合从入门学习、技术进阶到行业洞察的不同阶段。建议先按当前目标选择主线：引擎上手选官方学习中心，图形编程选OpenGL或着色器课程，架构能力查范式书籍，会议经验看GDC，行业动态则结合中文社区与专业媒体。</p></div>
+      <span class="guide-arrow">→</span>
+    </a></div>
+</section>
+<section class="guide-section">
+  <div class="section-head"><h2><span class="sec-emoji">🛠️</span>工具实操教程</h2></div>
+  <div class="tut-grid"><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-godot-ai.html">
+      <span class="tut-diff">入门</span>
+      <h3>Godot AI 入门：从安装到首个场景</h3>
+      <p>通过 Godot AI 的 MCP 服务连接编辑器，让 AI 生成脚本、场景与资源，并完成检查和迭代，产出可运行的 Godot 原型。</p>
+      <div class="tut-meta"><span>Godot AI</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-doyunha-gopeak.html">
+      <span class="tut-diff">入门</span>
+      <h3>GoPeak 入门：用 AI 串联 Godot 开发</h3>
+      <p>从安装配置到场景、脚本、调试与素材接入，演示如何让 AI 调用 GoPeak 工具，并验证产物已进入 Godot 管线。</p>
+      <div class="tut-meta"><span>GoPeak</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-godot-mcp.html">
+      <span class="tut-diff">入门</span>
+      <h3>Godot MCP 入门：从安装到运行首个场景</h3>
+      <p>在支持 MCP 的 AI 客户端中安装并连接 Godot MCP，让 AI 启动编辑器、运行项目并读取调试输出，完成首个可交互场景。</p>
+      <div class="tut-meta"><span>Godot MCP</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-fal-ai.html">
+      <span class="tut-diff">入门</span>
+      <h3>fal.ai入门：生成游戏宣传素材</h3>
+      <p>面向游戏开发者，介绍如何在fal.ai调用图像与视频模型，并把生成结果接入美术、宣传视频和资源管理管线。</p>
+      <div class="tut-meta"><span>fal.ai</span><span>⏱ 约 25 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-inworld.html">
+      <span class="tut-diff">入门</span>
+      <h3>Inworld AI 入门：制作首个记忆型 NPC</h3>
+      <p>从创建角色、配置记忆与目标，到在游戏运行时接入并测试对话，完成一个可记住玩家选择的 NPC 原型。</p>
+      <div class="tut-meta"><span>Inworld AI</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-convai.html">
+      <span class="tut-diff">入门</span>
+      <h3>Convai 入门：为游戏接入首个 AI NPC</h3>
+      <p>从创建角色、配置模型与语音，到导出 Unity 集成参数并测试对话，完成一个可触发、可调试的 AI NPC 原型。</p>
+      <div class="tut-meta"><span>Convai</span><span>⏱ 约 25 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-siliconflow.html">
+      <span class="tut-diff">入门</span>
+      <h3>硅基流动入门：接入游戏AI能力</h3>
+      <p>从注册账号、选择开源模型到编写接口调用，将文本、图像或语音能力接入游戏原型，并完成调试上线。</p>
+      <div class="tut-meta"><span>SiliconFlow 硅基流动</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-aliyun-bailian.html">
+      <span class="tut-diff">入门</span>
+      <h3>阿里云百炼入门：从模型到游戏AI服务</h3>
+      <p>面向游戏开发者，演示在阿里云百炼中选择模型、编排应用、构建知识库，并将AI能力通过API接入游戏服务。</p>
+      <div class="tut-meta"><span>阿里云百炼</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-volcengine-ark.html">
+      <span class="tut-diff">入门</span>
+      <h3>火山方舟入门：接入首个游戏 AI 管线</h3>
+      <p>从开通服务、填写密钥到调用多模态模型，最后把生成结果接入游戏素材批处理流程，完成一个可运行的 AI 辅助开发闭环。</p>
+      <div class="tut-meta"><span>火山引擎方舟</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-together-ai.html">
+      <span class="tut-diff">入门</span>
+      <h3>Together AI 入门：生成游戏资产并接入管线</h3>
+      <p>从注册、选择模型到调用图像与视频接口，完成游戏原型素材生成，再把结果整理进开发资源目录。</p>
+      <div class="tut-meta"><span>Together AI</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-modelscope.html">
+      <span class="tut-diff">入门</span>
+      <h3>ModelScope入门：为游戏接入首个AI模型</h3>
+      <p>从站内搜索模型与数据集开始，完成下载、加载与推理，并将生成结果封装成游戏可调用的接口或资源。</p>
+      <div class="tut-meta"><span>ModelScope 魔搭</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-sdnext.html">
+      <span class="tut-diff">入门</span>
+      <h3>SD.Next 入门：批量生成游戏美术</h3>
+      <p>从部署 SD.Next、选择扩散模型到批量生成与筛选游戏概念图、贴图素材，并整理成可直接交付美术管线的文件。</p>
+      <div class="tut-meta"><span>SD.Next</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-n8n.html">
+      <span class="tut-diff">入门</span>
+      <h3>n8n 入门：搭建 AI 游戏资产管线</h3>
+      <p>从安装 n8n 开始，串联 AI 生成、素材入库与游戏交付节点，产出一套可复用的游戏资产自动化工作流。</p>
+      <div class="tut-meta"><span>n8n</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-draw-things.html">
+      <span class="tut-diff">入门</span>
+      <h3>Draw Things 入门：本地生成游戏美术</h3>
+      <p>在 Mac 上用 Draw Things 生成游戏图像、微调专属风格，并把成品素材接入开发管线。</p>
+      <div class="tut-meta"><span>Draw Things</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-kaiber.html">
+      <span class="tut-diff">入门</span>
+      <h3>Kaiber入门：生成游戏音乐宣传片</h3>
+      <p>从准备游戏素材到导出成片，演示如何使用Kaiber把美术图、预告素材和音乐合成为可发布的风格化宣传片。</p>
+      <div class="tut-meta"><span>Kaiber</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-nvidia-ace.html">
+      <span class="tut-diff">入门</span>
+      <h3>NVIDIA ACE 入门：让游戏 NPC 开口说话</h3>
+      <p>从申请开发者资源开始，接入云端生成式模型与智能体服务，完成实时语音、角色情绪和对话记忆，并映射到游戏运行管线。</p>
+      <div class="tut-meta"><span>NVIDIA ACE</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-charactr.html">
+      <span class="tut-diff">入门</span>
+      <h3>Charactr 入门：从人设到分支对话原型</h3>
+      <p>面向要用 AI 做游戏的开发者，演示如何配置角色、测试连续对话、生成分支剧情，并把原型接入现有叙事验证流程。</p>
+      <div class="tut-meta"><span>Charactr</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-kohya-ss.html">
+      <span class="tut-diff">进阶</span>
+      <h3>kohya_ss 入门：训练游戏角色 LoRA</h3>
+      <p>从安装配置到训练专属 LoRA，把角色设定图转化为可复用模型，并接入 ComfyUI 或 Stable Diffusion WebUI 生成统一风格的游戏美术。</p>
+      <div class="tut-meta"><span>kohya_ss</span><span>⏱ 约 2 小时</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-comfyui-manager.html">
+      <span class="tut-diff">入门</span>
+      <h3>ComfyUI-Manager 入门：让游戏美术资产自动进管线</h3>
+      <p>完成 ComfyUI-Manager 安装、模型与节点管理，并用工作流批量生成可导入游戏项目的角色、场景和道具素材。</p>
+      <div class="tut-meta"><span>ComfyUI-Manager</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-lm-studio.html">
+      <span class="tut-diff">入门</span>
+      <h3>LM Studio 入门：搭建本地 AI 游戏原型</h3>
+      <p>从安装、下载模型到接入游戏项目，完成 NPC 对话、任务文本与代码生成，并掌握离线调用和模型对比方法。</p>
+      <div class="tut-meta"><span>LM Studio</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-vllm.html">
+      <span class="tut-diff">进阶</span>
+      <h3>vLLM 入门：部署游戏 AI 推理服务</h3>
+      <p>从安装 vLLM、加载开源模型到接入 OpenAI 兼容接口，带你搭出可供 NPC 对话、剧情生成等游戏后端调用的模型服务。</p>
+      <div class="tut-meta"><span>vLLM</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-llama-cpp.html">
+      <span class="tut-diff">入门</span>
+      <h3>llama.cpp 入门：构建本地游戏 AI</h3>
+      <p>从下载量化模型到接入脚本，制作离线 NPC 对话原型，并产出可导入游戏管线的 JSON 响应。</p>
+      <div class="tut-meta"><span>llama.cpp</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-openrouter.html">
+      <span class="tut-diff">入门</span>
+      <h3>OpenRouter 入门：接入游戏 AI NPC</h3>
+      <p>从注册、选模型到调用 API，完成一个能响应玩家对话的游戏 NPC，并将输出接入游戏对话流程。</p>
+      <div class="tut-meta"><span>OpenRouter</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-kokoro.html">
+      <span class="tut-diff">入门</span>
+      <h3>Kokoro入门：批量生成游戏角色配音</h3>
+      <p>从安装本地模型到批量合成语音，把角色台词导出为WAV并接入游戏原型，完成可试听、可迭代的配音资产。</p>
+      <div class="tut-meta"><span>Kokoro TTS</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-whisper.html">
+      <span class="tut-diff">入门</span>
+      <h3>Whisper 入门：从录音到字幕管线</h3>
+      <p>面向游戏开发者，演示如何安装 Whisper、批量转写录音、生成带时间轴字幕，并把文本导入内容管理与配音流程。</p>
+      <div class="tut-meta"><span>Whisper</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-beatoven.html">
+      <span class="tut-diff">入门</span>
+      <h3>Beatoven AI配乐入门：从场景需求到音乐草案</h3>
+      <p>面向游戏开发者，演示如何用情绪、节奏和时长描述场景，让 Beatoven 生成配乐草案，并筛选、导出后接入游戏或视频制作管线。</p>
+      <div class="tut-meta"><span>Beatoven</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-claude-code.html">
+      <span class="tut-diff">入门</span>
+      <h3>Claude Code 入门：从安装到修复游戏 Bug</h3>
+      <p>面向使用 AI 开发游戏的开发者，演示在终端中理解项目、定位问题、修改多文件代码并运行测试，最终形成可提交的游戏开发成果。</p>
+      <div class="tut-meta"><span>Claude Code</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-spline.html">
+      <span class="tut-diff">入门</span>
+      <h3>Spline 入门：从 AI 资产到交互场景</h3>
+      <p>面向 AI 游戏开发者，演示用 Spline 生成材质、组织 AI 三维资产、制作动画交互，并将场景导出到网页或游戏引擎。</p>
+      <div class="tut-meta"><span>Spline</span><span>⏱ 约 25 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-kaggle-datasets.html">
+      <span class="tut-diff">入门</span>
+      <h3>Kaggle 数据集入门：训练游戏 AI</h3>
+      <p>从搜索、下载并检查数据集，到接入训练脚本和复现实验，帮助你快速获得可用的图像、文本或音频训练素材。</p>
+      <div class="tut-meta"><span>Kaggle Datasets</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-comfyui-workflows-zho.html">
+      <span class="tut-diff">入门</span>
+      <h3>ComfyUI 工作流入门：从复用到游戏资产</h3>
+      <p>面向游戏美术开发者，讲解如何浏览并下载 ZHO 工作流、替换模型与提示词、运行生成任务，再把结果整理成可供引擎使用的贴图、概念图和参考素材。</p>
+      <div class="tut-meta"><span>ComfyUI 工作流合集 ZHO</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-comfyui-copilot.html">
+      <span class="tut-diff">入门</span>
+      <h3>ComfyUI智能助手入门：从安装到游戏素材</h3>
+      <p>面向游戏开发者，讲解安装 ComfyUI-Copilot、配置模型与节点，并用工作流生成可进入资产管线的游戏概念图。</p>
+      <div class="tut-meta"><span>ComfyUI 智能助手</span><span>⏱ 约 25 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-comfyui-examples.html">
+      <span class="tut-diff">入门</span>
+      <h3>ComfyUI 示例入门：从节点到游戏素材</h3>
+      <p>通过官方示例工作流掌握节点连接、参数设置与批量生成，并将透明贴图、角色图等产物整理进游戏美术管线。</p>
+      <div class="tut-meta"><span>ComfyUI 官方示例集</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-comfyui-to-python-extension.html">
+      <span class="tut-diff">入门</span>
+      <h3>ComfyUI转Python扩展入门：从工作流到可执行脚本</h3>
+      <p>面向AI游戏开发者，演示如何把ComfyUI工作流转换成Python脚本，并将生成素材接入批处理与游戏资源管线。</p>
+      <div class="tut-meta"><span>ComfyUI 转 Python 扩展</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-comfyui-yolain-workflows.html">
+      <span class="tut-diff">入门</span>
+      <h3>ComfyUI 工作流入门：生成游戏美术素材</h3>
+      <p>面向游戏开发与美术人员，介绍如何安装依赖、导入示例工作流、替换提示词并批量生成可直接进入资产管线的图像素材。</p>
+      <div class="tut-meta"><span>ComfyUI-Yolain 工作流集</span><span>⏱ 约 25 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-whatdreamscost-comfyui.html">
+      <span class="tut-diff">进阶</span>
+      <h3>WhatDreamsCost 入门：搭建游戏 AI 视频工作流</h3>
+      <p>完成扩展安装、模型与节点配置，并利用 LTX Director 和可复用工作流生成游戏场景片段，导入剪辑或游戏宣传管线。</p>
+      <div class="tut-meta"><span>WhatDreamsCost ComfyUI 扩展</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-invokeai.html">
+      <span class="tut-diff">入门</span>
+      <h3>InvokeAI入门：从安装到游戏素材</h3>
+      <p>面向独立游戏开发者，演示安装本地模型、用提示词生成概念图，并在画布中完成局部重绘、扩图与ControlNet控制，导出可进入资产管线的图片。</p>
+      <div class="tut-meta"><span>InvokeAI</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-vibevoice-comfyui.html">
+      <span class="tut-diff">入门</span>
+      <h3>VibeVoice入门：从节点安装到游戏对白</h3>
+      <p>在ComfyUI中安装VibeVoice节点，下载并配置文本转语音模型，生成单人或多人对白音频，再导入游戏音频管线。</p>
+      <div class="tut-meta"><span>VibeVoice ComfyUI 集成</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-comfyui-lora-manager.html">
+      <span class="tut-diff">入门</span>
+      <h3>LoRA 管理入门：从安装到接入工作流</h3>
+      <p>面向游戏 AI 美术开发，讲解安装扩展、整理与预览 LoRA、读取元数据，并把模型接入 ComfyUI 工作流，产出可复用的游戏概念图。</p>
+      <div class="tut-meta"><span>ComfyUI LoRA 管理器</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-comfyui-workspace-manager.html">
+      <span class="tut-diff">入门</span>
+      <h3>ComfyUI 工作区管理入门</h3>
+      <p>面向游戏开发团队，集中整理、切换和复用 ComfyUI 工作流，并规范导出素材与模型的入管线流程。</p>
+      <div class="tut-meta"><span>ComfyUI 工作区管理器</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-comfyui-minimaxh3-director.html">
+      <span class="tut-diff">入门</span>
+      <h3>MiniMax H3 导演工作流入门</h3>
+      <p>在 ComfyUI 中安装并运行 MiniMax H3 多语言导演工作流，生成可复用的游戏概念图、分镜和视觉参考图，并整理进资产管线。</p>
+      <div class="tut-meta"><span>ComfyUI MiniMax H3 导演工作流</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-workflow-templates.html">
+      <span class="tut-diff">入门</span>
+      <h3>ComfyUI模板入门：快速搭建游戏资产管线</h3>
+      <p>面向游戏开发者，介绍如何获取、配置并复用官方工作流模板，把AI生成的贴图、模型与动画结果导入游戏资源管线。</p>
+      <div class="tut-meta"><span>ComfyUI 工作流模板库</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-wyrde-comfyui-workflows.html">
+      <span class="tut-diff">入门</span>
+      <h3>ComfyUI 游戏素材工作流入门</h3>
+      <p>从 GitHub 获取社区工作流，在 ComfyUI 中导入并调整参数，批量生成游戏概念图、图标和贴图，再接入开发资源管线。</p>
+      <div class="tut-meta"><span>Wyrde ComfyUI 工作流合集</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-hunyuan3d-1.html">
+      <span class="tut-diff">进阶</span>
+      <h3>混元3D-1入门：从安装到游戏资产</h3>
+      <p>面向游戏开发者，演示如何安装开源项目，用文本或参考图生成三维模型，并导出、检查后接入Blender、Unity或Unreal资产管线。</p>
+      <div class="tut-meta"><span>混元3D 1.0</span><span>⏱ 约45分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-prolificdreamer.html">
+      <span class="tut-diff">进阶</span>
+      <h3>ProlificDreamer入门：从安装到三维资产</h3>
+      <p>面向游戏开发者，介绍如何部署文本到三维模型、生成高保真资产，并将网格接入Blender、Unity或Unreal完成原型验证。</p>
+      <div class="tut-meta"><span>多产梦想家</span><span>⏱ 约60分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-t3bench.html">
+      <span class="tut-diff">进阶</span>
+      <h3>T3Bench 入门：评测 AI 三维生成模型</h3>
+      <p>面向用 AI 做游戏的开发者，演示如何安装 T3Bench、配置模型与数据，并依据统一指标比较三维生成效果，选出适合游戏原型制作的方案。</p>
+      <div class="tut-meta"><span>T3Bench 三维生成评测基准</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-gaussiandreamer.html">
+      <span class="tut-diff">进阶</span>
+      <h3>高斯梦境生成器入门：从提示词到三维资产</h3>
+      <p>面向游戏开发者，讲解如何安装 GaussianDreamer、用文本生成三维高斯，并将结果导入引擎完成快速原型验证。</p>
+      <div class="tut-meta"><span>高斯梦想家</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-midjourney.html">
+      <span class="tut-diff">入门</span>
+      <h3>Midjourney 游戏美术入门：从提示词到概念稿</h3>
+      <p>面向游戏开发团队，演示如何用文本探索场景、角色与美术风格，批量比较方案，并将入选图像整理为可交付的视觉参考。</p>
+      <div class="tut-meta"><span>Midjourney</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-luciddreamer.html">
+      <span class="tut-diff">进阶</span>
+      <h3>LucidDreamer入门：从提示词到三维资产</h3>
+      <p>面向游戏开发者，介绍安装开源项目、配置文本生成三维环境，并用官方脚本导出可进入资产管线的模型。</p>
+      <div class="tut-meta"><span>LucidDreamer</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-3dgenstudio.html">
+      <span class="tut-diff">进阶</span>
+      <h3>3DGenStudio 入门：从安装到游戏资产</h3>
+      <p>面向游戏开发者，演示如何用AI生成概念图、三维网格、UV与纹理，并将成品整理进Blender和引擎资产管线。</p>
+      <div class="tut-meta"><span>3DGenStudio</span><span>⏱ 约 45 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-3dtopia.html">
+      <span class="tut-diff">入门</span>
+      <h3>3DTopia 入门：从提示词到三维验证稿</h3>
+      <p>面向游戏开发者，演示如何安装开源项目、用文本生成三维内容，并把结果整理成可用于玩法与美术前期验证的资产。</p>
+      <div class="tut-meta"><span>3DTopia</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-3dfuse.html">
+      <span class="tut-diff">高级</span>
+      <h3>3DFuse 入门：生成首个三维一致模型</h3>
+      <p>面向游戏开发者，演示如何安装 3DFuse、用文本生成三维资产，并将结果导出到 Blender 等资产管线。</p>
+      <div class="tut-meta"><span>3DFuse</span><span>⏱ 约 60 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-make-a-character.html">
+      <span class="tut-diff">入门</span>
+      <h3>Make-A-Character 入门：从提示词到三维角色</h3>
+      <p>面向使用 AI 制作游戏的开发者，演示如何配置环境、编写角色提示词、生成三维角色，并把模型与贴图导入主流游戏管线。</p>
+      <div class="tut-meta"><span>Make-A-Character</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-world-r1.html">
+      <span class="tut-diff">高级</span>
+      <h3>World-R1 入门：生成三维一致游戏视频</h3>
+      <p>从克隆仓库、配置模型到生成测试视频，并接入游戏宣传素材管线，理解三维约束如何减少画面穿帮。</p>
+      <div class="tut-meta"><span>World-R1</span><span>⏱ 约 90 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-comfyui-hy-motion1.html">
+      <span class="tut-diff">进阶</span>
+      <h3>HY-Motion1入门：生成首个人体动作</h3>
+      <p>在ComfyUI中安装并调用HY-Motion1，用文本生成人体动作，再将结果导入游戏角色动画原型与动作参考流程。</p>
+      <div class="tut-meta"><span>ComfyUI-HY-Motion1</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-gala3d.html">
+      <span class="tut-diff">进阶</span>
+      <h3>GALA3D 入门：从文本布局到三维场景</h3>
+      <p>面向游戏开发者，演示如何安装 GALA3D、输入文本与布局条件、生成复杂三维场景，并把结果接入后续资产制作管线。</p>
+      <div class="tut-meta"><span>GALA3D</span><span>⏱ 约 45 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-chatarena.html">
+      <span class="tut-diff">入门</span>
+      <h3>ChatArena入门：搭建首个多智能体游戏</h3>
+      <p>从安装环境、配置模型到运行对话实验，搭建一个可观察、可评估的多智能体协作原型，并接入游戏开发管线。</p>
+      <div class="tut-meta"><span>ChatArena 多智能体语言游戏环境</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-ai-game-devtools.html">
+      <span class="tut-diff">入门</span>
+      <h3>AI 游戏开发工具入门：从导航到首个原型</h3>
+      <p>按代码、美术、动画和音视频环节浏览资源中心，筛选适配项目的 AI 工具，并建立可复用的游戏原型制作流程。</p>
+      <div class="tut-meta"><span>AI 游戏开发工具资源中心</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-gamingagent.html">
+      <span class="tut-diff">进阶</span>
+      <h3>GamingAgent 入门：评测你的第一个游戏智能体</h3>
+      <p>从安装 Python 环境、接入模型到运行游戏任务，搭建一套可复现的 LLM 或 VLM 游戏智能体评测流程，并把结果用于模型选型与迭代。</p>
+      <div class="tut-meta"><span>GamingAgent 游戏智能体与评测框架</span><span>⏱ 约 60 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-stable-diffusion.html">
+      <span class="tut-diff">入门</span>
+      <h3>AI游戏素材入门：从仓库到资产管线</h3>
+      <p>从 GitHub 资源库筛选模型与教程，生成概念图、角色立绘、图标和语音素材，并整理为可供游戏引擎使用的文件。</p>
+      <div class="tut-meta"><span>Stable Diffusion</span><span>⏱ 约 45 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-yovoice.html">
+      <span class="tut-diff">入门</span>
+      <h3>Yovoice 入门：生成游戏配音与配乐</h3>
+      <p>从本地安装、文本转语音、声音克隆到歌曲和多轨配乐，完整走通 AI 音频进入游戏管线的流程。</p>
+      <div class="tut-meta"><span>YoVoice</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-alexandria-audiobook.html">
+      <span class="tut-diff">进阶</span>
+      <h3>AI游戏有声书入门：从脚本到多角色配音</h3>
+      <p>面向游戏开发者，演示如何导入剧本、让大模型标注角色与台词，再用克隆或设计声音生成多角色样片，并导出可直接接入项目管线的声音文件。</p>
+      <div class="tut-meta"><span>Alexandria Audiobook</span><span>⏱ 约 45 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-izwi.html">
+      <span class="tut-diff">进阶</span>
+      <h3>Izwi 入门：搭建游戏语音 AI 管线</h3>
+      <p>从 GitHub 获取 Izwi，完成本地语音识别、说话人分离、文本转语音与声音克隆，并接入兼容 OpenAI 的 API，让对白素材进入游戏音频管线。</p>
+      <div class="tut-meta"><span>Izwi</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-funplay-unity-mcp.html">
+      <span class="tut-diff">进阶</span>
+      <h3>Unity MCP 入门：用 AI 生成并验证游戏场景</h3>
+      <p>从安装配置到执行编辑器代码，让 AI 创建场景、生成资源、模拟输入并截图验证，形成可迭代的游戏开发闭环。</p>
+      <div class="tut-meta"><span>Funplay Unity MCP</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-lingecho-app.html">
+      <span class="tut-diff">进阶</span>
+      <h3>LingEcho 入门：接入首个实时语音 NPC</h3>
+      <p>从安装部署到串联语音识别、文本转语音与大模型，完成一个可实时听、说并连续对话的游戏 NPC 原型。</p>
+      <div class="tut-meta"><span>灵回声应用</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-qwentts-cpp.html">
+      <span class="tut-diff">入门</span>
+      <h3>Qwen3-TTS C++入门：生成游戏角色语音</h3>
+      <p>从编译部署到声音克隆与批量导出，完成一段可接入游戏音频管线的24 kHz单声道角色语音，并了解多硬件加速方案。</p>
+      <div class="tut-meta"><span>Qwen TTS C++ 实现</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-civagent.html">
+      <span class="tut-diff">进阶</span>
+      <h3>CivAgent 入门：接入第一个智能体玩家</h3>
+      <p>从克隆项目、配置模型到启动 Unciv 对局，搭建一个由大语言模型驱动、能够读取战局并作出决策的数字玩家。</p>
+      <div class="tut-meta"><span>CivAgent 文明类策略游戏智能体</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-free-ai-notebooks.html">
+      <span class="tut-diff">入门</span>
+      <h3>AI游戏素材入门：从笔记本到可用资产</h3>
+      <p>面向游戏开发者，演示如何运行文生视频、图生视频、声音克隆、TTS与音乐笔记本，并将生成结果整理进游戏开发管线。</p>
+      <div class="tut-meta"><span>免费 AI 笔记本合集</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-text2image-gui.html">
+      <span class="tut-diff">入门</span>
+      <h3>AI游戏美术入门：从安装到首张概念图</h3>
+      <p>面向游戏开发者，讲解安装并配置文本生成图像 GUI，调用 Stable Diffusion 生成角色、场景概念图，并将成图整理进游戏美术生产管线。</p>
+      <div class="tut-meta"><span>Text2Image 图形界面</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-kitchen-comfyui.html">
+      <span class="tut-diff">入门</span>
+      <h3>Kitchen ComfyUI入门：搭建首个游戏美术工作流</h3>
+      <p>从安装配置到连接节点，完成一个可重复运行的Stable Diffusion文生图流程，并把生成图片整理为可直接进入游戏资产管线的素材。</p>
+      <div class="tut-meta"><span>Kitchen ComfyUI</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-sd-gui.html">
+      <span class="tut-diff">入门</span>
+      <h3>SD GUI 入门：从安装到游戏素材</h3>
+      <p>面向游戏美术开发者，介绍 SD GUI 的安装、模型配置、提示词生图，以及导出素材并接入项目管线的完整流程。</p>
+      <div class="tut-meta"><span>SD GUI</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-civitai.html">
+      <span class="tut-diff">入门</span>
+      <h3>CivitAI 入门：找到并接入游戏美术模型</h3>
+      <p>面向使用 AI 制作游戏的开发者，讲解如何在 CivitAI 筛选模型与 LoRA、读取生成参数，并将成果规范接入概念设计和素材管线。</p>
+      <div class="tut-meta"><span>CivitAI</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-openart.html">
+      <span class="tut-diff">入门</span>
+      <h3>OpenArt 入门：批量生成游戏美术素材</h3>
+      <p>面向用 AI 做游戏的开发者，演示从创建项目、生成与微调图像，到训练视觉风格、批量扩产并导入游戏管线的完整流程。</p>
+      <div class="tut-meta"><span>OpenArt</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-csm.html">
+      <span class="tut-diff">入门</span>
+      <h3>CSM 入门：从提示词到游戏资产</h3>
+      <p>面向使用 AI 制作游戏的开发者，演示如何用文字或图片生成三维模型、材质与场景，并将结果整理后导入主流三维制作管线。</p>
+      <div class="tut-meta"><span>CSM</span><span>⏱ 约 25 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-artbot-for-stable-diffusion.html">
+      <span class="tut-diff">入门</span>
+      <h3>AI Horde图像生成入门：从配置到游戏素材</h3>
+      <p>面向游戏开发者，介绍如何安装并配置 ArtBot，通过 AI Horde 分布式算力生成 Stable Diffusion 图像，再将合格素材导入游戏资源管线。</p>
+      <div class="tut-meta"><span>ArtBot for Stable Diffusion</span><span>⏱ 约 25 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-luma-ai.html">
+      <span class="tut-diff">入门</span>
+      <h3>Luma AI 入门：从实景采集到游戏场景</h3>
+      <p>面向游戏开发者，演示如何用实景视频重建三维场景，并将生成结果整理为可用于原型验证、游戏资产和宣传视频的素材。</p>
+      <div class="tut-meta"><span>Luma AI</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-pika.html">
+      <span class="tut-diff">入门</span>
+      <h3>Pika 入门：从游戏图片到宣传短片</h3>
+      <p>面向游戏开发者，演示如何上传游戏截图、生成动态视频、局部修改与添加对象，并把成片导出到宣传与测试管线。</p>
+      <div class="tut-meta"><span>Pika</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-huggingface.html">
+      <span class="tut-diff">入门</span>
+      <h3>Hugging Face 入门：接入游戏 AI 模型</h3>
+      <p>从查找、下载开源模型到本地推理与在线 API，将文本生成能力接入 NPC 对话、内容生成或智能体工作流。</p>
+      <div class="tut-meta"><span>Hugging Face</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-ideogram.html">
+      <span class="tut-diff">入门</span>
+      <h3>Ideogram 入门：生成游戏宣传图与 Logo</h3>
+      <p>面向游戏开发者，演示如何用 Ideogram 生成带准确文字的海报、Logo 与宣传概念图，并将成图整理进素材管线。</p>
+      <div class="tut-meta"><span>Ideogram</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-hedra.html">
+      <span class="tut-diff">入门</span>
+      <h3>Hedra 入门：生成NPC口型同步对话视频</h3>
+      <p>面向AI游戏开发者，讲解如何用角色图与音频生成NPC对话视频，并将成片接入Unity、Unreal或角色展示管线。</p>
+      <div class="tut-meta"><span>Hedra</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-character-ai.html">
+      <span class="tut-diff">入门</span>
+      <h3>Character.AI 入门：从人设到 NPC 原型</h3>
+      <p>面向 AI 游戏开发者，演示如何创建角色、调校语气、测试多轮玩家交互，并把对话转化为可交付的角色设定与行为规格。</p>
+      <div class="tut-meta"><span>Character.AI</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-hyper3d-rodin.html">
+      <span class="tut-diff">入门</span>
+      <h3>Rodin 入门：从概念图到可编辑三维模型</h3>
+      <p>面向游戏开发者，演示如何用文字或图片生成三维资产，并经拓扑、网格检查后导入引擎或 DCC 工具继续制作。</p>
+      <div class="tut-meta"><span>Hyper3D Rodin</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-rokoko-vision.html">
+      <span class="tut-diff">入门</span>
+      <h3>Rokoko Vision 入门：真人动作转动画数据</h3>
+      <p>用普通摄像头录制真人表演，由 AI 识别骨骼姿态并导出动作数据，再导入游戏或动画管线，驱动角色完成基础动作。</p>
+      <div class="tut-meta"><span>Rokoko Vision</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-fish-speech.html">
+      <span class="tut-diff">进阶</span>
+      <h3>Fish Speech 入门：生成多语种角色语音</h3>
+      <p>从安装开源推理工具开始，用参考音频克隆角色声音，生成多语种对白，并整理成可直接接入游戏音频管线的 WAV 文件。</p>
+      <div class="tut-meta"><span>Fish Speech</span><span>⏱ 约 45 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-cosyvoice.html">
+      <span class="tut-diff">入门</span>
+      <h3>CosyVoice 入门：生成首个游戏角色对白</h3>
+      <p>从环境安装、参考音频准备到批量生成游戏对白，完成角色声线克隆、情绪控制，并把导出音频接入游戏资产管线。</p>
+      <div class="tut-meta"><span>CosyVoice</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-layer-ai.html">
+      <span class="tut-diff">入门</span>
+      <h3>Layer AI 入门：批量生成游戏资产</h3>
+      <p>面向独立开发者与游戏美术团队，演示如何用参考图建立统一风格、批量生成角色和场景资产，并将筛选后的素材导出到制作管线。</p>
+      <div class="tut-meta"><span>Layer AI</span><span>⏱ 约 25 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-rosebud-ai.html">
+      <span class="tut-diff">入门</span>
+      <h3>Rosebud AI 入门：从想法到游戏原型</h3>
+      <p>用对话生成角色、场景和叙事方向，迭代出可展示的游戏概念原型，并将视觉产物整理进开发管线。</p>
+      <div class="tut-meta"><span>Rosebud AI</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-aider.html">
+      <span class="tut-diff">入门</span>
+      <h3>Aider 入门：用 AI 修改并提交游戏代码</h3>
+      <p>面向独立游戏开发者，演示在终端中配置 Aider、读取项目、生成补丁、运行测试并用 AI 辅助提交代码。</p>
+      <div class="tut-meta"><span>Aider</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-cline.html">
+      <span class="tut-diff">入门</span>
+      <h3>Cline 入门：从安装到游戏原型</h3>
+      <p>在代码编辑器中配置 Cline 与模型 API，让 AI 规划并执行跨文件改造，最终生成一个可运行的 2D 游戏原型。</p>
+      <div class="tut-meta"><span>Cline</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-pixelcut.html">
+      <span class="tut-diff">入门</span>
+      <h3>Pixelcut 入门：从 AI 素材到商店宣传图</h3>
+      <p>面向 AI 游戏开发者，演示用 Pixelcut 自动抠图、清理边缘、套用截图模板，并批量产出可提交商店的营销素材。</p>
+      <div class="tut-meta"><span>Pixelcut</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-krita-ai-diffusion.html">
+      <span class="tut-diff">入门</span>
+      <h3>Krita AI Diffusion入门：从安装到游戏资产</h3>
+      <p>在Krita中完成文生图、局部重绘与ControlNet控制，把生成结果整理为分层PSD，并导出可直接进入游戏引擎的贴图与概念稿。</p>
+      <div class="tut-meta"><span>Krita AI Diffusion</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-roo-code.html">
+      <span class="tut-diff">入门</span>
+      <h3>Roo Code 入门：从安装到首个游戏原型</h3>
+      <p>面向使用 AI 开发游戏的开发者，演示在 VS Code 中配置 Roo Code、选择本地或云端模型，并让代理读写项目、运行命令，最终产出可运行的游戏原型。</p>
+      <div class="tut-meta"><span>Roo Code</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-continue-dev.html">
+      <span class="tut-diff">入门</span>
+      <h3>Continue 入门：用 AI 完成首个游戏功能</h3>
+      <p>从安装配置到上下文补全、项目聊天和局部改写，搭建可自建后端的 AI 游戏编码流程。</p>
+      <div class="tut-meta"><span>Continue</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-elevenlabs.html">
+      <span class="tut-diff">入门</span>
+      <h3>ElevenLabs 入门：从台词到角色语音</h3>
+      <p>面向游戏开发者，演示如何用 ElevenLabs 生成旁白与角色配音，并整理成可直接导入项目或交给音频团队的语音素材。</p>
+      <div class="tut-meta"><span>ElevenLabs</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-kits-ai.html">
+      <span class="tut-diff">入门</span>
+      <h3>Kits AI 入门：从人声到游戏成品</h3>
+      <p>面向游戏开发者，演示如何使用 Kits AI 分离人声、降噪、修复音频并完成响度优化，最终导出可直接放入项目或交给引擎处理的音频文件。</p>
+      <div class="tut-meta"><span>Kits AI</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-lalal-ai.html">
+      <span class="tut-diff">入门</span>
+      <h3>LALAL.AI 入门：提取游戏可用音频素材</h3>
+      <p>面向游戏开发者，演示如何用 AI 拆分音乐、对白与伴奏，并将结果整理成可直接导入音频管线的 stems 素材。</p>
+      <div class="tut-meta"><span>LALAL.AI</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-stable-audio.html">
+      <span class="tut-diff">入门</span>
+      <h3>Stable Audio 入门：生成游戏音频素材</h3>
+      <p>面向游戏开发者，演示如何用文字生成音乐、音效与氛围音频，并通过变奏、时长和风格控制，将结果整理成可试用的游戏音频资产。</p>
+      <div class="tut-meta"><span>Stable Audio</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-audiocraft.html">
+      <span class="tut-diff">入门</span>
+      <h3>AudioCraft 入门：生成游戏音乐与音效</h3>
+      <p>面向游戏开发者，介绍如何安装 AudioCraft、编写音乐与音效提示词、批量生成音频，并把产物整理成可直接接入项目管线的素材。</p>
+      <div class="tut-meta"><span>AudioCraft</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gpt-sovits.html">
+      <span class="tut-diff">入门</span>
+      <h3>GPT-SoVITS 入门：从安装到批量对白</h3>
+      <p>面向游戏开发者，介绍如何准备角色样本、微调音色并批量生成对白，让生成的语音文件直接进入游戏音频管线。</p>
+      <div class="tut-meta"><span>GPT-SoVITS</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-animate-diff.html">
+      <span class="tut-diff">入门</span>
+      <h3>AnimateDiff入门：从安装到游戏动态预演</h3>
+      <p>面向游戏开发者，演示如何安装本地工作流，用静态角色图生成动作短片，并通过ControlNet约束镜头运动，导出可进入美术评审的素材。</p>
+      <div class="tut-meta"><span>AnimateDiff</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-capcut.html">
+      <span class="tut-diff">入门</span>
+      <h3>剪映国际版入门：制作游戏宣传短片</h3>
+      <p>从导入游戏录屏和 AI 素材开始，完成字幕、旁白、静音清理、抠像及模板包装，导出适配 TikTok、YouTube Shorts 的宣传片。</p>
+      <div class="tut-meta"><span>CapCut</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-descript.html">
+      <span class="tut-diff">入门</span>
+      <h3>Descript 入门：把访谈变成可发布视频</h3>
+      <p>面向游戏开发者，演示如何导入访谈、自动转录、按文字删片段、清理口癖并导出成片，让 AI 转录直接进入视频粗剪管线。</p>
+      <div class="tut-meta"><span>Descript</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-ollama.html">
+      <span class="tut-diff">入门</span>
+      <h3>Ollama 入门：接入游戏 NPC</h3>
+      <p>在本地安装 Ollama、拉取开源模型并调用 API，产出可接入游戏 NPC 对话与测试流程的本地推理服务。</p>
+      <div class="tut-meta"><span>Ollama</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-windsurf.html">
+      <span class="tut-diff">入门</span>
+      <h3>Windsurf 入门：从安装到游戏功能落地</h3>
+      <p>面向游戏开发者，演示 Windsurf 如何理解整个工程、拆解需求、修改代码并自动串联开发任务，最终产出可运行并接入版本管理管线的新功能。</p>
+      <div class="tut-meta"><span>Windsurf</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-replit.html">
+      <span class="tut-diff">入门</span>
+      <h3>Replit 入门：用 AI 做出并部署游戏原型</h3>
+      <p>从创建项目、描述玩法到让 AI 代理写代码、运行调试和发布，完成一个可在浏览器体验的游戏原型。</p>
+      <div class="tut-meta"><span>Replit</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-replicate.html">
+      <span class="tut-diff">入门</span>
+      <h3>Replicate 入门：从模型调用到游戏资产</h3>
+      <p>面向游戏开发者，演示如何在 Replicate 选择模型、生成并筛选素材，再通过 API 批量接入资产生成管线。</p>
+      <div class="tut-meta"><span>Replicate</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-power-automate.html">
+      <span class="tut-diff">入门</span>
+      <h3>Power Automate 入门：从连接到首个自动化流程</h3>
+      <p>本教程带你访问 Power Automate，选择模板并配置触发器与操作，最终创建一个可自动执行并可查看运行记录的流程。</p>
+      <div class="tut-meta"><span>Power Automate</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-pureref.html">
+      <span class="tut-diff">入门</span>
+      <h3>PureRef 入门：搭建游戏美术参考库</h3>
+      <p>从下载安装到素材整理、检索与并排对照，逐步建立一个清晰易用的游戏美术参考板，方便创作时快速查找和比对图片。</p>
+      <div class="tut-meta"><span>PureRef</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-games104.html">
+      <span class="tut-diff">入门</span>
+      <h3>现代游戏引擎入门：从架构到实时demo</h3>
+      <p>系统学习现代游戏引擎的总体架构，以及渲染、物理、动画和AI的基本原理，并通过课程讲义与案例建立实时引擎知识框架。</p>
+      <div class="tut-meta"><span>GAMES104 现代游戏引擎</span><span>⏱ 约 2 小时</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-khronos-learn.html">
+      <span class="tut-diff">入门</span>
+      <h3>Vulkan 入门：从环境配置到首个窗口</h3>
+      <p>沿着官方学习路径认识 OpenGL 与 Vulkan，并动手编译示例，创建一个可交互的 Vulkan 图形窗口，为后续图形开发打下基础。</p>
+      <div class="tut-meta"><span>Khronos 学习中心</span><span>⏱ 约 90 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gamedev-net.html">
+      <span class="tut-diff">入门</span>
+      <h3>GameDev.net 入门：从注册到解决开发难题</h3>
+      <p>了解 GameDev.net 的论坛、新闻、教程、作品展示与招聘板块，并通过提问、检索和参与讨论，快速获得游戏开发经验与行业信息。</p>
+      <div class="tut-meta"><span>GameDev.net</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-game-developer.html">
+      <span class="tut-diff">入门</span>
+      <h3>Game Developer 入门：读懂行业动态</h3>
+      <p>从网站导航、栏目筛选到全文阅读与资料整理，快速掌握 Game Developer 的内容入口，并建立追踪游戏产业、开发者经验及行业报告的方法。</p>
+      <div class="tut-meta"><span>Game Developer</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gdc-vault.html">
+      <span class="tut-diff">入门</span>
+      <h3>GDC Vault 入门：高效学习前沿开发经验</h3>
+      <p>从检索演讲、筛选课程到建立个人学习清单，帮助开发者快速吸收游戏行业新技术与制作方法。</p>
+      <div class="tut-meta"><span>GDC Vault</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-epic-games-store.html">
+      <span class="tut-diff">进阶</span>
+      <h3>Epic 游戏商城：发布首款游戏的完整指南</h3>
+      <p>从注册开发者账号、创建游戏页面到提交审核与配置定价，系统掌握在Epic商城发行PC游戏的基本流程。</p>
+      <div class="tut-meta"><span>Epic 游戏商城</span><span>⏱ 约 45 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-rai-pal.html">
+      <span class="tut-diff">入门</span>
+      <h3>Rai Pal 入门：安装与管理首个模组</h3>
+      <p>从获取安装包、配置游戏目录，到启用、排序和排查模组，完成一次通用模组管理流程。</p>
+      <div class="tut-meta"><span>RAI PAL</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-deadlock-mod-manager.html">
+      <span class="tut-diff">入门</span>
+      <h3>Deadlock 模组管理入门：从安装到启用</h3>
+      <p>本文介绍 Deadlock 模组管理器的下载安装、模组发现与安装流程，以及本地管理和常见问题处理，帮助玩家完成第一个模组配置。</p>
+      <div class="tut-meta"><span>Deadlock 模组管理器</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-stardrop.html">
+      <span class="tut-diff">入门</span>
+      <h3>Stardrop 入门：安装与管理第一个模组</h3>
+      <p>本文将带你下载并配置 Stardrop，识别游戏与模组目录，完成首个模组的安装、启用和卸载，快速掌握图形化管理流程。</p>
+      <div class="tut-meta"><span>Stardrop</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-totk-mod-manager-for-switch-emulators.html">
+      <span class="tut-diff">入门</span>
+      <h3>王国之泪模组管理入门：安装并运行首个模组</h3>
+      <p>面向 Yuzu 模拟器玩家，讲解模组管理器的下载安装、游戏路径配置、模组导入与启停，以及运行验证的完整流程。</p>
+      <div class="tut-meta"><span>塞尔达传说：王国之泪模拟器 Mod 管理器</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-fmod.html">
+      <span class="tut-diff">入门</span>
+      <h3>FMOD Studio 入门：从安装到动态音频</h3>
+      <p>系统掌握 FMOD Studio 的项目创建、事件制作、参数驱动、自适应音乐、混音调试与引擎接入，完成一个可随游戏状态切换的音频示例。</p>
+      <div class="tut-meta"><span>FMOD Studio</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-audacity.html">
+      <span class="tut-diff">入门</span>
+      <h3>Audacity 入门：从录音到导出成品</h3>
+      <p>涵盖安装、项目管理、剪辑降噪、混音处理与格式导出，适合制作播客、配音及游戏音效。</p>
+      <div class="tut-meta"><span>Audacity</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-lmms.html">
+      <span class="tut-diff">入门</span>
+      <h3>LMMS 入门：从安装到导出原创配乐</h3>
+      <p>从下载安装、认识界面到编排多轨、添加虚拟乐器与效果，最终导出一段可用的原创背景音乐。</p>
+      <div class="tut-meta"><span>LMMS</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-github-copilot.html">
+      <span class="tut-diff">入门</span>
+      <h3>GitHub Copilot 入门：从安装到生成代码</h3>
+      <p>从账号开通、IDE安装到使用补全、对话和测试生成，完成一个可运行的小功能，并掌握审查与安全使用技巧。</p>
+      <div class="tut-meta"><span>GitHub Copilot</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-cursor.html">
+      <span class="tut-diff">入门</span>
+      <h3>Cursor 入门：从安装到完成游戏逻辑</h3>
+      <p>快速掌握 Cursor 的安装、项目接入、对话改码与代理执行，最终为一个小型游戏制作玩家移动、碰撞和计分逻辑。</p>
+      <div class="tut-meta"><span>Cursor</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-unity-asset-store.html">
+      <span class="tut-diff">入门</span>
+      <h3>Unity资源商店入门：从选包到导入项目</h3>
+      <p>了解搜索、筛选、购买与安装流程，并借助版本信息、示例工程和文档，把合适资源安全导入自己的Unity项目。</p>
+      <div class="tut-meta"><span>Unity 资源商店</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-opus-clip.html">
+      <span class="tut-diff">入门</span>
+      <h3>OpusClip 入门：剪出高传播短视频</h3>
+      <p>从导入长视频到识别高光、重构竖屏、生成字幕与标题，再到评分筛选和批量导出，完整制作一条可发布的短视频。</p>
+      <div class="tut-meta"><span>OpusClip</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-quaternius.html">
+      <span class="tut-diff">入门</span>
+      <h3>Quaternius 入门：从搜索到导入模型</h3>
+      <p>介绍如何在 Quaternius 浏览、筛选并下载 CC0 低模资产，将角色、道具和建筑素材导入引擎，完成一个可交互的场景原型。</p>
+      <div class="tut-meta"><span>Quaternius</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-freesound.html">
+      <span class="tut-diff">入门</span>
+      <h3>Freesound 入门：找到并下载合适音效</h3>
+      <p>从注册账号、搜索试听到按许可证筛选、收藏和下载音效，快速完成一次素材查找，并了解 API 与数据集入口。</p>
+      <div class="tut-meta"><span>Freesound</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-unreal-learning.html">
+      <span class="tut-diff">入门</span>
+      <h3>虚幻引擎入门：从安装到首个场景</h3>
+      <p>跟随 Epic 官方课程，从创建项目、搭建关卡到使用蓝图交互、添加材质动画，并了解打包发布与性能优化流程。</p>
+      <div class="tut-meta"><span>Unreal Learning</span><span>⏱ 约 60 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-wwise.html">
+      <span class="tut-diff">入门</span>
+      <h3>Wwise 入门：从安装到首个交互音效</h3>
+      <p>掌握 Wwise 的项目创建、声音导入、事件与参数驱动逻辑，并通过 Authoring 工具预览和导出基础工程。</p>
+      <div class="tut-meta"><span>Wwise</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-melody-assistant.html">
+      <span class="tut-diff">入门</span>
+      <h3>Melody Assistant 入门：从想法到歌曲初稿</h3>
+      <p>本教程介绍如何使用 Melody Assistant 围绕主题生成旋律、歌词、和弦与段落建议，并将结果保存为草稿，持续迭代成可供编曲或录音的歌曲方案。</p>
+      <div class="tut-meta"><span>Melody Assistant</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-soundation.html">
+      <span class="tut-diff">入门</span>
+      <h3>Soundation入门：从空白工程到发布作品</h3>
+      <p>本教程将带你完成Soundation注册、创建工程、编曲与录音，并进行混音、导出及在线发布，最终得到一首可直接分享的浏览器音乐作品。</p>
+      <div class="tut-meta"><span>Soundation</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-splice.html">
+      <span class="tut-diff">入门</span>
+      <h3>Splice 入门：从注册到制作首个采样</h3>
+      <p>本教程将带你完成 Splice 注册、素材检索与试听、收藏下载，并建立个人采样库，快速为音乐作品补充可用声音。</p>
+      <div class="tut-meta"><span>Splice</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-scenario.html">
+      <span class="tut-diff">入门</span>
+      <h3>Scenario 入门：从注册到批量生成资产</h3>
+      <p>本教程带你完成账号创建、风格模型训练与测试，并批量产出角色、场景和贴图，最终建立视觉一致的系列资产工作流。</p>
+      <div class="tut-meta"><span>Scenario</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-comfyui.html">
+      <span class="tut-diff">入门</span>
+      <h3>ComfyUI 入门：从安装到首个工作流</h3>
+      <p>完成 ComfyUI 本地安装、模型配置与基础节点连接，生成第一张图片，并学会保存和复用工作流。</p>
+      <div class="tut-meta"><span>ComfyUI</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-stable-diffusion-webui.html">
+      <span class="tut-diff">入门</span>
+      <h3>Stable Diffusion 入门：从安装到首张作品</h3>
+      <p>完成本地部署、模型配置与基础参数设置，并通过文生图和图生图模式生成首张作品，理解常用控制项及扩展机制。</p>
+      <div class="tut-meta"><span>Stable Diffusion WebUI</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-fooocus.html">
+      <span class="tut-diff">入门</span>
+      <h3>Fooocus入门：从安装到生成首张图</h3>
+      <p>详解 Fooocus 的环境准备、文生图、图生图及局部调整流程，帮助你快速生成并微调高质量作品。</p>
+      <div class="tut-meta"><span>Fooocus</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-trellis.html">
+      <span class="tut-diff">进阶</span>
+      <h3>TRELLIS 入门：从安装到生成三维资产</h3>
+      <p>详解环境准备、模型下载、文本与图片生成流程，并带你导出可用的三维网格、材质及高斯泼溅资产。</p>
+      <div class="tut-meta"><span>TRELLIS</span><span>⏱ 约 60 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-deepmotion.html">
+      <span class="tut-diff">入门</span>
+      <h3>DeepMotion 入门：从动作捕捉到角色动画</h3>
+      <p>本教程将带你完成环境准备、人体动作捕捉、文本生成动画、角色重定向与格式导出，产出可直接用于项目测试的3D角色动作。</p>
+      <div class="tut-meta"><span>DeepMotion</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-udio.html">
+      <span class="tut-diff">入门</span>
+      <h3>Udio入门：从提示词到首支AI歌曲</h3>
+      <p>掌握Udio的提示词创作、风格与结构控制、片段延展、歌曲重绘及音频导出流程，制作可用于游戏原型或短视频的高品质音乐。</p>
+      <div class="tut-meta"><span>Udio</span><span>⏱ 约25分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-kling-ai.html">
+      <span class="tut-diff">入门</span>
+      <h3>可灵 AI 入门：从提示词到首支视频</h3>
+      <p>从登录、编写提示词到参考图生成、镜头调整与视频延长，完整制作一支适合游戏宣传或短视频使用的动态素材。</p>
+      <div class="tut-meta"><span>可灵 AI</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-unity-learn.html">
+      <span class="tut-diff">入门</span>
+      <h3>Unity Learn 入门：从零到首个游戏场景</h3>
+      <p>跟随 Unity 官方课程，系统掌握编辑器操作、C# 脚本、角色移动与场景搭建，并完成一个可运行的基础游戏场景。</p>
+      <div class="tut-meta"><span>Unity Learn</span><span>⏱ 约 2 小时</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-bfxr.html">
+      <span class="tut-diff">入门</span>
+      <h3>Bfxr 入门：从打开网页到导出像素音效</h3>
+      <p>本教程带你用 Bfxr 制作游戏跳跃、爆炸与拾取等 8-bit 音效，理解波形、频率和包络设置，并导出可直接使用的 WAV 文件。</p>
+      <div class="tut-meta"><span>Bfxr</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-jimeng.html">
+      <span class="tut-diff">入门</span>
+      <h3>即梦 Dreamina 入门：生成首个AI视频</h3>
+      <p>从注册、描述画面到设置参数、生成与导出，完整演示文生视频和图生视频流程，帮助你快速制作可用于游戏宣发或短视频的创意画面。</p>
+      <div class="tut-meta"><span>即梦 Dreamina</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-hunyuan3d.html">
+      <span class="tut-diff">入门</span>
+      <h3>腾讯混元3D入门：生成首个3D模型</h3>
+      <p>从访问官网、输入描述或上传参考图开始，完成模型生成、材质预览、组件拆分与格式下载，快速获得可用于原型或游戏开发的3D资产。</p>
+      <div class="tut-meta"><span>腾讯混元 3D</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-runway.html">
+      <span class="tut-diff">入门</span>
+      <h3>Runway 入门：从注册到生成首支短片</h3>
+      <p>从注册账号、选择文生视频或图生视频模式开始，逐步完成提示词编写、生成、编辑与导出，产出适合游戏宣传或过场动画的短片。</p>
+      <div class="tut-meta"><span>Runway</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-steamworks.html">
+      <span class="tut-diff">入门</span>
+      <h3>Steamworks 入门：从注册到首次发布</h3>
+      <p>从开通Steamworks账号、完善商店资料，到接入成就、云存档并提交首个游戏版本，完整走通Steam发行准备流程。</p>
+      <div class="tut-meta"><span>Steamworks</span><span>⏱ 约60分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-game-jolt.html">
+      <span class="tut-diff">入门</span>
+      <h3>Game Jolt 入门：发布第一个独立游戏</h3>
+      <p>完成账号注册、项目上传、页面配置与试玩发布，让独立游戏在 Game Jolt 上线并开始吸引玩家反馈。</p>
+      <div class="tut-meta"><span>Game Jolt</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-godot-documentation.html">
+      <span class="tut-diff">入门</span>
+      <h3>Godot 官方文档入门：快速掌握开发流程</h3>
+      <p>从查阅版本文档、创建场景到编写脚本和导出项目，逐步建立使用官方文档解决开发问题的能力。</p>
+      <div class="tut-meta"><span>Godot 官方文档</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-indienova.html">
+      <span class="tut-diff">入门</span>
+      <h3>indienova 入门：探索独立游戏开发社区</h3>
+      <p>了解 indienova 的内容分区与检索方式，筛选开发文章、项目复盘和工具资源，并找到适合交流与持续学习的入口。</p>
+      <div class="tut-meta"><span>indienova  indie 游戏</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gcores.html">
+      <span class="tut-diff">入门</span>
+      <h3>机核入门：从浏览到参与游戏文化讨论</h3>
+      <p>掌握机核的资讯、专题、视频和社区功能，能够快速了解游戏热点、查找攻略内容，并参与有价值的玩家讨论。</p>
+      <div class="tut-meta"><span>机核</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-game-programming-patterns.html">
+      <span class="tut-diff">入门</span>
+      <h3>游戏编程范式入门：从架构到可运行原型</h3>
+      <p>系统学习游戏循环、享元、观察者、状态、命令等模式，并借助可运行示例完成一个模块清晰、易扩展的小型游戏架构。</p>
+      <div class="tut-meta"><span>游戏编程范式</span><span>⏱ 约 90 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-learn-opengl.html">
+      <span class="tut-diff">入门</span>
+      <h3>OpenGL 入门：从环境到首个窗口</h3>
+      <p>跟随 LearnOpenGL 中文教程，系统掌握现代 OpenGL 的环境搭建、渲染管线、着色器、纹理与光照，并完成一个可交互的 C++ 图形项目。</p>
+      <div class="tut-meta"><span>LearnOpenGL</span><span>⏱ 约 8 小时</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-igda.html">
+      <span class="tut-diff">入门</span>
+      <h3>IGDA 入门：从注册到参与全球社群</h3>
+      <p>完成注册、资料完善、兴趣方向选择与分会筛选，并找到适合游戏开发者的线上活动、行业资源及交流机会，建立持续参与社群的习惯。</p>
+      <div class="tut-meta"><span>IGDA</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-the-book-of-shaders.html">
+      <span class="tut-diff">入门</span>
+      <h3>着色器入门：从语法到动态渐变</h3>
+      <p>通过交互示例掌握GLSL基础，制作渐变、噪声与动态图案，并理解实时渲染中的颜色、坐标和噪声原理。</p>
+      <div class="tut-meta"><span>The Book of Shaders</span><span>⏱ 约 90 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-pygame.html">
+      <span class="tut-diff">入门</span>
+      <h3>Pygame 入门：从安装到第一个游戏</h3>
+      <p>本教程带你搭建 Python 环境、安装并验证 Pygame，逐步完成窗口、角色移动、事件处理、碰撞检测与计分，最终制作一个可运行的小游戏。</p>
+      <div class="tut-meta"><span>Pygame</span><span>⏱ 约 45 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-stride.html">
+      <span class="tut-diff">入门</span>
+      <h3>Stride 入门：从安装到首个3D场景</h3>
+      <p>完成开发环境配置、创建项目、搭建场景，并编写C#脚本控制角色交互，最终运行一个可交互的3D原型。</p>
+      <div class="tut-meta"><span>Stride</span><span>⏱ 约 45 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-maya.html">
+      <span class="tut-diff">入门</span>
+      <h3>Maya入门：从安装到首个三维模型</h3>
+      <p>介绍Maya从下载安装、界面操作到建模、材质、灯光和渲染的完整流程，帮助初学者完成一个可渲染的三维场景。</p>
+      <div class="tut-meta"><span>Maya 三维软件</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-3ds-max.html">
+      <span class="tut-diff">入门</span>
+      <h3>3ds Max入门：从建模到渲染出图</h3>
+      <p>从界面与基础建模讲起，依次完成标准物体编辑、材质与灯光设置、相机渲染及引擎导出，产出可直接用于项目展示的三维场景。</p>
+      <div class="tut-meta"><span>3ds Max</span><span>⏱ 约45分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-substance-painter.html">
+      <span class="tut-diff">入门</span>
+      <h3>Painter 入门：从安装到首个PBR材质</h3>
+      <p>讲解 Substance Painter 的安装、模型准备、图层绘制、智能材质与遮罩应用，并完成贴图导出，适合制作游戏资产表面效果。</p>
+      <div class="tut-meta"><span>Substance Painter</span><span>⏱ 约25分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-unreal-engine.html">
+      <span class="tut-diff">入门</span>
+      <h3>虚幻引擎入门：从安装到首个场景</h3>
+      <p>完成引擎安装与项目创建，搭建基础场景，添加灯光、材质和交互，并通过蓝图实现简单动画效果。</p>
+      <div class="tut-meta"><span>虚幻引擎</span><span>⏱ 约45分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gamemaker.html">
+      <span class="tut-diff">入门</span>
+      <h3>GameMaker 入门：从安装到第一个游戏</h3>
+      <p>本教程将带你完成 GameMaker 的基础设置，并用拖拽对象、GML 脚本、精灵动画与碰撞功能制作一个可运行的 2D 小游戏原型。</p>
+      <div class="tut-meta"><span>GameMaker</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-construct-3.html">
+      <span class="tut-diff">入门</span>
+      <h3>Construct 3 入门：制作第一个网页游戏</h3>
+      <p>从注册项目、搭建场景到添加事件逻辑，完成一个可移动、收集目标并计分的 H5 小游戏，并了解预览与导出流程。</p>
+      <div class="tut-meta"><span>Construct 3</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-trenchbroom.html">
+      <span class="tut-diff">入门</span>
+      <h3>TrenchBroom入门：从安装到首个地图</h3>
+      <p>从下载安装、选择引擎到创建房间、布置实体并编译测试，完整走通一款Quake系地图的制作流程。</p>
+      <div class="tut-meta"><span>TrenchBroom</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-love2d.html">
+      <span class="tut-diff">入门</span>
+      <h3>LÖVE 2D 入门：从安装到首个游戏</h3>
+      <p>了解 LÖVE 2D 的开发流程，搭建 Lua 脚本环境，并制作一个可移动角色、躲避障碍并显示分数的完整小游戏。</p>
+      <div class="tut-meta"><span>LÖVE 2D</span><span>⏱ 约 60 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-adventure-game-studio.html">
+      <span class="tut-diff">入门</span>
+      <h3>AGS入门：从安装到首个像素冒险</h3>
+      <p>本教程带你完成 Adventure Game Studio 的安装、项目创建与脚本编写，并利用示例工程制作一个包含房间、角色和交互对话的可运行冒险游戏。</p>
+      <div class="tut-meta"><span>Adventure Game Studio</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-cinema4d.html">
+      <span class="tut-diff">入门</span>
+      <h3>Cinema 4D入门：从建模到动画短片</h3>
+      <p>系统介绍Cinema 4D的界面、参数化建模、材质灯光与动画流程，帮助你快速搭建三维场景，并制作一段可播放的运动图形短片。</p>
+      <div class="tut-meta"><span>Cinema 4D</span><span>⏱ 约45分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-phaser.html">
+      <span class="tut-diff">入门</span>
+      <h3>Phaser 入门：从安装到第一个游戏</h3>
+      <p>理解 Phaser 的核心结构与工作流，完成开发环境搭建，并用 JavaScript 制作一个可交互、可计分的网页小游戏。</p>
+      <div class="tut-meta"><span>Phaser</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-substance-designer.html">
+      <span class="tut-diff">入门</span>
+      <h3>Substance Designer 入门：从安装到首个材质</h3>
+      <p>本教程带你完成软件安装、认识节点界面，并利用图元和曲线滤镜制作一块可导出的岩石 PBR 材质。</p>
+      <div class="tut-meta"><span>Substance Designer</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-marmoset-toolbag.html">
+      <span class="tut-diff">入门</span>
+      <h3>Marmoset Toolbag 入门：从预览到资产标注</h3>
+      <p>本教程将带你完成 Toolbag 的基础配置、模型与材质预览、动画逐帧检查、灯光切换及资产标注，建立规范的实时资产检查流程。</p>
+      <div class="tut-meta"><span>Marmoset Toolbag</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-notepad-plus-plus.html">
+      <span class="tut-diff">入门</span>
+      <h3>Notepad++ 入门：从安装到高效编辑</h3>
+      <p>从下载安装、基础编辑到正则替换、宏录制与插件配置，逐步掌握配置文件、脚本和代码文本的高效处理方法。</p>
+      <div class="tut-meta"><span>Notepad++</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-armorpaint.html">
+      <span class="tut-diff">入门</span>
+      <h3>ArmorPaint 入门：从安装到游戏贴图</h3>
+      <p>本教程将带你完成软件安装、新建画布、绘制材质细节，并用图层、选区与笔刷参数制作一块可用于游戏资产的基础纹理。</p>
+      <div class="tut-meta"><span>ArmorPaint</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-ogier-editor.html">
+      <span class="tut-diff">入门</span>
+      <h3>Ogier 编辑器入门：制作第一张瓦片地图</h3>
+      <p>从打开官网到导入、绘制并导出 JSON 瓦片地图，快速掌握 Ogier 的图层、对象放置、撤销重做与快捷键。</p>
+      <div class="tut-meta"><span>Ogier 编辑器</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-msi-afterburner.html">
+      <span class="tut-diff">入门</span>
+      <h3>MSI Afterburner 入门：监控与显卡调校</h3>
+      <p>从安装设置到创建调校预设，掌握硬件监控、频率与功耗调节、风扇曲线配置及游戏内叠加显示。</p>
+      <div class="tut-meta"><span>MSI Afterburner</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-special-k.html">
+      <span class="tut-diff">入门</span>
+      <h3>Special K 入门：从安装到帧率调优</h3>
+      <p>详解 Special K 的安装、游戏配置、帧率限制、延迟调校与插件使用，帮助你改善游戏表现并建立可复用的显示方案。</p>
+      <div class="tut-meta"><span>Special K</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-excel-gamesheet.html">
+      <span class="tut-diff">入门</span>
+      <h3>Excel GameSheet 入门：搭建游戏数值表</h3>
+      <p>从模板结构、公式输入到方案对比，演示如何用 Excel 建立角色成长、掉落与经济平衡表，并沉淀可复用的策划参数。</p>
+      <div class="tut-meta"><span>Excel GameSheet</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-itch-io.html">
+      <span class="tut-diff">入门</span>
+      <h3>itch.io 入门：从浏览作品到发布创作者页面</h3>
+      <p>本教程带你认识 itch.io 的素材商店、试玩与创作者后台，完成店铺创建、上传作品、设置价格及发布试玩链接，并了解愿望单、折扣和多合集等运营功能。</p>
+      <div class="tut-meta"><span>itch.io</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gamedev-market.html">
+      <span class="tut-diff">入门</span>
+      <h3>GameDev Market 入门：找到并商用游戏素材</h3>
+      <p>本教程讲解如何筛选、预览并获取专业游戏资源，完成授权检查与下载配置，最终把素材导入项目并整理成可复用资产库。</p>
+      <div class="tut-meta"><span>GameDev Market</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-fab.html">
+      <span class="tut-diff">入门</span>
+      <h3>Fab 入门：从搜索素材到导入虚幻引擎</h3>
+      <p>掌握 Fab 素材搜索、筛选、授权查看与下载流程，并将模型、材质或音频添加到 Fab 库及虚幻引擎项目。</p>
+      <div class="tut-meta"><span>Fab（Epic 资产市场）</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-pix.html">
+      <span class="tut-diff">进阶</span>
+      <h3>Microsoft PIX 入门：定位帧时间瓶颈</h3>
+      <p>从安装配置到捕获单帧，系统掌握 PIX 的时间线、资源跟踪与瓶颈分析流程，快速发现 DirectX 渲染异常。</p>
+      <div class="tut-meta"><span>Microsoft PIX</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-mangohud.html">
+      <span class="tut-diff">入门</span>
+      <h3>MangoHud 入门：监控游戏性能</h3>
+      <p>从安装 MangoHud 到在 Steam 游戏中显示帧率、帧时间、CPU/GPU 占用、温度和显存，并通过叠加数据定位性能瓶颈。</p>
+      <div class="tut-meta"><span>MangoHud</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-sonic-pi.html">
+      <span class="tut-diff">入门</span>
+      <h3>Sonic Pi入门：从安装到创作旋律</h3>
+      <p>了解Sonic Pi的安装、界面与核心语法，通过编写音符、和弦和节拍完成一段动态音乐，并学会叠加效果与多轨录制。</p>
+      <div class="tut-meta"><span>Sonic Pi</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-riva-tuner.html">
+      <span class="tut-diff">入门</span>
+      <h3>RTSS帧率监控入门：实时发现卡顿</h3>
+      <p>从下载安装到设置游戏内叠加层，掌握帧率、帧时间与进程监控，并能根据曲线定位卡顿来源。</p>
+      <div class="tut-meta"><span>RTSS 帧率监控</span><span>⏱ 约15分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-godot-aseprite-wizard.html">
+      <span class="tut-diff">入门</span>
+      <h3>Godot Aseprite 向导入门指南</h3>
+      <p>从安装向导、配置 Aseprite 路径到导入精灵动画，演示 AnimationPlayer、AnimatedSprite 与 SpriteFrames 的实际用法。</p>
+      <div class="tut-meta"><span>Godot Aseprite 向导</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-godot-spatial-gardener.html">
+      <span class="tut-diff">入门</span>
+      <h3>Godot 空间园艺家：从安装到场景布置</h3>
+      <p>介绍在 Godot 中安装并使用空间园艺家，在三维地面、墙面等表面批量绘制植物与道具，完成自然环境与开放世界场景装饰。</p>
+      <div class="tut-meta"><span>Godot 空间园艺家</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-godot-road-generator.html">
+      <span class="tut-diff">入门</span>
+      <h3>Godot 道路生成器入门：搭建首个车流场景</h3>
+      <p>从安装插件、配置道路节点到添加车辆，完成一段可行驶的三维街道，并掌握生成参数与场景调试方法。</p>
+      <div class="tut-meta"><span>Godot 道路生成器</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-godot-mterrain-plugin.html">
+      <span class="tut-diff">进阶</span>
+      <h3>MTerrain 入门：生成高性能开放世界地形</h3>
+      <p>介绍 Godot MTerrain 插件的安装、地形生成、材质配置与性能调优，帮助你快速搭建可交互的高性能开放世界场景。</p>
+      <div class="tut-meta"><span>Godot-MTerrain-plugin</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-godot-powerful.html">
+      <span class="tut-diff">入门</span>
+      <h3>Godot Powerful 入门：安装插件并扩展工作流</h3>
+      <p>本文讲解如何在 Godot 项目中安装并启用 Godot Powerful，按需选择插件、配置参数并验证运行效果，快速建立可扩展的引擎工作流。</p>
+      <div class="tut-meta"><span>Godot Powerful 开发工具集</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-godot-mcp-native.html">
+      <span class="tut-diff">入门</span>
+      <h3>Godot MCP 入门：连接 AI 操作引擎</h3>
+      <p>从安装 Godot MCP Native、配置 AI 客户端到执行首个场景命令，快速掌握用自然语言创建节点、修改属性与运行项目的方法。</p>
+      <div class="tut-meta"><span>Godot MCP Native</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-unity-mcp.html">
+      <span class="tut-diff">入门</span>
+      <h3>Unity MCP 入门：连接 AI 与编辑器</h3>
+      <p>完成 Unity MCP 的安装与配置，并让 AI 助手创建资产、修改场景、编辑脚本及触发编辑器任务。</p>
+      <div class="tut-meta"><span>Unity MCP</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-unity-editor-toolbox.html">
+      <span class="tut-diff">入门</span>
+      <h3>Unity编辑器工具箱入门：从安装到扩展工作流</h3>
+      <p>了解 Unity Editor Toolbox 的安装方式、菜单入口和常用功能，并通过自定义属性与层级信息叠加，建立更高效的 Unity 编辑器工作流。</p>
+      <div class="tut-meta"><span>Unity 编辑器工具箱</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-unity-animationui.html">
+      <span class="tut-diff">入门</span>
+      <h3>Unity动画界面工具入门：制作第一个补间</h3>
+      <p>从安装插件到配置 Motion 与 Tweening，掌握可视化编辑、拖放操作及代码调用方法，快速完成界面过渡动画。</p>
+      <div class="tut-meta"><span>Unity Animation UI</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-unity-mulligan-renamer.html">
+      <span class="tut-diff">入门</span>
+      <h3>Unity Mulligan 批量重命名入门</h3>
+      <p>完成插件安装与配置，批量规范项目资产和场景对象名称，并通过撤销或版本控制降低误操作风险。</p>
+      <div class="tut-meta"><span>Mulligan Renamer</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-unity-mcp-server.html">
+      <span class="tut-diff">入门</span>
+      <h3>Unity MCP 入门：连接编辑器并创建物体</h3>
+      <p>完成 Unity MCP Server 的安装、配置与连接，使用支持 MCP 的 AI 客户端创建场景物体、添加组件并查看运行结果。</p>
+      <div class="tut-meta"><span>Unity MCP 服务器</span><span>⏱ 约 25 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-sonniss-gdc.html">
+      <span class="tut-diff">入门</span>
+      <h3>Sonniss GDC 音效包入门：从申请到项目落地</h3>
+      <p>从官网申请年度 GDC 音效包，完成下载、解压与检索，并将战斗、环境、界面及 Foley 素材整理进项目，快速做出首个音频原型。</p>
+      <div class="tut-meta"><span>Sonniss GDC 音效包</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-rimsort.html">
+      <span class="tut-diff">入门</span>
+      <h3>RimSort 入门：从安装到管理模组</h3>
+      <p>本文介绍如何在 Windows、Linux 或 macOS 安装 RimSort，添加游戏与模组仓库，并通过排序、启停和冲突检查快速整理 RimWorld 模组。</p>
+      <div class="tut-meta"><span>RimSort 模组清单管理器</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-rimpy.html">
+      <span class="tut-diff">入门</span>
+      <h3>RimPy 入门：安装与管理环世界模组</h3>
+      <p>从下载安装 RimPy 到添加模组、调整配置和管理已装内容，帮助玩家快速搭建并维护《环世界》模组环境。</p>
+      <div class="tut-meta"><span>RimPy</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-chiptune-club.html">
+      <span class="tut-diff">入门</span>
+      <h3>Chiptone 入门：制作首段芯片音乐</h3>
+      <p>从打开网页编辑器开始，依次完成选音色、编排多轨、加入噪声与滤波、循环试听并导出音频，产出一段可播放的芯片音乐作品。</p>
+      <div class="tut-meta"><span>Chiptone</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-unity-mcp-plugin.html">
+      <span class="tut-diff">入门</span>
+      <h3>Unity MCP 入门：安装并创建首个场景</h3>
+      <p>完成插件安装、MCP 客户端连接与基础配置，并让 AI 创建对象、添加组件及保存一个可运行的 Unity 场景。</p>
+      <div class="tut-meta"><span>Unity MCP Plugin</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-unicli.html">
+      <span class="tut-diff">入门</span>
+      <h3>UniCli 入门：从安装到首次自动化</h3>
+      <p>了解 UniCli 的安装配置，并通过终端调用 Unity 执行项目编译、测试及编辑器命令，建立可复用的命令行工作流。</p>
+      <div class="tut-meta"><span>UniCli</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-phaser-ce-npm-webpack-typescript-starter-project.html">
+      <span class="tut-diff">入门</span>
+      <h3>Phaser CE TypeScript 入门：从安装到首屏</h3>
+      <p>通过该模板搭建基于 TypeScript、Webpack 与 Phaser CE 的网页游戏项目，完成资源加载、场景开发、发行构建及桌面端打包。</p>
+      <div class="tut-meta"><span>Phaser CE Webpack TypeScript 入门模板</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-meshy.html">
+      <span class="tut-diff">入门</span>
+      <h3>Meshy 入门：从提示词到三维模型</h3>
+      <p>通过文字或图片生成游戏三维资产，并完成贴图、导出、骨骼绑定与动画，快速做出可用的原型素材。</p>
+      <div class="tut-meta"><span>Meshy</span><span>⏱ 约 25 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-tripo3d.html">
+      <span class="tut-diff">入门</span>
+      <h3>Tripo 3D 入门：从提示词到三维模型</h3>
+      <p>本教程讲解如何用文字或参考图生成三维模型，调整生成结果，并导出适用于游戏、3D打印或引擎的模型文件。</p>
+      <div class="tut-meta"><span>Tripo 3D</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-leonardo-ai.html">
+      <span class="tut-diff">入门</span>
+      <h3>Leonardo.Ai入门：从想法到游戏视觉稿</h3>
+      <p>从注册、生成提示词到参考图控制、局部重绘和画布迭代，完整制作一套游戏贴图与角色概念图。</p>
+      <div class="tut-meta"><span>Leonardo.Ai</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gltf.html">
+      <span class="tut-diff">入门</span>
+      <h3>glTF规范入门：从结构到模型验证</h3>
+      <p>理解glTF的JSON结构、资源组织与扩展机制，并用官方验证器检查模型，完成跨工具交换的基础准备。</p>
+      <div class="tut-meta"><span>glTF 规范</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-awesome-godot.html">
+      <span class="tut-diff">入门</span>
+      <h3>Awesome Godot 入门：发现插件与开源项目</h3>
+      <p>从浏览主题清单到筛选兼容插件，再到安装并运行一个开源示例，搭建高效的 Godot 资源发现流程。</p>
+      <div class="tut-meta"><span>Awesome Godot 资源清单</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-cyclopslevelbuilder.html">
+      <span class="tut-diff">入门</span>
+      <h3>Cyclops 关卡构建器入门教程</h3>
+      <p>从安装插件到搭建首个模块化关卡，掌握场景组织、编辑辅助与内容复用流程。</p>
+      <div class="tut-meta"><span>Cyclops 关卡构建器</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-miku-material-converter-blender-to-unity-.html">
+      <span class="tut-diff">进阶</span>
+      <h3>Miku材质转换器入门：从节点到URP</h3>
+      <p>详解安装Blender插件、配置Unity URP项目、执行节点转换，并通过.mikubundle生成可继续编辑的Shader Graph材质。</p>
+      <div class="tut-meta"><span>Miku 材质转换器：Blender 转 Unity</span><span>⏱ 约45分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-gdmaim.html">
+      <span class="tut-diff">入门</span>
+      <h3>GDMaim 入门：安装插件并混淆脚本</h3>
+      <p>教程介绍如何从 GitHub 获取 GDMaim，在 Godot 项目中启用插件并处理 GDScript 源码，帮助你完成首次混淆并检查生成结果。</p>
+      <div class="tut-meta"><span>GDMaim</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-pixabay.html">
+      <span class="tut-diff">入门</span>
+      <h3>Pixabay 入门：查找并下载游戏素材</h3>
+      <p>从关键词检索、筛选授权素材到预览下载，完整演示如何为游戏或内容项目快速获取图片、插画、视频与音效。</p>
+      <div class="tut-meta"><span>Pixabay</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-zapsplat.html">
+      <span class="tut-diff">入门</span>
+      <h3>Zapsplat 入门：查找并下载游戏音效</h3>
+      <p>本教程介绍注册 Zapsplat、筛选音效、试听比较并下载素材的完整流程，帮助你快速找到适合游戏或视频的声音资源。</p>
+      <div class="tut-meta"><span>Zapsplat</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-suno.html">
+      <span class="tut-diff">入门</span>
+      <h3>Suno 入门：从提示词到首支歌曲</h3>
+      <p>介绍注册、编写提示词、选择曲风、生成歌曲、续写段落及下载音频的完整流程，帮助你快速制作游戏配乐和音乐草案。</p>
+      <div class="tut-meta"><span>Suno</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-godot-tiled-importer.html">
+      <span class="tut-diff">入门</span>
+      <h3>Godot Tiled导入器入门指南</h3>
+      <p>从安装编辑插件、配置图块集到导入并运行Tiled地图，完整走通Godot与Tiled协作流程。</p>
+      <div class="tut-meta"><span>Godot Tiled 导入器</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-imgui-godot.html">
+      <span class="tut-diff">进阶</span>
+      <h3>Godot Dear ImGui 入门：从安装到首个界面</h3>
+      <p>面向 Godot 4 与 C++ 开发者，讲解插件安装、编译配置和示例界面调用，完成一个可交互的 Dear ImGui 面板。</p>
+      <div class="tut-meta"><span>imgui-godot</span><span>⏱ 约 45 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-ugui-editor.html">
+      <span class="tut-diff">入门</span>
+      <h3>UGUI 编辑器增强工具入门指南</h3>
+      <p>从安装配置到实际使用，掌握该工具的菜单入口、辅助编辑功能与操作流程，减少 Unity UGUI 界面开发中的重复工作。</p>
+      <div class="tut-meta"><span>UGUI 编辑器</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-unityplayablegraphmonitortool.html">
+      <span class="tut-diff">入门</span>
+      <h3>PlayableGraph 监视入门：实时定位动画问题</h3>
+      <p>从安装配置到打开监视窗口，掌握实时查看 PlayableGraph 状态的方法，并通过运行信息定位动画与时间线异常。</p>
+      <div class="tut-meta"><span>Unity PlayableGraph 监视工具</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-instantpipes.html">
+      <span class="tut-diff">入门</span>
+      <h3>InstantPipes入门：搭建首个寻路管道</h3>
+      <p>从安装配置到生成、编辑和验证寻路，助你在 Unity 中快速搭建可运行的管道关卡，并掌握面向关卡制作的常见工作流。</p>
+      <div class="tut-meta"><span>InstantPipes</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-inkscape.html">
+      <span class="tut-diff">入门</span>
+      <h3>Inkscape 入门：从安装到首个矢量图标</h3>
+      <p>掌握 Inkscape 的界面、路径绘制、节点编辑、填充渐变与 SVG 导出，最终制作一个可用于界面演示的简洁图标。</p>
+      <div class="tut-meta"><span>Inkscape</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-ambientcg.html">
+      <span class="tut-diff">入门</span>
+      <h3>ambientCG 入门：查找并下载PBR材质</h3>
+      <p>从搜索、预览到下载和使用，完成一套游戏场景PBR材质准备工作，并了解分辨率与贴图类型的选择方法。</p>
+      <div class="tut-meta"><span>ambientCG</span><span>⏱ 约15分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-jsonschema-validator.html">
+      <span class="tut-diff">入门</span>
+      <h3>JSON Schema 校验器入门：快速检查数据</h3>
+      <p>通过粘贴 JSON 与 Schema，定位类型、必填字段、格式及嵌套错误，并学会编写常用自定义校验规则。</p>
+      <div class="tut-meta"><span>JSON Schema 校验器</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-assetstudio.html">
+      <span class="tut-diff">入门</span>
+      <h3>AssetStudio 入门：提取 Unity 游戏资源</h3>
+      <p>从下载安装到加载资源文件，逐步掌握 AssetBundle 解析及模型、贴图、材质、动画和音频的导出方法。</p>
+      <div class="tut-meta"><span>AssetStudio</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-monogame.html">
+      <span class="tut-diff">入门</span>
+      <h3>MonoGame入门：从安装到首个2D游戏</h3>
+      <p>从环境搭建、项目创建到精灵渲染与跨平台发布，完整走通MonoGame开发流程，并制作一个可运行的2D小游戏。</p>
+      <div class="tut-meta"><span>MonoGame</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-stencyl.html">
+      <span class="tut-diff">入门</span>
+      <h3>Stencyl入门：从安装到第一个2D游戏</h3>
+      <p>通过可视化积木编程完成场景搭建、角色控制、碰撞检测与关卡逻辑，最终制作并导出一个可玩的2D小游戏。</p>
+      <div class="tut-meta"><span>Stencyl</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-sbox-hammer.html">
+      <span class="tut-diff">入门</span>
+      <h3>Hammer 入门：从安装到首个多人关卡</h3>
+      <p>本教程将带你完成 Hammer 的基础配置，使用实体笔刷搭建空间、放置预制体并设置关键属性，最后通过沙盒工具链预览多人场景。</p>
+      <div class="tut-meta"><span>Hammer 关卡编辑器</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-bevy.html">
+      <span class="tut-diff">入门</span>
+      <h3>Bevy 入门：从安装到首个窗口</h3>
+      <p>从安装 Rust 与创建项目开始，了解 Bevy 的实体组件系统、插件、事件和资源，并通过窗口与简单动画掌握开发流程。</p>
+      <div class="tut-meta"><span>Bevy</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-flax-engine.html">
+      <span class="tut-diff">入门</span>
+      <h3>Flax引擎入门：从安装到首个3D场景</h3>
+      <p>完成Windows端安装、创建项目、搭建3D场景，并编写C#脚本控制角色移动，最终导出可运行的游戏版本。</p>
+      <div class="tut-meta"><span>Flax 引擎</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-blender.html">
+      <span class="tut-diff">入门</span>
+      <h3>Blender 入门：从安装到第一个3D场景</h3>
+      <p>完成Blender基础设置，制作并渲染一个包含立方体、灯光与相机的简单场景，为后续建模和动画打下基础。</p>
+      <div class="tut-meta"><span>Blender</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-houdini.html">
+      <span class="tut-diff">入门</span>
+      <h3>Houdini入门：从安装到程序化建模</h3>
+      <p>快速了解Houdini界面与节点工作流，创建一个可参数化调整的程序化模型，并学会导出结果，为后续特效制作打下基础。</p>
+      <div class="tut-meta"><span>Houdini</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-zbrush.html">
+      <span class="tut-diff">入门</span>
+      <h3>ZBrush入门：从安装到首个角色模型</h3>
+      <p>认识ZBrush界面，完成模型导入、雕刻、贴图与拓扑处理，并导出适合游戏使用的角色资产。</p>
+      <div class="tut-meta"><span>ZBrush</span><span>⏱ 约60分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-playcanvas.html">
+      <span class="tut-diff">入门</span>
+      <h3>PlayCanvas 入门：从创建到发布首个3D场景</h3>
+      <p>通过浏览器完成项目创建、场景搭建、脚本交互与发布，产出一个可在线访问、支持键盘交互的3D网页原型。</p>
+      <div class="tut-meta"><span>PlayCanvas</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-unity.html">
+      <span class="tut-diff">入门</span>
+      <h3>Unity 入门：从安装到第一个场景</h3>
+      <p>本教程带你完成 Unity 安装、创建项目、搭建场景、编写 C# 脚本并运行交互原型，最终得到一个可点击触发反馈的小项目。</p>
+      <div class="tut-meta"><span>Unity 引擎</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-godot.html">
+      <span class="tut-diff">入门</span>
+      <h3>Godot 入门：从安装到第一个 2D 游戏</h3>
+      <p>完成 Godot 的下载安装、场景搭建与 GDScript 编写，制作一个可用键盘控制角色移动的简单 2D 游戏。</p>
+      <div class="tut-meta"><span>Godot 引擎</span><span>⏱ 约 45 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-cocos-creator.html">
+      <span class="tut-diff">入门</span>
+      <h3>Cocos Creator 入门：从安装到首个游戏</h3>
+      <p>完成开发环境配置、场景搭建、脚本交互与界面制作，并了解资源管理和多平台发布流程，最终做出一个可运行的点击计分小游戏。</p>
+      <div class="tut-meta"><span>Cocos Creator</span><span>⏱ 约 60 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-defold.html">
+      <span class="tut-diff">入门</span>
+      <h3>Defold 入门：从安装到首个游戏</h3>
+      <p>从下载安装、创建项目到编写 Lua 逻辑、添加精灵碰撞并导出可运行版本，帮助你快速搭建第一个轻量 2D 游戏原型。</p>
+      <div class="tut-meta"><span>Defold</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-sketchfab.html">
+      <span class="tut-diff">入门</span>
+      <h3>Sketchfab 入门：发布首个三维模型</h3>
+      <p>从注册账号、上传模型到设置许可和网页 AR 预览，完成一个可分享、可嵌入网站的三维模型作品。</p>
+      <div class="tut-meta"><span>Sketchfab</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gdevelop.html">
+      <span class="tut-diff">入门</span>
+      <h3>GDevelop入门：从安装到第一个游戏</h3>
+      <p>通过可视化事件逻辑、物理碰撞与跨平台导出，完成一个可移动并收集物品的2D小游戏。</p>
+      <div class="tut-meta"><span>GDevelop</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-tiled.html">
+      <span class="tut-diff">入门</span>
+      <h3>Tiled入门：从安装到制作第一张地图</h3>
+      <p>本教程将带你完成Tiled的下载安装、图块集创建、地图绘制与对象层布置，并了解无限地图、CSV和JSON导出，最终得到一张可用于2D游戏的示例地图。</p>
+      <div class="tut-meta"><span>Tiled 地图编辑器</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-o3de.html">
+      <span class="tut-diff">入门</span>
+      <h3>O3DE 入门：从安装到第一个实时场景</h3>
+      <p>完成 O3DE 的安装、项目创建与基础场景搭建，并使用实体组件、脚本和材质灯光，制作可运行的首个实时场景。</p>
+      <div class="tut-meta"><span>O3DE</span><span>⏱ 约 45 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-renpy.html">
+      <span class="tut-diff">入门</span>
+      <h3>Ren&#39;Py入门：从安装到首个视觉小说</h3>
+      <p>从下载引擎、创建项目到编写分支对话、加入背景与音频，并完成可直接运行的桌面版视觉小说。</p>
+      <div class="tut-meta"><span>Ren&#39;Py</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-twine.html">
+      <span class="tut-diff">入门</span>
+      <h3>Twine入门：从安装到发布分支故事</h3>
+      <p>从下载安装到创建节点、设置变量与条件分支，再到本地测试和网页发布，完整做出一个可玩的互动叙事原型。</p>
+      <div class="tut-meta"><span>Twine</span><span>⏱ 约20分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-solar2d.html">
+      <span class="tut-diff">入门</span>
+      <h3>Solar2D 入门：从安装到首个游戏</h3>
+      <p>完成开发环境配置、创建项目，并用 Lua 编写移动、碰撞与计分逻辑，最终导出一个可运行的休闲小游戏。</p>
+      <div class="tut-meta"><span>Solar2D</span><span>⏱ 约 45 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-bepinex.html">
+      <span class="tut-diff">入门</span>
+      <h3>BepInEx 入门：从安装到首个插件</h3>
+      <p>详解为 Unity 游戏安装 BepInEx、配置首个插件并查看日志，帮助模组作者快速建立可调试的运行环境。</p>
+      <div class="tut-meta"><span>BepInEx</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-melonloader.html">
+      <span class="tut-diff">入门</span>
+      <h3>MelonLoader 入门：安装并运行首个模组</h3>
+      <p>从准备游戏文件到安装加载器、构建并运行首个模组，逐步掌握日志排查、依赖配置与调试控制台的基本用法。</p>
+      <div class="tut-meta"><span>MelonLoader</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-vscode.html">
+      <span class="tut-diff">入门</span>
+      <h3>VS Code 入门：从安装到调试项目</h3>
+      <p>完成 VS Code 安装、文件夹管理与扩展配置，并用内置终端、调试器和 Git 视图完成一次代码修改、运行与版本提交。</p>
+      <div class="tut-meta"><span>VS Code</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-krita.html">
+      <span class="tut-diff">入门</span>
+      <h3>Krita 入门：从安装到第一幅插画</h3>
+      <p>完成软件安装、画布设置、图层绘制与上色，并掌握选区、常用保存格式及动画时间轴的基础操作。</p>
+      <div class="tut-meta"><span>Krita</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-json-crack.html">
+      <span class="tut-diff">入门</span>
+      <h3>JSON Crack 入门：快速看懂接口数据</h3>
+      <p>从打开网站、粘贴 JSON 到查看节点路径和折叠层级，帮助你快速检查游戏接口、配置文件及 API 返回数据。</p>
+      <div class="tut-meta"><span>JSON Crack</span><span>⏱ 约 10 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-penpot.html">
+      <span class="tut-diff">入门</span>
+      <h3>Penpot 入门：从创建项目到交付原型</h3>
+      <p>本教程带你完成 Penpot 项目创建、界面绘制、组件复用、交互原型与开发资源交付，最终获得一套可协作、可演示的网页原型。</p>
+      <div class="tut-meta"><span>Penpot</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-blockbench.html">
+      <span class="tut-diff">入门</span>
+      <h3>Blockbench入门：从安装到首个方块模型</h3>
+      <p>掌握Blockbench的安装、基础建模、UV纹理、骨骼动画与模型导出，完成一个可用的我的世界风格角色模型。</p>
+      <div class="tut-meta"><span>Blockbench</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-nvidia-omniverse.html">
+      <span class="tut-diff">入门</span>
+      <h3>Omniverse入门：从安装到首个三维场景</h3>
+      <p>从账号准备、客户端安装到连接创作工具，完成首个OpenUSD场景并体验多人协同编辑。</p>
+      <div class="tut-meta"><span>NVIDIA Omniverse</span><span>⏱ 约30分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-dungeon-alchemist.html">
+      <span class="tut-diff">入门</span>
+      <h3>Dungeon Alchemist 入门：生成并导出地牢地图</h3>
+      <p>从访问官网、输入生成需求到微调布局、替换素材并导出地图格式，完整走通俯视地牢地图制作流程。</p>
+      <div class="tut-meta"><span>Dungeon Alchemist</span><span>⏱ 约 25 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-world-machine.html">
+      <span class="tut-diff">入门</span>
+      <h3>World Machine 入门：从地形到游戏资产</h3>
+      <p>从安装与基础操作开始，依次完成高度场塑形、侵蚀模拟、岛屿生成和生物群系着色，最终导出可供游戏引擎使用的高度图。</p>
+      <div class="tut-meta"><span>World Machine</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-worldpainter.html">
+      <span class="tut-diff">入门</span>
+      <h3>WorldPainter 入门：从地形到游戏地图</h3>
+      <p>掌握安装配置、实时雕刻体素地形、绘制生物群系、挖设洞穴及导出地图素材的完整流程，快速制作可用于独立游戏或模组开发的高质量场景。</p>
+      <div class="tut-meta"><span>WorldPainter</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-aseprite.html">
+      <span class="tut-diff">入门</span>
+      <h3>Aseprite 入门：从安装到首个精灵动画</h3>
+      <p>从下载安装开始，讲解画布设置、逐像素绘制、图层与动画制作、调色板管理及精灵表导出，完成一个可循环播放的角色动画。</p>
+      <div class="tut-meta"><span>Aseprite</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gimp.html">
+      <span class="tut-diff">入门</span>
+      <h3>GIMP 入门：从安装到第一张合成图</h3>
+      <p>本教程带你完成 GIMP 安装、选区与图层蒙版抠图、色彩调整，并导出透明背景 PNG，制作一张简单合成图。</p>
+      <div class="tut-meta"><span>GIMP</span><span>⏱ 约 25 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-photoshop.html">
+      <span class="tut-diff">入门</span>
+      <h3>Photoshop入门：从修图到首个作品</h3>
+      <p>系统讲解Photoshop界面、图层、蒙版、调整图层与文字排版，并带你完成一张合成海报，建立规范且高效的基础工作流。</p>
+      <div class="tut-meta"><span>Photoshop</span><span>⏱ 约45分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-figma.html">
+      <span class="tut-diff">入门</span>
+      <h3>Figma 入门：从注册到首个交互原型</h3>
+      <p>本教程将带你完成账号注册、界面绘制、组件复用与原型连接，最终产出一个可点击的游戏主菜单原型。</p>
+      <div class="tut-meta"><span>Figma</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-capframex.html">
+      <span class="tut-diff">入门</span>
+      <h3>CapFrameX 入门：从采集到帧率分析</h3>
+      <p>介绍 CapFrameX 的安装、游戏采集、传感器监控、基准对比与报告导出，帮助你建立可复现的帧时间分析流程。</p>
+      <div class="tut-meta"><span>CapFrameX</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-presentmon.html">
+      <span class="tut-diff">入门</span>
+      <h3>PresentMon 入门：从安装到帧时间分析</h3>
+      <p>完成PresentMon安装、进程与显卡筛选、CSV采集和实时统计，快速识别帧时间波动、平均帧率及潜在性能瓶颈。</p>
+      <div class="tut-meta"><span>PresentMon</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-renderdoc.html">
+      <span class="tut-diff">入门</span>
+      <h3>RenderDoc 入门：逐帧排查渲染异常</h3>
+      <p>从安装、连接应用到捕获帧，逐步掌握GPU调试流程，并学会检查纹理、着色器、管线状态与像素历史。</p>
+      <div class="tut-meta"><span>RenderDoc</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-mixamo.html">
+      <span class="tut-diff">入门</span>
+      <h3>Mixamo 动作库入门：从上传角色到下载动画</h3>
+      <p>本教程将带你完成角色上传、自动骨骼绑定、动作筛选与参数调整，最终导出一段可用于游戏或3D项目的角色动画。</p>
+      <div class="tut-meta"><span>Mixamo 动作库</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-thunderstore.html">
+      <span class="tut-diff">入门</span>
+      <h3>Thunderstore入门：安装与管理游戏模组</h3>
+      <p>从连接游戏平台、选择兼容模组，到处理依赖和启用配置，完成首个模组包的安装、更新与安全检查。</p>
+      <div class="tut-meta"><span>Thunderstore</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-move-ai.html">
+      <span class="tut-diff">入门</span>
+      <h3>Move AI 入门：从视频到游戏动画</h3>
+      <p>从拍摄动作素材开始，完成上传、动作识别、角色映射与动画导出，获得可直接用于游戏项目的角色动作片段。</p>
+      <div class="tut-meta"><span>move.ai</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-nsight-graphics.html">
+      <span class="tut-diff">进阶</span>
+      <h3>Nsight Graphics 入门：逐帧定位渲染瓶颈</h3>
+      <p>完成工具安装、项目配置与逐帧捕获，学会检查渲染管线、着色器耗时及GPU同步问题，并对比优化前后场景性能。</p>
+      <div class="tut-meta"><span>Nsight Graphics</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-jq.html">
+      <span class="tut-diff">入门</span>
+      <h3>jq 入门：从安装到提取 JSON</h3>
+      <p>掌握 jq 的安装、路径筛选、字段提取与数据重组，并能通过管道批量处理接口或游戏配置中的 JSON 数据。</p>
+      <div class="tut-meta"><span>jq</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-ffmpeg.html">
+      <span class="tut-diff">入门</span>
+      <h3>FFmpeg 入门：从安装到首个视频</h3>
+      <p>掌握 FFmpeg 的安装、转码、裁剪、滤镜、字幕与推流方法，并能用命令或脚本快速处理日常音视频任务。</p>
+      <div class="tut-meta"><span>FFmpeg</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-davinci-resolve.html">
+      <span class="tut-diff">入门</span>
+      <h3>DaVinci Resolve 入门：从安装到成片导出</h3>
+      <p>本教程带你完成软件安装、素材导入、多轨剪辑、调色、字幕添加与成片导出，产出一支可发布的短视频。</p>
+      <div class="tut-meta"><span>DaVinci Resolve</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-cascadeur.html">
+      <span class="tut-diff">入门</span>
+      <h3>Cascadeur 入门：制作第一个角色动作</h3>
+      <p>从下载安装、导入模型到制作跳跃与落地动作，并了解动画混合与引擎导出，助你快速生成自然流畅的角色动态。</p>
+      <div class="tut-meta"><span>Cascadeur</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-rokoko-studio.html">
+      <span class="tut-diff">入门</span>
+      <h3>Rokoko Studio 入门：从录制到角色动画</h3>
+      <p>详解用摄像头或动捕设备录制动作、修剪时间轴、映射自定义骨骼，并将成品动画导出至主流制作软件。</p>
+      <div class="tut-meta"><span>Rokoko Studio</span><span>⏱ 约 30 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-kenney.html">
+      <span class="tut-diff">入门</span>
+      <h3>Kenney素材库入门：从浏览到制作原型</h3>
+      <p>本教程将带你访问Kenney素材库，查找并下载适合项目的二维、三维、界面、音乐与音效资源，并整理素材以快速搭建游戏原型。</p>
+      <div class="tut-meta"><span>Kenney 素材库</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-craftpix.html">
+      <span class="tut-diff">入门</span>
+      <h3>CraftPix 入门：制作像素游戏资源包</h3>
+      <p>从浏览、筛选到下载和导入资源包，快速搭建含角色、场景与界面的像素游戏原型，并确认适合项目的授权方式。</p>
+      <div class="tut-meta"><span>CraftPix</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-assetripper.html">
+      <span class="tut-diff">入门</span>
+      <h3>AssetRipper 入门：还原 Unity 游戏资源</h3>
+      <p>从下载安装到解析资源包、查看目录并导出 Unity 项目，完整演示 AssetRipper 的基本操作流程。</p>
+      <div class="tut-meta"><span>AssetRipper</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-uabe.html">
+      <span class="tut-diff">入门</span>
+      <h3>UABE资源包编辑器：从安装到素材修改</h3>
+      <p>从下载安装开始，演示浏览、提取、编辑并重打包 Unity AssetBundle，完成一次纹理或音频素材替换。</p>
+      <div class="tut-meta"><span>UABE 资源包编辑器</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-opengameart.html">
+      <span class="tut-diff">入门</span>
+      <h3>OpenGameArt 入门：找到并下载可用素材</h3>
+      <p>学会搜索、筛选并下载开放游戏素材，同时检查许可与作者说明，快速为原型项目补充图像、音效和模型。</p>
+      <div class="tut-meta"><span>OpenGameArt</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-polyhaven.html">
+      <span class="tut-diff">入门</span>
+      <h3>Poly Haven 入门：查找并下载美术资源</h3>
+      <p>本教程介绍如何在 Poly Haven 浏览、筛选并下载模型、材质和 HDRI，并按目标软件选择格式，完成资源导入与基础设置。</p>
+      <div class="tut-meta"><span>Poly Haven</span><span>⏱ 约 15 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-sheetjs.html">
+      <span class="tut-diff">入门</span>
+      <h3>SheetJS 入门：批量转换游戏配置表</h3>
+      <p>从安装 SheetJS 开始，学习读取 Excel 与 CSV、修改表格数据，并导出为 JSON、CSV 或其他表格格式，快速完成游戏配置批处理。</p>
+      <div class="tut-meta"><span>SheetJS</span><span>⏱ 约 20 分钟</span></div>
+    </a><a class="tut-card" href="/game-tool-hub/tutorials/tut-gh-godot-ci.html">
+      <span class="tut-diff">入门</span>
+      <h3>Godot CI 入门：容器化导出与发布</h3>
+      <p>从配置 Docker 导出环境开始，依次接入 GitLab CI 或 GitHub Actions，将游戏自动发布到 Pages 或 Itch.io。</p>
+      <div class="tut-meta"><span>Godot 持续集成工具</span><span>⏱ 约 20 分钟</span></div>
+    </a></div>
+</section>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

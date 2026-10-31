@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Machine - 关卡与数据管线 - 游戏工具集</title>
+<meta name="description" content="把 AI 生成的地形思路转成高度图，服务大型场景制作">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tools/world-machine.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="World Machine - 关卡与数据管线 - 游戏工具集">
+<meta property="og:description" content="把 AI 生成的地形思路转成高度图，服务大型场景制作">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tools/world-machine.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link active" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tools/">工具集</a> / <a href="/game-tool-hub/categories/pipeline.html">关卡与数据管线</a> / <span>World Machine</span></nav>
+<article class="detail">
+  <header class="detail-head">
+    <span class="logo-badge" style="--logo-bg:hsl(53280 57% 42%);width:64px;height:64px;font-size:24px">WO</span>
+    <div class="detail-title">
+      <h1>World Machine</h1>
+      <p class="detail-summary">把 AI 生成的地形思路转成高度图，服务大型场景制作</p>
+      <div class="detail-tags"><span class="tag">程序化地形</span><span class="tag">高度图</span><span class="tag">地貌生成</span><span class="tag">开放世界</span></div>
+    </div>
+    <div class="detail-cta">
+      <a class="btn btn-primary" href="https://www.world-machine.com" target="_blank" rel="noopener nofollow">访问官网 ↗</a>
+      <a class="btn btn-ghost" href="/game-tool-hub/tutorials/tut-world-machine.html">阅读教程</a>
+    </div>
+  </header>
+  <div class="meta-grid">
+    <div><span>所属分类</span><strong><a href="/game-tool-hub/categories/pipeline.html">🗺️ 关卡与数据管线</a></strong></div>
+    <div><span>创作阶段</span><strong>🖌️ 美术</strong></div>
+    <div><span>工具类型</span><strong>传统工具 · AI 管线配套</strong></div>
+    <div><span>支持平台</span><strong>Windows</strong></div>
+    <div><span>价格模式</span><strong>买断制</strong></div>
+    <div><span>适合人群</span><strong>3A 地形美术、开放世界开发者与技术美术师</strong></div>
+    <div><span>官网链接</span><strong class="link-status ok">● 正常</strong></div>
+    <div><span>资料更新</span><strong>2026-11-01</strong></div>
+  </div>
+  <section class="detail-block ai-role-block">
+    <h2>🧠 在 AI 创作链路中的位置</h2>
+    <p class="lead">处在概念到资产之间，把 AI 地形方案转为可导入的高度场</p>
+    <p class="muted small">所属阶段：🖌️ 美术 · 传统工具，负责把 AI 产物打磨/接入到可交付的管线里</p>
+  </section>
+  <section class="detail-block">
+    <h2>工具介绍</h2>
+    <p class="lead">World Machine 是专业程序化地形制作工具，可通过节点式流程生成山脉、河流、侵蚀和高度图，并将结果用于游戏世界构建。它适合承接 AI 提出的地形概念或参数方案，再由美术进行精确塑造与引擎导入。目前主要支持 Windows，采用买断制。</p>
+  </section>
+  <section class="detail-block"><h2>核心能力</h2><ul class="feature-list"><li>节点式程序化地形流程</li><li>多分辨率高度场构建</li><li>侵蚀与水文地貌模拟</li><li>生成适配引擎的输出</li><li>支持大型远景地形</li></ul></section>
+  <div class="two-col">
+    <section class="detail-block"><h2>👍 优点</h2><ul class="plus-list"><li>大型地形控制能力专业</li><li>便于迭代地貌参数</li><li>支持多分辨率制作</li></ul></section>
+    <section class="detail-block"><h2>⚠️ 局限</h2><ul class="minus-list"><li>仅支持 Windows 平台</li><li>学习成本相对较高</li></ul></section>
+  </div>
+  <section class="detail-block"><h2>典型使用场景</h2><ul class="usecase-list"><li>构建开放世界地形</li><li>生成山脉与河谷地貌</li><li>制作远景高度图</li><li>衔接 AI 地形设计方案</li></ul></section>
+  <section class="detail-block"><h2>使用教程</h2>
+      <div class="tut-meta-line"><span class="badge">入门</span><span>⏱ 约 30 分钟</span><span>🎯 制作并导出一张带侵蚀细节的岛屿高度图</span></div>
+      <ol class="step-list"><li class="step"><div class="step-no">1</div><div><h4>安装并新建项目</h4><p>前往官网下载并安装 World Machine，启动后选择 Basic 模板，点击左上角 New，选择设备分辨率与地图尺寸，勾选 Height Output 后进入编辑界面。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>搭建基础高度场</h4><p>在 World 面板选中 Primary Layer，点击 Generate Fractal 按钮生成初始地形；用 Select 工具拖拽编辑区，调节缩放高度与细节噪声，形成山地和谷地。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>调整海岸与岛屿轮廓</h4><p>在 Layer 中添加 Radial 设备，把半径设为 2400、Shape 调为 Smooth，勾选 Invert 生成岛体；叠加第二个较小岛体，并用 Build 合并图层。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>加入水文侵蚀</h4><p>进入 Erosion 面板，从模拟类型中选择 Hydraulic Erosion，设置水流量、降雨量与沉积参数，点击 Simulate 预览侵蚀；满意后返回主视图确认沟谷。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>添加生物群系材质</h4><p>在 Terrain 面板添加 Biome 设备，为 Beach、Forest、Mountain 分配纹理或颜色；调整材质范围和高度规则，使不同地貌呈现清晰分区。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>导出引擎可用资产</h4><p>点击 Build 生成最终地形，在 Output 面板选择目标格式与分辨率；游戏项目通常导出 EXR 或 PNG 高度图及颜色贴图，再导入 Unity、Unreal 等引擎。</p></div></li></ol>
+      <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>先做小尺寸预览，再提高分辨率</li><li>侵蚀后叠加少量噪声可增加细节</li><li>多个图层用 Build 统一合成</li><li>为海平面预留明确高度范围</li></ul></div>
+      <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>过强侵蚀会让地形变得破碎</li><li>导出前检查位深与通道设置</li></ul></div>
+      <p class="muted small">完整图文教程：<a href="/game-tool-hub/tutorials/tut-world-machine.html">World Machine 入门：从地形到游戏资产</a></p>
+    </section>
+  <section class="detail-block guide-callout"><h2>📖 同类工具怎么选</h2><p>本分类负责把 AI 生成的视频、地图、数值表和资源包转化为可编辑、可校验、可集成的工程资产。应按目标引擎、资产格式、自动化程度与可回溯性选型，并先统一目录、命名和数据规范，再衔接生成、编辑、验证与发布流程。</p><a class="btn btn-ghost" href="/game-tool-hub/tutorials/guide-pipeline.html">阅读《AI游戏资产与关卡管线总览》</a></section>
+  <section class="detail-block"><h2>同类工具推荐</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/ffmpeg.html" data-cat="pipeline" data-stage="宣传" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(71280 60% 57%);width:40px;height:40px;font-size:15px">FF</span>
+    <div class="tool-card-info">
+      <h3>FFmpeg</h3>
+      <p>批量转码与裁切 AI 视频素材，快速生成可交付的宣发内容。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">视频转码</span><span class="tag">命令行</span><span class="tag">批处理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/davinci-resolve.html" data-cat="pipeline" data-stage="宣传" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(5400 72% 46%);width:40px;height:40px;font-size:15px">DA</span>
+    <div class="tool-card-info">
+      <h3>DaVinci Resolve</h3>
+      <p>精剪、调色并交付 AI 生成的宣传片与游戏实机视频。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">专业剪辑</span><span class="tag">调色</span><span class="tag">后期制作</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/tiled.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(57240 57% 55%);width:40px;height:40px;font-size:15px">TI</span>
+    <div class="tool-card-info">
+      <h3>Tiled 地图编辑器</h3>
+      <p>承接 AI 生成的瓦片与场景，搭建可交付的二维游戏地图</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">2D地图</span><span class="tag">瓦片关卡</span><span class="tag">开源</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/sbox-hammer.html" data-cat="pipeline" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(84960 63% 44%);width:40px;height:40px;font-size:15px">HA</span>
+    <div class="tool-card-info">
+      <h3>Hammer 关卡编辑器</h3>
+      <p>把 AI 生成的关卡方案搭成空间结构，并接入 Source 2 制作管线。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Source 2</span><span class="tag">s&amp;box</span><span class="tag">关卡编辑</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/jsonschema-validator.html" data-cat="pipeline" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(47880 73% 49%);width:40px;height:40px;font-size:15px">JS</span>
+    <div class="tool-card-info">
+      <h3>JSON Schema 校验器</h3>
+      <p>校验 AI 生成的游戏配置数据，提前拦截格式与字段错误。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">数据校验</span><span class="tag">JSON</span><span class="tag">Schema</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/assetstudio.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(49680 72% 53%);width:40px;height:40px;font-size:15px">AS</span>
+    <div class="tool-card-info">
+      <h3>AssetStudio</h3>
+      <p>导出游戏资源供 AI 提取、重制或作为生成参考。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">资源导出</span><span class="tag">Unity</span><span class="tag">素材提取</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/assetripper.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(14040 70% 42%);width:40px;height:40px;font-size:15px">AS</span>
+    <div class="tool-card-info">
+      <h3>AssetRipper</h3>
+      <p>还原 Unity 游戏资源，为 AI 改作与资产研究提供素材。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">资源还原</span><span class="tag">资产研究</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/uabe.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(23040 76% 43%);width:40px;height:40px;font-size:15px">UA</span>
+    <div class="tool-card-info">
+      <h3>UABE 资源包编辑器</h3>
+      <p>编辑 Unity 资源包，接住 AI 生成的材质与音频改动。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">资源包</span><span class="tag">Unity</span><span class="tag">资产编辑</span></div>
+</a></div></section>
+</article>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"World Machine","description":"把 AI 生成的地形思路转成高度图，服务大型场景制作","url":"https://www.world-machine.com","applicationCategory":"GameDevelopmentApplication","operatingSystem":"Windows","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

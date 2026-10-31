@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 工作流与训练 - 游戏工具集</title>
+<meta name="description" content="节点式工作流、LoRA 训练与批量处理，把生成变成可复用的管线——24 个相关游戏工具的中文介绍与使用教程。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/categories/ai-workflow.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI 工作流与训练 - 游戏工具集">
+<meta property="og:description" content="节点式工作流、LoRA 训练与批量处理，把生成变成可复用的管线——24 个相关游戏工具的中文介绍与使用教程。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/categories/ai-workflow.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link active" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<div class="page-head cat-page-head">
+  <div class="cat-head-icon">🔗</div>
+  <div>
+    <h1>AI 工作流与训练</h1>
+    <p>节点式工作流、LoRA 训练与批量处理，把生成变成可复用的管线 · 共 24 个工具 · 创作阶段：工作流</p>
+  </div>
+</div>
+<section class="detail-block guide-callout"><h2>📖 分类总览</h2><p>本分类负责把零散的 AI 生成能力组织成可重复执行的游戏美术管线，覆盖提示词管理、节点式批量出图、角色 LoRA 训练、素材审批与发布。选择时应先看引擎兼容性、批处理能力、模型管理、自动化接口和本地硬件要求，再用官方示例验证工作流。</p><a class="btn btn-ghost" href="/game-tool-hub/tutorials/guide-ai-workflow.html">阅读完整教程</a></section>
+
+<div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/comfyui.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(58320 74% 57%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI<span class="badge-ai">AI 原生</span></h3>
+      <p>用节点式工作流批量生成并串联游戏美术资产</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">节点工作流</span><span class="tag">批量生图</span><span class="tag">本地部署</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/stable-diffusion-webui.html" data-cat="ai-workflow" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(26640 59% 44%);width:40px;height:40px;font-size:15px">ST</span>
+    <div class="tool-card-info">
+      <h3>Stable Diffusion WebUI<span class="badge-ai">AI 原生</span></h3>
+      <p>在本地快速生成游戏概念图、贴图与角色素材</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">本地生图</span><span class="tag">扩散模型</span><span class="tag">图生图</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/fooocus.html" data-cat="ai-workflow" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(60120 60% 47%);width:40px;height:40px;font-size:15px">FO</span>
+    <div class="tool-card-info">
+      <h3>Fooocus<span class="badge-ai">AI 原生</span></h3>
+      <p>用简化生图界面快速产出游戏美术草案与素材</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">易用生图</span><span class="tag">美术草案</span><span class="tag">本地生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/sdnext.html" data-cat="ai-workflow" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(32760 64% 42%);width:40px;height:40px;font-size:15px">SD</span>
+    <div class="tool-card-info">
+      <h3>SD.Next<span class="badge-ai">AI 原生</span></h3>
+      <p>统一多款扩散模型，批量生成并筛选游戏美术资产</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">扩散模型</span><span class="tag">批量出图</span><span class="tag">本地部署</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/n8n.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(31680 74% 44%);width:40px;height:40px;font-size:15px">N8</span>
+    <div class="tool-card-info">
+      <h3>n8n<span class="badge-ai">AI 原生</span></h3>
+      <p>以可视化节点串联模型、素材库与游戏交付流程</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">流程编排</span><span class="tag">自动化</span><span class="tag">AI 节点</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/draw-things.html" data-cat="ai-workflow" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(28080 74% 54%);width:40px;height:40px;font-size:15px">DR</span>
+    <div class="tool-card-info">
+      <h3>Draw Things<span class="badge-ai">AI 原生</span></h3>
+      <p>在 Mac 本地生成游戏图像、视频并微调专属模型</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">本地出图</span><span class="tag">视频生成</span><span class="tag">模型微调</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/kohya-ss.html" data-cat="ai-workflow" data-stage="资源" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(2520 66% 43%);width:40px;height:40px;font-size:15px">KO</span>
+    <div class="tool-card-info">
+      <h3>kohya_ss<span class="badge-ai">AI 原生</span></h3>
+      <p>训练专属 LoRA，让游戏美术产出稳定贴合角色设定</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">LoRA</span><span class="tag">模型微调</span><span class="tag">美术训练</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/comfyui-manager.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(59040 65% 51%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI-Manager<span class="badge-ai">AI 原生</span></h3>
+      <p>管理 ComfyUI 模型与插件，让 AI 美术管线更顺畅</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">节点管理</span><span class="tag">模型同步</span><span class="tag">插件安装</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-comfyui-yolain-workflows.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(63360 75% 45%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI-Yolain 工作流集<span class="badge-ai">AI 原生</span></h3>
+      <p>基于 Easy Use 节点构建的 ComfyUI 创作工作流合集</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">工作流</span><span class="tag">Easy-Use</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-whatdreamscost-comfyui.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(30600 73% 52%);width:40px;height:40px;font-size:15px">WH</span>
+    <div class="tool-card-info">
+      <h3>WhatDreamsCost ComfyUI 扩展<span class="badge-ai">AI 原生</span></h3>
+      <p>提供 LTX Director 与多种自定义节点的 ComfyUI 项目</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">LTX-Director</span><span class="tag">工作流</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-comfyui-workspace-manager.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(8280 72% 43%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI 工作区管理器<span class="badge-ai">AI 原生</span></h3>
+      <p>集中管理 ComfyUI 工作流、模型与子工作流</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">工作流管理</span><span class="tag">模型管理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-comfyui-minimaxh3-director.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(5040 72% 42%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI MiniMax H3 导演工作流<span class="badge-ai">AI 原生</span></h3>
+      <p>面向 ComfyUI 的 MiniMax H3 多语言导演工作流</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">MiniMax H3</span><span class="tag">导演工作流</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-workflow-templates.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(88920 65% 57%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI 工作流模板库<span class="badge-ai">AI 原生</span></h3>
+      <p>以 TypeScript 维护的 ComfyUI 模板工作流集合</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">工作流模板</span><span class="tag">TypeScript</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-wyrde-comfyui-workflows.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(33840 68% 48%);width:40px;height:40px;font-size:15px">WY</span>
+    <div class="tool-card-info">
+      <h3>Wyrde ComfyUI 工作流合集<span class="badge-ai">AI 原生</span></h3>
+      <p>汇集可复用 ComfyUI 工作流的社区项目</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">工作流合集</span><span class="tag">Python</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-kitchen-comfyui.html" data-cat="ai-workflow" data-stage="美术" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(42840 62% 54%);width:40px;height:40px;font-size:15px">KI</span>
+    <div class="tool-card-info">
+      <h3>Kitchen ComfyUI<span class="badge-ai">AI 原生</span></h3>
+      <p>基于 React Flow 的 Stable Diffusion 节点式图形界面</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Stable Diffusion</span><span class="tag">React Flow</span><span class="tag">节点工作流</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-ai-game-devtools.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(65160 70% 55%);width:40px;height:40px;font-size:15px">AI</span>
+    <div class="tool-card-info">
+      <h3>AI 游戏开发工具资源中心<span class="badge-ai">AI 原生</span></h3>
+      <p>汇集AI游戏开发工具，覆盖模型、美术、音频、视频与代码环节</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">游戏开发</span><span class="tag">工具导航</span><span class="tag">AI工作流</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-comfyui-workflows-zho.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(29880 55% 42%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI 工作流合集 ZHO<span class="badge-ai">AI 原生</span></h3>
+      <p>汇集多种 ComfyUI 创作工作流的社区项目</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">工作流</span><span class="tag">AI美术</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-comfyui-copilot.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(33840 66% 47%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI 智能助手<span class="badge-ai">AI 原生</span></h3>
+      <p>为 ComfyUI 提供智能辅助与自动化支持的节点</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">智能助手</span><span class="tag">自动化</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-gdmaim.html" data-cat="ai-workflow" data-stage="玩法" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(54360 58% 43%);width:40px;height:40px;font-size:15px">GD</span>
+    <div class="tool-card-info">
+      <h3>GDMaim<span class="badge-ai">AI 原生</span></h3>
+      <p>面向 Godot 项目的 AI NPC 与智能体开发框架</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Godot</span><span class="tag">AI NPC</span><span class="tag">智能体</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-comfyui-examples.html" data-cat="ai-workflow" data-stage="学习" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(71640 65% 48%);width:40px;height:40px;font-size:15px">CO</span>
+    <div class="tool-card-info">
+      <h3>ComfyUI 官方示例集<span class="badge-ai">AI 原生</span></h3>
+      <p>展示 ComfyUI 节点编排与使用方法的示例集</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">ComfyUI</span><span class="tag">示例</span><span class="tag">节点工作流</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-unity-mcp-server.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(64080 68% 55%);width:40px;height:40px;font-size:15px">UN</span>
+    <div class="tool-card-info">
+      <h3>Unity MCP 服务器<span class="badge-ai">AI 原生</span></h3>
+      <p>面向 Unity 项目的 MCP 服务，让 AI 协助操作编辑器与项目内容。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">MCP</span><span class="tag">智能体</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-funplay-unity-mcp.html" data-cat="ai-workflow" data-stage="工作流" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(43560 65% 45%);width:40px;height:40px;font-size:15px">FU</span>
+    <div class="tool-card-info">
+      <h3>Funplay Unity MCP<span class="badge-ai">AI 原生</span></h3>
+      <p>面向 Unity 开发环境的 MCP 集成，用于连接 AI 与编辑器。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">MCP</span><span class="tag">AI 工作流</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/gh-free-ai-notebooks.html" data-cat="ai-workflow" data-stage="学习" data-native="1">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(24120 78% 45%);width:40px;height:40px;font-size:15px">AI</span>
+    <div class="tool-card-info">
+      <h3>免费 AI 笔记本合集<span class="badge-ai">AI 原生</span></h3>
+      <p>汇集免费 AI 笔记本，帮助开发者快速实践常见模型与任务。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Jupyter Notebook</span><span class="tag">AI 实验</span><span class="tag">免费学习资源</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/power-automate.html" data-cat="ai-workflow" data-stage="工作流" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(52560 68% 49%);width:40px;height:40px;font-size:15px">PO</span>
+    <div class="tool-card-info">
+      <h3>Power Automate</h3>
+      <p>自动串联游戏资产、审批与归档流程，减少团队手工搬运。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">流程自动化</span><span class="tag">团队协作</span><span class="tag">资产归档</span></div>
+</a></div>
+
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

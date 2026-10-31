@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jq - 关卡与数据管线 - 游戏工具集</title>
+<meta name="description" content="用命令行筛选转换 JSON，串起 AI 资产管线。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/tools/jq.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="jq - 关卡与数据管线 - 游戏工具集">
+<meta property="og:description" content="用命令行筛选转换 JSON，串起 AI 资产管线。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/tools/jq.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link active" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item open">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/tools/">工具集</a> / <a href="/game-tool-hub/categories/pipeline.html">关卡与数据管线</a> / <span>jq</span></nav>
+<article class="detail">
+  <header class="detail-head">
+    <span class="logo-badge" style="--logo-bg:hsl(77760 72% 57%);width:64px;height:64px;font-size:24px">JQ</span>
+    <div class="detail-title">
+      <h1>jq</h1>
+      <p class="detail-summary">用命令行筛选转换 JSON，串起 AI 资产管线。</p>
+      <div class="detail-tags"><span class="tag">JSON</span><span class="tag">命令行</span><span class="tag">数据转换</span><span class="tag">自动化</span></div>
+    </div>
+    <div class="detail-cta">
+      <a class="btn btn-primary" href="https://jqlang.github.io/jq" target="_blank" rel="noopener nofollow">访问官网 ↗</a>
+      <a class="btn btn-ghost" href="/game-tool-hub/tutorials/tut-jq.html">阅读教程</a>
+    </div>
+  </header>
+  <div class="meta-grid">
+    <div><span>所属分类</span><strong><a href="/game-tool-hub/categories/pipeline.html">🗺️ 关卡与数据管线</a></strong></div>
+    <div><span>创作阶段</span><strong>🔗 工作流</strong></div>
+    <div><span>工具类型</span><strong>传统工具 · AI 管线配套</strong></div>
+    <div><span>支持平台</span><strong>Windows、macOS、Linux</strong></div>
+    <div><span>价格模式</span><strong>免费开源</strong></div>
+    <div><span>适合人群</span><strong>工具程序开发者、数据工程师、独立开发者</strong></div>
+    <div><span>官网链接</span><strong class="link-status ok">● 正常</strong></div>
+    <div><span>资料更新</span><strong>2026-11-01</strong></div>
+  </div>
+  <section class="detail-block ai-role-block">
+    <h2>🧠 在 AI 创作链路中的位置</h2>
+    <p class="lead">转换 AI 产出的结构化数据，使其符合游戏管线要求。</p>
+    <p class="muted small">所属阶段：🔗 工作流 · 传统工具，负责把 AI 产物打磨/接入到可交付的管线里</p>
+  </section>
+  <section class="detail-block">
+    <h2>工具介绍</h2>
+    <p class="lead">免费开源的命令行 JSON 处理器，可通过简洁查询表达式筛选字段、重排结构、批量转换和输出数据。适合处理 AI 或引擎产生的角色、物品、对话与任务数据，并能接入 Shell、CI 和批处理流程，完成可复现的资产整理。</p>
+  </section>
+  <section class="detail-block"><h2>核心能力</h2><ul class="feature-list"><li>表达式筛选 JSON 字段</li><li>批量重排与转换数据</li><li>支持命令行管道组合</li><li>便于接入自动化流程</li></ul></section>
+  <div class="two-col">
+    <section class="detail-block"><h2>👍 优点</h2><ul class="plus-list"><li>批处理效率高</li><li>可复现且易自动化</li><li>跨平台可用</li></ul></section>
+    <section class="detail-block"><h2>⚠️ 局限</h2><ul class="minus-list"><li>学习表达式有门槛</li><li>大型嵌套数据调试不便</li></ul></section>
+  </div>
+  <section class="detail-block"><h2>典型使用场景</h2><ul class="usecase-list"><li>整理 AI 对话数据</li><li>转换物品与任务配置</li><li>批量导出模型元数据</li><li>接入资产校验脚本</li></ul></section>
+  <section class="detail-block"><h2>使用教程</h2>
+      <div class="tut-meta-line"><span class="badge">入门</span><span>⏱ 约 15 分钟</span><span>🎯 能用 jq 从 JSON 中提取并转换目标字段</span></div>
+      <ol class="step-list"><li class="step"><div class="step-no">1</div><div><h4>安装并检查 jq</h4><p>前往官网 jq 官网下载对应系统版本，或通过 Homebrew、Chocolatey 安装；终端运行 jq --version，确认命令可用。</p></div></li><li class="step"><div class="step-no">2</div><div><h4>准备 JSON 输入</h4><p>将示例数据保存为 data.json，根节点可以是对象或数组。执行 jq . data.json，检查语法并熟悉 jq 的标准输出。</p></div></li><li class="step"><div class="step-no">3</div><div><h4>筛选目标字段</h4><p>用点号读取对象字段，如 jq .user.name data.json；数组使用方括号和索引，如 jq .players[0].id data.json。</p></div></li><li class="step"><div class="step-no">4</div><div><h4>过滤数组元素</h4><p>使用选择器匹配条件，例如 jq &#39;.items[] | select(.level &gt; 10) | .name&#39; data.json；管道符表示把上一步结果交给下一步。</p></div></li><li class="step"><div class="step-no">5</div><div><h4>映射与重组数据</h4><p>使用对象和数组构造新结构，例如 jq &#39;{names: [.users[].name], count: (.users | length)}&#39; data.json，生成精简结果。</p></div></li><li class="step"><div class="step-no">6</div><div><h4>接入管道并保存</h4><p>将 curl 获取的接口数据交给 jq，如 curl -s https://example.com/api | jq &#39;.data[] | {id, name}&#39;；用重定向保存为 result.json。</p></div></li></ol>
+      <div class="tips-box"><h3>💡 实用技巧</h3><ul><li>先运行 jq . 验证输入格式</li><li>用 --arg 传入外部变量</li><li>用 -r 直接输出纯文本</li><li>复杂查询拆成多段管道</li></ul></div>
+      <div class="tips-box warn"><h3>⚠️ 常见坑</h3><ul><li>单引号可避免 Shell 提前解析表达式</li><li>点号访问对象，数组索引从零开始</li></ul></div>
+      <p class="muted small">完整图文教程：<a href="/game-tool-hub/tutorials/tut-jq.html">jq 入门：从安装到提取 JSON</a></p>
+    </section>
+  <section class="detail-block guide-callout"><h2>📖 同类工具怎么选</h2><p>本分类负责把 AI 生成的视频、地图、数值表和资源包转化为可编辑、可校验、可集成的工程资产。应按目标引擎、资产格式、自动化程度与可回溯性选型，并先统一目录、命名和数据规范，再衔接生成、编辑、验证与发布流程。</p><a class="btn btn-ghost" href="/game-tool-hub/tutorials/guide-pipeline.html">阅读《AI游戏资产与关卡管线总览》</a></section>
+  <section class="detail-block"><h2>同类工具推荐</h2><div class="tool-grid"><a class="tool-card" href="/game-tool-hub/tools/ffmpeg.html" data-cat="pipeline" data-stage="宣传" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(71280 60% 57%);width:40px;height:40px;font-size:15px">FF</span>
+    <div class="tool-card-info">
+      <h3>FFmpeg</h3>
+      <p>批量转码与裁切 AI 视频素材，快速生成可交付的宣发内容。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">视频转码</span><span class="tag">命令行</span><span class="tag">批处理</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/davinci-resolve.html" data-cat="pipeline" data-stage="宣传" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(5400 72% 46%);width:40px;height:40px;font-size:15px">DA</span>
+    <div class="tool-card-info">
+      <h3>DaVinci Resolve</h3>
+      <p>精剪、调色并交付 AI 生成的宣传片与游戏实机视频。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">专业剪辑</span><span class="tag">调色</span><span class="tag">后期制作</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/tiled.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(57240 57% 55%);width:40px;height:40px;font-size:15px">TI</span>
+    <div class="tool-card-info">
+      <h3>Tiled 地图编辑器</h3>
+      <p>承接 AI 生成的瓦片与场景，搭建可交付的二维游戏地图</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">2D地图</span><span class="tag">瓦片关卡</span><span class="tag">开源</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/world-machine.html" data-cat="pipeline" data-stage="美术" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(53280 57% 42%);width:40px;height:40px;font-size:15px">WO</span>
+    <div class="tool-card-info">
+      <h3>World Machine</h3>
+      <p>把 AI 生成的地形思路转成高度图，服务大型场景制作</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">程序化地形</span><span class="tag">高度图</span><span class="tag">地貌生成</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/sbox-hammer.html" data-cat="pipeline" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(84960 63% 44%);width:40px;height:40px;font-size:15px">HA</span>
+    <div class="tool-card-info">
+      <h3>Hammer 关卡编辑器</h3>
+      <p>把 AI 生成的关卡方案搭成空间结构，并接入 Source 2 制作管线。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Source 2</span><span class="tag">s&amp;box</span><span class="tag">关卡编辑</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/jsonschema-validator.html" data-cat="pipeline" data-stage="工程" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(47880 73% 49%);width:40px;height:40px;font-size:15px">JS</span>
+    <div class="tool-card-info">
+      <h3>JSON Schema 校验器</h3>
+      <p>校验 AI 生成的游戏配置数据，提前拦截格式与字段错误。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">数据校验</span><span class="tag">JSON</span><span class="tag">Schema</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/assetstudio.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(49680 72% 53%);width:40px;height:40px;font-size:15px">AS</span>
+    <div class="tool-card-info">
+      <h3>AssetStudio</h3>
+      <p>导出游戏资源供 AI 提取、重制或作为生成参考。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">资源导出</span><span class="tag">Unity</span><span class="tag">素材提取</span></div>
+</a><a class="tool-card" href="/game-tool-hub/tools/assetripper.html" data-cat="pipeline" data-stage="资源" data-native="0">
+  <div class="tool-card-head">
+    <span class="logo-badge" style="--logo-bg:hsl(14040 70% 42%);width:40px;height:40px;font-size:15px">AS</span>
+    <div class="tool-card-info">
+      <h3>AssetRipper</h3>
+      <p>还原 Unity 游戏资源，为 AI 改作与资产研究提供素材。</p>
+    </div>
+  </div>
+  <div class="tags"><span class="tag">Unity</span><span class="tag">资源还原</span><span class="tag">资产研究</span></div>
+</a></div></section>
+</article>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"jq","description":"用命令行筛选转换 JSON，串起 AI 资产管线。","url":"https://jqlang.github.io/jq","applicationCategory":"GameDevelopmentApplication","operatingSystem":"Windows, macOS, Linux","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

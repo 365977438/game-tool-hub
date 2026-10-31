@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scenes AI 用单张显卡运行 34B 实时世界模型 - 游戏工具集</title>
+<meta name="description" content="国产团队达瓦科技以 Scenes AI 获得 NVIDIA 创业企业展示卓越企业奖。该模型不逐帧重画画面，而是分别维护场景、人物、相机、灯光、物体与物理状态，在单张 RTX 5090 上实现实时运行，为游戏场景构建、交互预览和实时内容生产提供了新路径。">
+<meta name="keywords" content="AI游戏,AI做游戏,AI游戏开发,AI游戏制作,AI美术,AI生成素材,AI配音,AI NPC,AI工作流,AI游戏工具,游戏工具,游戏开发工具,游戏工具集,游戏引擎,游戏教程,AIGC游戏,AI game dev,AI game development,gamedev,game tools">
+<link rel="canonical" href="https://365977438.github.io/game-tool-hub/news/n-04f612f8.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Scenes AI 用单张显卡运行 34B 实时世界模型 - 游戏工具集">
+<meta property="og:description" content="国产团队达瓦科技以 Scenes AI 获得 NVIDIA 创业企业展示卓越企业奖。该模型不逐帧重画画面，而是分别维护场景、人物、相机、灯光、物体与物理状态，在单张 RTX 5090 上实现实时运行，为游戏场景构建、交互预览和实时内容生产提供了新路径。">
+<meta property="og:url" content="https://365977438.github.io/game-tool-hub/news/n-04f612f8.html">
+<meta property="og:site_name" content="游戏工具集">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="/game-tool-hub/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="游戏工具集 · AI 游戏快讯" href="/game-tool-hub/rss.xml">
+<link rel="stylesheet" href="/game-tool-hub/assets/site.css?v=mvworlgw">
+<script>(function(){try{var t=localStorage.getItem('gth-theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&p)){document.documentElement.classList.add('dark');}}catch(e){}})();</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="菜单">☰</button>
+    <a class="brand" href="/game-tool-hub/">
+      <span class="brand-mark">🎮</span>
+      <span class="brand-text">游戏工具集<em>GameToolHub</em></span>
+    </a>
+    <nav class="top-nav">
+      <a class="nav-link" href="/game-tool-hub/">首页</a>
+      <a class="nav-link" href="/game-tool-hub/tools/">工具集</a>
+      <a class="nav-link active" href="/game-tool-hub/news/">新闻</a>
+      <a class="nav-link" href="/game-tool-hub/tutorials/">教程</a>
+      <a class="nav-link" href="/game-tool-hub/automation.html">自动化</a>
+    </nav>
+    <form class="search-form" action="/search.html" method="get" role="search">
+      <input type="search" name="q" id="header-search" placeholder="搜索工具 / 新闻 / 教程…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="side-head">
+      <span>全部分类</span>
+      <span class="side-total">274 个工具</span>
+    </div>
+    <nav class="side-nav"><ul><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-art.html"><span class="side-emoji">🖌️</span><span class="side-name">AI 美术生成</span><span class="side-count">14</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-3d.html"><span class="side-emoji">🧊</span><span class="side-name">AI 三维与动画</span><span class="side-count">25</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-audio.html"><span class="side-emoji">🎙️</span><span class="side-name">AI 音频与配音</span><span class="side-count">20</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-code.html"><span class="side-emoji">⌨️</span><span class="side-name">AI 代码与自动化</span><span class="side-count">15</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-npc.html"><span class="side-emoji">🗣️</span><span class="side-name">AI NPC 与智能体</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-workflow.html"><span class="side-emoji">🔗</span><span class="side-name">AI 工作流与训练</span><span class="side-count">24</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-video.html"><span class="side-emoji">🎬</span><span class="side-name">AI 视频与宣传</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-compute.html"><span class="side-emoji">🖥️</span><span class="side-name">AI 算力与部署</span><span class="side-count">11</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/ai-model.html"><span class="side-emoji">📚</span><span class="side-name">AI 模型与素材库</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/engine.html"><span class="side-emoji">🎮</span><span class="side-name">游戏引擎与框架</span><span class="side-count">31</span></a>
+        <ul class="side-sub"><li><a href="/game-tool-hub/categories/engine.html#engine-2d">2D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-3d">3D 引擎</a></li><li><a href="/game-tool-hub/categories/engine.html#engine-web">网页 / H5 引擎</a></li></ul>
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/art.html"><span class="side-emoji">🎨</span><span class="side-name">美术与 DCC</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/audio.html"><span class="side-emoji">🎵</span><span class="side-name">音频与音效</span><span class="side-count">9</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/pipeline.html"><span class="side-emoji">🗺️</span><span class="side-name">关卡与数据管线</span><span class="side-count">22</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/asset.html"><span class="side-emoji">📦</span><span class="side-name">素材与资源库</span><span class="side-count">17</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/mod.html"><span class="side-emoji">🧩</span><span class="side-name">Mod 与插件</span><span class="side-count">7</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/perf.html"><span class="side-emoji">🩺</span><span class="side-name">性能与优化</span><span class="side-count">10</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/publish.html"><span class="side-emoji">🛫</span><span class="side-name">发行与平台</span><span class="side-count">5</span></a>
+        
+      </li><li class="side-item">
+        <a href="/game-tool-hub/categories/learn.html"><span class="side-emoji">🎓</span><span class="side-name">学习与社区</span><span class="side-count">17</span></a>
+        
+      </li></ul></nav>
+    <div class="side-card">
+      <div class="side-card-title">🤖 AI 自动化维护</div>
+      <p>工具收集、新闻聚合、教程撰写与站点发布，全部由 AI 机器人定时执行。</p>
+      <a class="side-card-link" href="/game-tool-hub/automation.html">查看流水线状态 →</a>
+    </div>
+  </div>
+</aside>
+<main class="main" id="main">
+<nav class="crumb"><a href="/game-tool-hub/">首页</a> / <a href="/game-tool-hub/news/">新闻</a> / <span>Scenes AI 用单张显卡运行 34B 实时世界模型</span></nav>
+<article class="article">
+  <header class="article-head">
+    <div class="news-card-meta"><span class="tag tag-imp">AI 工具链</span><span>量子位</span><span>2026-10-23 17:03</span></div>
+    <h1>Scenes AI 用单张显卡运行 34B 实时世界模型</h1>
+    <p class="lead">国产团队达瓦科技以 Scenes AI 获得 NVIDIA 创业企业展示卓越企业奖。该模型不逐帧重画画面，而是分别维护场景、人物、相机、灯光、物体与物理状态，在单张 RTX 5090 上实现实时运行，为游戏场景构建、交互预览和实时内容生产提供了新路径。</p>
+    <div class="news-highlight">💡 实时世界模型不再只生成结果，而是让场景、物体与物理成为可持续修改的游戏状态。</div>
+  </header>
+  <section class="article-points"><h3 class="body-label">关键要点</h3><ul><li>理解世界状态与逐帧生成的区别</li><li>评估实时世界模型的场景应用</li><li>关注单卡运行带来的硬件门槛</li><li>探索 AI 与现有引擎管线接入</li><li>将状态维护用于关卡快速预览</li></ul></section>
+  <div class="article-body"><h3 class="body-label">正文（AI 核查整理）</h3><p>10 月 15 日，2026 NVIDIA 创业企业展示半程展示在苏州金鸡湖举行。来自重庆的达瓦科技凭借实时世界模型产品 Scenes AI 获得“半程展示卓越企业奖”；本届赛事共有 580 多家科创企业报名，30 家 NVIDIA 初创加速计划会员进入半程展示。</p><p>Scenes AI 区别于以“下一帧像不像”为目标的视频生成模型。它持续维护一个世界状态，把场景、人物、相机、灯光、物体和物理分别表示为可独立读写的变量；世界发生变化时，只更新对应部分，再将结果写回状态，供下一时刻继续演化。</p><p>其输入可以不是游戏引擎或代理画面，而是普通摄像头捕获的真实空间。演示中，模型将房间改造成手绘草原，同时保持人物动作、家具位置、遮挡关系和空间透视；后续加入树木、篝火、雪与雨时，墙上文字、玩偶位置等细节仍被保留。</p><p>这意味着游戏开发者可以把世界状态理解为一套可实时操控的场景底座：修改画风、环境或物体，而不必重新生成整段内容。状态变量化的路线尤其适合预制场景搭建、实时关卡预览、镜头与灯光调试，以及快速验证场景变化对后续模拟的影响。</p><p>不过，素材展示的是实时世界模型及交互式 Demo，尚不能等同于可直接投入商业游戏的完整生产方案。开发者仍需评估复杂场景下的稳定性、资产生成质量、状态接入成本以及与现有引擎管线的兼容方式，同时关注实时运行所依赖的显卡硬件成本。</p><p>更值得关注的趋势，是生成式技术正从一次性产出视频转向持续模拟世界。若这一路线成熟，AI 在游戏制作中的角色可能不只是批量生成素材，而是成为可查询、可修改、可追踪状态的场景系统，让美术、关卡与系统设计更早进入同一套实时迭代流程。</p></div>
+  <div class="article-foot">
+    <a class="btn btn-primary" href="https://www.qbitai.com/2026/10/504931.html" target="_blank" rel="noopener nofollow">阅读原文 ↗</a>
+    <div class="article-tags"><span class="tag">实时世界模型</span><span class="tag">游戏场景</span><span class="tag">RTX显卡</span><span class="tag">状态生成</span><span class="tag">达瓦科技</span></div>
+  </div>
+  <section class="detail-block"><h2>相关快讯</h2><ul class="link-list"><li><a href="/game-tool-hub/news/n-a8fde85a.html">Ramen 发布 Aura Autopilot 开源自主游戏测试代理</a><em>2026-10-30</em></li><li><a href="/game-tool-hub/news/n-47993511.html">Playgama 用真实玩家参与度评选 AI 编程智能体</a><em>2026-10-29</em></li><li><a href="/game-tool-hub/news/n-88aa79f4.html">Epic 将生成式 AI 深入 Fortnite 与 Unreal Engine 6</a><em>2026-10-29</em></li><li><a href="/game-tool-hub/news/n-8ec5f6e8.html">3D高斯泼溅进入皮克斯流程，游戏场景采集有了新路径</a><em>2026-10-27</em></li><li><a href="/game-tool-hub/news/n-39e8a443.html">UGC 平台转向 AI 工具，让普通玩家成为游戏创作者</a><em>2026-10-26</em></li><li><a href="/game-tool-hub/news/n-3caa3c2c.html">亦庄发布游戏电竞十大科技创新场景，AI创作进入大会议程</a><em>2026-10-23</em></li></ul></section>
+</article>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Scenes AI 用单张显卡运行 34B 实时世界模型","description":"国产团队达瓦科技以 Scenes AI 获得 NVIDIA 创业企业展示卓越企业奖。该模型不逐帧重画画面，而是分别维护场景、人物、相机、灯光、物体与物理状态，在单张 RTX 5090 上实现实时运行，为游戏场景构建、交互预览和实时内容生产提供了新路径。","datePublished":"2026-10-23T09:03:37.000Z","dateModified":"2026-10-25T09:21:21.468Z","author":{"@type":"Organization","name":"量子位"},"publisher":{"@type":"Organization","name":"游戏工具集"},"mainEntityOfPage":"https://365977438.github.io/game-tool-hub/news/n-04f612f8.html"}</script>
+</main>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="brand footer-brand"><span class="brand-mark">🎮</span><span class="brand-text">游戏工具集</span></div>
+      <p class="muted">游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</p>
+      <p class="muted small">本站内容由 AI 机器人自动采集与生成，版权归原作者所有</p>
+      
+    </div>
+    <div class="footer-col">
+      <h4>导航</h4>
+      <a href="/game-tool-hub/tools/">工具集</a>
+      <a href="/game-tool-hub/news/">AI 游戏快讯</a>
+      <a href="/game-tool-hub/tutorials/">使用教程</a>
+      <a href="/game-tool-hub/categories/engine.html">游戏引擎</a>
+      <a href="/game-tool-hub/categories/ai-art.html">AI 美术生成</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="/game-tool-hub/about.html">关于本站</a>
+      <a href="/game-tool-hub/automation.html">AI 维护流水线</a>
+      <a href="/game-tool-hub/disclaimer.html">免责声明</a>
+      <a href="/game-tool-hub/rss.xml">RSS 订阅</a>
+    </div>
+    <div class="footer-col">
+      <h4>自动化状态</h4>
+      <p class="muted small">最近一次运行：2026-11-01 01:39</p>
+      <p class="muted small">运行模式：完整跑批</p>
+      <p class="muted small">累计自动发布：57 次</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 游戏工具集 · 本站内容由 AI 机器人自动采集、整理与生成</span>
+    <span class="footer-week">构建周 2026-W44</span>
+  </div>
+</footer>
+<script>window.GTH_BASE="/game-tool-hub/";</script>
+<script src="/game-tool-hub/assets/app.js?v=mvworlgw"></script>
+
+</body>
+</html>

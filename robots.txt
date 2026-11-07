@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://365977438.github.io/game-tool-hub/sitemap.xml

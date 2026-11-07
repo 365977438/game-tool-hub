@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>游戏工具集 · AI 游戏快讯</title>
+    <link>https://365977438.github.io/game-tool-hub/news/</link>
+    <description>游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</description>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 07 Nov 2026 17:37:55 GMT</lastBuildDate>
+    <item>
+      <title><![CDATA[从单会话到多智能体：游戏开发工作流迎来并行调度]]></title>
+      <link><![CDATA[https://www.qbitai.com/2026/11/508264.html]]></link>
+      <guid isPermaLink="false">n-7d36f3d4</guid>
+      <pubDate>Sat, 07 Nov 2026 05:01:17 GMT</pubDate>
+      <description><![CDATA[DeepSeek Harness 提出由主 Agent 调度多个 Worker 的 Super-agent 架构，硅谷团队 AFK AI 也以 Comma 产品实践“单 Router＋多 Worker”。对游戏开发者而言，这类系统可把代码、测试、素材与项目管理等任务纳入长期在线的并行工作流。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">量子位</source>
+    </item>
+    <item>
+      <title><![CDATA[AI 创作争议升级：艺术家与 Epic CEO 公开交锋]]></title>
+      <link><![CDATA[https://www.pcgamer.com/software/ai/the-ai-posting-war-is-heating-up-please-leave-me-behind-says-artist-who-got-into-it-with-epic-ceo-tim-sweeney-on-x/]]></link>
+      <guid isPermaLink="false">n-9d9ff1c2</guid>
+      <pubDate>Fri, 06 Nov 2026 22:21:50 GMT</pubDate>
+      <description><![CDATA[PC Gamer 报道，艺术家与 Epic CEO Tim Sweeney 在 X 上围绕 AI 展开争论，玩家与开发者也分裂成不同阵营。这场冲突直接触及游戏美术生产、署名权、版权伦理，以及开发者使用 AI 工具时如何降低团队与玩家阻力。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">PC Gamer</source>
+    </item>
+    <item>
+      <title><![CDATA[《WoW: Forever》被指需占用 250,000 GB 内存]]></title>
+      <link><![CDATA[https://www.pcgamer.com/games/world-of-warcraft/wow-forever-takes-250-000-gb-of-memory-to-run-and-i-cant-even-joke-about-sam-altman-being-jealous-because-thats-almost-nothing-compared-to-the-monolithic-demands-of-ai/]]></link>
+      <guid isPermaLink="false">n-aca76e95</guid>
+      <pubDate>Fri, 06 Nov 2026 15:50:34 GMT</pubDate>
+      <description><![CDATA[PC Gamer 以夸张标题对比《WoW: Forever》的内存需求与 AI 算力消耗，指出前者运行可能需要 250,000 GB 内存。这一数字主要反映超大型游戏基础设施的夸张量级，素材未说明其与 AI 制作流程的具体关系。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">PC Gamer</source>
+    </item>
+    <item>
+      <title><![CDATA[前 Rockstar 技术总监：AI 克隆或促使 GTA 6 提前登陆 PC]]></title>
+      <link><![CDATA[https://www.eurogamer.net/grand-theft-auto-6-pc-sooner-than-you-expect-curb-ai-clone]]></link>
+      <guid isPermaLink="false">n-8e454baf</guid>
+      <pubDate>Fri, 06 Nov 2026 12:02:40 GMT</pubDate>
+      <description><![CDATA[前 Rockstar North 技术总监 Obbe Vermeij 认为，AI 生成的《GTA 6》仿作可能分流正版玩家收入，迫使 Rockstar 更快推出官方 PC 版本。这并非直接的制作工具新闻，却揭示了生成式 AI 对游戏发行窗口、平台策略和版权保护的新压力。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">Eurogamer</source>
+    </item>
+    <item>
+      <title><![CDATA[AI 接入研发流程后，游戏策划的经验与岗位价值正在重估]]></title>
+      <link><![CDATA[http://www.chuapp.com/article/291741.html]]></link>
+      <guid isPermaLink="false">n-44a44e52</guid>
+      <pubDate>Fri, 06 Nov 2026 11:18:00 GMT</pubDate>
+      <description><![CDATA[触乐以资深策划潇潇的经历切入：项目被取消后，他难以再进入相近岗位，并将原因指向 AI 改变需求拆分、文档撰写和团队判断方式。文章呈现了生成式 AI 进入制作工作流后，对策划岗位、资历定价和开发组织方式的真实影响。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">触乐</source>
+    </item>
+    <item>
+      <title><![CDATA[Vermeij：AI 仿作或迫使 GTA 6 提前推出 PC 版]]></title>
+      <link><![CDATA[https://www.rockpapershotgun.com/its-a-brave-new-world-gta-6s-pc-port-will-release-sooner-than-you-think-to-avoid-losing-money-to-ai-rip-offs-says-former-rockstar-tech-director]]></link>
+      <guid isPermaLink="false">n-10ff0f92</guid>
+      <pubDate>Fri, 06 Nov 2026 11:09:10 GMT</pubDate>
+      <description><![CDATA[前 Rockstar North 技术总监 Obbe Vermeij 表示，《GTA 6》若出现生成式 AI 非官方克隆，Rockstar 与 Take-Two 可能加快 PC 版发布，以免玩家转向仿作而流失收入。事件凸显 AI 对游戏版权、产品窗口和跨平台开发规划的影响。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">Rock Paper Shotgun</source>
+    </item>
+    <item>
+      <title><![CDATA[Unity 第三季度营收增长 32%，AI 广告网络 Vector 同比增长 126%]]></title>
+      <link><![CDATA[https://www.gamesindustry.biz/unity-reports-strongest-ever-q3-results-driven-by-its-ai-powered-ad-network-vector]]></link>
+      <guid isPermaLink="false">n-2f6926f1</guid>
+      <pubDate>Fri, 06 Nov 2026 10:04:40 GMT</pubDate>
+      <description><![CDATA[Unity 第三季度营收同比增长 32% 至 6.22 亿美元，并实现自 2020 年上市以来首次 GAAP 盈利。推动增长的关键业务是 AI 驱动的广告网络 Vector，其营收同比增长 126%，显示引擎厂商正把 AI 延伸至游戏获客与商业化环节。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">GamesIndustry.biz</source>
+    </item>
+    <item>
+      <title><![CDATA[游族42.25亿元采购GPU，AI原生游戏进入重投入期]]></title>
+      <link><![CDATA[https://www.youxituoluo.com/535030.html]]></link>
+      <guid isPermaLink="false">n-d73b79bb</guid>
+      <pubDate>Fri, 06 Nov 2026 10:00:04 GMT</pubDate>
+      <description><![CDATA[游族网络以42.25亿元签署PCIe GPU采购合同，并将AI工具、算力与内部创业机制打通：全员项目免常规立项审批，上线首年净利润归团队。对独立开发者而言，这表明游戏公司的AI竞争正从辅助工具延伸到训练、推理与产品孵化全链路。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">游戏陀螺</source>
+    </item>
+    <item>
+      <title><![CDATA[开源工具 gputaskman：看清本地 AI 游戏开发的 GPU 消耗]]></title>
+      <link><![CDATA[https://www.ithome.com/1/023/392.htm]]></link>
+      <guid isPermaLink="false">n-925eec52</guid>
+      <pubDate>Fri, 06 Nov 2026 07:58:11 GMT</pubDate>
+      <description><![CDATA[微软 GitHub 副总裁 Scott Hanselman 开源 GPU 监控工具 gputaskman，可按进程查看显存、功耗、温度及 PCIe 流量，并能识别本地 LLM 的模型、运行时、量化方式和显存占用。对使用本地模型辅助游戏开发的团队而言，它能帮助定位算力瓶颈。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[小岛秀夫谈 AI 游戏开发：效率提升可能夺走试错乐趣]]></title>
+      <link><![CDATA[https://www.ithome.com/1/023/333.htm]]></link>
+      <guid isPermaLink="false">n-9e098600</guid>
+      <pubDate>Fri, 06 Nov 2026 06:58:44 GMT</pubDate>
+      <description><![CDATA[游戏制作人小岛秀夫认为，AI 与 Photoshop、文字处理软件一样能提升创作效率，但指令驱动的反复生成也可能省略绘画、建模等工作中最有价值的试错过程。他担忧人类逐步让渡创作控制后，AI 最终会进入并取代创意工作。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[即梦短剧工作室贯通剧本、资产与分镜，AI连续剧生产提速]]></title>
+      <link><![CDATA[https://www.qbitai.com/2026/11/507972.html]]></link>
+      <guid isPermaLink="false">n-b06c3f94</guid>
+      <pubDate>Fri, 06 Nov 2026 03:20:05 GMT</pubDate>
+      <description><![CDATA[即梦短剧工作室把剧本创作、资产管理、分镜生成和连续故事制作整合进同一项目。实测中，创作者可从一句灵感生成多集大纲与剧本，建立角色和场景资产，再借助自动分镜与故事板助手调整镜头；这套工作流虽面向短剧，却展示了AI降低连续内容制作门槛的路径。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">量子位</source>
+    </item>
+    <item>
+      <title><![CDATA[Epic重组研发团队，AI深入UEFN与虚幻引擎核心]]></title>
+      <link><![CDATA[https://www.tmtpost.com/8194347.html]]></link>
+      <guid isPermaLink="false">n-048b23ff</guid>
+      <pubDate>Fri, 06 Nov 2026 03:17:00 GMT</pubDate>
+      <description><![CDATA[Epic Games以战略重组全面推进AI加速研发，素材称AI已将虚幻引擎原型验证速度提升5倍、Three.js项目最高提升10倍，并接管约70%的机械编码工作。Claude、Codex及模型上下文协议进入引擎工作流，AI工具正在从插件走向3D内容生产的底层能力。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">钛媒体</source>
+    </item>
+    <item>
+      <title><![CDATA[Frameboy 开放网页端 AI 世界探索，最高达 15 帧]]></title>
+      <link><![CDATA[https://www.ithome.com/1/023/063.htm]]></link>
+      <guid isPermaLink="false">n-6d1ced04</guid>
+      <pubDate>Fri, 06 Nov 2026 01:17:52 GMT</pubDate>
+      <description><![CDATA[World Labs 发布网页演示项目 Frameboy，用户可通过触屏、键盘和虚拟摇杆探索 Atlas 生成的模拟世界。系统依赖云端 GPU，以最高 15 帧实时传输，展示了 AI 世界模型走向可交互内容原型的可能性，也暴露出帧率与成本限制。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[TapTap聚光灯GameJam：AI辅助让独立创作加速]]></title>
+      <link><![CDATA[https://www.gcores.com/articles/221985]]></link>
+      <guid isPermaLink="false">n-d088dbdc</guid>
+      <pubDate>Thu, 05 Nov 2026 11:30:33 GMT</pubDate>
+      <description><![CDATA[TapTap聚光灯GameJam的线上开发阶段仅用21天便诞生2000余款可试玩Demo，历届活动累计吸引3000余名开发者、产出近500款作品。文章指出，开发工具迭代、AI辅助技术普及与高校开发氛围共同降低创作门槛，让独立游戏开发逐渐成为更多人的日常表达。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">机核</source>
+    </item>
+    <item>
+      <title><![CDATA[Itch.io 清理 AI 垃圾内容，并推出“No AI”筛选]]></title>
+      <link><![CDATA[https://80.lv/articles/itch-io-revises-ai-content-policies-after-removing-ai-generated-games/]]></link>
+      <guid isPermaLink="false">n-b7101018</guid>
+      <pubDate>Thu, 05 Nov 2026 08:30:00 GMT</pubDate>
+      <description><![CDATA[Itch.io 在删除数 TB 批量上传的 AI 生成内容后更新了平台政策，同时上线“No AI”筛选功能。平台并非全面禁止生成式 AI，而是要求创作者明确披露用途，并确保作品能为用户带来实际价值。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">80 Level</source>
+    </item>
+    <item>
+      <title><![CDATA[《不问凡尘》如何用 AI 视频与 NPC 重塑修仙游戏制作]]></title>
+      <link><![CDATA[https://www.gcores.com/radios/221962]]></link>
+      <guid isPermaLink="false">n-f9fbc664</guid>
+      <pubDate>Thu, 05 Nov 2026 04:00:00 GMT</pubDate>
+      <description><![CDATA[字节首款 AI 游戏《不问凡尘》以 AI 视频呈现修仙世界，并允许玩家与 NPC 自由聊天。制作团队借助 AI 与 Agent 完成大规模内容生产，将线性影像转化为可交互 RPG，同时探索 AI 游戏的定价与商业方向。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">机核</source>
+    </item>
+    <item>
+      <title><![CDATA[Googlebook 用 AI 开发 16 位横版游戏《胡子协议》]]></title>
+      <link><![CDATA[https://www.ithome.com/1/022/550.htm]]></link>
+      <guid isPermaLink="false">n-30d553ec</guid>
+      <pubDate>Thu, 05 Nov 2026 02:49:13 GMT</pubDate>
+      <description><![CDATA[谷歌与演员亨利·卡维尔合作推出《胡子协议》，这款 16 位横版卷轴游戏直接使用 Googlebook 内置的 Antigravity、Rambler 和 Magic Pointer 等 AI 工具创作。它展示了自然语言驱动内容生成与迭代的“氛围编码”流程，为希望降低制作门槛的独立开发者提供了可关注的产品化样本。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[Claude 参与重编译，Switch 游戏原生登陆 Apple TV 4K]]></title>
+      <link><![CDATA[https://www.ithome.com/1/022/510.htm]]></link>
+      <guid isPermaLink="false">n-befc7150</guid>
+      <pubDate>Thu, 05 Nov 2026 01:05:24 GMT</pubDate>
+      <description><![CDATA[开源项目 TVPort 基于 nxnative，并使用 Claude Opus 5.5 构建，将部分 Nintendo Switch 与 Switch 2 游戏重新编译到 Apple TV 4K。《超级马力欧：奥德赛》已实现原生 60FPS，证明生成式 AI 正开始参与兼容性移植与底层工程。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[Nexus Mods要求AI生成模组强制披露]]></title>
+      <link><![CDATA[https://www.pcgamer.com/games/nexus-mods-takes-the-valve-approach-to-ai-generated-content-no-outright-bans-but-mandatory-disclosures/]]></link>
+      <guid isPermaLink="false">n-0ab221cc</guid>
+      <pubDate>Wed, 04 Nov 2026 17:12:53 GMT</pubDate>
+      <description><![CDATA[Nexus Mods宣布不全面禁止AI生成内容，但要求创作者披露相关使用情况。该规则直接关系到模组作者的资产制作流程，也为发行商和独立开发者处理第三方AI内容提供了平台治理样本。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">PC Gamer</source>
+    </item>
+    <item>
+      <title><![CDATA[Nexus Mods 不禁 AI Mod，但要求强制披露]]></title>
+      <link><![CDATA[https://www.gamespot.com/articles/nexus-mods-wont-ban-ai-mods-but-it-wont-let-them-hide-either/]]></link>
+      <guid isPermaLink="false">n-9254bf8d</guid>
+      <pubDate>Wed, 04 Nov 2026 16:39:12 GMT</pubDate>
+      <description><![CDATA[Nexus Mods 负责人 Victor“ Foledinho ”Folmann 宣布，平台不会禁止使用 AI 工具制作的 PC Mod，但将要求上传者披露 AI 的使用情况。这意味着 AI Mod 仍可进入模组生态，同时创作者不能再隐藏生成式 AI 的参与。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">GameSpot</source>
+    </item>
+    <item>
+      <title><![CDATA[Steam 收紧游戏提交规则，应对 AI 垃圾内容洪流]]></title>
+      <link><![CDATA[https://www.gamespot.com/articles/steam-is-tightening-its-game-submission-rules-as-ai-slop-floods-the-store/]]></link>
+      <guid isPermaLink="false">n-358af8cd</guid>
+      <pubDate>Wed, 04 Nov 2026 13:19:17 GMT</pubDate>
+      <description><![CDATA[Steam 正面临游戏审核积压，提交前强制 QA 的等待时间据报已从数日延长至两周以上，原因之一可能是大量疑似由 AI 批量生成、却未通过基础技术检查的构建涌入。规则收紧将直接增加开发者的提交与上线成本。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">GameSpot</source>
+    </item>
+    <item>
+      <title><![CDATA[游族网络签下42.25亿元GPU大单，跨界算力生意考验现金流]]></title>
+      <link><![CDATA[https://www.tmtpost.com/8193553.html]]></link>
+      <guid isPermaLink="false">n-31fa1918</guid>
+      <pubDate>Wed, 04 Nov 2026 10:04:44 GMT</pubDate>
+      <description><![CDATA[游族网络全资子公司签下42.25亿元PRO5500 GPU采购合同，金额约为其2025年营收的三倍。交易反映出游戏公司正从用AI降本走向硬件与算力服务，但巨额采购也带来库存、现金流和交付风险。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">钛媒体</source>
+    </item>
+    <item>
+      <title><![CDATA[Claude Code 放开游戏玩法参考，仍禁止直接复刻]]></title>
+      <link><![CDATA[https://www.ithome.com/1/022/279.htm]]></link>
+      <guid isPermaLink="false">n-63975b05</guid>
+      <pubDate>Wed, 04 Nov 2026 09:30:28 GMT</pubDate>
+      <description><![CDATA[Anthropic 调整 Claude Code 的游戏开发限制。开发者现在可以提及现有游戏，让模型参考其玩法机制开发原创作品；若要求直接复制原作，系统仍会拒绝并建议采用相似体验的替代方案。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[Nexus Mods 要求模组开发者公开 AI 工具使用情况]]></title>
+      <link><![CDATA[https://www.ithome.com/1/022/257.htm]]></link>
+      <guid isPermaLink="false">n-6f423812</guid>
+      <pubDate>Wed, 04 Nov 2026 08:41:45 GMT</pubDate>
+      <description><![CDATA[Nexus Mods 更新生成式 AI 创作政策，不全面禁止 AI 模组，但要求创作者说明 AI 参与了哪些制作环节。存量模组获得 60 天补充期限，后续由人工审核。对开发者而言，采用 AI 工具时必须同步建立披露和追溯机制。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[AI 热潮下 Steam 审核积压，最长等待增至 12 个工作日]]></title>
+      <link><![CDATA[https://www.ithome.com/1/022/163.htm]]></link>
+      <guid isPermaLink="false">n-fe49675a</guid>
+      <pubDate>Wed, 04 Nov 2026 06:57:09 GMT</pubDate>
+      <description><![CDATA[Valve 称，近期商店页面与游戏构建版本提交量显著增加，导致 Steam 审核进度延迟，最长可能等待 12 个工作日。平台将通过新版发布检查清单减少重复审核，对使用 AI 扩大开发产量的独立团队尤其值得关注。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[Steam 审批积压 Valve 推新清单帮开发者一次过审]]></title>
+      <link><![CDATA[https://www.pcgamer.com/gaming-industry/valve-admits-its-running-behind-on-approving-steam-games-because-it-has-to-keep-re-reviewing-them-which-surely-has-nothing-to-do-with-ai/]]></link>
+      <guid isPermaLink="false">n-ad13d371</guid>
+      <pubDate>Tue, 03 Nov 2026 23:51:13 GMT</pubDate>
+      <description><![CDATA[Valve 承认 Steam 游戏审批工作落后，部分项目因需要反复审核而错过愿望单设定的发售日期，并为开发者推出新的检查清单，帮助其在首次提交时满足要求。清单可减少返工，也让 AI 辅助开发的版本管理更重要。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">PC Gamer</source>
+    </item>
+    <item>
+      <title><![CDATA[AI 批量涌入 Steam，开发者遭遇审核拥堵]]></title>
+      <link><![CDATA[https://www.rockpapershotgun.com/steams-review-queue-is-clogged-up-by-ai-slop-salacious-fire-emblem-ish-food-devils-gets-a-delay-because-its-devs-think-valve-is-inundated-with-genai-games]]></link>
+      <guid isPermaLink="false">n-bcb29d0e</guid>
+      <pubDate>Tue, 03 Nov 2026 21:41:08 GMT</pubDate>
+      <description><![CDATA[独立游戏《Food Devils》因 Steam 审核进度延误宣布延期。开发者 Studio Daimon 认为，大量生成式 AI 游戏正在堵塞审核队列。对独立开发者而言，AI 降低部分制作门槛的同时，也可能放大低质量提交、返工和平台审核压力。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">Rock Paper Shotgun</source>
+    </item>
+    <item>
+      <title><![CDATA[AI 助手成为游戏发现入口，独立开发者获客逻辑要变了]]></title>
+      <link><![CDATA[https://www.youxituoluo.com/535024.html]]></link>
+      <guid isPermaLink="false">n-2f2c9887</guid>
+      <pubDate>Tue, 03 Nov 2026 18:26:15 GMT</pubDate>
+      <description><![CDATA[DeepSeek Harness 等 AI Agent 已能主动搜索、筛选并推荐游戏内容。对独立开发者而言，游戏发现渠道可能从平台推荐、主播和买量转向 AI 助手，但能否进入候选名单，正取决于作品信息是否易被检索、理解和验证。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">游戏陀螺</source>
+    </item>
+    <item>
+      <title><![CDATA[Itch.io 扩大 AI 筛选项，开发者需正视作品标注与玩家抵制]]></title>
+      <link><![CDATA[https://www.pcgamer.com/software/ai/just-deleted-a-couple-terabytes-of-ai-slop-itch-io-pushes-back-against-the-flood-of-ai-on-its-storefront/]]></link>
+      <guid isPermaLink="false">n-f920a96b</guid>
+      <pubDate>Tue, 03 Nov 2026 17:57:30 GMT</pubDate>
+      <description><![CDATA[面对生成式 AI 作品大量涌入，Itch.io 进一步扩展 AI 筛选机制，允许用户按不同类型的生成式 AI 排除相关游戏。对独立开发者而言，这不仅是平台分发规则变化，也意味着仅靠 AI 降低成本可能影响作品曝光、商店信任与玩家接受度。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">PC Gamer</source>
+    </item>
+    <item>
+      <title><![CDATA[Kimi实测：AI一句话能推进游戏原型到哪一步？]]></title>
+      <link><![CDATA[https://www.youxituoluo.com/535022.html]]></link>
+      <guid isPermaLink="false">n-c2b75403</guid>
+      <pubDate>Tue, 03 Nov 2026 16:26:13 GMT</pubDate>
+      <description><![CDATA[游戏陀螺实测Kimi K3.1 Pro，将其用于参考图生成、Blender建模、场景搭建及Godot验证。测试显示，AI已能串联部分游戏美术工作流并降低原型门槛，但资产质量、任务连续性和额度成本仍需人工把关。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">游戏陀螺</source>
+    </item>
+    <item>
+      <title><![CDATA[《ARC Raiders》为何采用生成式 AI 配音：海量台词超出演员负荷]]></title>
+      <link><![CDATA[https://www.eurogamer.net/arc-raiders-ai-voice-acting-would-go-crazy]]></link>
+      <guid isPermaLink="false">n-0c67c4d1</guid>
+      <pubDate>Tue, 03 Nov 2026 15:34:03 GMT</pubDate>
+      <description><![CDATA[Embark Studios 开发者表示，《ARC Raiders》使用生成式 AI 配音是必要的，因为演员若逐字朗读全部台词可能会难以承受。该案例说明，生成式语音正在从少量补充内容转向大规模制作管线，同时将演员产能与录音安排转化为成本和质量问题。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">Eurogamer</source>
+    </item>
+    <item>
+      <title><![CDATA[itch.io 清理海量 AI 游戏，并升级 AI 内容披露机制]]></title>
+      <link><![CDATA[https://www.gamespot.com/articles/one-popular-pc-game-storefront-has-had-enough-of-ai-slop-and-its-taking-action/]]></link>
+      <guid isPermaLink="false">n-c2fd93c2</guid>
+      <pubDate>Tue, 03 Nov 2026 15:12:19 GMT</pubDate>
+      <description><![CDATA[独立游戏平台 itch.io 已移除数 TB 被视为“AI slop”的低质量内容，并采取更多措施应对 AI 生成游戏泛滥。平台治理变化意味着开发者即使能借助 AI 快速生成并上传作品，也必须面对披露、质量审核和商店入口竞争。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">GameSpot</source>
+    </item>
+    <item>
+      <title><![CDATA[Kimi 入局游戏开发：从生成代码到直接操作引擎]]></title>
+      <link><![CDATA[https://www.youxituoluo.com/535021.html]]></link>
+      <guid isPermaLink="false">n-b294d06d</guid>
+      <pubDate>Tue, 03 Nov 2026 14:54:05 GMT</pubDate>
+      <description><![CDATA[Kimi 发布游戏开发方案，组合 Kimi K3.1 Pro、Kimi Code、Kimi Work 以及 Unity、Unreal Engine、Blender、Godot 插件，让模型进入现有工程和编辑器，生成并修改可继续维护的资产。关键变化不是产出代码或图片，而是把 AI 接入验证、制作和迭代闭环。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">游戏陀螺</source>
+    </item>
+    <item>
+      <title><![CDATA[Itch.io 清理低质量 AI 游戏，并推出 NoAI 筛选]]></title>
+      <link><![CDATA[https://www.ithome.com/1/021/824.htm]]></link>
+      <guid isPermaLink="false">n-6cbecb7c</guid>
+      <pubDate>Tue, 03 Nov 2026 13:47:52 GMT</pubDate>
+      <description><![CDATA[独立游戏平台 Itch.io 正整治低质量 AI 游戏，已删除数 TB 内容，并将 AI 使用披露要求扩展至游戏、图书、漫画和原声音乐。平台还上线 NoAI 过滤选项，让用户能够隐藏带有生成式 AI 标签的作品。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[Arc Raiders 团队解释为何用生成式 AI 制作语音]]></title>
+      <link><![CDATA[https://www.rockpapershotgun.com/arc-raiders-devs-embark-insist-that-using-genai-for-voice-lines-was-necessary-as-actors-would-just-go-crazy-if-they-had-to-read-all-of-that]]></link>
+      <guid isPermaLink="false">n-55737bd8</guid>
+      <pubDate>Tue, 03 Nov 2026 12:32:19 GMT</pubDate>
+      <description><![CDATA[Embark Studios 创意总监 Stefan Strandberg 表示，团队将演员录音输入机器生成 AI 模仿语音，原因是大量台词若全部由演员朗读会难以完成；这也引出 AI 语音在游戏制作中的效率收益与演员权益边界。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">Rock Paper Shotgun</source>
+    </item>
+    <item>
+      <title><![CDATA[非游戏应用内购收入自2016年起超越手游]]></title>
+      <link><![CDATA[https://www.gamesindustry.biz/appmagic-non-gaming-apps-have-beaten-mobile-games-in-iap-revenue-since-2016]]></link>
+      <guid isPermaLink="false">n-f8dd8604</guid>
+      <pubDate>Tue, 03 Nov 2026 12:24:23 GMT</pubDate>
+      <description><![CDATA[AppMagic 数据显示，非游戏应用已在整体应用内购收入上超过移动游戏，TikTok 与 AI 聊天机器人成为主要驱动力；Honor of Kings、Free Fire 等游戏仍在游戏榜中领先。对开发者而言，AI 聊天机器人等新形态正在争夺用户付费时长与商业化空间。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">GamesIndustry.biz</source>
+    </item>
+    <item>
+      <title><![CDATA[itch.io 扩大 AI 披露筛选，应对游戏商店 AI 垃圾内容]]></title>
+      <link><![CDATA[https://www.eurogamer.net/itchio-generative-ai-filters-slop]]></link>
+      <guid isPermaLink="false">n-0efb0b80</guid>
+      <pubDate>Tue, 03 Nov 2026 12:03:56 GMT</pubDate>
+      <description><![CDATA[独立游戏平台 itch.io 扩展了生成式 AI 披露过滤器，帮助用户区分标明使用 AI 的作品与其他游戏。平台借此提高内容透明度，也向开发者提示：AI 参与制作已成发行与商店治理必须面对的现实。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">Eurogamer</source>
+    </item>
+    <item>
+      <title><![CDATA[itch.io 将支持过滤披露使用生成式 AI 的游戏]]></title>
+      <link><![CDATA[https://www.rockpapershotgun.com/itchio-will-soon-let-you-filter-games-with-genai-disclosures-out-of-your-search-results-on-the-site-after-admitting-it-was-previously-critically-lacking]]></link>
+      <guid isPermaLink="false">n-3d76b06b</guid>
+      <pubDate>Tue, 03 Nov 2026 10:12:22 GMT</pubDate>
+      <description><![CDATA[itch.io 宣布即将允许玩家在站内搜索结果中过滤披露使用生成式 AI 的游戏，以缓解低质量 AI 内容淹没人工创作的问题。对独立开发者而言，AI 使用披露正从平台标签走向搜索分发机制，作品的曝光方式和玩家对制作透明度的敏感度都在改变。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">Rock Paper Shotgun</source>
+    </item>
+    <item>
+      <title><![CDATA[Steam 十月近半新作披露使用生成式 AI]]></title>
+      <link><![CDATA[https://www.gcores.com/articles/221856]]></link>
+      <guid isPermaLink="false">n-453afd36</guid>
+      <pubDate>Tue, 03 Nov 2026 09:54:54 GMT</pubDate>
+      <description><![CDATA[一项基于开发者自我披露的统计显示，2026 年 10 月 Steam 新发售游戏中，49.9% 标明使用生成式 AI 内容和工具，达到单月最高。AI 已广泛进入美术、文本、商店宣传和代码环节，但玩家实际接触实时生成内容的游戏仍少，开发者与发行商正面对披露、品质和流量分化。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">机核</source>
+    </item>
+    <item>
+      <title><![CDATA[VRChat 拒绝标识 AI 内容，创作者信任与玩家抵制同时升温]]></title>
+      <link><![CDATA[https://www.ithome.com/1/021/651.htm]]></link>
+      <guid isPermaLink="false">n-a85398ac</guid>
+      <pubDate>Tue, 03 Nov 2026 09:08:58 GMT</pubDate>
+      <description><![CDATA[VRChat 在超过 2.1 万名用户参与、约 95% 希望增加 AI 内容标识的调查后，仍决定不引入专门标签，引发社区强烈不满。其替代措施包括禁止使用 AI 生成的不实缩略图、增加点赞点踩和反馈入口，游戏近期评价也明显下滑。]]></description>
+      <source url="https://365977438.github.io/game-tool-hub/news/">IT之家</source>
+    </item>
+  </channel>
+</rss>

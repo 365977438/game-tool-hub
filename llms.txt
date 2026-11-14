@@ -1,0 +1,98 @@
+# AI 游戏工具集
+
+> AI 游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。
+
+本文件按 llms.txt 规范（https://llmstxt.org/）列出本站的核心入口，供 AI 与 LLM 读取。
+完整清单（全部 276 个工具 / 272 条快讯 / 294 篇教程）见 https://365977438.github.io/game-tool-hub/llms-full.txt。
+
+## 分类（共 18 个）
+
+- [AI 美术生成](https://365977438.github.io/game-tool-hub/categories/ai-art.html): 文生图、贴图与角色概念图，批量产出风格一致的美术资产（14 个工具）
+- [AI 三维与动画](https://365977438.github.io/game-tool-hub/categories/ai-3d.html): AI 生成 3D 模型、动捕与动作，让概念直接进引擎（25 个工具）
+- [AI 音频与配音](https://365977438.github.io/game-tool-hub/categories/ai-audio.html): 配乐、音效与 AI 配音，批量产出符合世界观的声音资产（20 个工具）
+- [AI 代码与自动化](https://365977438.github.io/game-tool-hub/categories/ai-code.html): AI 编程助手、引擎 MCP 与自动化脚本，加速玩法与工具开发（15 个工具）
+- [AI NPC 与智能体](https://365977438.github.io/game-tool-hub/categories/ai-npc.html): 会对话的角色、记忆与世界模型，让游戏角色自己活起来（9 个工具）
+- [AI 工作流与训练](https://365977438.github.io/game-tool-hub/categories/ai-workflow.html): 节点式工作流、LoRA 训练与批量处理，把生成变成可复用的管线（24 个工具）
+- [AI 视频与宣传](https://365977438.github.io/game-tool-hub/categories/ai-video.html): 过场动画、预告片与宣传素材的 AI 生成与剪辑（11 个工具）
+- [AI 算力与部署](https://365977438.github.io/game-tool-hub/categories/ai-compute.html): 本地跑模型、推理服务与显存调度，决定生成成本与速度（11 个工具）
+- [AI 模型与素材库](https://365977438.github.io/game-tool-hub/categories/ai-model.html): 可下载的模型、数据集与可商用生成素材（5 个工具）
+- [游戏引擎与框架](https://365977438.github.io/game-tool-hub/categories/engine.html): Godot / Unity / Unreal 等主流引擎，AI 能力的落地载体（33 个工具）
+- [美术与 DCC](https://365977438.github.io/game-tool-hub/categories/art.html): 传统建模、贴图与雕刻工具，负责把 AI 产物打磨到可交付（22 个工具）
+- [音频与音效](https://365977438.github.io/game-tool-hub/categories/audio.html): 传统剪辑、混音与音效库，配合 AI 生成完成声音资产（9 个工具）
+- [关卡与数据管线](https://365977438.github.io/game-tool-hub/categories/pipeline.html): 关卡编辑、数值配置与资产管理，AI 产出能否进管线由它们决定（22 个工具）
+- [素材与资源库](https://365977438.github.io/game-tool-hub/categories/asset.html): 可商用模型、贴图、音效与模板，补齐生成之外的素材需求（17 个工具）
+- [Mod 与插件](https://365977438.github.io/game-tool-hub/categories/mod.html): 模组管理器与引擎插件，扩展引擎与 AI 工具的能力边界（7 个工具）
+- [性能与优化](https://365977438.github.io/game-tool-hub/categories/perf.html): 帧率、显存与崩溃诊断，让生成式资产跑得动（10 个工具）
+- [发行与平台](https://365977438.github.io/game-tool-hub/categories/publish.html): 上架 Steam / Epic 与开发者服务，作品走向玩家（5 个工具）
+- [学习与社区](https://365977438.github.io/game-tool-hub/categories/learn.html): 官方文档、课程、峰会与社区，跟上 AI 制作的玩法（17 个工具）
+
+## 精选工具（按评分排序，共 276 个）
+
+- [Scenario](https://365977438.github.io/game-tool-hub/tools/scenario.html): 【美术】以风格一致性为核心，规模化生成游戏二维美术资产。；按统一美术风格批量生成游戏图标与二维资产。
+- [ComfyUI](https://365977438.github.io/game-tool-hub/tools/comfyui.html): 【工作流】充当游戏美术资产的自动化生成与批处理中枢；用节点式工作流批量生成并串联游戏美术资产
+- [Stable Diffusion WebUI](https://365977438.github.io/game-tool-hub/tools/stable-diffusion-webui.html): 【美术】为游戏美术环节提供本地可控的图像生产工位；在本地快速生成游戏概念图、贴图与角色素材
+- [Fooocus](https://365977438.github.io/game-tool-hub/tools/fooocus.html): 【美术】降低 AI 游戏美术草案和素材初稿的制作门槛；用简化生图界面快速产出游戏美术草案与素材
+- [TRELLIS](https://365977438.github.io/game-tool-hub/tools/trellis.html): 【美术】把二维 AI 概念图转成游戏三维原型资产；把单张游戏概念图快速转成可编辑三维资产
+- [Melody Assistant](https://365977438.github.io/game-tool-hub/tools/melody-assistant.html): 【声音】在配乐前期生成旋律与编曲草案，减少从空白乐谱到可用音乐稿的手工时间。；用 AI 辅助作曲和编曲，快速产出适配游戏场景的音乐草案。
+- [即梦 Dreamina](https://365977438.github.io/game-tool-hub/tools/jimeng.html): 【宣传】负责把游戏创意转成宣传视频与动态概念初稿。；用提示词生成游戏宣传片与动态美术概念，替代大量分镜和素材剪辑。
+- [腾讯混元 3D](https://365977438.github.io/game-tool-hub/tools/hunyuan3d.html): 【美术】在美术资产生成环节产出三维模型初稿，减少手工建模。；从文字或图片生成可编辑三维资产，快速补齐游戏原型所需模型。
+- [GitHub Copilot](https://365977438.github.io/game-tool-hub/tools/github-copilot.html): 【代码】嵌入开发环节生成脚本、测试和工具，压缩重复编码时间。；在代码编辑器中辅助编写游戏脚本与工具链，替代重复性编码工作。
+- [Cursor](https://365977438.github.io/game-tool-hub/tools/cursor.html): 【玩法】以对话方式承接玩法需求，直接修改项目并辅助验证实现。；用自然对话修改游戏项目代码，把需求快速转成可运行逻辑。
+- [Runway](https://365977438.github.io/game-tool-hub/tools/runway.html): 【宣传】承接 AI 美术素材，生成并加工游戏动态宣传内容；用生成式视频快速制作游戏过场、预告与宣传片段
+- [Hyper3D Rodin](https://365977438.github.io/game-tool-hub/tools/hyper3d-rodin.html): 【美术】承接二维概念并快速产出可继续制作的三维资产。；从文字或图片生成可编辑的游戏三维模型。
+- [Rokoko Vision](https://365977438.github.io/game-tool-hub/tools/rokoko-vision.html): 【美术】把真人表演转成动画数据，为游戏角色动作提供来源。；用普通摄像头把真人动作转成可用于动画的数据。
+- [Fish Speech](https://365977438.github.io/game-tool-hub/tools/fish-speech.html): 【声音】生成多语种角色语音，衔接剧本与本地化音频资产。；用多语言声音克隆生成角色对白，支撑跨语种游戏语音本地化
+- [CosyVoice](https://365977438.github.io/game-tool-hub/tools/cosyvoice.html): 【声音】按角色与情绪直接生成对白，承担脚本到配音资产转换。；零样本克隆角色声线并控制情感，生成自然中文游戏语音
+- [Layer AI](https://365977438.github.io/game-tool-hub/tools/layer-ai.html): 【美术】承担批量概念资产与风格化素材生产，把草图快速推进为可用视觉方案。；批量生成统一风格的游戏资产，替美术团队省去重复制作与筛选时间。
+- [Aider](https://365977438.github.io/game-tool-hub/tools/aider.html): 【代码】承接 AI 脚本、工具代码与项目重构的实现环节；在终端里用 AI 编写、修改并提交游戏代码
+- [Cline](https://365977438.github.io/game-tool-hub/tools/cline.html): 【代码】把自然语言需求转成可执行的工程开发任务；在 IDE 中让 AI 自主完成游戏代码与工程任务
+- [Krita AI Diffusion](https://365977438.github.io/game-tool-hub/tools/krita-ai-diffusion.html): 【美术】嵌在传统绘制流程中，为美术师提供可控生成、局部修改与细节修复能力。；在 Krita 内局部重绘与可控生成，精细打磨 AI 游戏美术。
+- [Roo Code](https://365977438.github.io/game-tool-hub/tools/roo-code.html): 【代码】按开发阶段调度模型，代理完成游戏工程任务；以多模式 AI 代理编写游戏代码和项目工具
+- [ElevenLabs](https://365977438.github.io/game-tool-hub/tools/elevenlabs.html): 【声音】接住 AI 写出的台词并快速产出可用的角色语音；用 AI 快速生成角色配音、旁白与拟真的声音素材
+- [Kits AI](https://365977438.github.io/game-tool-hub/tools/kits-ai.html): 【声音】把 AI 或录音人声加工成游戏可直接使用的成品；用 AI 清理人声、降噪并打磨可交付的音频成品
+- [LALAL.AI](https://365977438.github.io/game-tool-hub/tools/lalal-ai.html): 【资源】从混合音频中提取可再利用的对白与伴奏素材；用 AI 拆分音乐声轨，提取角色配音和游戏循环素材
+- [Stable Audio](https://365977438.github.io/game-tool-hub/tools/stable-audio.html): 【声音】把场景与情绪描述快速转成可试用的游戏音频；用 AI 按情绪与场景生成音乐、音效和声音氛围
+- [DeepMotion](https://365977438.github.io/game-tool-hub/tools/deepmotion.html): 【美术】负责把真人动作快速转译成可用的3D角色动画。；用AI动捕生成角色动画，免去逐帧绑定与K帧制作。
+- [AudioCraft](https://365977438.github.io/game-tool-hub/tools/audiocraft.html): 【声音】承担游戏音乐和音效的提示词生成，补齐音频资产初稿。；用开源模型批量生成游戏音乐与音效，替代手工作曲和找素材
+- [GPT-SoVITS](https://365977438.github.io/game-tool-hub/tools/gpt-sovits.html): 【声音】把角色台词直接转成可用对白，减少真人配音录制量。；用少量中文语音样本微调角色音色，批量产出游戏对白
+- [可灵 AI](https://365977438.github.io/game-tool-hub/tools/kling-ai.html): 【宣传】负责把游戏概念图和镜头描述转成动态宣传素材。；用AI生成游戏宣传片，把概念图转成动态预告。
+- [AnimateDiff](https://365977438.github.io/game-tool-hub/tools/animate-diff.html): 【宣传】接在美术产出之后，为角色动作、场景气氛和游戏镜头生成动态预演。；把静态游戏美术快速转成动态镜头，适合预演动作与制作宣传片段。
+- [CapCut](https://365977438.github.io/game-tool-hub/tools/capcut.html): 【宣传】承接 AI 视频与游戏录屏，负责剪辑、字幕、包装和社交媒体成片。；把 AI 生成的视频、字幕和包装快速剪成可发布的游戏宣传片。
+- [Descript](https://365977438.github.io/game-tool-hub/tools/descript.html): 【宣传】把访谈转录成可操作脚本，驱动音视频粗剪并清理口头表达。；用脚本和字幕直接剪辑游戏访谈，替代逐段查找与粗剪工作。
+- [Ollama](https://365977438.github.io/game-tool-hub/tools/ollama.html): 【算力】作为本地推理底座，为游戏 NPC、自动化工具和内容管线提供模型接口。；在开发机上部署 AI 模型，为 NPC、测试和内容生成提供本地接口。
+- [Windsurf](https://365977438.github.io/game-tool-hub/tools/windsurf.html): 【代码】作为编码执行端，从理解工程到落地功能连续完成开发任务；用智能体理解整个游戏工程，快速生成代码并接手重复开发任务
+- [Replicate](https://365977438.github.io/game-tool-hub/tools/replicate.html): 【算力】充当AI模型执行层，将创意批量转成可调用的游戏资产。；调用与部署开源模型，把AI生成能力快速接入游戏管线。
+- [fal.ai](https://365977438.github.io/game-tool-hub/tools/fal-ai.html): 【算力】承担实时或批量媒体推理，为游戏美术和宣传素材提速。；低延迟生成图像与视频，为游戏资产管线提速。
+- [Inworld AI](https://365977438.github.io/game-tool-hub/tools/inworld.html): 【玩法】在游戏运行时为 NPC 提供对话、记忆与行为决策；为游戏 NPC 注入可记忆、可对话的智能角色能力
+- [Convai](https://365977438.github.io/game-tool-hub/tools/convai.html): 【玩法】为可玩角色补充自然语言与语音交互能力；为游戏 NPC 快速接入自然对话和语音交互能力
+- [SiliconFlow 硅基流动](https://365977438.github.io/game-tool-hub/tools/siliconflow.html): 【算力】充当国产模型推理底座，让文本、图像和音频能力进入游戏。；提供国内开源模型推理，快速接入游戏AI功能。
+- [阿里云百炼](https://365977438.github.io/game-tool-hub/tools/aliyun-bailian.html): 【工作流】把模型、知识与智能体编排成可接入游戏的服务。；整合模型、知识库与应用编排，搭建游戏AI服务。
+- [火山引擎方舟](https://365977438.github.io/game-tool-hub/tools/volcengine-ark.html): 【算力】承接游戏素材生成、内容分析与自动化批处理任务；为游戏 AI 管线提供多模态模型推理与批量调用能力
+
+## 分类总览教程
+
+- [AI 模型与素材库总览：从选型到接入游戏](https://365977438.github.io/game-tool-hub/tutorials/guide-ai-model.html): AI 模型与素材库负责提供训练数据、基础模型、LoRA 权重及可商用生成素材，是游戏 AI 制作链路的资源层。选型时应兼顾授权条款、模型质量、硬件成本、格式兼容性、社区活跃度与复现能力，并与标注、训练、微调、推理和资产制作流程衔接。
+- [AI游戏资产与关卡管线总览](https://365977438.github.io/game-tool-hub/tutorials/guide-pipeline.html): 本分类负责把 AI 生成的视频、地图、数值表和资源包转化为可编辑、可校验、可集成的工程资产。应按目标引擎、资产格式、自动化程度与可回溯性选型，并先统一目录、命名和数据规范，再衔接生成、编辑、验证与发布流程。
+- [用AI生成游戏美术资产全流程指南](https://365977438.github.io/game-tool-hub/tutorials/guide-ai-art.html): AI美术生成覆盖从概念探索、角色与场景设绘，到贴图、图标、宣传图及后期精修的视觉生产环节。选型时应结合资产类型、批量一致性、局部控制、版权与部署方式，并让生成结果进入统一规范和人工审核流程。
+- [AI 三维与动画制作全链路指南](https://365977438.github.io/game-tool-hub/tutorials/guide-ai-3d.html): AI 三维与动画工具负责把文字、概念图、真人动作快速转成可编辑模型、实时场景与动画数据。选型时应重点检查拓扑质量、纹理与UV、引擎兼容性、动作稳定性、生成速度及商用授权，并按原型、角色、场景和动捕需求组合工作流。
+- [AI 游戏音频与配音全流程指南](https://365977438.github.io/game-tool-hub/tutorials/guide-ai-audio.html): 本分类覆盖配乐、音效、角色对白、声音克隆与后期清理，帮助团队从需求规格、生成草稿、角色音色训练到交付母带建立完整声音流水线。选型时优先匹配语言与音色控制、批量能力、授权条款、离线部署及游戏引擎格式需求，并保留人工验收环节。
+- [AI 代码与自动化：游戏开发提效全链路](https://365977438.github.io/game-tool-hub/tutorials/guide-ai-code.html): AI 代码工具负责把需求转为可运行代码、补全脚本、维护工程并连接 Godot、Unity 等编辑器。应按项目规模、编辑器、代理自主程度和部署需求选型，再用版本控制、测试与人工审查守住质量。
+- [AI NPC 与智能体游戏开发总览](https://365977438.github.io/game-tool-hub/tutorials/guide-ai-npc.html): AI NPC 与智能体负责让角色具备记忆、对话、情绪反馈和自主行动能力。本类工具横跨角色原型、即时交互、多人环境与游戏评测，选型时应重点考察记忆一致性、响应延迟、语音支持、引擎集成、可控性、成本与隐私方案。
+- [AI 游戏工作流与模型训练总览](https://365977438.github.io/game-tool-hub/tutorials/guide-ai-workflow.html): 本分类负责把零散的 AI 生成能力组织成可重复执行的游戏美术管线，覆盖提示词管理、节点式批量出图、角色 LoRA 训练、素材审批与发布。选择时应先看引擎兼容性、批处理能力、模型管理、自动化接口和本地硬件要求，再用官方示例验证工作流。
+- [AI游戏视频与宣传素材制作总览](https://365977438.github.io/game-tool-hub/tutorials/guide-ai-video.html): 本分类覆盖从概念预演、过场与预告生成，到长视频拆条、访谈粗剪、配音口型同步及平台成片包装。挑选时应先看输入输出类型、角色与镜头一致性、可编辑性、音画同步和商用授权，再按游戏类型与宣传平台组合工具。
+- [AI 算力与部署：从本地试验到在线推理](https://365977438.github.io/game-tool-hub/tutorials/guide-ai-compute.html): 本分类负责为 AI 制作游戏提供模型运行、API 调用与推理服务能力，覆盖开发机本地部署、云端生成和在线高并发服务。挑选时应结合模型兼容性、响应延迟、吞吐与显存、调用成本、部署地域、并发方式及数据合规，并按原型验证、资产批量生成与在线 NPC 分层验证。
+- [游戏引擎与框架选型总览](https://365977438.github.io/game-tool-hub/tutorials/guide-engine.html): 游戏引擎与框架用于搭建2D、3D、网页及叙事项目的运行基础。选型时应综合目标平台、团队技能、渲染需求、开源许可与发布成本，优先验证核心玩法、性能预算和资产管线，再确定通用引擎、专业工具或轻量框架。
+- [游戏美术与建模工具链总览](https://365977438.github.io/game-tool-hub/tutorials/guide-art.html): 本分类覆盖从概念草图、参考管理、建模雕刻、贴图绘制，到动画动捕、界面原型和资产检查的完整游戏美术流程。选择时应优先明确资产类型、交付规格、团队协作方式与预算，再按环节组合免费开源工具或专业商业软件。
+- [游戏 Mod 与插件工具全流程指南](https://365977438.github.io/game-tool-hub/tutorials/guide-mod.html): 本分类覆盖模组框架、加载器、管理器、创意工坊与编辑器增强工具，适用于安装玩家模组、开发跨平台模组或维护 Unity、Godot 项目。挑选时应先确认游戏引擎、平台与安装方式，再区分运行时加载、依赖管理、冲突修复和内容分发工具。
+- [游戏性能与帧率优化总览教程](https://365977438.github.io/game-tool-hub/tutorials/guide-perf.html): 本分类覆盖帧率监控、GPU 调优、渲染分析与崩溃诊断。先用 CapFrameX、PresentMon、RTSS 或 MangoHud 确认帧时间、卡顿与瓶颈，再用 RenderDoc、Nsight Graphics、PIX 或 GPUView 深入渲染管线；系统级争抢可借助 System Informer、Process Lasso 和 Afterburner 排查与调节。
+- [游戏素材与资源库选择与使用总览](https://365977438.github.io/game-tool-hub/tutorials/guide-asset.html): “素材与资源库”覆盖模型、贴图、像素图、音效、UI及引擎插件，帮助开发者降低美术、音频和工具制作成本。挑选时应先看授权条款、格式兼容性与资源风格，再结合用途选择通用库、专业市场或创作者平台；同时核对商用、署名、修改和再分发限制。
+- [游戏音频与音乐制作工具总览](https://365977438.github.io/game-tool-hub/tutorials/guide-audio.html): 本分类覆盖游戏音效制作、配乐、采样素材、DSP 与音频中间件。Audacity、LMMS、Splice 适合独立开发者快速产出素材；Bfxr、Chiptone、Sonic Pi 面向芯片音与实验创作；FMOD、Wwise 用于大型项目中的自适应音乐、互动混音和运行时逻辑；Melody Assistant、Soundation 则可辅助旋律生成与云端编曲。
+- [独立游戏发行与平台接入指南](https://365977438.github.io/game-tool-hub/tutorials/guide-publish.html): 本分类覆盖从游戏导出、平台提交到上线运营的发行链路。选择时应先确认目标市场、DRM政策、商店分成与开发者资质，再结合引擎和自动化需求选用 Steamworks、Epic、Game Jolt 或 GOG，并用 Godot 官方文档及 godot-ci 打通构建与部署。
+- [游戏开发学习资源与社区选择指南](https://365977438.github.io/game-tool-hub/tutorials/guide-learn.html): 本分类覆盖官方教程、系统课程、开放规范、行业媒体与开发者社区，适合从入门学习、技术进阶到行业洞察的不同阶段。建议先按当前目标选择主线：引擎上手选官方学习中心，图形编程选OpenGL或着色器课程，架构能力查范式书籍，会议经验看GDC，行业动态则结合中文社区与专业媒体。
+
+## 其他入口
+
+- [工具总表](https://365977438.github.io/game-tool-hub/tools/): 全部工具，可按 AI 创作阶段与「只看 AI 原生」筛选
+- [AI 游戏快讯](https://365977438.github.io/game-tool-hub/news/): 272 条由 AI 翻译核查并写成的中文文章
+- [使用教程](https://365977438.github.io/game-tool-hub/tutorials/): 294 篇中文实操教程
+- [AI 自动化维护流水线](https://365977438.github.io/game-tool-hub/automation.html): 本站内容全部由 AI 机器人自动生成与发布的全过程

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>AI 游戏工具集 · AI 游戏快讯</title>
+    <link>https://www.mindorabot.com/news/</link>
+    <description>AI 游戏工具集聚焦「用 AI 制作游戏」：收录 AI 美术生成、AI 三维、AI 配音、AI 代码与 NPC 等创作全链路工具，聚合 AI 游戏快讯并写成中文文章，附中文实操教程，全部由 AI 机器人每日维护并自动发布。</description>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 21 Nov 2026 17:39:02 GMT</lastBuildDate>
+    <item>
+      <title><![CDATA[腾讯第四次调整AI航道，游戏业务成核心应用场景]]></title>
+      <link><![CDATA[https://www.tmtpost.com/8213477.html]]></link>
+      <guid isPermaLink="false">2026-11-21-ai-ea3e18</guid>
+      <pubDate>Sat, 21 Nov 2026 07:55:05 GMT</pubDate>
+      <description><![CDATA[腾讯再次调整AI战略，从早期将AI视作游戏、广告等业务的底层插件，转向建立独立大模型赛道并面向用户开发智能体。对游戏开发者而言，腾讯AI入口和业务能力的扩张，可能影响智能体功能、玩家交互与生态合作机会。]]></description>
+      <source url="https://www.mindorabot.com/news/">钛媒体</source>
+    </item>
+    <item>
+      <title><![CDATA[AI 斗蛐蛐揭示游戏开发的新分工]]></title>
+      <link><![CDATA[http://www.chuapp.com/article/291774.html]]></link>
+      <guid isPermaLink="false">2026-11-21-ai-13fd53</guid>
+      <pubDate>Sat, 21 Nov 2026 06:01:08 GMT</pubDate>
+      <description><![CDATA[近期“AI 斗蛐蛐”视频把不同大模型放进战争模拟、足球和造桥等游戏任务，以规则、成本和成绩进行比较。比赛显示，AI 能执行策略和反复试错，却仍缺乏真正的创意；这为开发者把 AI 接入游戏原型、关卡优化与玩法验证提供了现实参照。]]></description>
+      <source url="https://www.mindorabot.com/news/">触乐</source>
+    </item>
+    <item>
+      <title><![CDATA[樱井政博游戏制作教程被整合为 AI 智能体 Skill]]></title>
+      <link><![CDATA[https://www.ithome.com/1/030/228.htm]]></link>
+      <guid isPermaLink="false">2026-11-20-skill-ai-1ddc4b</guid>
+      <pubDate>Fri, 20 Nov 2026 11:55:46 GMT</pubDate>
+      <description><![CDATA[GitHub 项目 sakurai-skill 将樱井政博 YouTube 频道 257 集视频的字幕整理为可调用技能，覆盖游戏企划、难度、奖励、新手引导、UI、音效和操作手感等主题。项目采用分章节、按需加载的方式降低上下文负担，并以 Godot 4.6.3 作品《ハジキ》展示应用，但内容来自字幕总结，不等同于本人原话。]]></description>
+      <source url="https://www.mindorabot.com/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[《E.T.》制作人警告：AI 游戏洪流或重演 1983 年市场崩溃]]></title>
+      <link><![CDATA[https://www.gamesindustry.biz/the-creator-of-et-on-the-atari-2600-likens-the-deluge-of-ai-made-games-to-the-glut-of-poor-quality-titles-released-ahead-of-the-us-video-game-crash-of-1983]]></link>
+      <guid isPermaLink="false">2026-11-20-creator-of-on-atari-2600-a5d020</guid>
+      <pubDate>Fri, 20 Nov 2026 11:13:00 GMT</pubDate>
+      <description><![CDATA[《E.T. the Extra-Terrestrial》制作人 Howard Scott Warshaw 在 DevGAMM Lisbon 演讲中，将当前激增的 AI 制作游戏比作 1983 年美国游戏市场崩溃前充斥低质量作品的阶段。这场警告直接指向开发工具、发行筛选与玩家信任：AI 能降低内容生产门槛，也可能在缺少质量控制时放大供给过剩。]]></description>
+      <source url="https://www.mindorabot.com/news/">GamesIndustry.biz</source>
+    </item>
+    <item>
+      <title><![CDATA[微软让多台 Win11 电脑协同运行本地 AI 模型]]></title>
+      <link><![CDATA[https://www.ithome.com/1/030/081.htm]]></link>
+      <guid isPermaLink="false">2026-11-20-usb4-win11-ai-e236b8</guid>
+      <pubDate>Fri, 20 Nov 2026 08:25:51 GMT</pubDate>
+      <description><![CDATA[微软以开发者预览方式推出基于 USB4 的 RDMA 体验，让多台 Windows 11 电脑共享内存与 GPU 算力。对游戏团队而言，它提供了一条不必单独采购昂贵服务器、即可扩展本地 AI 推理资源的实验路径，可用于验证 NPC、美术生成或工作流助手等模型部署。]]></description>
+      <source url="https://www.mindorabot.com/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[AI 短剧争夺玩家注意力，网易游戏业务承压]]></title>
+      <link><![CDATA[https://www.ithome.com/1/029/977.htm]]></link>
+      <guid isPermaLink="false">2026-11-20-ithome-84527f</guid>
+      <pubDate>Fri, 20 Nov 2026 07:14:26 GMT</pubDate>
+      <description><![CDATA[网易三季度游戏及相关增值服务收入同比下降 1.7%，丁磊称短剧的爆发式增长短期内会影响游戏。素材同时显示，AI 已用于九成以上新上线微短剧。对游戏团队而言，这不是单纯的流量对手变化：低成本 AI 内容正在改变玩家时间分配，也会迫使开发者重新评估内容生产效率和获客方式。]]></description>
+      <source url="https://www.mindorabot.com/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[《The Ghost Of Solaris》转付费前免费领，AI 素材争议引关注]]></title>
+      <link><![CDATA[https://www.ithome.com/1/029/902.htm]]></link>
+      <guid isPermaLink="false">2026-11-20-steam-ghost-of-solaris-abd1df</guid>
+      <pubDate>Fri, 20 Nov 2026 06:44:34 GMT</pubDate>
+      <description><![CDATA[动作冒险游戏《The Ghost Of Solaris》即将由免费游玩转为以49.99美元销售，玩家可先免费领取。商店图片疑似由AI生成，而模型粗糙、场景空洞与运行卡顿也引发争议，为开发者审视AI美术的实际转化效果提供了反面案例。]]></description>
+      <source url="https://www.mindorabot.com/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[育碧成立 Motherbrain，聚焦生成式 AI 与智能 NPC]]></title>
+      <link><![CDATA[https://www.ithome.com/1/029/795.htm]]></link>
+      <guid isPermaLink="false">2026-11-20-motherbrain-ai-1100-b9eee0</guid>
+      <pubDate>Fri, 20 Nov 2026 02:03:05 GMT</pubDate>
+      <description><![CDATA[育碧将游戏 AI 团队 Motherbrain 设为独立子公司，集中开发记忆型 NPC、AI 游戏主持人等生成式 AI 技术，并向旗下工作室及外部开发者提供服务。此举意味着生成式 AI 正从单点实验走向支撑玩法与生产流程的独立技术业务。]]></description>
+      <source url="https://www.mindorabot.com/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[Principal Venture Partners 谈 AI 原生游戏与人类创造力]]></title>
+      <link><![CDATA[https://gamesbeat.com/principal-venture-partners-songyee-yoon-on-ai-native-games-human-creativity-and-gamings-new-rivals-gamesbeat-next-2026/]]></link>
+      <guid isPermaLink="false">2026-11-19-principal-venture-partners-songyee-yoon-17f7b0</guid>
+      <pubDate>Thu, 19 Nov 2026 18:28:04 GMT</pubDate>
+      <description><![CDATA[Principal Venture Partners 的 Songyee Yoon 认为，游戏行业的经验可能催生下一批 AI 原生公司，而 AI-native 游戏未必沿用传统地牢等玩法框架。她把 AI 与游戏行业的新竞争者及人类创造力放在一起讨论，为开发者理解 AI 如何改变产品与制作方式提供投资视角。]]></description>
+      <source url="https://www.mindorabot.com/news/">GamesBeat</source>
+    </item>
+    <item>
+      <title><![CDATA[不用生成式 AI，四天完成的游戏登顶 Epic AI MegaJam]]></title>
+      <link><![CDATA[https://www.rockpapershotgun.com/fish-with-a-sniper-rifle-takes-aim-at-tim-sweeneys-hopes-and-dreams-as-genai-free-meme-game-tops-epic-games-vibe-coding-megajam]]></link>
+      <guid isPermaLink="false">2026-11-19-fish-sniper-rifle-takes-aim-e84705</guid>
+      <pubDate>Thu, 19 Nov 2026 15:30:00 GMT</pubDate>
+      <description><![CDATA[Epic Games 举办 Epic AI MegaJam，允许开发者借助 AI 代理或工具，在 Unreal Engine 或 Fortnite 的 Unreal Editor 中制作可玩游戏。参赛作品《LSD:FIH》由开发者 PolyCube 在四天内独立完成，且明确未使用生成式 AI，成为活动中最受欢迎的作品之一。]]></description>
+      <source url="https://www.mindorabot.com/news/">Rock Paper Shotgun</source>
+    </item>
+    <item>
+      <title><![CDATA[《不问凡尘》遭恶意攻击，游戏 AI 聊天出现异常]]></title>
+      <link><![CDATA[https://store.steampowered.com/news/app/4209920/view/672886171588624967]]></link>
+      <guid isPermaLink="false">2026-11-19-steam-news-6fab8c</guid>
+      <pubDate>Thu, 19 Nov 2026 13:56:56 GMT</pubDate>
+      <description><![CDATA[《不问凡尘》官方公告称，服务器遭到恶意网络攻击，导致部分功能异常：使用自定义名字创建角色可能失败，玩家也可能无法正常进入游戏，AI 聊天同样受到影响。开发方正在排查修复并升级防护，玩家暂时可尝试使用随机取名功能。]]></description>
+      <source url="https://www.mindorabot.com/news/">Steam 新闻</source>
+    </item>
+    <item>
+      <title><![CDATA[前 Take-Two CEO：玩家对游戏 AI 的态度或将转向接受]]></title>
+      <link><![CDATA[https://80.lv/articles/former-take-two-ceo-believes-attitudes-toward-ai-in-video-games-will-improve/]]></link>
+      <guid isPermaLink="false">2026-11-19-former-take-two-ceo-believes-9af00c</guid>
+      <pubDate>Thu, 19 Nov 2026 10:47:00 GMT</pubDate>
+      <description><![CDATA[前 Take-Two CEO Ben Feder 以动画从手绘转向 CG 的进程作类比，认为西方玩家对游戏开发中使用 AI 的抵触正在接近临界点，未来消费者态度可能改善。这一判断直接关系到开发者采用 AI 制作内容时面临的玩家沟通、版权与质量风险。]]></description>
+      <source url="https://www.mindorabot.com/news/">80 Level</source>
+    </item>
+    <item>
+      <title><![CDATA[GTA6以零生成式AI完成制作，3A品质投入价值凸显]]></title>
+      <link><![CDATA[https://www.qbitai.com/2026/11/511180.html]]></link>
+      <guid isPermaLink="false">2026-11-19-gta6-ai-3a-a54bf1</guid>
+      <pubDate>Thu, 19 Nov 2026 08:18:30 GMT</pubDate>
+      <description><![CDATA[《GTA6》正式发售并获得媒体高分认可，素材称其生成式AI零参与。作品仍通过大量动画、编剧导演团队、物理材质与光影升级维持高完成度，为开发者提供了一条对照路径：在AI快速迭代之外，人工主导的高成本制作仍能支撑顶级内容体验。]]></description>
+      <source url="https://www.mindorabot.com/news/">量子位</source>
+    </item>
+    <item>
+      <title><![CDATA[《GTA 6》PS5 Pro画面经AI神经渲染，帧率最高提升853.33%]]></title>
+      <link><![CDATA[https://www.ithome.com/1/029/200.htm]]></link>
+      <guid isPermaLink="false">2026-11-19-853-33-gta-ps5-pro-2e5144</guid>
+      <pubDate>Thu, 19 Nov 2026 03:11:05 GMT</pubDate>
+      <description><![CDATA[GameGPU 将 PS5 Pro 的 4K 画面经采集卡送入电脑，再启用 NVIDIA DLSS 5 神经渲染与帧生成，使《GTA 6》帧率由原生 30 FPS 提升至约 262—286 FPS。测试同时显示，神经处理会明显改变角色皮肤、肤色与面部质感，凸显 AI 加速游戏画面时对美术一致性的挑战。]]></description>
+      <source url="https://www.mindorabot.com/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[不会写代码的设计师如何用 AI 独立开发应用]]></title>
+      <link><![CDATA[https://www.gcores.com/radios/222533]]></link>
+      <guid isPermaLink="false">2026-11-19-ep34-ai-app-5fc8a9</guid>
+      <pubDate>Thu, 19 Nov 2026 00:30:00 GMT</pubDate>
+      <description><![CDATA[平面设计师 MOG借助 AI 完成从创意、编程到上架推广的独立开发流程，并做出浮雕、合成器与互动教具等工具。对游戏制作而言，这展示了一条可借鉴的路径：AI 不仅能补代码，也能让非程序人员把视觉与交互原型快速变成可发布产品。]]></description>
+      <source url="https://www.mindorabot.com/news/">机核</source>
+    </item>
+    <item>
+      <title><![CDATA[Snap 推出 Easy Lens CLI，让开发者用 AI 编程助手制作 Snapchat Lenses]]></title>
+      <link><![CDATA[https://gamesbeat.com/snap-introduces-easy-lens-cli-to-create-snapchat-lenses-with-ai-coding-assistant/]]></link>
+      <guid isPermaLink="false">2026-11-18-snap-introduces-easy-lens-cli-fd88cf</guid>
+      <pubDate>Wed, 18 Nov 2026 17:00:00 GMT</pubDate>
+      <description><![CDATA[Snap 发布 Easy Lens CLI，为开发者提供一条结合 AI 编程助手来创建 Snapchat Lenses 的新路径。它把 AI 辅助编码接入互动内容制作流程，面向的不是传统游戏本体，却与基于工具和模板开发互动体验的团队高度相关，值得关注其工作流迁移方式。]]></description>
+      <source url="https://www.mindorabot.com/news/">GamesBeat</source>
+    </item>
+    <item>
+      <title><![CDATA[从机器人鸭子到游戏开发：本地 AI 的价值被重新发现]]></title>
+      <link><![CDATA[https://www.yystv.cn/p/14649]]></link>
+      <guid isPermaLink="false">2026-11-18-ai-2236cc</guid>
+      <pubDate>Wed, 18 Nov 2026 16:00:00 GMT</pubDate>
+      <description><![CDATA[NVIDIA RTX Spark 上市一个月后，媒体在上海英伟达办公室体验了多台笔记本与 SFF 主机部署本地模型的多个 Demo。报道指出，本地 AI 的关键并非取代云端大模型，而是让模型更贴近日常生产流程，为游戏等需要低延迟、隐私与低成本能力的场景提供选择。]]></description>
+      <source url="https://www.mindorabot.com/news/">游研社</source>
+    </item>
+    <item>
+      <title><![CDATA[AI 技能进入游戏招聘面试，岗位基本功仍是门槛]]></title>
+      <link><![CDATA[http://www.chuapp.com/article/291769.html]]></link>
+      <guid isPermaLink="false">2026-11-18-ai-c539bf</guid>
+      <pubDate>Wed, 18 Nov 2026 11:08:11 GMT</pubDate>
+      <description><![CDATA[生成式 AI 正从游戏开发工具变成求职者的通用技能。腾讯 IEG 招聘材料显示，AI 岗位需求上升，部分面试加入 AI Coding 考察；GDC 调查也显示，已有四成受访从业者使用生成式 AI。不过，多数厂商目前仍优先考察专业能力，AI 能力主要充当加分项。]]></description>
+      <source url="https://www.mindorabot.com/news/">触乐</source>
+    </item>
+    <item>
+      <title><![CDATA[前 Take-Two CEO：游戏行业距接受生成式 AI 只差一个“玩具总动员时刻”]]></title>
+      <link><![CDATA[https://www.eurogamer.net/gta-4-red-dead-redemption-take-two-ben-feder-ai-toy-story]]></link>
+      <guid isPermaLink="false">2026-11-18-former-gta-red-dead-boss-264aec</guid>
+      <pubDate>Wed, 18 Nov 2026 09:13:30 GMT</pubDate>
+      <description><![CDATA[曾主导《GTA 4》《荒野大镖客》等项目的前 Take-Two CEO Ben Feder 认为，西方开发者对生成式 AI 的抵触，可能随着一项足以改变行业的标志性作品出现而消失。这直接指向 AI 是否能从争议工具转化为游戏生产管线中的常规能力。]]></description>
+      <source url="https://www.mindorabot.com/news/">Eurogamer</source>
+    </item>
+    <item>
+      <title><![CDATA[《GTA6》临近发售，PS5强制更新应对AI逆向风险]]></title>
+      <link><![CDATA[https://www.gcores.com/articles/222495]]></link>
+      <guid isPermaLink="false">2026-11-18-gta6-33163b</guid>
+      <pubDate>Wed, 18 Nov 2026 08:46:32 GMT</pubDate>
+      <description><![CDATA[为迎接《GTA6》发售，索尼向PS5推送14.23固件，并要求玩家必须安装更新才能游玩。报道提到，已有黑客借助AI逆向从14.22固件提取游戏文件，因此新版本可能意在降低越狱主机首日盗版风险。对游戏制作方而言，这表明AI正在同时改变资产保护与发行安全流程。]]></description>
+      <source url="https://www.mindorabot.com/news/">机核</source>
+    </item>
+    <item>
+      <title><![CDATA[互动影游引入AI全链路，但分支与审核仍是核心门槛]]></title>
+      <link><![CDATA[https://www.tmtpost.com/8209736.html]]></link>
+      <guid isPermaLink="false">2026-11-18-200-c7b310</guid>
+      <pubDate>Wed, 18 Nov 2026 06:41:38 GMT</pubDate>
+      <description><![CDATA[一相逢互动将AI用于内容生产、制作与宣发，其新作《重生2我独自逆袭》上线3天销量超过5万套。团队同时强调，AI无法取代真人互动，互动影游真正要解决的是分支设计、玩家习惯与平台审核问题。]]></description>
+      <source url="https://www.mindorabot.com/news/">钛媒体</source>
+    </item>
+    <item>
+      <title><![CDATA[欧洲多国游戏工会发布联合宣言，呼吁拒绝生成式 AI]]></title>
+      <link><![CDATA[https://www.rockpapershotgun.com/games-are-best-made-by-people-the-iwgb-and-other-european-unions-publish-joint-manifesto-calling-on-workers-employers-and-consumers-to-reject-genai]]></link>
+      <guid isPermaLink="false">2026-11-17-games-best-made-by-people-174671</guid>
+      <pubDate>Tue, 17 Nov 2026 12:30:00 GMT</pubDate>
+      <description><![CDATA[IWGB 与来自爱尔兰、德国、意大利、法国和西班牙的游戏行业工会发布联合宣言，呼吁劳动者、雇主与消费者共同抵制生成式 AI。事件直接触及游戏制作中的岗位替代、创作权益和产业规则，将影响开发者选择 AI 工具、团队协作方式与发行合规。]]></description>
+      <source url="https://www.mindorabot.com/news/">Rock Paper Shotgun</source>
+    </item>
+    <item>
+      <title><![CDATA[Manus 成为 Godot Foundation 白金赞助商]]></title>
+      <link><![CDATA[https://godotengine.org/article/partners_manus_sponsorship_2026_announcement/]]></link>
+      <guid isPermaLink="false">2026-11-17-godot-foundation-welcomes-manus-as-981c3e</guid>
+      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
+      <description><![CDATA[Manus 以白金赞助商身份加入 Godot Foundation，支持开源引擎持续维护与社区发展。官方同时强调，AI 正在降低游戏制作的技术门槛，但真正稀缺的已从实现创意转向明确自己想做什么。]]></description>
+      <source url="https://www.mindorabot.com/news/">Godot Blog</source>
+    </item>
+    <item>
+      <title><![CDATA[米哈游发布 Gamer 通用视觉语言动作模型，可自主操作游戏]]></title>
+      <link><![CDATA[https://www.ithome.com/1/028/503.htm]]></link>
+      <guid isPermaLink="false">2026-11-17-gamer-39dc46</guid>
+      <pubDate>Tue, 17 Nov 2026 11:26:19 GMT</pubDate>
+      <description><![CDATA[米哈游《崩坏》系列 AI 团队公布 Gamer，可通过屏幕画面生成键鼠指令，自主完成 3D 与 2D 游戏任务。模型无需读取内部数据或调用专用 API，已展示操作《崩坏：星穹铁道》，其关键价值在于把通用视觉理解与动作决策用于游戏测试、无障碍和交互研究。]]></description>
+      <source url="https://www.mindorabot.com/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[巨人网络整合AI实验室，AI漫剧切入游戏买量生产线]]></title>
+      <link><![CDATA[https://www.youxituoluo.com/535065.html]]></link>
+      <guid isPermaLink="false">2026-11-17-ai-ai-80ea5e</guid>
+      <pubDate>Tue, 17 Nov 2026 10:55:39 GMT</pubDate>
+      <description><![CDATA[巨人网络将AI实验室并入技术中台，并把研发工作流重构、发行素材批量生成和AI漫剧列为业务落地方向。多家游戏厂商已测试AI剧情素材，标志着AI正从实验性美术生产延伸至获客与内容运营环节。]]></description>
+      <source url="https://www.mindorabot.com/news/">游戏陀螺</source>
+    </item>
+    <item>
+      <title><![CDATA[HoYoverse 如何避免《Petit Planet》的 AI NPC 骚扰玩家]]></title>
+      <link><![CDATA[https://www.gamespot.com/articles/how-hoyoverse-is-keeping-petit-planets-ai-npcs-from-harassing-players/]]></link>
+      <guid isPermaLink="false">2026-11-17-hoyoverse-is-keeping-petit-planet-90d6f5</guid>
+      <pubDate>Tue, 17 Nov 2026 10:36:49 GMT</pubDate>
+      <description><![CDATA[HoYoverse 在即将推出的生活模拟游戏《Petit Planet》中引入由 AI 驱动的咖啡馆 NPC。生成式对话为角色互动带来更多可能，也带来骚扰、越界等审核难题，其治理方式将影响开发者部署 AI NPC 的风险边界。]]></description>
+      <source url="https://www.mindorabot.com/news/">GameSpot</source>
+    </item>
+    <item>
+      <title><![CDATA[Ctrl Video AI上线，一站式打通互动影游制作与发行]]></title>
+      <link><![CDATA[https://www.youxituoluo.com/535064.html]]></link>
+      <guid isPermaLink="false">2026-11-17-ai-16495b</guid>
+      <pubDate>Tue, 17 Nov 2026 10:24:48 GMT</pubDate>
+      <description><![CDATA[智令互动推出Ctrl Video AI互动影游制作平台，将故事构思、角色与分镜、图片和视频生成、互动节点编排、作品封装及发行连接起来。该平台瞄准AI漫剧团队的产能瓶颈，让内容团队进一步交付可互动、可商业化的影游产品。]]></description>
+      <source url="https://www.mindorabot.com/news/">游戏陀螺</source>
+    </item>
+    <item>
+      <title><![CDATA[Unity 收购 Synty Studios，资产将接入 Unity Spark]]></title>
+      <link><![CDATA[https://www.gamesindustry.biz/unity-acquires-3d-asset-creator-synty-studios-artist-created-content-to-be-integrated-into-ai-game-creation-platform-unity-spark]]></link>
+      <guid isPermaLink="false">2026-11-17-unity-acquires-3d-asset-creator-233086</guid>
+      <pubDate>Tue, 17 Nov 2026 09:53:30 GMT</pubDate>
+      <description><![CDATA[Unity 收购 3D 资产创作者与发行商 Synty Studios，后者创作的素材将以同一品牌、艺术家和风格保留，并计划接入 AI 游戏创作平台 Unity Spark。这一整合有望为独立开发者扩充可用资产供给，但资产授权与来源也需同步确认。]]></description>
+      <source url="https://www.mindorabot.com/news/">GamesIndustry.biz</source>
+    </item>
+    <item>
+      <title><![CDATA[欧洲六国游戏工会呼吁抵制生成式 AI 游戏]]></title>
+      <link><![CDATA[https://www.ithome.com/1/028/341.htm]]></link>
+      <guid isPermaLink="false">2026-11-17-ai-cb78e4</guid>
+      <pubDate>Tue, 17 Nov 2026 08:24:26 GMT</pubDate>
+      <description><![CDATA[英国、爱尔兰、法国、西班牙、德国和意大利的游戏工会联合发布宣言，呼吁玩家支持纯人工开发作品，并要求开发者在使用生成式 AI 时审慎评估就业、环境、伦理与法律风险。对独立开发者而言，AI 的采用方式正从效率工具选择转变为影响团队就业与作品市场定位的决策。]]></description>
+      <source url="https://www.mindorabot.com/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[Take-Two CEO 呼吁 AI 平台限制用户克隆游戏]]></title>
+      <link><![CDATA[https://www.ithome.com/1/028/287.htm]]></link>
+      <guid isPermaLink="false">2026-11-17-take-two-ceo-anthropic-openai-137a30</guid>
+      <pubDate>Tue, 17 Nov 2026 07:55:51 GMT</pubDate>
+      <description><![CDATA[Take-Two CEO 施特劳斯·泽尔尼克批评 Anthropic、OpenAI 等公司放任用户利用生成式 AI 逆向仿制现有游戏。Anthropic 已修改 Claude 底层代码，禁止相关侵权用法。对开发者而言，AI 辅助编程正在降低复制、移植和抢先上架的门槛，作品发布前的资产与代码保护更加重要。]]></description>
+      <source url="https://www.mindorabot.com/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[腾讯将 AI 变革视为生死存亡，游戏团队如何重构制作流程]]></title>
+      <link><![CDATA[https://www.youxituoluo.com/535061.html]]></link>
+      <guid isPermaLink="false">2026-11-16-ai-c5a517</guid>
+      <pubDate>Mon, 16 Nov 2026 15:50:05 GMT</pubDate>
+      <description><![CDATA[腾讯在内部总办笔记中将 AI 变革定义为“生死存亡”，要求核心业务围绕 AI 再创业，并通过组织扁平化、小团队作战与工作方式重设计推进落地。对游戏开发者而言，这意味着 AI 不再只是单点工具，而可能进入团队组织、资源分配和内容生产流程。]]></description>
+      <source url="https://www.mindorabot.com/news/">游戏陀螺</source>
+    </item>
+    <item>
+      <title><![CDATA[AI进入游戏制作：效率红利与创意价值同时放大]]></title>
+      <link><![CDATA[https://www.youxituoluo.com/535060.html]]></link>
+      <guid isPermaLink="false">2026-11-16-steam-195480</guid>
+      <pubDate>Mon, 16 Nov 2026 15:21:18 GMT</pubDate>
+      <description><![CDATA[游戏陀螺周报提到，AI工具虽尚未赢得足够信任，却已形成明显的制作效率差距。任天堂导演樱井政博认为，项目期限、团队能力和成本等现实约束仍需人工处理；Skydance则将AI定位为创作者工具。这对开发者意味着，AI落地重点应是补足流程，而非脱离团队独立完成制作。]]></description>
+      <source url="https://www.mindorabot.com/news/">游戏陀螺</source>
+    </item>
+    <item>
+      <title><![CDATA[AI短剧成为买量管线，短剧反向嵌入游戏]]></title>
+      <link><![CDATA[https://www.youxituoluo.com/535058.html]]></link>
+      <guid isPermaLink="false">2026-11-16-gamerbee-930807</guid>
+      <pubDate>Mon, 16 Nov 2026 14:18:11 GMT</pubDate>
+      <description><![CDATA[《疯狂水世界》近90天投放17.01万条素材，抽样290条头部素材中，“剧情逆袭·AIGC短剧”占50.3%，传统玩法实录仅14.8%。部分用户开始追更广告剧情，官方随后把自制短剧和AI真人短剧实装进游戏，显示AI正在重构素材生产、用户叙事与游戏内运营的连接方式。]]></description>
+      <source url="https://www.mindorabot.com/news/">游戏陀螺</source>
+    </item>
+    <item>
+      <title><![CDATA[《Ashes of the Singularity 2》评测：生成式 AI 反而拖累 RTS 体验]]></title>
+      <link><![CDATA[https://www.pcgamer.com/games/rts/ashes-of-the-singularity-2-review/]]></link>
+      <guid isPermaLink="false">2026-11-16-ashes-of-singularity-review-neat-a4e163</guid>
+      <pubDate>Mon, 16 Nov 2026 14:01:32 GMT</pubDate>
+      <description><![CDATA[PC Gamer 对《Ashes of the Singularity 2》的评测指出，这款即时战略游戏虽有宏大战场等亮点，却受到乏味战役与突兀生成式 AI 的拖累。对游戏开发者而言，这提示 AI 若未融入玩法与叙事，也会损害作品质感和玩家信任。]]></description>
+      <source url="https://www.mindorabot.com/news/">PC Gamer</source>
+    </item>
+    <item>
+      <title><![CDATA[Claude 驱动玩家自制 GTA 6 非官方 PC 版]]></title>
+      <link><![CDATA[https://www.rockpapershotgun.com/this-week-in-pc-games-start-a-new-life-in-vice-city-escape-a-dying-universe-before-the-last-black-hole-evaporates-and-avenge-your-pigeon-with-a-sledgehammer]]></link>
+      <guid isPermaLink="false">2026-11-16-week-in-pc-games-start-aee1cc</guid>
+      <pubDate>Mon, 16 Nov 2026 12:54:10 GMT</pubDate>
+      <description><![CDATA[Rock Paper Shotgun 在每周 PC 游戏盘点中提到，有玩家正借助 Claude 推进 Grand Theft Auto 6 的非官方 PC 移植。素材没有披露移植进度或 Claude 的具体参与环节，但这表明大模型正从讨论话题进入玩家社区的动手实践。]]></description>
+      <source url="https://www.mindorabot.com/news/">Rock Paper Shotgun</source>
+    </item>
+    <item>
+      <title><![CDATA[Xbox Project Helix引入神经渲染，下一代主机不只拼算力]]></title>
+      <link><![CDATA[https://www.eurogamer.net/microsoft-project-helix-interview-details]]></link>
+      <guid isPermaLink="false">2026-11-16-next-xbox-project-helix-is-95d887</guid>
+      <pubDate>Mon, 16 Nov 2026 12:08:40 GMT</pubDate>
+      <description><![CDATA[微软明确下一代 Xbox 主机 Project Helix 是“能运行 PC 游戏的游戏主机”，而非反向定义的主机化 PC，并强调算力并非唯一重点，神经渲染将成为关键能力。它提示开发者：新一代平台可能通过 AI 图形技术改变画面生产与移植流程。]]></description>
+      <source url="https://www.mindorabot.com/news/">Eurogamer</source>
+    </item>
+    <item>
+      <title><![CDATA[《零秒：时光的归途》 DLC 明确未使用生成式 AI 素材]]></title>
+      <link><![CDATA[https://www.gcores.com/articles/222406]]></link>
+      <guid isPermaLink="false">2026-11-16-dlc-75-9ee48b</guid>
+      <pubDate>Mon, 16 Nov 2026 07:32:00 GMT</pubDate>
+      <description><![CDATA[动作 Roguelike 游戏《零秒：时光的归途》推出“小恶魔”主题皮肤 DLC 与免费冬季更新。发行方特别说明，本次 DLC 全部内容均由美术团队亲手制作，没有使用任何生成式 AI 素材。这一表态把生成式 AI 的使用边界、玩家信任与内容披露问题直接摆到开发团队面前。]]></description>
+      <source url="https://www.mindorabot.com/news/">机核</source>
+    </item>
+    <item>
+      <title><![CDATA[GDC调查：四成游戏从业者已用AI，创意落地仍显谨慎]]></title>
+      <link><![CDATA[https://www.ithome.com/1/027/323.htm]]></link>
+      <guid isPermaLink="false">n-deaa1936</guid>
+      <pubDate>Sun, 15 Nov 2026 06:28:57 GMT</pubDate>
+      <description><![CDATA[GDC对2600多名游戏产业从业者的调查显示，40%已在工作中使用生成式AI，但55%认为其对行业负面影响。AI目前主要进入调研、总结和代码环节，概念图等创意工作渗透率较低，版权与能力退化仍是主要顾虑。]]></description>
+      <source url="https://www.mindorabot.com/news/">IT之家</source>
+    </item>
+    <item>
+      <title><![CDATA[GDC 调查：四成游戏开发者已采用生成式 AI]]></title>
+      <link><![CDATA[https://www.pcgamer.com/software/ai/40-percent-of-game-developers-use-generative-ai-according-to-a-new-report-but-more-than-half-reckon-the-technology-has-a-negative-impact-on-the-games-industry/]]></link>
+      <guid isPermaLink="false">n-515466cb</guid>
+      <pubDate>Sat, 14 Nov 2026 12:53:03 GMT</pubDate>
+      <description><![CDATA[GDC 最新报告显示，已有 40% 的游戏开发者使用生成式 AI，但超过一半的受访者认为该技术对游戏行业产生负面影响。数据表明，AI 已进入实际制作环节，同时版权、质量与行业价值争议正在扩大。]]></description>
+      <source url="https://www.mindorabot.com/news/">PC Gamer</source>
+    </item>
+    <item>
+      <title><![CDATA[AI 视频重塑游戏买量，单日素材峰值破万]]></title>
+      <link><![CDATA[https://www.tmtpost.com/8205248.html]]></link>
+      <guid isPermaLink="false">n-5c072bb9</guid>
+      <pubDate>Sat, 14 Nov 2026 08:54:00 GMT</pubDate>
+      <description><![CDATA[生成式视频正在把游戏买量从少量真人广告推进到可连续更新、批量测试的内容生产。《永夜起源》用肌肉唐僧唱歌等 AI 素材获得大量传播，单日投放素材峰值突破一万条；这意味着独立团队能以更低成本测试创意，但素材产能不再等于有效创意。]]></description>
+      <source url="https://www.mindorabot.com/news/">钛媒体</source>
+    </item>
+  </channel>
+</rss>
